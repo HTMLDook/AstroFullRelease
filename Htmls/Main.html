@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Title-->
+        <title>Our Solar System</title>
+        <!-- This meta tag specifies the character encoding for the HTML document -->
+        <meta charset="UTF-8">
+        <!-- This meta tag specifies the author of the webpage -->
+        <meta name="author" content="Erik Rhodin Claesson">
+        <!-- This meta tag provides a brief description of the webpage for search engines -->
+        <meta name="description" content="Astro is a pioneering company that specializes in the exploration of the solar system. Their website is a one-stop destination for all things related to space exploration and the wonders of the cosmos. From the latest discoveries about our neighboring planets to cutting-edge research on the origins of the universe, Astro's website offers a wealth of information and resources for space enthusiasts of all levels.">
+        <!-- This meta tag provides a list of keywords that describe the content of the webpage -->
+        <meta name="keywords" content="Astro, solar system, space exploration, cosmos, neighboring planets, discoveries, cutting-edge research, origins of the universe, space enthusiasts, information, resources, planet data, light pollution, astronomy, science, space technology, space missions, space science, planet exploration, telescopes, space telescopes, space discoveries, extraterrestrial life, space news, space education, space events, rocket science, space missions, NASA, ESA, JAXA, space probes, space travel, space programs, space history, space research, space discoveries, celestial objects, solar system objects, planetary science, space imaging, space simulations, space visualization, space facts, space phenomena, space exploration missions, space colonization, space engineering, space technology advancements, space conferences, space outreach, space apps, space industry">
+        <!-- This meta tag sets the viewport to ensure that the webpage is displayed properly on mobile devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- These meta tags are used by social media platforms when the webpage is shared to specify the title, description, image and URL for the shared content -->
+        <meta property="og:title" content="Our Solar System">
+        <meta property="og:description" content="Astro is a pioneering company that specializes in the exploration of the solar system. Their website is a one-stop destination for all things related to space exploration and the wonders of the cosmos. From the latest discoveries about our neighboring planets to cutting-edge research on the origins of the universe, Astro's website offers a wealth of information and resources for space enthusiasts of all levels.">
+        <meta property="og:image" content="https://img.freepik.com/free-vector/solar-system-science-education_1308-89626.jpg?w=2000">
+        <meta property="og:url" content="http://astro.com/">
+        <!-- Css Links -->
+        <link rel="stylesheet" href="../Css/StickyNavigation.css">
+        <link rel="stylesheet" href="../Css/PictureItemCards.css">
+        <link rel="stylesheet" href="../Css/CustomScrollBar.css">
+        <link rel="stylesheet" href="../Css/CelestialBodies.css">
+        <link rel="stylesheet" href="../Css/NavbarSmaller.css">
+        <link rel="stylesheet" href="../Css/TopNavigation.css">
+        <link rel="stylesheet" href="../Css/HomePageStyle.css">
+        <link rel="stylesheet" href="../Css/GeneralStyle.css"> 
+        <link rel="stylesheet" href="../Css/ProgressBar.css"> 
+        <link rel="stylesheet" href="../Css/BackToTop.css"> 
+        <link rel="stylesheet" href="../Css/SwitchGif.css"> 
+        <link rel="stylesheet" href="../Css/Readmore.css"> 
+        <link rel="stylesheet" href="../Css/FadeInUp.css"> 
+        <link rel="stylesheet" href="../Css/Socials.css"> 
+        <!-- Script Links -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Other Links -->
+        <link rel="icon" href="../Pictures/solar-system.png">
+    </head>
+    <body>
+        <!-- Back To Top Button -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <!-- Top Header -->
+        <div class="header">
+            <!-- Part Bonus Added To The Background -->
+            <div class="flow">
+                <img src="../Pictures/Home/Flow.png" alt="Pointless picture that adds something over the background" class="Showinstant">
+            </div>
+            <!-- Box To Hold Main Text -->
+            <div class="textbox">
+                <div class="overtext">
+                    <p class="Showinstant">the beauty of space</p>
+                </div>
+                <h1 class="Showinstant">welcome to our official website where you can find our expeditions and studies!</h1>
+            </div>
+            <!-- Social Icons Buttons -->
+            <div class="social-icons">
+                <a href="mailto:example@gmail.com" target="_blank" class="icon gmail"></a>
+                <a href="https://twitter.com/example" target="_blank" class="icon twitter"></a>
+                <a href="https://instagram.com/example" target="_blank" class="icon instagram"></a>
+                <a href="https://youtube.com/channel/UCdXh9gKzDo6H_2q3oPW6Gzw" target="_blank" class="icon youtube"></a>
+                <a href="https://linkedin.com/in/example" target="_blank" class="icon linkedin"></a>
+            </div>
+            <!-- Top Navigation Buttons -->
+            <div class="topnavigation">
+                <a href="Main.html" class="active">Home</a>
+                <a href="AboutUs.html">About us</a>
+                <a href="ContactUs.html">Contact</a>
+            </div>
+            <!-- Logo And Logo Text Both As Links -->
+            <div class="TopLinks">
+                <!-- Logo Picture --> 
+                <a href="Main.html">
+                    <img src="../Pictures/AstroLogo.png" width="75" height="75" alt="Company logo that looks like davids star from the jewish belief" class="Showinstant">
+                </a>
+                
+                <!-- Logo Text -->
+                <a href="AboutUs.html">
+                    <img src="../Pictures/TextLogo.png" width="175" height="75" alt="Text beside logo saying Astro" class="Showinstant">
+                </a>
+            </div>
+        </div>
+        <main>
+            <!-- Solar System -->
+            <div class="celestialbodies">
+                <!-- The Center Sun -->
+                <div class="sun">
+                    <a href="Sun.html" target="_blank">
+                        <img src="../Pictures/Sun/sun.webp" alt="Picture of the Sun" class="Showinstant">
+                    </a>
+                    <div>The Sun</div>
+                </div>
+                <!-- Planets Orbiting The Sun -->   
+                <div id="planet-mercury" class="planet">
+                    <!-- Link To Planet Page -->
+                    <a href="Mercury.html" target="_blank">
+                        <img src="../Pictures/Mercury/mercury.jpg" alt="Picture of the Mercury" class="Showinstant">
+                    </a>
+                    <div>Mercury</div>
+                </div>
+
+                <div id="planet-venus" class="planet">
+                    <!-- Link To Planet Page -->
+                    <a href="Venus.html" target="_blank">
+                        <img src="../Pictures/Venus/venus.jpg" alt="Picture of the Venus" class="Showinstant">
+                    </a>
+                    <div>Venus</div>
+                </div>
+
+                <div id="planet-earth" class="planet">
+                    <!-- Link To Planet Page -->
+                    <a href="Earth.html" target="_blank">
+                        <img src="../Pictures/Earth/earth.jpg" alt="Picture of the Earth" class="Showinstant">
+                    </a>
+                    <div>Earth</div>
+                </div>
+
+                <div id="planet-mars" class="planet">
+                    <!-- Link To Planet Page -->
+                    <a href="Mars.html" target="_blank">
+                        <img src="../Pictures/Mars/mars.jpg" alt="Picture of the Mars" class="Showinstant">
+                    </a>
+                    <div>Mars</div>
+                </div>
+
+                <div id="planet-jupiter" class="planet">
+                    <!-- Link To Planet Page -->
+                    <a href="Jupiter.html" target="_blank">
+                        <img src="../Pictures/Jupiter/Jupiter.jpg" alt="Picture of the Jupiter" class="Showinstant">
+                    </a>
+                    <div>Jupiter</div>
+                </div>
+
+                <div id="planet-saturn" class="planet">
+                    <!-- Link To Planet Page -->
+                    <a href="Saturn.html" target="_blank">
+                        <img src="../Pictures/Saturn/saturn.png" alt="Picture of the Saturn" style="width: 4vw; height: 4vw;" class="Showinstant">
+                    </a>
+                    <div style="margin-top: -16px;">Saturn</div>
+                </div>
+
+                <div id="planet-uranus" class="planet">
+                    <!-- Link To Planet Page -->
+                    <a href="Uranus.html" target="_blank">
+                        <img src="../Pictures/Uranus/uranus.jpg" alt="Picture of the Uranus" class="Showinstant">
+                    </a>
+                    <div>Uranus</div>
+                </div>
+
+                <div id="planet-neptune" class="planet">
+                    <!-- Link To Planet Page -->
+                    <a href="Neptune.html" target="_blank">
+                        <img src="../Pictures/Neptune/neptune.png" alt="Picture of the Neptune" class="Showinstant">
+                    </a>
+                    <div>Neptune</div>
+                </div>
+            </div>
+            <div class="Spacer"></div>
+        </main>
+         <!-- Bottom Text To Tell People How To Navigate -->
+        <div id="BtmInfo">Click the planets or use the navbar to read more!</div>
+        <!-- Sticky Navigation Bar -->
+        <nav>
+            <div style="list-style: none; margin: 0; padding: 0; display: flex;">
+                <!-- Opens Dropdown When Clicked -->
+                <div class="dropdown">
+                    <button onclick="toggleDropdown(this.id)" id="home" class="dropbtn">Home</button>
+                    <div id="home-dropdown" class="dropdown-content">
+                        <input type="text" placeholder="Search.." id="home-input" onkeyup="filterDropdown('home')">
+                        <a href="#about">About</a>
+                    </div>
+                </div>
+                <!-- Opens Dropdown When Clicked -->
+                <div class="dropdown">
+                    <button onclick="toggleDropdown(this.id)" id="sun" class="dropbtn">Sun</button>
+                    <div id="sun-dropdown" class="dropdown-content">
+                        <input type="text" placeholder="Search.." id="sun-input" onkeyup="filterDropdown('sun')">
+                        <a href="Sun.html#Home">About</a>
+                        <a href="Sun.html#Introduction">Introduction</a>
+                        <a href="Sun.html#Size">Size</a>
+                        <a href="Sun.html#Location">Location</a>
+                        <a href="Sun.html#Atmosphere">Atmosphere</a>
+                        <a href="Sun.html#Orbit">Orbit</a>
+                        <a href="Sun.html#GravitationalPull">Gravitational Pull</a>
+                        <a href="Sun.html#Rotation">Rotation</a>
+                        <a href="Sun.html#Composition">Composition</a>
+                        <a href="Sun.html#History">History</a>
+                        <a href="Sun.html#Newsletter">Newsletter</a>
+                    </div>
+                </div> 
+                <!-- Opens Dropdown When Clicked -->
+                <div class="dropdown">
+                    <button onclick="toggleDropdown(this.id)" id="mercury" class="dropbtn">Mercury</button>
+                    <div id="mercury-dropdown" class="dropdown-content">
+                        <input type="text" placeholder="Search.." id="mercury-input" onkeyup="filterDropdown('mercury')">
+                        <a href="Mercury.html#Home">About</a>
+                        <a href="Mercury.html#Introduction">Introduction</a>
+                        <a href="Mercury.html#Size">Size</a>
+                        <a href="Mercury.html#Location">Location</a>
+                        <a href="Mercury.html#Atmosphere">Atmosphere</a>
+                        <a href="Mercury.html#Orbit">Orbit</a>
+                        <a href="Mercury.html#GravitationalPull">Gravitational Pull</a>
+                        <a href="Mercury.html#Rotation">Rotation</a>
+                        <a href="Mercury.html#Composition">Composition</a>
+                        <a href="Mercury.html#History">History</a>
+                        <a href="Mercury.html#Newsletter">Newsletter</a>
+                    </div>
+                </div>
+                <!-- Opens Dropdown When Clicked -->
+                <div class="dropdown">
+                    <button onclick="toggleDropdown(this.id)" id="venus" class="dropbtn">Venus</button>
+                    <div id="venus-dropdown" class="dropdown-content">
+                        <input type="text" placeholder="Search.." id="venus-input" onkeyup="filterDropdown('venus')">
+                        <a href="Venus.html#Home">About</a>
+                        <a href="Venus.html#Introduction">Introduction</a>
+                        <a href="Venus.html#Size">Size</a>
+                        <a href="Venus.html#Location">Location</a>
+                        <a href="Venus.html#Atmosphere">Atmosphere</a>
+                        <a href="Venus.html#Orbit">Orbit</a>
+                        <a href="Venus.html#GravitationalPull">Gravitational Pull</a>
+                        <a href="Venus.html#Rotation">Rotation</a>
+                        <a href="Venus.html#Composition">Composition</a>
+                        <a href="Venus.html#History">History</a>
+                        <a href="Venus.html#Newsletter">Newsletter</a>
+                    </div>
+                </div>
+                <!-- Opens Dropdown When Clicked -->
+                <div class="dropdown">
+                    <button onclick="toggleDropdown(this.id)" id="earth" class="dropbtn">Earth</button>
+                    <div id="earth-dropdown" class="dropdown-content">
+                        <input type="text" placeholder="Search.." id="earth-input" onkeyup="filterDropdown('earth')">
+                        <a href="Earth.html#Home">About</a>
+                        <a href="Earth.html#Introduction">Introduction</a>
+                        <a href="Earth.html#Size">Size</a>
+                        <a href="Earth.html#Location">Location</a>
+                        <a href="Earth.html#Atmosphere">Atmosphere</a>
+                        <a href="Earth.html#Orbit">Orbit</a>
+                        <a href="Earth.html#GravitationalPull">Gravitational Pull</a>
+                        <a href="Earth.html#Rotation">Rotation</a>
+                        <a href="Earth.html#Composition">Composition</a>
+                        <a href="Earth.html#History">History</a>
+                        <a href="Earth.html#Newsletter">Newsletter</a>
+                    </div>
+                </div>
+                <!-- Opens Dropdown When Clicked -->
+                <div class="dropdown">
+                    <button onclick="toggleDropdown(this.id)" id="mars" class="dropbtn">Mars</button>
+                    <div id="mars-dropdown" class="dropdown-content">
+                        <input type="text" placeholder="Search.." id="mars-input" onkeyup="filterDropdown('mars')">
+                        <a href="Mars.html#Home">About</a>
+                        <a href="Mars.html#Introduction">Introduction</a>
+                        <a href="Mars.html#Size">Size</a>
+                        <a href="Mars.html#Location">Location</a>
+                        <a href="Mars.html#Atmosphere">Atmosphere</a>
+                        <a href="Mars.html#Orbit">Orbit</a>
+                        <a href="Mars.html#GravitationalPull">Gravitational Pull</a>
+                        <a href="Mars.html#Rotation">Rotation</a>
+                        <a href="Mars.html#Composition">Composition</a>
+                        <a href="Mars.html#History">History</a>
+                        <a href="Mars.html#Newsletter">Newsletter</a>
+                    </div>
+                </div>
+                <!-- Opens Dropdown When Clicked -->
+                <div class="dropdown">
+                    <button onclick="toggleDropdown(this.id)" id="jupiter" class="dropbtn">Jupiter</button>
+                    <div id="jupiter-dropdown" class="dropdown-content">
+                        <input type="text" placeholder="Search.." id="jupiter-input" onkeyup="filterDropdown('jupiter')">
+                        <a href="Jupiter.html#Home">About</a>
+                        <a href="Jupiter.html#Introduction">Introduction</a>
+                        <a href="Jupiter.html#Size">Size</a>
+                        <a href="Jupiter.html#Location">Location</a>
+                        <a href="Jupiter.html#Atmosphere">Atmosphere</a>
+                        <a href="Jupiter.html#Orbit">Orbit</a>
+                        <a href="Jupiter.html#GravitationalPull">Gravitational Pull</a>
+                        <a href="Jupiter.html#Rotation">Rotation</a>
+                        <a href="Jupiter.html#Composition">Composition</a>
+                        <a href="Jupiter.html#History">History</a>
+                        <a href="Jupiter.html#Newsletter">Newsletter</a>
+                    </div>
+                </div>
+                <!-- Opens Dropdown When Clicked -->
+                <div class="dropdown">
+                    <button onclick="toggleDropdown(this.id)" id="saturn" class="dropbtn">Saturn</button>
+                    <div id="saturn-dropdown" class="dropdown-content">
+                        <input type="text" placeholder="Search.." id="saturn-input" onkeyup="filterDropdown('saturn')">
+                        <a href="Saturn.html#Home">About</a>
+                        <a href="Saturn.html#Introduction">Introduction</a>
+                        <a href="Saturn.html#Size">Size</a>
+                        <a href="Saturn.html#Location">Location</a>
+                        <a href="Saturn.html#Atmosphere">Atmosphere</a>
+                        <a href="Saturn.html#Orbit">Orbit</a>
+                        <a href="Saturn.html#GravitationalPull">Gravitational Pull</a>
+                        <a href="Saturn.html#Rotation">Rotation</a>
+                        <a href="Saturn.html#Composition">Composition</a>
+                        <a href="Saturn.html#History">History</a>
+                        <a href="Saturn.html#Newsletter">Newsletter</a>
+                    </div>
+                </div>
+                <!-- Opens Dropdown When Clicked -->
+                <div class="dropdown">
+                    <button onclick="toggleDropdown(this.id)" id="uranus" class="dropbtn">Uranus</button>
+                    <div id="uranus-dropdown" class="dropdown-content">
+                        <input type="text" placeholder="Search.." id="uranus-input" onkeyup="filterDropdown('uranus')">
+                        <a href="Uranus.html#Home">About</a>
+                        <a href="Uranus.html#Introduction">Introduction</a>
+                        <a href="Uranus.html#Size">Size</a>
+                        <a href="Uranus.html#Location">Location</a>
+                        <a href="Uranus.html#Atmosphere">Atmosphere</a>
+                        <a href="Uranus.html#Orbit">Orbit</a>
+                        <a href="Uranus.html#GravitationalPull">Gravitational Pull</a>
+                        <a href="Uranus.html#Rotation">Rotation</a>
+                        <a href="Uranus.html#Composition">Composition</a>
+                        <a href="Uranus.html#History">History</a>
+                        <a href="Uranus.html#Newsletter">Newsletter</a>
+                    </div>
+                </div>
+                <!-- Opens Dropdown When Clicked -->
+                <div class="dropdown">
+                    <button onclick="toggleDropdown(this.id)" id="neptune" class="dropbtn">Neptune</button>
+                    <div id="neptune-dropdown" class="dropdown-content">
+                        <input type="text" placeholder="Search.." id="neptune-input" onkeyup="filterDropdown('neptune')">
+                        <a href="Neptune.html#Home">About</a>
+                        <a href="Neptune.html#Introduction">Introduction</a>
+                        <a href="Neptune.html#Size">Size</a>
+                        <a href="Neptune.html#Location">Location</a>
+                        <a href="Neptune.html#Atmosphere">Atmosphere</a>
+                        <a href="Neptune.html#Orbit">Orbit</a>
+                        <a href="Neptune.html#GravitationalPull">Gravitational Pull</a>
+                        <a href="Neptune.html#Rotation">Rotation</a>
+                        <a href="Neptune.html#Composition">Composition</a>
+                        <a href="Neptune.html#History">History</a>
+                        <a href="Neptune.html#Newsletter">Newsletter</a>
+                    </div>
+                </div>
+                <!-- Opens Dropdown When Clicked (Placed On The Right Side) -->
+                <div class="dropdown split">
+                    <button onclick="toggleDropdown(this.id)" id="other" class="dropbtn">other</button>
+                    <div id="other-dropdown" class="dropdown-content">
+                        <input type="text" placeholder="Search.." id="other-input" onkeyup="filterDropdown('other')">
+                        <a href="AboutUs.html">About</a>
+                        <a href="ContactUs.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Progressbar Stuck To Navigation Bar -->
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+            </div>  
+        </nav>
+        <!-- Seperate Navigation For Devices Bellow 1200px -->
+        <div id="myNav-for-mobile" class="overlay-for-mobile">
+            <a href="javascript:void(0)" class="closebtn-for-mobile" onclick="closeNav()">&times;</a>
+            <div class="overlay-content-for-mobile">
+              <a href="Main.html">Home</a>
+              <a href="Sun.html">Sun</a>
+              <a href="Mercury.html">Mercury</a>
+              <a href="Venus.html">Venus</a>
+              <a href="Earth.html">Earth</a>
+              <a href="Mars.html">Mars</a>
+              <a href="Jupiter.html">Jupiter</a>
+              <a href="Saturn.html">Saturn</a>
+              <a href="Uranus.html">Uranus</a>
+              <a href="Neptune.html">Neptune</a>
+              <a href="AboutUs.html">About us</a>
+              <a href="ContactUs.html">Contact</a>
+            </div>
+        </div>
+        <!-- Seperate Navigation For Devices Bellow 1200px Button -->
+        <div id="navbut">
+            <span onclick="openNav()">open Navigation</span>
+        </div>
+        <!-- Main information -->
+        <div class="maininfo">
+            <div id="SwitchPictureAndOther" class="section section--auto">
+                <div class="content-center">
+                    <h5 style="margin-top: 0;">Our Solar System</h5>
+                    <h3>How Our Solar System Works</h3>
+                    <p>For centuries, it was believed that our solar system worked with the sun at the center, staying stationary while the planets orbited around it. However, in reality, the sun is not stationary but instead moves throughout space, spinning on its axis while everything in our solar system follows it and orbits around it.<span class="dots"></span><span class="more">
+                    <br><br>
+                    While this concept may be difficult to grasp, it is important to understand the true nature of our solar system and the movement of celestial bodies. Today, the majority of scientists and astronomers agree that the sun is not stationary, but rather constantly moving through space, dragging everything in its orbit along with it.
+                    <br><br>
+                    The realization that the sun is not stationary and that everything in our solar system is in constant motion has opened up new avenues for research and exploration, allowing us to better understand our place in the universe and the complex workings of the cosmos.</span></p>
+                    <button onclick="readMoreFunction(this)" class="read-more" style="margin-bottom: 20px;">Read more</button>
+                    <div class="content-tabs">
+                        <button id="fake-btn" type="button" onclick="showFake()">Previous Assumption</button>
+                        <span style="padding-left: 5px; padding-right: 5px;">|</span>
+                        <button id="real-btn" type="button" onclick="showReal()">Current Assumption</button>
+                    </div>
+                    <img id="fake-img" style="margin-top: 40px; width: 100%;" class="Selected" src="../Pictures/FakeSolarSystem.gif" onclick="selectFake()" alt="A gif video showing how the solar system works from a top down view where all the planets spin around the sun">
+                    <img id="real-img" style="margin-top: 40px; width: 100%;" class="NotSelected " src="../Pictures/RealSolarSystem.gif" onclick="selectReal()" alt="A gif video showing how the solar system moves throughout space, meaning that the sun is also in motion and the whole solar system follows the suns path">
+                    <div style="margin-top: 50px;"></div>
+                    <h5 style="margin-top: 0;">Rotation</h5>
+                    <h3>Planets Rotational Axis</h3>
+                    <p>
+                        The planets in our solar system all spin around their own axis, or in other words, they all rotate. This rotation causes day and night on each planet. The direction in which a planet rotates is also known as its spin axis, and this can vary greatly among the planets in our solar system. For example, the spin axis of Venus is tilted by 177 degrees, which means it rotates backwards compared to other planets. This causes the sun to rise in the west and set in the east on Venus.
+                        <span class="dots"></span><span class="more"><br><br>
+                            On the other hand, the spin axis of Uranus is tilted by almost 98 degrees, causing it to spin on its side like a rolling ball. This gives Uranus its unique and unusual appearance.
+                            In addition to the varying tilt of their spin axis, the speed of rotation also differs among the planets. Jupiter, the largest planet in our solar system, rotates once on its axis in just under 10 hours, while Venus takes about 243 Earth days to complete a single rotation.
+                            <br><br>
+                            Interestingly, the rotation of the planets can also affect their magnetic fields. For example, the fast rotation of Jupiter creates a strong magnetic field that traps and accelerates particles in its radiation belts, creating a hazardous environment for spacecraft. Overall, the rotation of the planets in our solar system is a fascinating and complex phenomenon that has a significant impact on the appearance and characteristics of each planet.
+                        </span>
+                    </p>
+                    <button onclick="readMoreFunction(this)" class="read-more" style="margin-bottom: 20px;">Read more</button>
+                    <img src="../Pictures/PlanetsOrbit.gif" alt="A gif video showing the rotation of each planet in our solar system and at how many degrees the axis is angled and the length it takes for them to spin one whole lap" style="width: 100%;">
+                    <div style="margin-top: 50px;"></div>
+                    <h5 style="margin-top: 0;">Gravitation</h5>
+                    <h3>Gravitational Pull On Planets</h3>
+                    <p>
+                        The gravitational pull on the planets in our solar system is a fundamental force that plays a critical role in the formation and dynamics of our solar system. The force of gravity is the attraction that exists between any two objects with mass, and it varies based on the distance between the objects and the amount of mass they possess.    
+                        <span class="dots"></span><span class="more"><br><br>
+                            In our solar system, the sun has the most mass, and it exerts a gravitational pull on all the planets that orbit around it. The strength of the gravitational force between the sun and each planet is directly proportional to the distance between them. This means that planets that are closer to the sun experience a stronger gravitational pull than those that are farther away.
+                            <br><br>
+                            The gravitational pull of the planets also affects the orbits of other planets and objects in the solar system. For example, the gravitational pull of Jupiter, the largest planet in our solar system, is so strong that it has a significant impact on the orbits of other planets and asteroids.
+                            <br><br>
+                            In addition to affecting the orbits of objects, the gravitational pull of the planets also influences their physical characteristics. For instance, the strength of the gravitational pull on a planet can affect its atmospheric pressure, surface features, and even its internal structure.
+                            <br><br>
+                            The gravitational pull of the planets also plays a crucial role in determining their ability to support life. The strength of the gravitational pull affects the amount of gas and water that a planet can retain, which in turn impacts the planet's ability to sustain an atmosphere and support life.
+                            <br><br>
+                            In conclusion, the gravitational pull on the planets in our solar system is a fundamental force that shapes the characteristics and behavior of our solar system. It affects the orbits of objects, influences physical features, and plays a critical role in determining a planet's ability to sustain life.
+                        </span>
+                    </p>
+                    <button onclick="readMoreFunction(this)" class="read-more" style="margin-bottom: 20px;">Read more</button>
+                    <img src="../Pictures/Gravitation.gif" alt="A gif video showing the gravitational pull of each planet. How fast a ball would fall if dropped from a height of 1km and how long it would take till it hits the ground" style="width: 100%;">
+                </div>     
+            </div>
+            <div style="display: inline-block; text-align: center; color: white; padding-top: 50px; background-color: black;">
+                <h5 style="text-align: center;">Light Pollution</h5>
+                <h3 style="text-align: center; position: relative;">The Problem With Light Pollution</h3>
+                <p style="width: 80%; margin-left: auto; margin-right: auto;">
+                    Light pollution is a growing concern in modern society as artificial light sources increasingly interfere with the natural environment. The level of light pollution can vary depending on location, from excellent dark sky sites to highly illuminated city/inner city skies. An excellent dark sky site is characterized by minimal light pollution, providing an optimal environment for stargazing and astronomical research. These sites are often found in remote, undeveloped areas with little to no light sources.
+                    <span class="dots"></span><span class="more"><br><br>
+                        A dark sky site, on the other hand, may still have some light pollution, but it is significantly reduced compared to suburban or urban areas. These sites are often found in rural areas with low population density and minimal artificial light sources. The rural sky is the night sky seen from areas with low population density and minimal artificial light sources. Although these areas may still have some light pollution, it is significantly less than suburban or urban areas.
+                        <br><br>
+                        The suburban/rural transition is characterized by a mix of rural and suburban areas with varying degrees of light pollution. This area is often characterized by suburban development, where street lamps, commercial areas, and residential homes contribute to light pollution. The suburban sky is the night sky seen from suburban areas with moderate to high population density and significant artificial light sources. These areas often have street lamps, commercial areas, and residential homes that contribute to light pollution.
+                        <br><br>
+                        The bright suburban site is characterized by high levels of light pollution, where the night sky is barely visible due to the abundance of artificial light sources. These areas often have high population density and significant commercial and industrial development, contributing to the high levels of light pollution. The city/suburban transition is characterized by a mix of urban and suburban areas with significant artificial light sources. These areas often have street lamps, commercial areas, and residential homes that contribute to light pollution.
+                        <br><br>
+                        The city/inner city sky is the night sky seen from highly illuminated urban areas with significant commercial and industrial development. These areas have high population density and are often characterized by bright street lights, commercial and industrial buildings, and high-rise apartment buildings. In conclusion, the level of light pollution can vary significantly depending on location. From excellent dark sky sites to highly illuminated city/inner city skies, the amount of light pollution can impact stargazing, astronomical research, and the natural environment. As awareness of light pollution continues to grow, efforts to reduce light pollution through responsible lighting practices and dark sky preservation will become increasingly important.
+                    </span>
+                </p>
+                <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+            </div>
+            <div style="display: inline-block; text-align: center; color: white; padding-top: 50px; background-color: black;">
+                <div class="column">
+                    <div class="item">
+                        <picture class="responsive-image">
+                            <img src="../Pictures/SkyLightPollution1.jpg" alt="A picture showing how well you can see the sky depending on different light pollutions">
+                        </picture>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="item">
+                        <picture class="responsive-image">
+                            <img src="../Pictures/SkyLightPollution2.jpg" alt="A picture showing how well you can see the sky depending on different light pollutions">
+                        </picture>
+                    </div>
+                </div>
+                <h3 style="text-align: center; position: relative;">Causes of light pollution</h3>
+                <div class="column">
+                    <div class="item">
+                        <picture class="responsive-image fade-in-text">
+                            <img src="../Pictures/LampLightPollution1.jpg" alt="Showing how different lamps affect light pollution">
+                        </picture>
+                        <div class="location">Why we can't see then night sky</div>
+                        <div class="label">Light pollution from lamps</div>
+                        <p>
+                            Light pollution is a growing concern in modern society. One of the primary culprits of light pollution are open lamps that create a lot of light pollution. These lamps emit light in all directions, including upwards into the sky, where it contributes to light pollution. When you look up at the night sky in an area with open lamps, can you see the milky way galaxy or do you notice that the sky is not as dark as it should be, so it's difficult to see the stars above.
+                            <span class="dots"></span><span class="more"><br><br>
+                                To address this issue, some lamps come with a partial hood that creates less light pollution. These hoods direct the light downwards and prevent it from shining upwards into the sky. While these lamps are better than open lamps, they still create a significant amount of light pollution and can make it difficult to see the sky.
+                                <br><br>   
+                                However, there are lamps that are designed specifically to minimize light pollution. One type of lamp is designed to not let any light escape above the horizontal line of the lamp. These lamps are commonly used in urban areas where reducing light pollution is essential for stargazing and astronomical research. They are often used in conjunction with shields that further reduce light pollution.
+                                <br><br>
+                                Another type of lamp is designed to shine its light downwards so that no light affects the night sky. These lamps are commonly used in residential areas, where they provide illumination for sidewalks, driveways, and other outdoor spaces. They are ideal for those who want to minimize light pollution while still maintaining a safe and well-lit environment.
+                                <br><br>
+                                In conclusion, open lamps that create a lot of light pollution and lamps with a partial hood that create less light pollution are both bad if you want to see the sky. However, there are lamps that are specifically designed to minimize light pollution, and these are the best option for those who want to enjoy the beauty of the night sky without being affected by light pollution.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="item">
+                        <picture class="responsive-image">
+                            <img src="../Pictures/LampLightPollution22.jpg" alt="A picture showing how the light of lamps travels">
+                        </picture>
+                        <div class="location">Different forms of light pollution</div>
+                        <div class="label">light pollution from street lamps</div>
+                        <p>
+                            Street lamps are an essential component of modern urban infrastructure, providing much-needed illumination for drivers, pedestrians, and cyclists. However, these lamps can also contribute to light pollution, which is a growing concern for astronomers, wildlife, and human health. The amount of light pollution created by a street lamp depends on several factors, including the radius of useful light, glare zone, direct glare, light trespass, upwards reflected light, and direct upward light.
+                            <span class="dots"></span><span class="more"><br><br>
+                                The radius of useful light refers to the distance from the street lamp where the light is still effective for illuminating the ground. Ideally, street lamps should have a narrow radius of useful light to avoid unnecessary light pollution. If the radius of useful light is too wide, the lamp may illuminate areas that do not require illumination, such as neighboring houses or natural areas.
+                                <br><br>
+                                The glare zone is the area around the street lamp where the brightness of the light is uncomfortable for the eyes. This can cause visual discomfort for drivers and pedestrians and can also reduce visibility. To minimize the glare zone, street lamps should be designed with a shield or hood to direct the light downwards and prevent it from shining directly into the eyes of passersby.
+                                <br><br>
+                                Direct glare refers to the intense, blinding light that is emitted from the street lamp. This type of light can cause discomfort and reduce visibility, particularly for drivers. To avoid direct glare, street lamps should be designed with a diffusing lens or a shield to soften the intensity of the light.
+                                <br><br>
+                                Light trespass refers to the unwanted light that spills over onto neighboring properties. This can cause annoyance, particularly for those who live in urban areas where street lamps are common. To minimize light trespass, street lamps should be designed with shields or hoods to direct the light downwards and prevent it from illuminating neighboring properties.
+                                <br><br>
+                                Upwards reflected light refers to the light that bounces off the ground and reflects upwards. This type of light can contribute to light pollution and can also cause discomfort for drivers and pedestrians. To minimize upwards reflected light, street lamps should be designed with shields or hoods to direct the light downwards and prevent it from bouncing off the ground.
+                                <br><br>
+                                Direct upward light refers to the light that is emitted directly upwards from the street lamp. This type of light contributes significantly to light pollution and can also cause discomfort for astronomers and wildlife. To minimize direct upward light, street lamps should be designed with shields or hoods to direct the light downwards and prevent it from shining directly into the sky.
+                                <br><br>
+                                In conclusion, street lamps can contribute significantly to light pollution if they are not designed and placed correctly. The radius of useful light, glare zone, direct glare, light trespass, upwards reflected light, and direct upward light are all factors that contribute to light pollution. By minimizing these factors, street lamps can be designed to provide safe and effective illumination without contributing to light pollution.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Scripts -->
+        <script src="../Javascript/Animation.js"></script>
+        <script src="../Javascript/StickyNavigation.js"></script>
+        <script src="../Javascript/BackToTop&ProgressBar.Js"></script>
+        <script src="../Javascript/SmallNav.js"></script>
+        <script src="../Javascript/ReadMore.js"></script>
+        <script src="../Javascript/FadeInUp.js"></script>
+        <script src="../Javascript/Switch.js"></script>
+    </body>
+</html>
+

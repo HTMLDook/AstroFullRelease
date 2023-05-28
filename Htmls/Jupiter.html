@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Title-->
+        <title>Our Solar System</title>
+        <!-- This meta tag specifies the character encoding for the HTML document -->
+        <meta charset="UTF-8">
+        <!-- This meta tag specifies the author of the webpage -->
+        <meta name="author" content="Erik Rhodin Claesson">
+        <!-- This meta tag provides a brief description of the webpage for search engines -->
+        <meta name="description" content="Astro is a pioneering company that specializes in the exploration of the solar system. Their website is a one-stop destination for all things related to space exploration and the wonders of the cosmos. From the latest discoveries about our neighboring planets to cutting-edge research on the origins of the universe, Astro's website offers a wealth of information and resources for space enthusiasts of all levels.">
+        <!-- This meta tag provides a list of keywords that describe the content of the webpage -->
+        <meta name="keywords" content="Astro, solar system, space exploration, cosmos, neighboring planets, discoveries, cutting-edge research, origins of the universe, space enthusiasts, information, resources, planet data, light pollution, astronomy, science, space technology, space missions, space science, planet exploration, telescopes, space telescopes, space discoveries, extraterrestrial life, space news, space education, space events, rocket science, space missions, NASA, ESA, JAXA, space probes, space travel, space programs, space history, space research, space discoveries, celestial objects, solar system objects, planetary science, space imaging, space simulations, space visualization, space facts, space phenomena, space exploration missions, space colonization, space engineering, space technology advancements, space conferences, space outreach, space apps, space industry">
+        <!-- This meta tag sets the viewport to ensure that the webpage is displayed properly on mobile devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- These meta tags are used by social media platforms when the webpage is shared to specify the title, description, image and URL for the shared content -->
+        <meta property="og:title" content="Our Solar System">
+        <meta property="og:description" content="Astro is a pioneering company that specializes in the exploration of the solar system. Their website is a one-stop destination for all things related to space exploration and the wonders of the cosmos. From the latest discoveries about our neighboring planets to cutting-edge research on the origins of the universe, Astro's website offers a wealth of information and resources for space enthusiasts of all levels.">
+        <meta property="og:image" content="https://img.freepik.com/free-vector/solar-system-science-education_1308-89626.jpg?w=2000">
+        <meta property="og:url" content="http://astro.com/">
+        <!-- Css Links -->
+        <link rel="stylesheet" href="../Css/StickyNavigation.css">
+        <link rel="stylesheet" href="../Css/CustomScrollBar.css">
+        <link rel="stylesheet" href="../Css/TopNavigation.css">
+        <link rel="stylesheet" href="../Css/NavbarSmaller.css">
+        <link rel="stylesheet" href="../Css/GeneralStyle.css"> 
+        <link rel="stylesheet" href="../Css/ProgressBar.css"> 
+        <link rel="stylesheet" href="../Css/Newsletter.css"> 
+        <link rel="stylesheet" href="../Css/BackToTop.css"> 
+        <link rel="stylesheet" href="../Css/FactsPage.css"> 
+        <link rel="stylesheet" href="../Css/TimeLine.css">
+        <link rel="stylesheet" href="../Css/Readmore.css"> 
+        <link rel="stylesheet" href="../Css/FadeInUp.css"> 
+        <link rel="stylesheet" href="../Css/Socials.css"> 
+        <!-- Script Links -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Other Links -->
+        <link rel="icon" href="../Pictures/solar-system.png">
+        <style>
+            .header {
+                background-image: url("../Pictures/Jupiter/jupiterbg.jpg");
+            }
+        </style>
+    </head>
+    <body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <!-- Top Header -->
+        <div class="header" id="Home">
+            <div class="textbox">
+                <h1 class="Showinstant">The Great Red Spot: Jupiter</h1>
+                <div class="overtext">
+                    <p class="Showinstant">Jupiter is the largest planet in our solar system and is primarily composed of hydrogen and helium gas with swirling bands of clouds and a massive, intense magnetic field.</p>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="mailto:example@gmail.com" target="_blank" class="icon gmail"></a>
+                <a href="https://twitter.com/example" target="_blank" class="icon twitter"></a>
+                <a href="https://instagram.com/example" target="_blank" class="icon instagram"></a>
+                <a href="https://youtube.com/channel/UCdXh9gKzDo6H_2q3oPW6Gzw" target="_blank" class="icon youtube"></a>
+                <a href="https://linkedin.com/in/example" target="_blank" class="icon linkedin"></a>
+            </div>
+            <div class="topnavigation">
+                <a href="Main.html">Home</a>
+                <a href="AboutUs.html">About us</a>
+                <a href="ContactUs.html">Contact</a>
+            </div>
+            <div class="TopLinks">
+                <!-- Logo Picture --> 
+                <a href="Main.html">
+                    <img src="../Pictures/AstroLogo.png" width="75" height="75" alt="Company logo that looks like davids star from the jewish belief" class="Showinstant">
+                </a>
+                
+                <!-- Logo Text -->
+                <a href="AboutUs.html">
+                    <img src="../Pictures/TextLogo.png" width="175" height="75" alt="Text beside logo saying Astro" class="Showinstant">
+                </a>
+            </div>
+        </div>
+        <nav>
+            <div class="nav-container">
+                <a class="nav-link" href="#Home">Home</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Introduction">Introduction</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Size">Size</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Location">Location</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Atmosphere">Atmosphere</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Orbit">Orbit</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#GravitationalPull">Gravitational Pull</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Rotation">Rotation</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Composition">Composition</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#History">History</a>
+                <div class="progress-container">
+                    <div class="progress-bar" id="myBar"></div>
+                </div>  
+            </div>
+          </nav> 
+          <div id="myNav-for-mobile" class="overlay-for-mobile">
+            <a href="javascript:void(0)" class="closebtn-for-mobile" onclick="closeNav()">&times;</a>
+            <div class="overlay-content-for-mobile">
+                <a class="nav-link" href="#Home">Home</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Introduction">Introduction</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Size">Size</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Location">Location</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Atmosphere">Atmosphere</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Orbit">Orbit</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#GravitationalPull">Gravitational Pull</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Rotation">Rotation</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Composition">Composition</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#History">History</a>
+            </div>
+        </div>
+        <div id="navbut">
+            <span onclick="openNav()">open Navigation</span>
+        </div>
+        <div class="FirstContainer" id="Introduction">
+            <div class="FirstBoxLeft">
+                <div class="FirstBoxHeaders">
+                    <h5>Jupiter</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>King of Planets</h2>
+                </div>
+                <p>Jupiter is one of the most fascinating planets in our solar system, and it holds a special place in our understanding of the cosmos. As the largest planet in our solar system, Jupiter is a gas giant with a complex and dynamic atmosphere that is constantly changing. It is located fifth from the sun, after the inner rocky planets, and is easily visible from Earth with the naked eye.
+                <br><br>
+                Jupiter is surrounded by dozens of moons, with the four largest moons known as the Galilean moons after the astronomer Galileo Galilei, who first discovered them in 1610. These moons are Io, Europa, Ganymede, and Callisto, and they are some of the most fascinating objects in our solar system. Io is the most volcanically active object in our solar system, Europa is believed to have a subsurface ocean that could potentially harbor life, Ganymede is the largest moon in our solar system, and Callisto has a heavily cratered surface that provides valuable insights into the history of our solar system.
+                <br><br>
+                Jupiter also plays a crucial role in shaping our solar system, as its immense gravitational influence helps to maintain the stability of the asteroid belt between Mars and Jupiter. It also helps to protect the inner rocky planets from potentially dangerous asteroids and comets by gravitationally deflecting them away from the inner solar system.</p>
+            </div>
+            <div class="FirstBoxRight">
+                <img src="../Pictures/Jupiter/Jupiter.jpg" alt="Picture of jupiter" >
+            </div>
+        </div>        
+        <div class="SecondContainer" id="Size">
+            <div class="SecondBox">
+                <div class="SecondBoxHeaders">
+                    <h5>Jupiter</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>The Colossus of the Solar System</h2>
+                </div>
+                <p>
+                    Jupiter, known as the "Colossus of the Solar System", is the largest planet in our solar system. Its massive size sets it apart from all the other planets in our solar system, with a diameter of approximately 86,881 miles (139,822 kilometers) at its equator. This makes it more than 11 times wider than Earth and almost three times larger than all of the other planets in our solar system combined.
+                    <span class="dots"></span><span class="more"><br><br>
+                    Jupiter is so large that it is classified as a gas giant planet, which means that its composition is primarily made up of gas and does not have a solid surface. Its immense size is due to its high mass, which is about 318 times that of Earth. The planet's mass is so significant that it actually affects the orbits of other planets in the solar system, particularly the inner rocky planets such as Earth.
+                    <br><br>
+                    Despite its colossal size, Jupiter's density is relatively low. This is because the planet is mostly made up of gas, which is less dense than solid materials. As a result, if you were to place Jupiter in a giant bathtub filled with water, the planet would actually float.
+                    <br><br>
+                    One of Jupiter's most prominent features is the Great Red Spot, a massive storm that has been raging on the planet's surface for over 350 years. The Great Red Spot is so large that it could easily swallow Earth whole, measuring approximately 10,000 miles (16,000 kilometers) in diameter.
+                    <br><br>
+                    Jupiter's size has been a subject of fascination and study for astronomers for centuries, and it continues to intrigue scientists to this day. Its immense size and composition offer valuable insights into the formation and evolution of our solar system, and it serves as a reminder of the vastness and complexity of the universe we inhabit.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+            <div class="SecondBox">
+                <img src="../Pictures/Jupiter/size.jpg" alt="Picture showing how many moons fit in jupiter and how many moons that is compared to earth and how many jupiters fit in the diameter of the sun" style="border: 1px solid white;">
+            </div>
+        </div>
+        <div class="ThirdContainer" id="Location">
+            <div class="ThirdBoxHeaders" style="border-bottom: 1px solid white;">
+                <h5>Jupiter's Unique Location</h5>
+                <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                <h2>Importance in Our Solar System</h2>
+            </div>
+            <div class="ThirdBottomBox">
+                <img src="../Pictures/Jupiter/location.jpg" alt="Picture showing that jupiter is the fifth planet from the sun and is the biggest">
+            </div>
+            <div class="ThirdTopBox">
+                <p>
+                    Jupiter's location in our solar system is unique and holds great importance. It is the fifth planet from the sun, and it is located at a distance of about 484 million miles (778 million kilometers) from the sun. Its distance from the sun means that Jupiter has a very long orbit, taking approximately 12 Earth years to complete a single orbit around the sun.
+                    <span class="dots"></span><span class="more"><br><br>
+                    Jupiter's location is significant for many reasons. One of the most important is its gravitational influence on the rest of the solar system. Because of its immense size, Jupiter exerts a significant gravitational pull on the other planets in the solar system, particularly the inner planets such as Earth. This gravitational pull helps to maintain the stability of the solar system by keeping the orbits of the planets in check and preventing them from colliding with each other.
+                    <br><br>
+                    Jupiter's location is also important in terms of its impact on the formation and evolution of the solar system. Scientists believe that Jupiter played a crucial role in the formation of the solar system by capturing and absorbing large amounts of gas and dust during its early formation. This process helped to clear the space around Jupiter and allowed the other planets to form.
+                    <br><br>
+                    Another important aspect of Jupiter's location is its relationship with its many moons. Jupiter has at least 79 known moons, making it the planet with the most moons in our solar system. The location of these moons is critical to our understanding of the formation and evolution of the solar system, as well as their potential for harboring life.
+                    <br><br>
+                    Jupiter's location in our solar system is unique and holds great importance for our understanding of the universe we inhabit. Its massive size, gravitational influence, and relationship with its moons all contribute to our understanding of the formation and evolution of our solar system, and it continues to be a subject of fascination and study for astronomers and scientists around the world.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+        </div>
+        <div class="SecondContainer" id="Atmosphere">
+            <div class="SecondBox">
+                <div class="SecondBoxHeaders">
+                    <h5>Layers</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>Atmospheric Zones</h2>
+                </div>
+                <p>
+                    Jupiter's atmosphere is one of the most dynamic and fascinating in our solar system. It is composed primarily of hydrogen and helium gas, with smaller amounts of other elements such as methane and ammonia. The atmosphere is divided into several distinct layers or atmospheric zones, each with its own unique characteristics.
+                    <span class="dots"></span><span class="more"><br><br>
+                    The outermost layer of Jupiter's atmosphere is known as the thermosphere. This layer extends from the top of the stratosphere to the planet's outer edge and is characterized by extremely high temperatures. The thermosphere is heated by the sun's radiation and can reach temperatures of up to 1,700 degrees Celsius (3,092 degrees Fahrenheit).
+                    <br><br>
+                    Beneath the thermosphere is the stratosphere, which extends down to an altitude of about 50 kilometers. This layer is characterized by cooler temperatures and is where most of the planet's clouds are located. The clouds in the stratosphere are made up of ammonia, methane, and water vapor and are responsible for the planet's distinctive banded appearance.
+                    <br><br>
+                    Below the stratosphere is the troposphere, which is the layer closest to the planet's surface. This layer is characterized by lower temperatures and high winds, with wind speeds of up to 600 kilometers per hour (370 miles per hour). The troposphere is where most of Jupiter's weather occurs, including its massive and long-lasting storms, such as the Great Red Spot.
+                    <br><br>
+                    Jupiter's atmosphere also contains a number of unique features, such as its belts and zones, which are bands of different colored clouds that circle the planet. These bands are caused by differences in wind speed and direction at different latitudes, and they give Jupiter its distinctive appearance.
+                    <br><br>
+                    Overall, Jupiter's atmosphere is a complex and dynamic system that continues to fascinate scientists and researchers around the world. Its layered structure and unique features offer valuable insights into the formation and evolution of our solar system, and it remains an important area of study for scientists in the years to come.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+            <div class="SecondBox">
+                <img src="../Pictures/Jupiter/atmos.jpg" alt="Picture showing the different zones of the planet jupiter" >
+            </div>
+        </div>     
+        <div class="FirstContainer" id="Orbit">
+            <div class="FirstBoxLeft">
+                <img src="../Pictures/Jupiter/orbit.jpg" alt="Picture showing how far away jupiter is from the other planets and whats in between them and how it orbits">
+            </div>
+            <div class="FirstBoxRight">
+                <div class="FirstBoxHeaders">
+                    <h5>Jupiter</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>Eccentric Orbit</h2>
+                </div>
+                <p>
+                    Jupiter, the largest planet in our solar system, has an eccentric orbit that distinguishes it from the other planets. The planet's eccentricity means that its orbit around the sun is not a perfect circle, but rather an ellipse. This eccentricity results in variations in Jupiter's distance from the sun, which have important consequences for the planet's climate and environment.
+                    <br><br>
+                    Jupiter's orbit takes approximately 12 Earth years to complete, and during this time, the planet travels a distance of about 4.95 astronomical units (AU) from the sun at its closest point (perihelion) to 5.46 AU at its furthest point (aphelion). This means that Jupiter is approximately 778 million kilometers (484 million miles) from the sun at its closest point and about 817 million kilometers (508 million miles) at its furthest point.
+                    <br><br>
+                    The eccentricity of Jupiter's orbit has significant effects on the planet's climate and environment. When Jupiter is closest to the sun, it receives more sunlight and experiences higher temperatures, which can cause changes in its atmosphere and weather patterns. Conversely, when Jupiter is furthest from the sun, it receives less sunlight and experiences lower temperatures, which can also affect its atmosphere and weather.
+                </p>
+            </div>
+        </div>
+        <div class="ThirdContainer" id="GravitationalPull">
+            <div class="ThirdBoxHeaders">
+                <h5>Gravitational Pull of Jupiter</h5>
+                <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                <h2>A Powerful Force to be Reckoned With</h2>
+            </div>
+            <div class="ThirdBottomBox">
+                <img src="../Pictures/Jupiter/gravity.png" alt="Picture of jupiter with strong arms showing its strong gravitational pull">
+            </div>
+            <div class="ThirdTopBox">
+                <p>
+                    Jupiter is not only the largest planet in our solar system but also boasts a gravitational pull that is significantly stronger than any other planet. Its immense size and mass make it a powerful force to be reckoned with, exerting a gravitational pull that affects not only its moons but also the other planets in our solar system.
+                    <span class="dots"></span><span class="more"><br><br>
+                    Jupiter's gravitational force is approximately 2.5 times stronger than that of Earth. This means that if you were to stand on Jupiter's surface, you would weigh approximately two and a half times what you weigh on Earth. Jupiter's immense gravitational pull is due to its massive size and mass, which are more than twice that of all the other planets in our solar system combined.
+                    <br><br>
+                    The gravitational pull of Jupiter also affects its moons, which orbit the planet in a way that is unique and dynamic. Some of Jupiter's moons, such as Io and Europa, experience tidal heating due to the gravitational forces exerted by the planet. This results in volcanic activity on Io and the potential for liquid water on Europa, making these moons prime targets for exploration and study.
+                    <br><br>
+                    Jupiter's gravitational pull also has effects on the other planets in our solar system. Its gravity affects the orbit of other planets and asteroids, and even helps to protect the inner planets from incoming comets and asteroids. Jupiter's powerful gravitational pull acts as a giant vacuum cleaner, sweeping up potentially dangerous space debris before it can reach the inner planets.
+                    <br><br>
+                    In conclusion, the gravitational pull of Jupiter is a powerful force that has significant effects on its moons and the other planets in our solar system. Its immense size and mass make it a key player in the dynamics of our solar system, and its unique features and behaviors continue to fascinate scientists and astronomers alike.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+        </div>
+        <div class="SecondContainer" id="Rotation">
+            <div class="SecondBox">
+                <div class="SecondBoxHeaders">
+                    <h5>Spin</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>Axis And Rotation Period</h2>
+                </div>
+                <p>
+                    Jupiter, the largest planet in our solar system, is known for its rapid rotation and distinctive banding patterns that are visible from Earth. The planet's rotation plays a key role in shaping its atmosphere and magnetic field.
+                    <span class="dots"></span><span class="more"><br><br>
+                    Jupiter's axis of rotation is tilted at an angle of 3.13 degrees relative to its orbit around the sun. This tilt is much less pronounced than Earth's, which is tilted at an angle of 23.5 degrees. Jupiter's relatively low axial tilt means that it experiences very little seasonal variation in its weather patterns.
+                    <br><br>
+                    The rotation period of Jupiter is just under 10 hours, making it the fastest rotating planet in our solar system. This rapid rotation causes the equator of the planet to bulge outward, creating a flattened shape known as an oblate spheroid. The high speed of Jupiter's rotation also creates strong winds that circle the planet, with the fastest winds reaching speeds of up to 620 kilometers per hour.
+                    <br><br>
+                    Jupiter's rapid rotation plays a crucial role in shaping its atmosphere. The planet's strong winds and jet streams are responsible for the distinct banding patterns visible in the planet's cloud tops. These bands are created by the movement of gas and clouds at different latitudes, driven by the planet's rotation.
+                    <br><br>
+                    Jupiter's rotation also contributes to the planet's strong magnetic field. The rotation of the planet creates a dynamo effect that generates electric currents in the interior of the planet. These currents create a magnetic field that is about 20,000 times stronger than Earth's magnetic field.
+                    <br><br>
+                    In summary, Jupiter's rapid rotation and low axial tilt have important consequences for the planet's atmosphere and magnetic field. The fast rotation creates strong winds and jet streams that shape the planet's cloud patterns, while also generating the planet's powerful magnetic field. Jupiter's unique rotation and distinctive features continue to fascinate scientists and astronomers alike.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+            <div class="SecondBox">
+                <img src="../Pictures/Jupiter/rotation.gif" alt="A gif video showing the very short rotation of jupiter whre one day is 9h 55min" style="border: 1px solid white;">
+            </div>
+        </div>
+        <div class="FirstContainer" id="Composition">
+            <div class="FirstBoxLeft">
+                <div class="FirstBoxHeaders">
+                    <h5>Composition</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>Layers</h2>
+                </div>
+                <p>Jupiter, the fifth planet from the sun and the largest in our solar system, is a gas giant made up mostly of hydrogen and helium. The planet's composition is divided into several layers, each with its own unique characteristics.
+                <br><br>
+                The outermost layer of Jupiter's atmosphere is composed mainly of hydrogen and helium gas, along with trace amounts of other gases such as methane and ammonia. This layer extends to a depth of about 1,000 kilometers and is characterized by the planet's distinctive banding patterns, which are caused by differences in wind speeds and cloud formations.
+                <br><br>
+                Beneath the outer atmosphere lies a layer of liquid metallic hydrogen, which extends to a depth of about 20,000 kilometers. This layer is created by the high pressure and temperature at the planet's core, which causes hydrogen gas to become compressed and heated until it behaves like a liquid metal.
+                <br><br>
+                Deeper still lies a layer of molecular hydrogen, which extends to a depth of about 40,000 kilometers. This layer is characterized by extreme pressure and temperature, which cause the hydrogen to behave like a fluid and to conduct electricity.
+                <br><br>
+                At the center of Jupiter lies a rocky core, which is believed to be about the size of Earth and is composed of heavy elements such as iron, nickel, and rock. The core is surrounded by layers of liquid and metallic hydrogen, which in turn are surrounded by the planet's outer atmosphere.
+                <br><br>
+                The composition of Jupiter's atmosphere and interior is still being studied and analyzed by scientists and astronomers, who hope to gain a better understanding of the planet's history and evolution. Despite its complex and mysterious composition, >Jupiter's unique features and distinctive appearance continue to captivate and inspire people around the world.</p>
+            </div>
+            <div class="FirstBoxRight">
+                <img src="../Pictures/Jupiter/Composition.jpg" alt="Picture of jupiters composition" >
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Element</th>
+                            <th>Percentage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hydrogen</td>
+                            <td>89.8%</td>
+                        </tr>
+                        <tr>
+                            <td>Helium</td>
+                            <td>10.2%</td>
+                        </tr>
+                        <tr>
+                            <td>Methane</td>
+                            <td>0.3%</td>
+                        </tr>
+                        <tr>
+                            <td>Ammonia</td>
+                            <td>0.026%</td>
+                        </tr>
+                        <tr>
+                            <td>Hydrogen Deuteride</td>
+                            <td>0.0028%</td>
+                        </tr>
+                        <tr>
+                            <td>Ethane</td>
+                            <td>0.0005%</td>
+                        </tr>
+                        <tr>
+                            <td>Water Vapor</td>
+                            <td>0.0004%</td>
+                        </tr>
+                        <tr>
+                            <td>Phosphine</td>
+                            <td>0.0001%</td>
+                        </tr>
+                    </tbody>
+                </table>                
+            </div>
+        </div>     
+        <div class="ThirdBoxHeaders" id="History">
+            <h5>History of the Earth</h5>
+            <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+            <h2>From Formation to the Future</h2>
+        </div>
+        <div class="Timeline-Box">
+            <div class="timeline-timeline">
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                    <h4>The Formation of Jupiter: A Giant's Beginning
+                    </h4>
+                    <p>
+                        Jupiter, the largest planet in our solar system, formed approximately 4.5 billion years ago. Its formation began with the accumulation of a massive amount of gas and dust, which gradually formed a protoplanetary disk around the young Sun. The gas and dust in the disk eventually coalesced, forming larger and larger clumps that grew in size through collisions with other clumps.
+                        <span class="dots"></span><span class="more"><br><br>
+                        As Jupiter continued to grow, it began to exert a strong gravitational pull on the surrounding material, causing more and more gas and dust to be drawn towards it. Eventually, Jupiter's gravitational force became so strong that it was able to begin capturing the gas and dust directly from the disk, rapidly increasing its mass and size.
+                        <br><br>
+                        Over time, Jupiter continued to grow larger and larger, eventually becoming the massive gas giant that we know today. Its formation was a critical component in shaping the architecture of our solar system, as its enormous size and gravity helped to shape the orbits of the other planets and objects in the outer solar system.
+                        </span>
+                    </p>
+                    <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>The Early Jovian System: Insights into Solar System Formation
+                        </h4>
+                        <p>
+                            The early Jovian system, which includes Jupiter and its four largest moons, Ganymede, Callisto, Io, and Europa, provides crucial insights into the formation of our solar system. By studying the composition and structure of these bodies, scientists can gain a better understanding of the conditions that existed during the early stages of our solar system's formation.
+                            <span class="dots"></span><span class="more"><br><br>
+                            One of the most striking features of the Jovian system is the diversity of its moons. Ganymede and Callisto, for example, are thought to have formed from a mixture of ice and rock, while Io is a volcanic world covered in sulfur and other volatile compounds. Europa, meanwhile, is believed to have a subsurface ocean that could potentially harbor life.
+                            <br><br>
+                            By studying the geological features and chemical compositions of these bodies, scientists can gain insights into the processes that shaped our solar system. For example, the presence of water on Europa suggests that liquid water was present in the early solar system, potentially providing a hospitable environment for the formation of life.
+                            <br><br>
+                            Overall, the Jovian system provides a fascinating window into the early history of our solar system, and continues to be a target of intense scientific study and exploration.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" id="myReadmoreBtn" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                        <h4>Jupiter's Atmosphere: Exploring the Gas Giant's Layers
+                        </h4>
+                        <p>
+                            Jupiter's atmosphere is a fascinating and complex system that has been the subject of intense study for many years. Composed mainly of hydrogen and helium, with small amounts of other gases such as methane and ammonia, Jupiter's atmosphere is divided into several distinct layers, each with its own unique properties and characteristics.
+                            <span class="dots"></span><span class="more"><br><br>
+                            The outermost layer of Jupiter's atmosphere is the equatorial zone, which is characterized by a series of alternating light and dark bands. These bands are created by powerful jet streams that flow in opposite directions, producing a complex system of vortices and eddies.
+                            <br><br>
+                            Beneath the equatorial zone lies the more turbulent mid-latitudes, where powerful storms and other weather phenomena can be observed. The most famous of these is the Great Red Spot, a massive storm system that has been raging for centuries and is larger than the entire planet Earth.
+                            <br><br>
+                            Deeper still lies the more stable polar regions, where temperatures are cooler and atmospheric conditions are more predictable. Here, scientists have observed fascinating phenomena such as polar auroras and the formation of powerful lightning storms.
+                            <br><br>
+                            By studying Jupiter's atmosphere in detail, scientists can gain insights into the dynamics of planetary atmospheres and the ways in which they interact with their surrounding environments. This knowledge is critical for understanding the formation and evolution of planets, both within our own solar system and beyond.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>The Magnetic Field of Jupiter: A Powerful Force
+                        </h4>
+                        <p>
+                            Jupiter's magnetic field is one of the most powerful in the solar system, extending far beyond the planet itself and influencing the environment of its surrounding moons and other objects. The magnetic field is generated by the motion of charged particles within Jupiter's interior, and is thought to be caused by a combination of convective motion and the presence of metallic hydrogen in the planet's core.
+                            <span class="dots"></span><span class="more"><br><br>
+                            The magnetic field of Jupiter has many important effects on its surrounding environment. It helps to protect the planet from the solar wind, a stream of charged particles emitted by the Sun, by deflecting much of the incoming particles away from the planet. This protection is especially important for the Jovian moons, which would otherwise be bombarded by the solar wind and other sources of radiation.
+                            <br><br>
+                            Jupiter's magnetic field also produces some spectacular phenomena, such as intense auroras at the planet's poles. These auroras are caused by the interaction of charged particles from Jupiter's magnetosphere with the planet's upper atmosphere, and can be many times brighter than the auroras seen on Earth.
+                            <br><br>
+                            Overall, Jupiter's magnetic field is a powerful force that has a significant impact on the environment of the Jovian system. Studying this magnetic field is critical for understanding the dynamics of planetary magnetospheres and the ways in which they influence the evolution of planets and their surrounding environments.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                        <h4>The Moons of Jupiter: Exploring the Jovian Satellite System
+                        </h4>
+                        <p>
+                            Jupiter's four largest moons, Ganymede, Callisto, Io, and Europa, are some of the most fascinating and diverse objects in the solar system. Each of these moons has its own unique characteristics and provides important insights into the formation and evolution of the Jovian system.
+                            <span class="dots"></span><span class="more"><br><br>
+                            Ganymede is the largest moon in the solar system and is believed to have a subsurface ocean of liquid water, making it a prime target for astrobiological studies. Callisto, on the other hand, is a heavily cratered moon that provides clues about the early history of the solar system.
+                            <br><br>
+                            Io is the most volcanically active object in the solar system, with hundreds of active volcanoes spewing sulfur and other compounds into the moon's tenuous atmosphere. The intense tidal forces exerted by Jupiter and its other moons are responsible for driving these volcanic eruptions.
+                            <br><br>
+                            Europa is another moon that has received a lot of attention from scientists due to its subsurface ocean, which may harbor life. Recent missions to Europa have revealed the presence of geysers that may be venting water vapor from the moon's interior, providing tantalizing clues about the potential habitability of this icy moon.
+                            <br><br>
+                            Overall, the moons of Jupiter offer a wealth of scientific opportunities for exploring the Jovian system and learning more about the formation and evolution of our solar system. With ongoing missions such as NASA's Europa Clipper, there is still much to be learned about these fascinating objects and the secrets they hold.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>The Great Red Spot: Studying Jupiter's Most Famous Storm
+                        </h4>
+                        <p>
+                            The Great Red Spot is one of the most recognizable features of Jupiter's atmosphere, and has been studied for centuries by astronomers and planetary scientists. This massive storm system is a high-pressure region that produces winds of up to 400 miles per hour, making it one of the most powerful storms in the solar system.
+                            <span class="dots"></span><span class="more"><br><br>
+                            Despite being well-known for many years, much is still not fully understood about the Great Red Spot. For example, scientists are still unsure about how the storm maintains its intensity and what drives its characteristic oval shape. Recent observations and simulations have suggested that the storm may be sustained by a complex interaction between the upper and lower layers of Jupiter's atmosphere, with heat and energy being transported from deep within the planet to the outermost layers.
+                            <br><br>
+                            Studying the Great Red Spot is not just a matter of scientific curiosity; it also has important implications for understanding planetary atmospheres more broadly. By studying the dynamics of the storm and its interactions with other features of Jupiter's atmosphere, scientists can gain insights into the ways in which planetary atmospheres interact with their surrounding environments, and how these interactions may affect the evolution and habitability of planets.
+                            <br><br>
+                            With ongoing observations from Earth-based telescopes and spacecraft such as NASA's Juno mission, there is still much to be learned about this fascinating storm and the many secrets it holds.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                        <h4>Jupiter's Rings: A Complex and Dynamic System
+                        </h4>
+                        <p>
+                            While Saturn is perhaps best known for its iconic rings, Jupiter also has a complex and fascinating ring system. This system is made up of four main parts: the halo, the main ring, the Amalthea gossamer ring, and the Thebe gossamer ring.
+                            <span class="dots"></span><span class="more"><br><br>
+                            The main ring is the most well-known part of Jupiter's ring system, and is made up of small, dark particles that are thought to be the remnants of asteroids or comets that collided with the planet's moons. The Amalthea and Thebe gossamer rings, on the other hand, are made up of tiny dust particles that are thought to be generated by the moons Amalthea and Thebe as they orbit the planet.
+                            <br><br>
+                            Jupiter's ring system is not just an interesting object to study in its own right; it also has important implications for understanding the formation and evolution of the Jovian system as a whole. By studying the composition and dynamics of the rings, scientists can learn more about the conditions that prevailed during the formation of Jupiter and its moons, and how these conditions may have shaped the evolution of the Jovian system over time.
+                            <br><br>
+                            Despite being relatively poorly understood compared to other planetary ring systems, ongoing observations from ground-based telescopes and spacecraft such as NASA's Juno mission are shedding new light on this complex and dynamic system. With continued research, we can hope to unlock many of the mysteries of Jupiter's ring system and gain a deeper understanding of the workings of our solar system.                                
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>The Juno Mission: Unlocking the Secrets of Jupiter
+                        </h4>
+                        <p>
+                            Launched in 2011, NASA's Juno mission is a groundbreaking effort to study Jupiter up close and unlock many of the mysteries of this massive gas giant. Over the course of its mission, Juno has collected an unprecedented amount of data about Jupiter's atmosphere, interior, magnetic field, and more, using a suite of cutting-edge scientific instruments.
+                            <span class="dots"></span><span class="more"><br><br>
+                            One of the key goals of the Juno mission is to shed new light on the formation and evolution of Jupiter, as well as the larger processes that govern the workings of our solar system. By studying the composition, structure, and dynamics of Jupiter's atmosphere and interior, scientists hope to gain insights into the conditions that prevailed during the early stages of the solar system's formation, and how these conditions gave rise to the Jovian system.
+                            <br><br>
+                            Another major focus of the Juno mission is to study Jupiter's powerful magnetic field, which is thought to be generated by electric currents deep within the planet's interior. By mapping the variations in the magnetic field and studying its interactions with Jupiter's atmosphere, scientists hope to learn more about the processes that drive the planet's magnetic field, as well as how these processes may affect the formation and evolution of Jupiter's moons.
+                            <br><br>
+                            Overall, the Juno mission represents an unprecedented opportunity to unlock many of the secrets of Jupiter and gain a deeper understanding of the workings of our solar system. With ongoing observations and analysis of the mission's data, we can expect to learn many new and exciting things about this massive gas giant and the complex system that surrounds it.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                        <h4>The Future of Jovian Exploration: New Technologies and Missions
+                        </h4>
+                        <p>
+                            The study of Jupiter and its moons has been a priority for planetary exploration since the early days of the space age, and as our understanding of the Jovian system continues to evolve, scientists are already looking ahead to the future of Jovian exploration.
+                            <span class="dots"></span><span class="more"><br><br>
+                            One promising avenue for future exploration of Jupiter is the development of new, more advanced technologies that will enable us to study the planet and its moons in greater detail. For example, the development of more advanced imaging and spectroscopic techniques could help us better understand the composition and dynamics of Jupiter's atmosphere, while new propulsion systems and spacecraft designs could allow us to explore more of the planet's moons and delve deeper into the Jovian system.
+                            <br><br>
+                            Another exciting development on the horizon is the planning and development of new missions to explore Jupiter and its moons. NASA's Europa Clipper mission, for example, is set to launch in the mid-2020s and will focus on studying the ice-covered moon Europa, which is thought to have a subsurface ocean that may harbor life. Other proposed missions include the JUpiter ICy moons Explorer (JUICE) mission, which is set to launch in 2022 and will focus on studying the moons Ganymede, Callisto, and Europa, and the Europa Lander mission, which aims to send a lander to the surface of Europa to search for signs of life.
+                            <br><br>
+                            Overall, the future of Jovian exploration is looking bright, with new technologies and missions on the horizon that promise to unlock many of the secrets of this fascinating and complex system. As we continue to explore Jupiter and its moons, we can expect to gain a deeper understanding of the formation and evolution of our solar system, and perhaps even discover new insights into the origins of life in the universe.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>The Fate of Jupiter: What Will Happen to the Gas Giant in the Distant Future?</h4>
+                        <p>
+                            Jupiter is the largest planet in our solar system, with a mass more than twice that of all the other planets in the solar system combined. But as massive as Jupiter is, its fate in the distant future is not entirely clear.
+                            <span class="dots"></span><span class="more"><br><br>
+                            One possibility is that Jupiter will simply continue on its current course, orbiting the sun for billions of years to come. However, over time, the gravitational interactions between Jupiter and the other planets in the solar system could cause its orbit to shift or become destabilized, leading to a possible collision with another planet or even ejection from the solar system altogether.
+                            <br><br>
+                            Another possibility is that Jupiter's fate could be determined by its own internal processes. As Jupiter continues to cool over time, the helium in its interior could begin to crystallize, leading to changes in the planet's internal dynamics and potential impacts on its atmosphere and magnetic field. Over time, these changes could ultimately lead to the demise of the gas giant.
+                            <br><br>
+                            In the very distant future, another possibility is that Jupiter could even evolve into a new type of object altogether. For example, it's been suggested that Jupiter could eventually become a brown dwarf, a type of failed star that didn't have enough mass to initiate nuclear fusion in its core.
+                            <br><br>
+                            Of course, all of these possibilities are highly speculative, and much remains unknown about the long-term fate of Jupiter. But one thing is certain: as we continue to study this massive gas giant and learn more about its dynamics and evolution, we will gain new insights into the workings of our solar system and the wider universe beyond.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="wrapper" id="Newsletter">
+            <h1>Subscribe to our Newsletter</h1>
+            <p>Receive updates instanly</p>
+            <div class="newsletter">
+                <input type="text" class="input" placeholder="Enter Your Email">
+                <img src="../Pictures/envelope-solid.png" class="fas fa-envelope Showinstant" alt="Picture of an envelope">
+                <div class="btn">Subscribe</div>
+            </div>
+        </div>	
+        <script src="../Javascript/SmallNav.js"></script>
+        <script src="../Javascript/FadeInUp.js"></script>
+        <script src="../Javascript/StickyNavigation.js"></script>
+        <script src="../Javascript/BackToTop&ProgressBar.Js"></script>
+        <script src="../Javascript/ReadMore.js"></script>
+    </body>
+</html>

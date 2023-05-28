@@ -1,0 +1,75 @@
+/* General Font */
+@font-face {
+    font-family: "star_jedi_outlineregular";
+    src: url("../Fonts/Star.woff2") format("woff2"),
+        url("../Fonts/Star.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Logo Links (Logo and Logo Text) */
+.TopLinks {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 1.2vh;
+    padding-left: 1.2vh;
+}
+.TopLinks img {
+    transition: transform 0.5s, width 0.5s, height 0.5s;
+}
+
+.TopLinks img:hover {
+    transform: scale(1.2);
+    transition-timing-function: ease-in-out;
+}
+
+.TopLinks img:not(:hover) {
+    transition-timing-function: ease-in-out;
+}
+
+@media only screen and (max-width: 767px) {
+    .TopLinks {
+        display: none;
+    }
+}
+
+/* Text */
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media only screen and (min-width: 1400px) {
+    body p {
+        line-height: 2;
+        padding: auto;
+        margin: auto;
+        font-size: 30px;
+    } .general p {
+        font-size: 14px;
+        line-height: 21px;
+    } .coords p {
+        font-size: 14px;
+        line-height: 21px;
+    } .caption-container {
+        height: 100%;
+    } #caption {
+        height: 100%;
+    }
+}

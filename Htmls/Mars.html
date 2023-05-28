@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Title-->
+        <title>Our Solar System</title>
+        <!-- Meta -->
+        <meta charset="UTF-8">
+        <meta name="author" content="Erik Rhodin Claesson">
+        <meta name="description" content="Page about our solar system">
+        <meta name="keywords" content="solar system, planets, orbit">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Css Links -->
+        <link rel="stylesheet" href="../Css/StickyNavigation.css">
+        <link rel="stylesheet" href="../Css/CustomScrollBar.css">
+        <link rel="stylesheet" href="../Css/TopNavigation.css">
+        <link rel="stylesheet" href="../Css/NavbarSmaller.css">
+        <link rel="stylesheet" href="../Css/GeneralStyle.css"> 
+        <link rel="stylesheet" href="../Css/ProgressBar.css"> 
+        <link rel="stylesheet" href="../Css/Newsletter.css"> 
+        <link rel="stylesheet" href="../Css/BackToTop.css"> 
+        <link rel="stylesheet" href="../Css/FactsPage.css"> 
+        <link rel="stylesheet" href="../Css/TimeLine.css">
+        <link rel="stylesheet" href="../Css/Readmore.css"> 
+        <link rel="stylesheet" href="../Css/FadeInUp.css"> 
+        <link rel="stylesheet" href="../Css/Socials.css"> 
+        <!-- Script Links -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Other Links -->
+        <link rel="icon" href="../Pictures/solar-system.png">
+        <style>
+            .header {
+                background-image: url("../Pictures/Mars/marsbg.jpg");
+            }
+        </style>
+    </head>
+    <body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <!-- Top Header -->
+        <div class="header" id="Home">
+            <div class="textbox">
+                <h1 class="Showinstant">The Red Planet: Mars</h1>
+                <div class="overtext">
+                <p class="Showinstant">Mars, also known as the Red Planet, is easily recognized by its distinctive reddish color and has long captivated the human imagination as a possible destination for exploration and colonization.</p>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="mailto:example@gmail.com" target="_blank" class="icon gmail"></a>
+                <a href="https://twitter.com/example" target="_blank" class="icon twitter"></a>
+                <a href="https://instagram.com/example" target="_blank" class="icon instagram"></a>
+                <a href="https://youtube.com/channel/UCdXh9gKzDo6H_2q3oPW6Gzw" target="_blank" class="icon youtube"></a>
+                <a href="https://linkedin.com/in/example" target="_blank" class="icon linkedin"></a>
+            </div>
+            <div class="topnavigation">
+                <a href="Main.html">Home</a>
+                <a href="AboutUs.html">About us</a>
+                <a href="ContactUs.html">Contact</a>
+            </div>
+            <div class="TopLinks">
+                <!-- Logo Picture --> 
+                <a href="Main.html">
+                    <img src="../Pictures/AstroLogo.png" width="75" height="75" alt="Company logo that looks like davids star from the jewish belief" class="Showinstant">
+                </a>
+                
+                <!-- Logo Text -->
+                <a href="AboutUs.html">
+                    <img src="../Pictures/TextLogo.png" width="175" height="75" alt="Text beside logo saying Astro" class="Showinstant">
+                </a>
+            </div>
+        </div>
+        <nav>
+            <div class="nav-container">
+                <a class="nav-link" href="#Home">Home</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Introduction">Introduction</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Size">Size</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Location">Location</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Atmosphere">Atmosphere</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Orbit">Orbit</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#GravitationalPull">Gravitational Pull</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Rotation">Rotation</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Composition">Composition</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#History">History</a>
+                <div class="progress-container">
+                    <div class="progress-bar" id="myBar"></div>
+                </div>  
+            </div>
+          </nav> 
+          <div id="myNav-for-mobile" class="overlay-for-mobile">
+            <a href="javascript:void(0)" class="closebtn-for-mobile" onclick="closeNav()">&times;</a>
+            <div class="overlay-content-for-mobile">
+                <a class="nav-link" href="#Home">Home</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Introduction">Introduction</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Size">Size</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Location">Location</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Atmosphere">Atmosphere</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Orbit">Orbit</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#GravitationalPull">Gravitational Pull</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Rotation">Rotation</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Composition">Composition</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#History">History</a>
+            </div>
+        </div>
+        <div id="navbut">
+            <span onclick="openNav()">open Navigation</span>
+        </div>
+        <div class="FirstContainer" id="Introduction">
+            <div class="FirstBoxLeft">
+                <div class="FirstBoxHeaders">
+                    <h5>Mars</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>Possible Home</h2>
+                </div>
+                <p>Mars, the fourth planet from the Sun, is a place of endless fascination and wonder. With its distinctive reddish hue and close proximity to Earth, Mars has captivated human imagination for centuries. As our nearest planetary neighbor, Mars has been the subject of countless scientific investigations, space missions, and even works of fiction. From ancient myths to modern discoveries, Mars continues to inspire and intrigue us with its potential as a future destination for exploration and colonization.
+                <br><br>
+                The planet's unique qualities and characteristics have made it a source of fascination for scientists and researchers alike. Mars is a rocky, terrestrial planet with a thin atmosphere and a surface dominated by craters, valleys, and mountains. It is also home to the largest volcano in the solar system, Olympus Mons, and the deepest canyon in the solar system, Valles Marineris. Mars' seasons, weather patterns, and geological activity have also been the subject of scientific scrutiny and exploration.
+                <br><br>
+                Despite its harsh and inhospitable environment, Mars remains a symbol of human ingenuity and curiosity. From the earliest telescopic observations to the latest space missions and technological advancements, Mars continues to offer new insights and discoveries about our place in the universe. As we continue to explore and learn more about Mars, we may one day unlock the secrets of its past and the potential for life beyond our own planet.</p>
+            </div>
+            <div class="FirstBoxRight">
+                <img src="../Pictures/Mars/mars.jpg" alt="Picture of planet mars" >
+            </div>
+        </div>        
+        <div class="SecondContainer" id="Size">
+            <div class="SecondBox">
+                <div class="SecondBoxHeaders">
+                    <h5>Size</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>Small but Mighty</h2>
+                </div>
+                <p>
+                    Mars, also known as the "Red Planet," is the fourth planet from the Sun and the second smallest planet in our solar system, after Mercury. Despite its relatively small size, Mars packs a powerful punch when it comes to its impact on our understanding of the universe.
+                    <span class="dots"></span><span class="more"><br><br>
+                    Mars has a diameter of approximately 6,779 kilometers, which is about half the size of Earth. It has a volume of 1.63 x 10^11 cubic kilometers, which is less than 15% of Earth's volume. Its mass is also significantly less than Earth's, with a value of 6.39 x 10^23 kilograms, or just over 10% of Earth's mass.
+                    <br><br>
+                    Despite its small size, Mars has several unique features that make it stand out among the other planets in our solar system. For example, Mars has the largest volcano in the solar system, Olympus Mons, which stands at a height of 21 kilometers and has a base diameter of over 600 kilometers. Mars also has the deepest canyon in the solar system, Valles Marineris, which stretches over 4,000 kilometers in length and up to 7 kilometers in depth.
+                    <br><br>
+                    Additionally, Mars has a number of other interesting geological features, such as a huge dust storm that can engulf the entire planet, and a unique magnetic field that is much weaker than Earth's. The planet's relatively thin atmosphere is composed mainly of carbon dioxide, with small amounts of nitrogen and argon. This atmosphere is responsible for the planet's iconic red color, which is caused by iron oxide, or rust, on the surface.
+                    <br><br>
+                    Despite its small size, Mars has captured the imagination of scientists and the general public alike. It has been the subject of numerous missions, both manned and unmanned, from various space agencies around the world. These missions have provided us with a wealth of information about the planet's geology, atmosphere, and potential habitability, and have contributed to our understanding of the early history of the solar system.
+                    <br><br>
+                    In conclusion, while Mars may be small in comparison to other planets, it is mighty in terms of its impact on our understanding of the universe. Its unique features and potential for habitability make it an exciting target for further exploration and study.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+            <div class="SecondBox">
+                <img src="../Pictures/Mars/size.jpg" alt="Picture showing the size of mars compared to exoplanets and earth">
+            </div>
+        </div>
+        <div class="ThirdContainer" id="Location">
+            <div class="ThirdBoxHeaders" style="border-bottom: 1px solid white;">
+                <h5>Red Planet, Blue Sky</h5>
+                <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                <h2>Why It's a Prime Target for Human Exploration</h2>
+            </div>
+            <div class="ThirdBottomBox">
+                <img src="../Pictures/Mars/location.jpg" alt="picture showing the location of planet mars, 4th planet from the sun">
+            </div>
+            <div class="ThirdTopBox">
+                <p>
+                    Mars, the fourth planet from the Sun, is often referred to as the "Red Planet" due to its reddish appearance in the night sky. But what makes this planet such an exciting target for human exploration is not just its color, but its location in the solar system.
+                    <span class="dots"></span><span class="more"><br><br>
+                    Mars is located approximately 140 million miles from the Sun, which is about 1.5 times the distance between Earth and the Sun. Because of this, the temperature on Mars is much colder than on Earth, with an average surface temperature of -63 degrees Celsius (-81 degrees Fahrenheit). However, Mars' distance from the Sun also means that it receives only about half the amount of sunlight as Earth does.
+                    <br><br>
+                    Despite its distance from the Sun, Mars still has a number of advantages as a target for human exploration. For one, it has a day/night cycle that is similar to Earth's, with a day length of 24 hours and 39 minutes. This means that humans could adapt relatively easily to the Martian day/night cycle, which is important for maintaining a healthy sleep schedule and productivity.
+                    <br><br>
+                    Additionally, Mars has a thin atmosphere, which is composed mainly of carbon dioxide, with small amounts of nitrogen and argon. This atmosphere is thick enough to protect the planet's surface from cosmic radiation, but not so thick that it would pose a problem for human exploration. The thin atmosphere also means that Mars has a blue sky, similar to Earth's, which would make for a visually stunning environment for human explorers.
+                    <br><br>
+                    Another advantage of Mars' location is its proximity to Earth. While Mars is still a long way from Earth, it is much closer than other potential targets for human exploration, such as the gas giants Jupiter and Saturn. This means that it would be easier and less expensive to send missions to Mars, as the travel time would be shorter and the spacecraft would require less fuel.
+                    <br><br>
+                    Overall, Mars' location in the solar system, with its similar day/night cycle, thin atmosphere, and proximity to Earth, make it an attractive target for human exploration. While the journey to Mars would still be challenging and dangerous, the potential rewards of establishing a human presence on another planet are too great to ignore. With continued advances in technology and space exploration, it may not be long before we see the first human footsteps on the Red Planet.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+        </div>
+        <div class="SecondContainer" id="Atmosphere">
+            <div class="SecondBox">
+                <div class="SecondBoxHeaders">
+                    <h5>Layers</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>Atmospheric Zones</h2>
+                </div>
+                <p>Mars, the fourth planet from the Sun, has a thin atmosphere that is much different than Earth's. The atmosphere on Mars is composed mainly of carbon dioxide, with small amounts of nitrogen and argon. Despite being thin, the atmosphere on Mars still has several distinct layers that scientists have been able to study and analyze.
+                <span class="dots"></span><span class="more"><br><br>
+                The first layer of the Martian atmosphere is the exosphere, which extends from the planet's surface up to about 10,000 km. This layer is very thin, and its gases are so sparse that they rarely interact with each other. The exosphere is also where the planet's magnetic field interacts with the solar wind, creating auroras in the Martian sky.
+                <br><br>
+                The second layer is the thermosphere, which extends from the exosphere up to about 200 km above the surface. This layer is characterized by very high temperatures, as it absorbs the energy from the Sun's ultraviolet radiation. Despite these high temperatures, the thermosphere would not feel hot to a human standing on the surface of Mars, as the thin atmosphere would not transfer heat very effectively.
+                <br><br>
+                The third layer is the mesosphere, which extends from the thermosphere down to about 80 km above the surface. This layer is characterized by much cooler temperatures, and it is where the majority of meteors burn up as they enter the Martian atmosphere. The mesosphere is also where scientists have observed strange, twisting clouds that are thought to be made of carbon dioxide or water ice.
+                <br><br>
+                The fourth and final layer is the stratosphere, which extends from the mesosphere down to the surface of the planet. This layer is characterized by very low temperatures and is where the majority of the Martian atmosphere's dust is located. The stratosphere is also where scientists have detected trace amounts of methane gas, which has led to speculation about the possibility of life on Mars.
+                <br><br>
+                Overall, the layers of the Martian atmosphere offer a unique and intriguing environment for scientists to study. While the thin atmosphere poses challenges for human exploration, it also allows for stunning views of the planet's surface and its distinctive blue sky. As our understanding of Mars and its atmosphere continues to grow, we may gain even greater insight into the mysteries of this fascinating planet.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+            <div class="SecondBox">
+                <img src="../Pictures/Mars/Comparing_the_atmospheres_of_Mars_and_Earth.jpg" alt="picture showing what the atmosphere of mars is composed of compared to earth showing the elements and their procentages" >
+            </div>
+        </div>     
+        <div class="ThirdContainer" id="Orbit">
+            <div class="ThirdBoxHeaders">
+                <h5>The Martian Year</h5>
+                <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                <h2>Phobos and Deimos and Their Effect on Its Orbit</h2>
+            </div>
+            <div class="ThirdBottomBox">
+                <img src="../Pictures/Mars/orbit.jpg" alt="Picture showing the orbit of mercury, venus, earth and mars">
+            </div>
+            <div class="ThirdTopBox">
+                <p>
+                    Mars, the fourth planet from the Sun, has a unique orbit that is influenced by its two small moons, Phobos and Deimos. These moons are much smaller than Earth's Moon, but they still have a significant impact on the planet's orbit and rotation.
+                    <span class="dots"></span><span class="more"><br><br>
+                    Mars has an elliptical orbit, which means that it follows a path that is not a perfect circle. The distance between Mars and the Sun varies throughout its orbit, with its closest approach known as perihelion and its furthest point called aphelion. Mars takes about 687 Earth days to complete one orbit around the Sun, which is known as a Martian year.
+                    <br><br>
+                    The gravitational pull of Phobos and Deimos affects Mars' orbit in several ways. Phobos, the larger of the two moons, orbits very close to Mars and has an irregular shape. As it orbits, it creates a bulge in the Martian surface that causes small but measurable variations in the planet's rotation. Deimos, on the other hand, is much smaller and farther from Mars, and its effect on the planet's orbit is much weaker.
+                    <br><br>
+                    The orbits of Phobos and Deimos also have interesting properties. Phobos, for example, is gradually getting closer to Mars and is predicted to eventually collide with the planet in about 50 million years. Deimos, on the other hand, is gradually moving away from Mars and will eventually leave the planet's gravitational influence.
+                    <br><br>
+                    Despite their small size, Phobos and Deimos are fascinating objects that have a significant impact on the Martian system. Their influence on the planet's orbit and rotation is a reminder of the complex interactions that can occur in our Solar System. As we continue to study Mars and its moons, we may gain even greater insights into the mysteries of our planetary neighborhood.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+        </div>
+        <div class="ThirdContainer" id="GravitationalPull">
+            <div class="ThirdBoxHeaders">
+                <h5>Gravity on Mars</h5>
+                <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                <h2>Exploring the Planet's Mountains and Valleys</h2>
+            </div>
+            <div class="ThirdBottomBox">
+                <img src="../Pictures/Mars/gravity.jpg" alt="Picture showing mars cut in half">
+            </div>
+            <div class="ThirdTopBox">
+                <p>
+                    Mars, the Red Planet, has a weaker gravitational pull than Earth due to its smaller size and lower mass. The surface gravity on Mars is only about 38% of Earth's, which means that objects weigh less on Mars than they do on Earth. For example, a person who weighs 150 pounds on Earth would only weigh 57 pounds on Mars.
+                    <span class="dots"></span><span class="more"><br><br>
+                    The weaker gravity on Mars has interesting implications for exploration and colonization. It means that humans would be able to carry more weight and move more easily on the Martian surface. However, it also means that the planet has a thinner atmosphere, which makes it more difficult to breathe and protect against radiation.
+                    <br><br>
+                    Mars' two small moons, Phobos and Deimos, also have interesting properties when it comes to gravity. Phobos, the larger of the two, is just 14 miles in diameter and has a very low density, which means that it has a weak gravitational pull. In fact, if you were standing on the surface of Phobos, you could jump high enough to escape its gravity and float away into space.
+                    <br><br>
+                    Deimos, on the other hand, is even smaller and has an even weaker gravitational pull. Its gravity is so weak that it is believed to be a captured asteroid that was pulled into orbit around Mars.
+                    <br><br>
+                    Despite their small size and weak gravitational pull, both Phobos and Deimos have had an impact on the Martian surface. Phobos, for example, has caused a series of long, narrow grooves on the planet's surface known as "grooves." These grooves are believed to be caused by tidal forces from Phobos as it orbits Mars. Deimos, on the other hand, has had a less noticeable impact on the planet.
+                    <br><br>
+                    Exploring the mountains and valleys of Mars is an exciting challenge for scientists and researchers. Understanding the planet's unique gravity and the effects of its two small moons, Phobos and Deimos, is an important part of this work. As we continue to study the Red Planet, we may gain even greater insights into the mysteries of our Solar System and the universe beyond.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+        </div>
+        <div class="SecondContainer" id="Rotation">
+            <div class="SecondBox">
+                <div class="SecondBoxHeaders">
+                    <h5>The Axial Tilt</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>Martian Poles</h2>
+                </div>
+                <p>
+                    Like Earth, Mars rotates on its axis, completing a full rotation in about 24.6 hours. However, the planet's axial tilt is much greater than Earth's, which has important implications for the climate and seasons on Mars.
+                    <span class="dots"></span><span class="more"><br><br>
+                    The axial tilt of Mars is approximately 25 degrees, compared to Earth's tilt of about 23.5 degrees. This means that Mars experiences more extreme seasonal variations than Earth. During the Martian summer, the southern hemisphere is tilted towards the sun, while during the Martian winter, the northern hemisphere is tilted towards the sun.
+                    <br><br>
+                    The axial tilt of Mars also has a significant impact on the planet's poles. Like Earth, Mars has both north and south poles, but they are not the same. The Martian north pole is a flat, icy region that is covered in a layer of carbon dioxide during the winter months. The southern pole, on the other hand, is a large, permanent ice cap that is made up of water and carbon dioxide ice.
+                    <br><br>
+                    One interesting phenomenon that occurs at the Martian poles is known as the "polar hood." During the winter months, as the poles are tilted away from the sun, the atmosphere above the poles cools and condenses into clouds. These clouds then form a large hood that covers the polar regions, making them difficult to see from space.
+                    <br><br>
+                    The axial tilt of Mars also has implications for potential future human missions to the planet. The extreme seasonal variations and the polar regions present unique challenges for exploration and colonization. However, they also offer opportunities for scientific research and discovery.
+                    <br><br>
+                    Understanding the rotation and axial tilt of Mars is an important part of studying the planet and its unique characteristics. As we continue to explore and learn more about the Red Planet, we may uncover even more secrets about our Solar System and the universe beyond.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+            <div class="SecondBox">
+                <img src="../Pictures/Mars/marsorbit.png" alt="Picture showing off how the seasons change on planet mars depending on where the planet is around the sun and its tilt on its own axis" style="border: 1px solid white;">
+            </div>
+        </div>
+        <div class="FirstContainer" id="Composition">
+            <div class="FirstBoxLeft">
+                <div class="FirstBoxHeaders">
+                    <h5>Composition</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>Layers</h2>
+                </div>
+                <p>The composition of Mars is one of the most fascinating and unique aspects of the planet. Unlike Earth, Mars does not have a magnetic field, which has had a significant impact on the composition and structure of the planet.
+                <br><br>
+                The planet is made up of several layers, each with its own unique characteristics. At the center of the planet is the core, which is thought to be primarily composed of iron and nickel. Unlike Earth's core, however, the Martian core is not believed to be molten.
+                <br><br>
+                Surrounding the core is the mantle, which is made up of silicate rocks and minerals. This layer is believed to be partially molten and is responsible for much of the volcanic activity on the planet.
+                <br><br>
+                Above the mantle is the crust, which is the outermost layer of the planet. The Martian crust is much thinner than Earth's crust, averaging about 50 kilometers thick, compared to Earth's average crust thickness of about 35 kilometers.
+                <br><br>
+                One of the most fascinating aspects of the Martian composition is the presence of vast regions of iron oxide, which give the planet its distinctive red color. These regions are thought to have formed as a result of ancient volcanic activity and the subsequent oxidation of iron-rich minerals.
+                <br><br>
+                Compared to Earth, Mars has a significantly lower density, which has important implications for the planet's gravity and overall structure. The lower density is due to the lack of a molten core and the absence of tectonic activity, which has led to a much less complex geological history.
+                <br><br>
+                Despite these differences, there are also many similarities between the compositions of Earth and Mars. Both planets are primarily composed of silicate rocks and minerals, and both have a similar distribution of elements, such as oxygen, silicon, and iron.
+                <br><br>
+                Studying the composition of Mars is an important part of understanding the planet and its place in our Solar System. By comparing the layers and structures of Mars to those of Earth, we can gain new insights into the formation and evolution of planets and the universe as a whole.</p>
+            </div>
+            <div class="FirstBoxRight">
+                <img src="../Pictures/Mars/comp.jpg" alt="Picture showing the composition of the planet" >
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Element</th>
+                            <th>Percentage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Iron oxide (FeO)</td>
+                            <td>15-25%</td>
+                        </tr>
+                        <tr>
+                            <td>Silicon dioxide (SiO2)</td>
+                            <td>25-45%</td>
+                        </tr>
+                        <tr>
+                            <td>Aluminum oxide (Al2O3)</td>
+                            <td>5-18%</td>
+                        </tr>
+                        <tr>
+                            <td>Magnesium oxide (MgO)</td>
+                            <td>5-10%</td>
+                        </tr>
+                        <tr>
+                            <td>Calcium oxide (CaO)</td>
+                            <td>2-8%</td>
+                        </tr>
+                        <tr>
+                            <td>Sodium oxide (Na2O)</td>
+                            <td>1-3%</td>
+                        </tr>
+                        <tr>
+                            <td>Potassium oxide (K2O)</td>
+                            <td>0.5-1.5%</td>
+                        </tr>
+                        <tr>
+                            <td>Titanium oxide (TiO2)</td>
+                            <td>0.5-1.5%</td>
+                        </tr>
+                        <tr>
+                            <td>Phosphorus pentoxide (P2O5)</td>
+                            <td>0.1-0.3%</td>
+                        </tr>
+                        <tr>
+                            <td>Chlorine (Cl)</td>
+                            <td>0.05-0.1%</td>
+                        </tr>
+                        <tr>
+                            <td>Carbon dioxide (CO2)</td>
+                            <td>0.01-0.1%</td>
+                        </tr>
+                        <tr>
+                            <td>Water (H2O)</td>
+                            <td>0.01-0.03%</td>
+                        </tr>
+                        <tr>
+                            <td>Nitrogen (N2)</td>
+                            <td>0.01-0.02%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>     
+        <div class="ThirdBoxHeaders" id="History">
+            <h5>History of the Mars</h5>
+            <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+            <h2>From Formation to the Future</h2>
+        </div>
+        <div class="Timeline-Box">
+            <div class="timeline-timeline">
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                    <h4>The Formation of Mars: A History of the Red Planet</h4>
+                    <p>
+                        Mars, also known as the Red Planet, is the fourth planet from the sun and is named after the Roman god of war. Scientists believe that Mars formed about 4.6 billion years ago, around the same time as Earth and the other planets in our solar system. The formation of Mars was a complex process that involved the accretion of smaller bodies and the collision of larger ones.
+                        <span class="dots"></span><span class="more"><br><br>
+                        One popular theory about the formation of Mars is that it was created when a protoplanet collided with a Mars-sized body called Theia. This collision caused a massive explosion that ejected a significant amount of debris into space. Over time, this debris coalesced to form the planet we know today as Mars.
+                        <br><br>
+                        Another theory suggests that Mars formed in a similar way to Earth, through the accretion of smaller objects that gradually grew larger. However, Mars did not grow as large as Earth because it did not have as much material to work with.
+                        <br><br>
+                        Scientists continue to study Mars and its formation in order to gain a better understanding of the early solar system and how planets form. The study of Mars is also important because it can help us to understand the potential for life on other planets and the possibility of human exploration and settlement beyond Earth.
+                        </span>
+                    </p>
+                    <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>Exploring the Surface of Mars: The Early Missions</h4>
+                        <p>
+                            The surface of Mars has fascinated scientists and space enthusiasts for decades. The first missions to explore the surface of Mars were launched in the 1960s, with the Soviet Union's Mars 1 mission being the first to fly by the planet in 1962. The United States followed suit with its Mariner missions, which were the first to capture close-up images of the Martian surface.
+                            <span class="dots"></span><span class="more"><br><br>
+                            In 1971, the Soviet Union's Mars 3 mission became the first to land on Mars, although its rover malfunctioned after just 20 seconds. NASA's Viking 1 and 2 missions, launched in 1975, were the first to successfully land on the Martian surface and conduct experiments to study the planet's geology and climate.
+                            <br><br>
+                            Since then, there have been numerous missions to explore Mars, including NASA's Mars Pathfinder, Mars Exploration Rovers (Spirit and Opportunity), Phoenix lander, and the Mars Science Laboratory (Curiosity). These missions have provided valuable information about the planet's geology, atmosphere, and potential for life.
+                            <br><br>
+                            Early missions to explore the surface of Mars faced many challenges, including the harsh environment, communication difficulties, and technological limitations. However, these missions paved the way for future exploration and inspired new technologies that have enabled us to continue to learn more about this fascinating planet.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" id="myReadmoreBtn" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                        <h4>The Martian Atmosphere: Uncovering Clues to the Planet's Past</h4>
+                        <p>
+                            The Martian atmosphere is one of the key areas of study for scientists seeking to uncover the planet's past. Unlike Earth, Mars does not have a thick atmosphere, and it is composed primarily of carbon dioxide with traces of other gases, including nitrogen and argon.
+                            <span class="dots"></span><span class="more"><br><br>
+                            Scientists believe that the Martian atmosphere was once much denser and contained a significant amount of water. Evidence from the planet's surface suggests that liquid water once flowed on Mars, which could only have occurred if the planet had a much thicker atmosphere than it does now.
+                            <br><br>
+                            By studying the composition and behavior of the Martian atmosphere, scientists can gain valuable insights into the planet's past. For example, the presence of methane in the atmosphere could be an indication of biological activity, as methane is a byproduct of many types of life. Studying the behavior of the atmosphere can also provide clues about the planet's past climate and geological activity.
+                            <br><br>
+                            In addition to its scientific value, the Martian atmosphere is also of great interest to those planning future missions to the planet. The thin atmosphere and lack of a strong magnetic field present challenges for human exploration and settlement, and scientists and engineers must work together to develop technologies that can overcome these obstacles.
+                            <br><br>
+                            Overall, the study of the Martian atmosphere is critical to our understanding of the planet's history, potential for life, and the challenges that must be overcome for future exploration and settlement.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>Water on Mars: Evidence of Life?</h4>
+                        <p>
+                            The discovery of water on Mars has been a major focus of planetary research for many years. Evidence from multiple sources suggests that liquid water may have once existed on the surface of the planet, and there is evidence of large amounts of water ice beneath the surface.
+                            <span class="dots"></span><span class="more"><br><br>
+                            The presence of water is critical for the search for life on Mars, as all known forms of life require water to survive. While no direct evidence of life has been found on Mars, the discovery of water has raised the possibility that microbial life could exist beneath the planet's surface.
+                            <br><br>
+                            One of the most compelling pieces of evidence for the presence of water on Mars is the discovery of gullies and other features that appear to have been formed by flowing water. In addition, the Phoenix lander and the Mars Science Laboratory (Curiosity) have both found evidence of water ice beneath the surface of the planet.
+                            <br><br>
+                            While the discovery of water on Mars does not guarantee the existence of life, it is an important step in the search for extraterrestrial life. Future missions to Mars, such as the Mars 2020 rover and the ExoMars mission, will continue to study the planet's geology and search for signs of life.
+                            <br><br>
+                            Overall, the discovery of water on Mars has opened up new possibilities for exploration and discovery on the planet, and it has reignited interest in the search for life beyond Earth.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                        <h4>The Search for Life on Mars: Past and Future Missions</h4>
+                        <p>
+                            The search for life on Mars has been a long-standing goal of planetary exploration. Over the years, numerous missions have been sent to Mars in an attempt to answer this question, and while no definitive evidence of life has been found yet, the search continues.
+                            <span class="dots"></span><span class="more"><br><br>
+                            One of the most exciting missions in the search for life on Mars was NASA's Viking program, which consisted of two landers that were sent to Mars in the 1970s. The landers carried out experiments to search for signs of life, but the results were inconclusive.
+                            <br><br>
+                            More recently, NASA's Mars Science Laboratory (Curiosity) has been exploring the Gale Crater region of Mars since 2012. The rover has been searching for signs of habitable conditions, such as the presence of organic compounds or evidence of past water activity.
+                            <br><br>
+                            In 2020, NASA's Mars 2020 mission landed the Perseverance rover on the planet's surface, which will also search for signs of ancient microbial life. The rover will collect and store samples of Martian rocks and soil for a future mission to bring back to Earth for further analysis.
+                            <br><br>
+                            The European Space Agency's ExoMars mission is also scheduled for launch in 2022, and it will include a rover that will search for signs of life and drill beneath the Martian surface to look for traces of organic matter.
+                            <br><br>
+                            The search for life on Mars is a complex and challenging endeavor, but it has the potential to transform our understanding of the universe and our place within it. As technology continues to advance and new missions are planned, we may one day discover that we are not alone in the universe.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>Colonizing Mars: Challenges and Opportunities</h4>
+                        <p>
+                            Colonizing Mars is a daunting but exciting prospect that has captured the imagination of scientists, entrepreneurs, and the public alike. However, the challenges of establishing a permanent human presence on the Red Planet are numerous and complex.
+                            <span class="dots"></span><span class="more"><br><br>
+                            One of the main challenges of colonizing Mars is the harsh environment. The planet's thin atmosphere provides little protection from solar radiation, which can cause health problems for humans. The lack of a magnetic field also means that the planet's surface is bombarded by cosmic rays, which could damage equipment and harm colonists.
+                            <br><br>
+                            Another challenge is the lack of resources on Mars. Water, food, and oxygen will all need to be produced locally to sustain a human colony, and the planet's harsh climate and thin atmosphere make this a difficult task. However, recent discoveries of water ice on the planet have provided hope that this challenge can be overcome.
+                            <br><br>
+                            Additionally, the journey to Mars is long and dangerous, with potential risks to human health and safety. The cost of launching and maintaining a human colony on Mars is also a significant hurdle that will need to be overcome.
+                            <br><br>
+                            Despite these challenges, there are many potential opportunities that could arise from colonizing Mars. A permanent human presence on Mars could lead to new scientific discoveries, the development of new technologies, and the creation of a new economy that could benefit both Earth and Mars.
+                            <br><br>
+                            Furthermore, colonizing Mars could be seen as a way to ensure the long-term survival of the human species by establishing a second home on another planet. This would provide a backup plan in case of a catastrophic event on Earth, such as a large asteroid impact or a nuclear war.
+                            <br><br>
+                            In conclusion, while colonizing Mars presents many challenges, the potential opportunities for scientific discovery, technological development, and the survival of the human species make it an exciting prospect that is worth pursuing.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                        <h4>The Future of Martian Agriculture: Sustainable Food Production on the Red Planet</h4>
+                        <p>
+                            One of the key challenges in establishing a permanent human colony on Mars is the ability to produce enough food to sustain the inhabitants. To accomplish this, it will be necessary to develop a sustainable agriculture system on the Red Planet.
+                            <span class="dots"></span><span class="more"><br><br>
+                            Martian agriculture presents several unique challenges that must be addressed. The planet's thin atmosphere and lack of magnetic field make it difficult to protect plants from harmful radiation. The extreme temperature fluctuations and dust storms on the planet also pose challenges for plant growth and survival.
+                            <br><br>
+                            To overcome these challenges, several strategies have been proposed for sustainable food production on Mars. One approach is to use hydroponic or aeroponic systems, which allow plants to grow in nutrient-rich solutions or air without soil. This approach reduces the need for heavy and bulky soil and allows for greater control over the growing environment.
+                            <br><br>
+                            Another approach is to use greenhouses, which can provide a more controlled environment for plants to grow. These structures can also help protect plants from the harsh Martian environment and reduce water and energy usage.
+                            <br><br>
+                            To further enhance the sustainability of Martian agriculture, it will be necessary to develop closed-loop systems, where waste products from the colony are recycled and used to fertilize and nourish the plants. This will help minimize the need for external inputs and reduce waste.
+                            <br><br>
+                            In addition to producing food, Martian agriculture could also have other benefits. For example, plants can help generate oxygen and purify the air, which could improve the habitability of the colony. Plants can also provide psychological benefits for the colonists, such as improving mood and reducing stress.
+                            <br><br>
+                            In conclusion, the future of Martian agriculture holds great promise for sustainable food production on the Red Planet. With the development of innovative farming techniques and closed-loop systems, it may be possible to establish a self-sufficient human colony on Mars that can sustain itself for the long term.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>Mars and Climate Change: How Studying the Red Planet Can Help Save Earth</h4>
+                        <p>
+                            As concerns about climate change continue to grow on Earth, scientists are turning to the study of Mars to gain insights into our planet's changing climate and how we can mitigate its effects.
+                            <span class="dots"></span><span class="more"><br><br>
+                            Mars is an ideal target for studying climate change because it has a similar history to Earth, but with fewer complex processes and variables. By studying the Red Planet's climate history and how it has changed over time, scientists can gain a better understanding of the underlying mechanisms that drive climate change.
+                            <br><br>
+                            For example, the study of Mars has helped scientists understand how the sun's energy output can influence planetary climates. Mars has a much thinner atmosphere than Earth, which means that its climate is more sensitive to changes in solar radiation. By studying Mars, scientists can better understand the potential effects of variations in solar output on Earth's climate.
+                            <br><br>
+                            Mars is also a valuable testing ground for new technologies and strategies for mitigating climate change. For example, the development of sustainable agriculture systems on Mars could be adapted for use on Earth, helping to reduce the environmental impact of agriculture and increase food security.
+                            <br><br>
+                            Furthermore, Mars exploration missions could provide opportunities for technological innovation that could have applications on Earth. For example, the development of new energy technologies for powering spacecraft and habitats on Mars could be adapted for use in renewable energy production on Earth.
+                            <br><br>
+                            In addition, Mars exploration could inspire a new generation of scientists and engineers to tackle the challenges of climate change on Earth. The exploration of Mars can spark curiosity and inspire people to seek solutions to the problems we face on our own planet.
+                            <br><br>
+                            In conclusion, studying Mars and its climate can provide valuable insights and technologies that could help us address climate change on Earth. By learning from the Red Planet, we can develop new strategies for sustainable agriculture, renewable energy, and technological innovation that could help us mitigate the effects of climate change and create a more sustainable future.                                
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                        <h4>The Martian Economy: Mining and Resource Extraction</h4>
+                        <p>
+                            As humanity looks towards the future colonization of Mars, one of the key considerations is how to establish a self-sustaining economy on the Red Planet. One potential avenue for economic growth is mining and resource extraction.
+                            <span class="dots"></span><span class="more"><br><br>
+                            The Martian surface contains a wide variety of minerals and resources that could be valuable for future human settlements. These resources include metals such as iron, nickel, and cobalt, as well as rare earth elements and other minerals. These resources could be used for a variety of purposes, from construction to manufacturing to energy production.
+                            <br><br>
+                            In order to extract these resources, it will be necessary to develop advanced mining and extraction technologies specifically tailored for the Martian environment. Mining on Mars will be challenging due to the planet's low gravity and lack of atmospheric pressure, which can affect drilling and excavation techniques. It will also be necessary to develop methods for processing and refining the extracted materials.
+                            <br><br>
+                            The development of a Martian mining industry could have several potential benefits. It could provide a source of income and economic growth for the Martian colony, as well as a potential export market for valuable resources. It could also reduce the cost and complexity of transporting resources from Earth to Mars, making the colony more self-sufficient.
+                            <br><br>
+                            However, there are also potential risks and challenges associated with mining on Mars. These include environmental concerns such as the disruption of the Martian landscape and the release of dust and other particles into the atmosphere. There are also ethical considerations, such as ensuring that mining activities do not infringe upon any potential indigenous life forms that may exist on the planet.
+                            <br><br>
+                            In conclusion, the development of a Martian mining and resource extraction industry could provide significant economic benefits for future Martian colonies. However, it will be necessary to carefully consider the potential risks and challenges associated with such activities and develop appropriate technologies and policies to mitigate these concerns.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>Interplanetary Travel: The Possibility of Human Settlement on Mars</h4>
+                        <p>
+                            Interplanetary travel and the possibility of human settlement on Mars have long been a dream of space enthusiasts and scientists alike. The idea of establishing a permanent human presence on another planet has captured the imagination of people around the world and inspired some of the greatest achievements in space exploration.
+                            <span class="dots"></span><span class="more"><br><br>
+                            The challenges of interplanetary travel and Martian colonization are immense. The journey to Mars takes months and requires overcoming numerous technological hurdles, including developing the necessary propulsion systems and life support technologies for the long journey. Once on the planet, colonists will need to establish a self-sustaining habitat that can provide for all their needs, from food and water to energy and communication.
+                            <br><br>
+                            Despite these challenges, there are several reasons why human settlement on Mars is a worthwhile pursuit. First and foremost, it could serve as a "backup plan" for humanity in the event of a global catastrophe on Earth. Establishing a self-sustaining colony on Mars would provide a safety net in case of a catastrophic event that makes Earth uninhabitable.
+                            <br><br>
+                            In addition, the exploration and colonization of Mars could lead to significant scientific and technological advancements. Studying the planet's geology, climate, and potential for life could provide important insights into the history of our solar system and the origins of life on Earth. Developing the necessary technologies for Martian colonization could also have spin-off benefits for a range of terrestrial applications, from environmental monitoring to sustainable agriculture.
+                            <br><br>
+                            Finally, the idea of exploring and colonizing Mars captures the human spirit of exploration and discovery. It challenges us to push the limits of what is possible and inspires us to seek out new frontiers and expand our horizons.
+                            <br><br>
+                            In conclusion, the possibility of human settlement on Mars is a daunting challenge, but one that holds immense potential benefits for humanity. Through the development of new technologies, scientific advancements, and the human spirit of exploration, we may one day be able to establish a permanent human presence on the Red Planet.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="wrapper" id="Newsletter">
+            <h1>Subscribe to our Newsletter</h1>
+            <p>Receive updates instanly</p>
+            <div class="newsletter">
+                <input type="text" class="input" placeholder="Enter Your Email">
+                <img src="../Pictures/envelope-solid.png" class="fas fa-envelope Showinstant" alt="Picture of an envelope">
+                <div class="btn">Subscribe</div>
+            </div>
+        </div>	
+        <script src="../Javascript/SmallNav.js"></script>
+        <script src="../Javascript/FadeInUp.js"></script>
+        <script src="../Javascript/StickyNavigation.js"></script>
+        <script src="../Javascript/BackToTop&ProgressBar.Js"></script>
+        <script src="../Javascript/ReadMore.js"></script>
+    </body>
+</html>

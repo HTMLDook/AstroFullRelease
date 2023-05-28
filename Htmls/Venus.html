@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Title-->
+        <title>Our Solar System</title>
+        <!-- This meta tag specifies the character encoding for the HTML document -->
+        <meta charset="UTF-8">
+        <!-- This meta tag specifies the author of the webpage -->
+        <meta name="author" content="Erik Rhodin Claesson">
+        <!-- This meta tag provides a brief description of the webpage for search engines -->
+        <meta name="description" content="Astro is a pioneering company that specializes in the exploration of the solar system. Their website is a one-stop destination for all things related to space exploration and the wonders of the cosmos. From the latest discoveries about our neighboring planets to cutting-edge research on the origins of the universe, Astro's website offers a wealth of information and resources for space enthusiasts of all levels.">
+        <!-- This meta tag provides a list of keywords that describe the content of the webpage -->
+        <meta name="keywords" content="Astro, solar system, space exploration, cosmos, neighboring planets, discoveries, cutting-edge research, origins of the universe, space enthusiasts, information, resources, planet data, light pollution, astronomy, science, space technology, space missions, space science, planet exploration, telescopes, space telescopes, space discoveries, extraterrestrial life, space news, space education, space events, rocket science, space missions, NASA, ESA, JAXA, space probes, space travel, space programs, space history, space research, space discoveries, celestial objects, solar system objects, planetary science, space imaging, space simulations, space visualization, space facts, space phenomena, space exploration missions, space colonization, space engineering, space technology advancements, space conferences, space outreach, space apps, space industry">
+        <!-- This meta tag sets the viewport to ensure that the webpage is displayed properly on mobile devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- These meta tags are used by social media platforms when the webpage is shared to specify the title, description, image and URL for the shared content -->
+        <meta property="og:title" content="Our Solar System">
+        <meta property="og:description" content="Astro is a pioneering company that specializes in the exploration of the solar system. Their website is a one-stop destination for all things related to space exploration and the wonders of the cosmos. From the latest discoveries about our neighboring planets to cutting-edge research on the origins of the universe, Astro's website offers a wealth of information and resources for space enthusiasts of all levels.">
+        <meta property="og:image" content="https://img.freepik.com/free-vector/solar-system-science-education_1308-89626.jpg?w=2000">
+        <meta property="og:url" content="http://astro.com/">
+        <!-- Css Links -->
+        <link rel="stylesheet" href="../Css/StickyNavigation.css">
+        <link rel="stylesheet" href="../Css/CustomScrollBar.css">
+        <link rel="stylesheet" href="../Css/TopNavigation.css">
+        <link rel="stylesheet" href="../Css/NavbarSmaller.css">
+        <link rel="stylesheet" href="../Css/GeneralStyle.css"> 
+        <link rel="stylesheet" href="../Css/ProgressBar.css"> 
+        <link rel="stylesheet" href="../Css/Newsletter.css"> 
+        <link rel="stylesheet" href="../Css/BackToTop.css"> 
+        <link rel="stylesheet" href="../Css/FactsPage.css"> 
+        <link rel="stylesheet" href="../Css/TimeLine.css">
+        <link rel="stylesheet" href="../Css/Readmore.css"> 
+        <link rel="stylesheet" href="../Css/FadeInUp.css"> 
+        <link rel="stylesheet" href="../Css/Socials.css"> 
+        <!-- Script Links -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Other Links -->
+        <link rel="icon" href="../Pictures/solar-system.png">
+        <style>
+            .header {
+                background-image: url("../Pictures/Venus/venusbg.jpg");
+            }
+        </style>
+    </head>
+    <body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <!-- Top Header -->
+        <div class="header" id="Home">
+            <div class="textbox">
+                <h1 class="Showinstant">our Morning And Evening Star Venus</h1>
+                <div class="overtext">
+                    <p class="Showinstant">Venus, known as both the Morning Star and Evening Star, is the brightest natural object in the sky after the Sun and the Moon, and has been an object of fascination and mythology for thousands of years.</p>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="mailto:example@gmail.com" target="_blank" class="icon gmail"></a>
+                <a href="https://twitter.com/example" target="_blank" class="icon twitter"></a>
+                <a href="https://instagram.com/example" target="_blank" class="icon instagram"></a>
+                <a href="https://youtube.com/channel/UCdXh9gKzDo6H_2q3oPW6Gzw" target="_blank" class="icon youtube"></a>
+                <a href="https://linkedin.com/in/example" target="_blank" class="icon linkedin"></a>
+            </div>
+            <div class="topnavigation">
+                <a href="Main.html">Home</a>
+                <a href="AboutUs.html">About us</a>
+                <a href="ContactUs.html">Contact</a>
+            </div>
+            <div class="TopLinks">
+                <!-- Logo Picture --> 
+                <a href="Main.html">
+                    <img src="../Pictures/AstroLogo.png" width="75" height="75" alt="Company logo that looks like davids star from the jewish belief" class="Showinstant">
+                </a>
+                
+                <!-- Logo Text -->
+                <a href="AboutUs.html">
+                    <img src="../Pictures/TextLogo.png" width="175" height="75" alt="Text beside logo saying Astro" class="Showinstant">
+                </a>
+            </div>
+        </div>
+        <nav>
+            <div class="nav-container">
+                <a class="nav-link" href="#Home">Home</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Introduction">Introduction</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Size">Size</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Location">Location</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Atmosphere">Atmosphere</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Orbit">Orbit</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#GravitationalPull">Gravitational Pull</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Rotation">Rotation</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Composition">Composition</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#History">History</a>
+                <div class="progress-container">
+                    <div class="progress-bar" id="myBar"></div>
+                </div>  
+            </div>
+          </nav> 
+          <div id="myNav-for-mobile" class="overlay-for-mobile">
+            <a href="javascript:void(0)" class="closebtn-for-mobile" onclick="closeNav()">&times;</a>
+            <div class="overlay-content-for-mobile">
+                <a class="nav-link" href="#Home">Home</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Introduction">Introduction</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Size">Size</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Location">Location</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Atmosphere">Atmosphere</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Orbit">Orbit</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#GravitationalPull">Gravitational Pull</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Rotation">Rotation</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Composition">Composition</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#History">History</a>
+            </div>
+        </div>
+        <div id="navbut">
+            <span onclick="openNav()">open Navigation</span>
+        </div>
+        <div class="FirstContainer" id="Introduction">
+            <div class="FirstBoxLeft">
+                <div class="FirstBoxHeaders">
+                    <h5>Venus</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>Unveiling the Mysteries</h2>
+                </div>
+                <p>As we gaze up at the night sky, we can't help but marvel at the beauty and mystery of the planets that orbit around our Sun. One of the most captivating of these celestial bodies is Venus, the second planet from the Sun and the brightest object in the sky after the Sun and the Moon.
+                <br><br>
+                Venus has been the subject of fascination and speculation for thousands of years, with ancient civilizations such as the Babylonians, Greeks, and Mayans observing its movements and incorporating its significance into their mythologies and cultures. Even in modern times, Venus continues to captivate us with its thick atmosphere, extreme temperatures, and unusual rotation.
+                <br><br>
+                Despite its proximity to Earth, Venus remains a planet shrouded in mystery, with much still to be learned about its formation, evolution, and unique features. Scientists continue to study this enigmatic planet, using spacecraft and telescopes to gather data and unlock the secrets of our neighboring planet.
+                <br><br>
+                Whether you're a seasoned astronomer or simply a curious stargazer, Venus is a fascinating object to observe and contemplate, offering a window into the vast and awe-inspiring universe that surrounds us.</p>
+            </div>
+            <div class="FirstBoxRight">
+                <img src="../Pictures/Venus/venus.jpg" alt="Picture of planet venus" >
+            </div>
+        </div>        
+        <div class="SecondContainer" id="Size">
+            <div class="SecondBox">
+                <div class="SecondBoxHeaders">
+                    <h5>Size</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>Sister to Earth</h2>
+                </div>
+                <p>
+                    Venus and Earth are two of the most similar planets in our Solar System, with many shared characteristics such as rocky surfaces and similar composition. However, there are also notable differences between the two, including their size.
+                    <span class="dots"></span><span class="more"><br><br>
+                    In terms of size, Venus is often described as Earth's "sister planet", as it is almost the same size as Earth with a diameter of 12,104 kilometers compared to Earth's 12,742 kilometers. This makes Venus the sixth largest planet in the Solar System, just slightly smaller than Earth which is the fifth largest.
+                    <br><br>
+                    Despite their similar sizes, Venus and Earth have some significant differences in terms of their overall mass and volume. Venus has a much denser atmosphere than Earth, which accounts for most of the planet's mass. As a result, Venus has a mass that is approximately 81% of Earth's, but a volume that is only around 86% of Earth's.
+                    <br><br>
+                    While Venus may be similar in size to Earth, its harsh environment and extreme temperatures make it a difficult planet to explore and understand. Nevertheless, studying the similarities and differences between these two neighboring planets is important for understanding the formation and evolution of rocky planets like ours.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+            <div class="SecondBox">
+                <img src="../Pictures/Venus/size.png" alt="Picture of planet venus compared to earth and two exoplanets">
+            </div>
+        </div>
+        <div class="ThirdContainer" id="Location">
+            <div class="ThirdBoxHeaders" style="border-bottom: 1px solid white;">
+                <h5>A Cosmic Wonder</h5>
+                <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                <h2>The Position of Venus in Our Night Sky</h2>
+            </div>
+            <div class="ThirdBottomBox">
+                <img src="../Pictures/Venus/location.jpg" alt="Picture showing where venus is in our solar system">
+            </div>
+            <div class="ThirdTopBox">
+                <p>
+                    Venus, the second planet from the Sun, is a cosmic wonder that has captured the imagination of stargazers and astronomers for thousands of years. With its bright, glowing appearance and close proximity to Earth, Venus is one of the most visible objects in the night sky.
+                    <span class="dots"></span><span class="more"><br><br>
+                    From our perspective on Earth, Venus orbits the Sun at an average distance of approximately 108 million kilometers. Due to its proximity to the Sun, Venus has a relatively short orbit of just 224.7 Earth days, meaning it completes a full orbit around the Sun faster than any other planet in our Solar System.
+                    <br><br>
+                    Throughout its orbit, Venus's position in the night sky varies depending on its relative position to the Sun and Earth. When Venus is on the same side of the Sun as Earth, it appears as a bright "morning star" just before sunrise in the eastern sky. Similarly, when Venus is on the opposite side of the Sun to Earth, it appears as an "evening star" just after sunset in the western sky.
+                    <br><br>
+                    Due to its proximity to Earth and its distinctive appearance, Venus has been observed and studied by astronomers for centuries. In recent years, spacecraft such as NASA's Magellan mission have provided unprecedented insights into the planet's surface, atmosphere, and geology.
+                    <br><br>
+                    Whether you're a seasoned astronomer or simply a curious stargazer, Venus is a mesmerizing object to observe and contemplate in our night sky. Its position and appearance provide a constant reminder of the vast and fascinating cosmos that surrounds us.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+        </div>
+        <div class="SecondContainer" id="Atmosphere">
+            <div class="SecondBox">
+                <div class="SecondBoxHeaders">
+                    <h5>Layers</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>Atmospheric Zones</h2>
+                </div>
+                <p>Venus, the second planet from the Sun, is often referred to as Earth's "sister planet" due to its similar size and rocky composition. However, when it comes to the atmosphere, Venus is a planet that stands out from the rest. The thick and hazy atmosphere of Venus is composed mainly of carbon dioxide, with clouds of sulfuric acid and other trace gases.
+                <span class="dots"></span><span class="more"><br><br>
+                The atmosphere of Venus can be divided into several distinct layers or atmospheric zones. The first layer is the troposphere, which extends from the surface of the planet up to an altitude of around 50 kilometers. The temperature in this layer decreases with altitude, with the upper part of the layer being much cooler than the lower part.
+                <br><br>
+                Above the troposphere is the next layer, known as the mesosphere, which extends up to an altitude of around 80 kilometers. In this layer, the temperature starts to increase with altitude due to the absorption of solar radiation.
+                <br><br>
+                The third layer is the thermosphere, which extends up to an altitude of around 700 kilometers. In this layer, temperatures can reach up to 1,500 degrees Celsius due to the absorption of high-energy solar radiation.
+                <br><br>
+                Above the thermosphere is the exosphere, which extends all the way out to the edge of space. This layer is very thin, with a density of only a few particles per cubic centimeter.
+                <br><br>
+                The thick atmosphere of Venus creates a strong greenhouse effect, trapping heat and leading to surface temperatures that average around 460 degrees Celsius. This extreme temperature makes Venus the hottest planet in the Solar System, even hotter than Mercury which is the closest planet to the Sun.
+                <br><br>
+                Studying the atmosphere of Venus is essential for understanding the evolution and composition of our Solar System. By investigating the unique features and layers of the Venusian atmosphere, scientists can gain valuable insights into the dynamics and processes that shape planets like our own.
+            </span></p>
+            <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+            <div class="SecondBox">
+                <img src="../Pictures/Venus/atmosphere.png" alt="Picture over venus showing the atmosphere a bit" style="border: 1px solid white;">
+            </div>
+        </div>     
+        <div class="ThirdContainer" id="Orbit">
+            <div class="ThirdBoxHeaders">
+                <h5>Elliptical Orbit of Venus</h5>
+                <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                <h2>A World with an Eccentric Orbit</h2>
+            </div>
+            <div class="ThirdBottomBox">
+                <img src="../Pictures/Venus/orbit.jpg" alt="Showing venus orbit compared to earth around the sun">
+            </div>
+            <div class="ThirdTopBox">
+                <p>
+                    Venus, the second planet from the Sun, has a highly eccentric orbit that sets it apart from other planets in our Solar System. Unlike the nearly circular orbits of most planets, Venus's orbit is highly elliptical, with an eccentricity of 0.0067. This means that the distance between Venus and the Sun varies significantly throughout its orbit.
+                    <span class="dots"></span><span class="more"><br><br>
+                    At its closest point to the Sun (known as perihelion), Venus is approximately 108 million kilometers away. At its farthest point from the Sun (known as aphelion), Venus is approximately 108.9 million kilometers away. This difference in distance results in significant variations in the amount of solar radiation that Venus receives at different points in its orbit.
+                    <br><br>
+                    The orbit of Venus is also unique in that it rotates in the opposite direction to most planets in our Solar System. While most planets rotate counterclockwise, Venus rotates clockwise, a phenomenon known as retrograde rotation. This unusual rotation has long puzzled astronomers and planetary scientists.
+                    <br><br>
+                    Venus's elliptical orbit and retrograde rotation have important implications for its climate and geology. The planet's varying distance from the Sun results in significant changes in temperature and atmospheric pressure, which can contribute to the formation of atmospheric phenomena such as the intense, fast-moving winds known as super-rotation.
+                    <br><br>
+                    Additionally, the unique features of Venus's orbit have led to hypotheses about the planet's history and formation. Some scientists believe that Venus may have undergone a significant collision or gravitational interaction with another object in the past, which could have disrupted its rotation and contributed to the unusual features of its orbit.
+                    <br><br>
+                    Studying the orbit of Venus is essential for understanding the dynamics and processes that shape our Solar System. By investigating the eccentricities, rotations, and other characteristics of Venus's orbit, scientists can gain valuable insights into the formation and evolution of planets like our own.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+        </div>
+        <div class="ThirdContainer" id="GravitationalPull">
+            <div class="ThirdBoxHeaders">
+                <h5>Gravitational Pull</h5>
+                <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                <h2>A World of Contrasting Gravitational Anomalies</h2>
+            </div>
+            <div class="ThirdBottomBox">
+                <img src="../Pictures/Venus/gravity.jpg" alt="Picture showing the gravitational pull of venus compared to earth. 1 gram on earth is 0.9 grams on venus">
+            </div>
+            <div class="ThirdTopBox">
+                <p>
+                    Venus, the second planet from the Sun, has a gravitational pull that differs significantly from that of Earth. The planet's smaller size and mass result in a weaker gravitational field, with surface gravity that is only about 90% of Earth's. This means that objects on Venus weigh less than they would on Earth, and that it would be easier for humans to move around on its surface.
+                    <span class="dots"></span><span class="more"><br><br>
+                    However, despite its weaker overall gravitational pull, Venus also exhibits some unusual gravitational anomalies. For example, the planet's gravity field is highly asymmetric, with the largest gravitational anomalies occurring in regions such as the Aphrodite Terra highlands, where the surface elevations are highest. These anomalies can affect the planet's atmosphere, with variations in gravity leading to differences in atmospheric pressure and wind patterns.
+                    <br><br>
+                    Additionally, Venus's proximity to the Sun can cause significant tidal forces that affect its gravitational field. These tidal forces can lead to bulges in the planet's crust and mantle, creating features such as volcanoes and rift valleys.
+                    <br><br>
+                    Studying the gravitational pull of Venus is essential for understanding the planet's geology, atmosphere, and overall structure. By investigating the gravitational anomalies and other features of Venus's gravity field, scientists can gain valuable insights into the planet's history and evolution, as well as the dynamics and processes that shape other rocky planets in our Solar System.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+        </div>
+        <div class="SecondContainer" id="Rotation">
+            <div class="SecondBox">
+                <div class="SecondBoxHeaders">
+                    <h5>Rotation</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>The Upside-Down Planet</h2>
+                </div>
+                <p>
+                    Venus, the second planet from the Sun, has a rotation that is distinct from that of most other planets in our Solar System. While most planets rotate counterclockwise on their axes, Venus rotates clockwise, a phenomenon known as retrograde rotation.
+                    <span class="dots"></span><span class="more"><br><br>
+                    In addition to its retrograde rotation, Venus also has a very slow rotation rate. It takes approximately 243 Earth days for Venus to complete a single rotation on its axis, which is longer than the time it takes for Venus to complete one orbit around the Sun. This means that a day on Venus is actually longer than a year on Venus.
+                    <br><br>
+                    The slow rotation of Venus and its retrograde motion have significant implications for the planet's climate and geology. The long, slow rotation means that the planet's atmosphere is subject to intense solar radiation for extended periods of time, which can contribute to the extreme temperatures and atmospheric conditions on Venus.
+                    <br><br>
+                    The retrograde rotation also creates unusual features on the planet's surface, such as the Venusian "mountains," which are actually highland plateaus that were pushed up by tectonic activity. These plateaus can be up to 4,000 meters high and are the largest topographic features on the planet.
+                    <br><br>
+                    Despite its unusual rotation, studying Venus's rotation is essential for understanding the planet's geology, climate, and overall structure. By investigating the mechanisms that drive Venus's retrograde rotation and slow rotation rate, scientists can gain valuable insights into the processes that shape other rocky planets in our Solar System.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+            <div class="SecondBox">
+                <img src="../Pictures/Venus/rotation.png" alt="Picture showing how venus spins backwards" style="border: 1px solid white;">
+            </div>
+        </div>
+        <div class="FirstContainer" id="Composition">
+            <div class="FirstBoxLeft">
+                <div class="FirstBoxHeaders">
+                    <h5>Composition</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>Layers</h2>
+                </div>
+                <p>Venus, the second planet from the Sun, has a composition that is similar to Earth's in many ways, but with some key differences. Like Earth, Venus is a rocky planet, composed primarily of silicate rocks and metals. However, there are significant variations in the composition of different layers of the planet.
+                <br><br>
+                The outermost layer of Venus is the crust, which is composed of igneous rocks such as basalt and granite. Beneath the crust lies the mantle, which is much thicker than Earth's mantle and is composed of a mixture of silicates and metals. The core of Venus is believed to be similar to Earth's, composed primarily of iron and nickel.
+                <br><br>
+                One significant difference between Venus and Earth is the presence of a thick, dense atmosphere on Venus. The Venusian atmosphere is composed primarily of carbon dioxide, with smaller amounts of nitrogen, sulfur dioxide, and other gases. The thick atmosphere creates a strong greenhouse effect, trapping heat and contributing to the planet's extreme surface temperatures.
+                <br><br>
+                The composition of Venus's atmosphere also creates a range of different layers and zones. The lower atmosphere is dominated by sulfuric acid clouds, while the upper atmosphere contains a layer of ozone. There is also a layer of high-altitude clouds, which are composed of sulfur dioxide and water vapor.
+                <br><br>
+                Studying the composition of Venus is essential for understanding the planet's geology, atmosphere, and overall structure. By investigating the different layers and components of the planet, scientists can gain valuable insights into the planet's history, evolution, and potential habitability.
+                <br><br>
+                In addition to its similar composition to Earth, Venus has been found to have a unique isotopic composition compared to other planets in the solar system. Isotopes are different forms of an element that have the same number of protons but varying numbers of neutrons, resulting in different atomic masses.</p>
+            </div>
+            <div class="FirstBoxRight">
+                <img src="../Pictures/Venus/comp.png" alt="Picture showing the composition of venus">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Element</th>
+                            <th>Percentage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Oxygen</td>
+                            <td>30%</td>
+                        </tr>
+                        <tr>
+                            <td>iron</td>
+                            <td>25%</td>
+                        </tr>
+                        <tr>
+                            <td>Silicon</td>
+                            <td>15%</td>
+                        </tr>
+                        <tr>
+                            <td>Magnesium</td>
+                            <td>12%</td>
+                        </tr>
+                        <tr>
+                            <td>Sulfur</td>
+                            <td>8%</td>
+                        </tr>
+                        <tr>
+                            <td>Calcium</td>
+                            <td>5%</td>
+                        </tr>
+                        <tr>
+                            <td>Aluminium</td>
+                            <td>3%</td>
+                        </tr>
+                        <tr>
+                            <td>Other</td>
+                            <td>2%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>     
+        <div class="ThirdBoxHeaders" id="History">
+            <h5>History of the Venus</h5>
+            <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+            <h2>From Formation to the Future</h2>
+        </div>
+        <div class="Timeline-Box">
+            <div class="timeline-timeline">
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                    <h4>The Formation of Venus: Exploring the Birth of Our Sister Planet</h4>
+                    <p>
+                        The formation of Venus is a fascinating topic for astronomers and planetary scientists alike. According to current scientific understanding, Venus was likely formed from the same cloud of gas and dust that gave rise to our own solar system. As the cloud collapsed under its own gravity, it began to spin, forming a protoplanetary disk around a young Sun.
+                        <span class="dots"></span><span class="more"><br><br>
+                        Within this disk, tiny particles began to clump together and grow, eventually forming larger bodies called planetesimals. These planetesimals collided and merged, building up the cores of planets like Venus and Earth. Venus likely took shape in the inner region of the disk, where temperatures were high enough to melt and vaporize some of the materials present.
+                        <br><br>
+                        Over time, Venus grew in size and mass through a process called accretion, where it swept up smaller objects in its orbit. The planet's intense heat and gravity caused it to differentiate into layers, with a dense iron core surrounded by a mantle and crust.
+                        <br><br>
+                        Despite its similarities to Earth, Venus took a very different path in its early history, with a runaway greenhouse effect causing its surface temperatures to soar to over 460 degrees Celsius. Nonetheless, by studying the planet's formation, we can gain insights into the origins of our own solar system and the conditions that gave rise to life on Earth.
+                        </span>
+                    </p>
+                    <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>The Early Years of Venus: Understanding the Planet's First Few Million Years</h4>
+                        <p>
+                            The early years of Venus were a time of intense geological activity and rapid change. As the planet formed from a disk of gas and dust orbiting the young Sun, it was bombarded by countless objects in space, including asteroids and comets. These impacts left their mark on the planet's surface, creating craters and other features that can still be seen today.
+                            <span class="dots"></span><span class="more"><br><br>
+                            As Venus continued to evolve, its surface was reshaped by volcanic activity, with lava flows covering vast areas of the planet. The planet's atmosphere also underwent significant changes, with volcanic outgassing releasing large amounts of carbon dioxide into the air. This led to a runaway greenhouse effect, causing temperatures to soar and creating the planet's thick, acidic atmosphere.
+                            <br><br>
+                            Over time, the intense heat and pressure on Venus caused its crust to buckle and fold, creating vast mountain ranges and other geological features. The planet's surface continued to change as tectonic activity shifted and reshaped its landscape.
+                            <br><br>
+                            By studying the early years of Venus, scientists can gain insights into the conditions that gave rise to the planet's extreme environment and the factors that shaped its surface. This knowledge could also help us better understand the potential for habitable environments on other planets and moons in our solar system and beyond.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" id="myReadmoreBtn" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                        <h4>Venus in the Solar System: Mapping the Planet's Place Among the Stars
+                        </h4>
+                        <p>
+                            Venus is one of the most fascinating and mysterious planets in our solar system. It is the second planet from the Sun, located between Mercury and Earth. Venus is often called Earth's sister planet because it is similar in size and composition, but it is also very different in many ways.
+                            <span class="dots"></span><span class="more"><br><br>
+                            One of the key ways that scientists have mapped Venus's place in the solar system is through the use of space probes and telescopes. These instruments have provided detailed images and data about the planet's surface, atmosphere, and environment. They have revealed a harsh, hostile world with a thick, acidic atmosphere and surface temperatures hot enough to melt lead.
+                            <br><br>
+                            Despite its extreme conditions, Venus remains a critical target for scientific study, both because of its unique characteristics and because of its potential as a model for understanding the formation and evolution of planets in general. By mapping Venus's place in the solar system and studying its characteristics, scientists hope to gain insights into the processes that have shaped our own planet and others like it. They also hope to discover new clues about the potential for life beyond Earth and the conditions necessary to support habitable environments elsewhere in the universe.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>Unraveling Venus's Geologic History: A Journey Through Time</h4>
+                        <p>
+                            Unraveling Venus's geologic history is a journey through time that takes us back billions of years. Through the use of advanced instruments and technologies, scientists have been able to piece together a complex picture of the planet's evolution.
+                            <span class="dots"></span><span class="more"><br><br>
+                            One of the most striking features of Venus's geologic history is its volcanic activity. The planet is covered in vast plains of volcanic rock, which suggests that it has experienced a long and intense period of volcanic activity. In fact, Venus is thought to have had the most volcanic activity of any planet in the solar system.
+                            <br><br>
+                            But Venus's geologic history is not just about volcanic activity. The planet has also experienced tectonic activity, including mountain-building events and the formation of rift valleys. These processes have reshaped the planet's surface over time and created many of the features that we see today.
+                            <br><br>
+                            In addition, the planet's thick, acidic atmosphere has played a major role in shaping its geologic history. The atmosphere has a corrosive effect on rocks and other materials, which can erode and alter the planet's surface features over time.
+                            <br><br>
+                            By unraveling Venus's geologic history, scientists hope to gain insights into the planet's past and better understand the factors that have shaped its environment. This knowledge could also provide new clues about the potential for habitable environments on other planets and moons in our solar system and beyond.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                        <h4>A Tale of Two Planets: Venus and Earth's Diverging Paths</h4>
+                        <p>
+                            Venus and Earth are often compared to one another because they are similar in size, composition, and location in the solar system. However, despite their similarities, the two planets have followed very different paths over time.
+                            <span class="dots"></span><span class="more"><br><br>
+                            While Earth has a mild climate and is home to a diverse range of life forms, Venus is a harsh, uninhabitable world with extreme temperatures and a toxic atmosphere. The two planets diverged early in their histories, with Venus experiencing a runaway greenhouse effect that caused temperatures to soar and created a thick, acidic atmosphere.
+                            <br><br>
+                            One of the key factors that led to this divergence was the presence of liquid water on Earth. Water is a critical ingredient for life and also plays an important role in regulating a planet's climate. Earth's oceans helped to absorb and dissipate heat from the Sun, keeping temperatures moderate and preventing a runaway greenhouse effect like the one that occurred on Venus.
+                            <br><br>
+                            Another factor was the relative proximity of the two planets to the Sun. Venus is closer to the Sun than Earth, and as a result, it receives much more sunlight and heat. This contributed to the planet's extreme temperatures and volatile environment.
+                            <br><br>
+                            Despite their differences, Venus and Earth remain important targets for scientific study. By comparing and contrasting the two planets, scientists hope to gain insights into the factors that shape planetary environments and the potential for habitable environments on other planets and moons in our solar system and beyond.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>Venus Today: Uncovering the Mysteries of Our Closest Planetary Neighbor</h4>
+                        <p>
+                            Venus is our closest planetary neighbor, but it remains one of the most mysterious and enigmatic worlds in our solar system. Today, scientists are working hard to uncover the secrets of this harsh and inhospitable planet.
+                            <span class="dots"></span><span class="more"><br><br>
+                            One of the key areas of research is the planet's atmosphere. Venus has a thick, acidic atmosphere that is very different from Earth's. Scientists are trying to understand how the atmosphere formed and how it has evolved over time. They are also studying the planet's weather patterns and climate to better understand the factors that drive its extreme conditions.
+                            <br><br>
+                            Another area of interest is the planet's surface. Venus is covered in vast plains of volcanic rock, but there are also highland regions and mountainous areas. Scientists are trying to understand how these features formed and what they can tell us about the planet's geologic history.
+                            <br><br>
+                            In addition, there is growing interest in the search for signs of life on Venus. While the planet's extreme conditions make it unlikely that life as we know it could exist there, some scientists believe that there could be microbial life forms that have adapted to the planet's harsh environment.
+                            <br><br>
+                            Through a combination of space missions, ground-based observations, and computer simulations, scientists are slowly uncovering the mysteries of Venus. Their work is helping us to better understand the processes that shape our solar system and the potential for habitable environments beyond Earth.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                        <h4>The Search for Life on Venus: Probing the Possibilities</h4>
+                        <p>
+                            For many years, scientists believed that Venus was a barren, lifeless world. However, recent discoveries have sparked renewed interest in the possibility that there could be life on our closest planetary neighbor.
+                            <span class="dots"></span><span class="more"><br><br>
+                            One of the key factors driving this interest is the discovery of phosphine gas in the planet's atmosphere. Phosphine is a gas that is typically associated with biological processes on Earth, leading some scientists to speculate that it could be a sign of microbial life on Venus. However, it's important to note that other non-biological processes could also produce phosphine, and more research is needed to determine its origins.
+                            <br><br>
+                            Scientists are also studying the possibility of life in the planet's clouds. Venus's atmosphere is composed mostly of carbon dioxide, with clouds of sulfuric acid droplets that are extremely acidic and inhospitable. However, there are some microorganisms on Earth that can survive in similar environments, leading some scientists to speculate that there could be similar life forms on Venus.
+                            <br><br>
+                            Another area of interest is the possibility of subsurface life. While the surface of Venus is inhospitable, the planet's interior could provide a more stable environment. Scientists are studying the planet's geology and tectonic activity to better understand the potential for habitable environments below the surface.
+                            <br><br>
+                            Despite the challenges, the search for life on Venus is an exciting area of research. If microbial life does exist on our closest planetary neighbor, it would have profound implications for our understanding of the potential for life beyond Earth.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>Venus in the Age of Exploration: New Technologies, New Discoveries
+                        </h4>
+                        <p>
+                            The exploration of Venus has a rich history, dating back to the first flyby missions in the 1960s and 70s. Since then, new technologies have enabled scientists to make significant strides in our understanding of this enigmatic planet.
+                            <span class="dots"></span><span class="more"><br><br>
+                            One of the key technological advancements has been the use of radar to map the planet's surface. Radar imaging has allowed scientists to create detailed maps of Venus's terrain, revealing mountains, valleys, and other features that were previously hidden from view. This technology has also been used to study the planet's geology and to search for signs of past or present volcanic activity.
+                            <br><br>
+                            Another important development has been the use of spacecraft to study Venus from orbit. In recent years, several missions have been launched to study the planet's atmosphere, climate, and geology. These missions have provided valuable data on the planet's atmospheric circulation, cloud patterns, and surface features.
+                            <br><br>
+                            In addition, advances in computer modeling have allowed scientists to simulate the conditions on Venus, enabling them to better understand the processes that shape the planet's climate, geology, and atmospheric chemistry.
+                            <br><br>
+                            The future of Venus exploration looks bright, with several new missions in the works. NASA and the European Space Agency are planning to launch missions in the coming years to study the planet's atmosphere, geology, and potential for habitability. These missions will use state-of-the-art technologies to provide new insights into this mysterious planet and help us better understand the processes that shape our solar system.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                        <h4>Terraforming Venus: Could We Make Our Sister Planet Habitable?
+                        </h4>
+                        <p>
+                            Terraforming is the process of making a planet habitable for humans, typically by altering its atmosphere, temperature, and other environmental conditions. While the idea of terraforming Venus has been discussed for decades, it remains a daunting challenge due to the planet's extreme conditions.
+                            <span class="dots"></span><span class="more"><br><br>
+                            One of the biggest obstacles to terraforming Venus is its thick, toxic atmosphere. Venus's atmosphere is composed mainly of carbon dioxide, with clouds of sulfuric acid and a surface pressure that is over 90 times greater than that on Earth. To make the planet habitable, scientists would need to find a way to remove much of the carbon dioxide and other toxic gases from the atmosphere and replace them with gases that are compatible with human life.
+                            <br><br>
+                            Another major challenge is the planet's high surface temperature. Venus is the hottest planet in our solar system, with surface temperatures that can reach up to 462°C (864°F). To make the planet habitable, scientists would need to find a way to cool the planet's surface and create a stable, Earth-like climate.
+                            <br><br>
+                            Despite these challenges, some scientists believe that terraforming Venus could be possible using advanced technologies such as giant mirrors in space that reflect sunlight away from the planet, or atmospheric engineering techniques that could gradually convert the planet's atmosphere into a more hospitable environment.
+                            <br><br>
+                            However, terraforming Venus would be a massive undertaking that would require significant resources, international cooperation, and technological advancements that do not yet exist. It remains to be seen whether the dream of making Venus habitable will ever become a reality.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>The Future of Venus: What's Next for Our Mysterious Neighbor?</h4>
+                        <p>
+                            The future of Venus exploration is promising, with several missions planned in the coming years to study the planet's atmosphere, geology, and potential for habitability.
+                            <span class="dots"></span><span class="more"><br><br>
+                            One of the most anticipated missions is NASA's VERITAS (Venus Emissivity, Radio Science, InSAR, Topography, and Spectroscopy) mission, scheduled to launch in 2028. VERITAS will use a suite of scientific instruments, including a radar imaging system, to create detailed 3D maps of Venus's surface, geology, and mineralogy. This will help scientists better understand the planet's geologic history, as well as the processes that have shaped its surface.
+                            <br><br>
+                            Another important mission is NASA's DAVINCI+ (Deep Atmosphere Venus Investigation of Noble gases, Chemistry, and Imaging Plus) mission, which will also launch in 2028. DAVINCI+ will descend into Venus's atmosphere to study its composition, temperature, and pressure, as well as search for signs of past or present microbial life.
+                            <br><br>
+                            In addition, the European Space Agency is planning to launch the EnVision mission in the early 2030s. EnVision will use a suite of scientific instruments, including a spectrometer and radar imaging system, to study Venus's atmosphere, geology, and potential for habitability.
+                            <br><br>
+                            Overall, the next decade is set to be an exciting time for Venus exploration, with a range of new missions and technologies set to revolutionize our understanding of this enigmatic planet. With these new discoveries, we may finally unlock the mysteries of our closest planetary neighbor and gain new insights into the processes that shape our solar system.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="wrapper" id="Newsletter">
+            <h1>Subscribe to our Newsletter</h1>
+            <p>Receive updates instanly</p>
+            <div class="newsletter">
+                <input type="text" class="input" placeholder="Enter Your Email">
+                <img src="../Pictures/envelope-solid.png" class="fas fa-envelope Showinstant" alt="Picture of an envelope">
+                <div class="btn">Subscribe</div>
+            </div>
+        </div>	
+        <script src="../Javascript/SmallNav.js"></script>
+        <script src="../Javascript/FadeInUp.js"></script>
+        <script src="../Javascript/StickyNavigation.js"></script>
+        <script src="../Javascript/BackToTop&ProgressBar.Js"></script>
+        <script src="../Javascript/ReadMore.js"></script>
+    </body>
+</html>

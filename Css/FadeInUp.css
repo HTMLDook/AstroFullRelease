@@ -1,0 +1,9 @@
+.fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.Showinstant {
+    opacity: 1;
+    transform: translateY(0);
+}

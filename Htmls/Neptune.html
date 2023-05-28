@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Title-->
+        <title>Our Solar System</title>
+        <!-- This meta tag specifies the character encoding for the HTML document -->
+        <meta charset="UTF-8">
+        <!-- This meta tag specifies the author of the webpage -->
+        <meta name="author" content="Erik Rhodin Claesson">
+        <!-- This meta tag provides a brief description of the webpage for search engines -->
+        <meta name="description" content="Astro is a pioneering company that specializes in the exploration of the solar system. Their website is a one-stop destination for all things related to space exploration and the wonders of the cosmos. From the latest discoveries about our neighboring planets to cutting-edge research on the origins of the universe, Astro's website offers a wealth of information and resources for space enthusiasts of all levels.">
+        <!-- This meta tag provides a list of keywords that describe the content of the webpage -->
+        <meta name="keywords" content="Astro, solar system, space exploration, cosmos, neighboring planets, discoveries, cutting-edge research, origins of the universe, space enthusiasts, information, resources, planet data, light pollution, astronomy, science, space technology, space missions, space science, planet exploration, telescopes, space telescopes, space discoveries, extraterrestrial life, space news, space education, space events, rocket science, space missions, NASA, ESA, JAXA, space probes, space travel, space programs, space history, space research, space discoveries, celestial objects, solar system objects, planetary science, space imaging, space simulations, space visualization, space facts, space phenomena, space exploration missions, space colonization, space engineering, space technology advancements, space conferences, space outreach, space apps, space industry">
+        <!-- This meta tag sets the viewport to ensure that the webpage is displayed properly on mobile devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- These meta tags are used by social media platforms when the webpage is shared to specify the title, description, image and URL for the shared content -->
+        <meta property="og:title" content="Our Solar System">
+        <meta property="og:description" content="Astro is a pioneering company that specializes in the exploration of the solar system. Their website is a one-stop destination for all things related to space exploration and the wonders of the cosmos. From the latest discoveries about our neighboring planets to cutting-edge research on the origins of the universe, Astro's website offers a wealth of information and resources for space enthusiasts of all levels.">
+        <meta property="og:image" content="https://img.freepik.com/free-vector/solar-system-science-education_1308-89626.jpg?w=2000">
+        <meta property="og:url" content="http://astro.com/">
+        <!-- Css Links -->
+        <link rel="stylesheet" href="../Css/StickyNavigation.css">
+        <link rel="stylesheet" href="../Css/CustomScrollBar.css">
+        <link rel="stylesheet" href="../Css/TopNavigation.css">
+        <link rel="stylesheet" href="../Css/NavbarSmaller.css">
+        <link rel="stylesheet" href="../Css/GeneralStyle.css"> 
+        <link rel="stylesheet" href="../Css/ProgressBar.css"> 
+        <link rel="stylesheet" href="../Css/Newsletter.css"> 
+        <link rel="stylesheet" href="../Css/BackToTop.css"> 
+        <link rel="stylesheet" href="../Css/FactsPage.css"> 
+        <link rel="stylesheet" href="../Css/TimeLine.css">
+        <link rel="stylesheet" href="../Css/Readmore.css"> 
+        <link rel="stylesheet" href="../Css/FadeInUp.css"> 
+        <link rel="stylesheet" href="../Css/Socials.css"> 
+        <!-- Script Links -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Other Links -->
+        <link rel="icon" href="../Pictures/solar-system.png">
+        <style>
+            .header {
+                background-image: url("../Pictures/Neptune/neptunebg.jpg");
+            }
+        </style>
+    </head>
+    <body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <!-- Top Header -->
+        <div class="header" id="Home">
+            <div class="textbox">
+                <h1 class="Showinstant">Poseidon's Planet: Neptune</h1>
+                <div class="overtext">
+                    <p class="Showinstant">The blue gas giant with a turbulent atmosphere, icy rings, and multiple moons, located in the outer regions of the solar system.</p>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="mailto:example@gmail.com" target="_blank" class="icon gmail"></a>
+                <a href="https://twitter.com/example" target="_blank" class="icon twitter"></a>
+                <a href="https://instagram.com/example" target="_blank" class="icon instagram"></a>
+                <a href="https://youtube.com/channel/UCdXh9gKzDo6H_2q3oPW6Gzw" target="_blank" class="icon youtube"></a>
+                <a href="https://linkedin.com/in/example" target="_blank" class="icon linkedin"></a>
+            </div>
+            <div class="topnavigation">
+                <a href="Main.html">Home</a>
+                <a href="AboutUs.html">About us</a>
+                <a href="ContactUs.html">Contact</a>
+            </div>
+            <div class="TopLinks">
+                <!-- Logo Picture --> 
+                <a href="Main.html">
+                    <img src="../Pictures/AstroLogo.png" width="75" height="75" alt="Company logo that looks like davids star from the jewish belief" class="Showinstant">
+                </a>
+                
+                <!-- Logo Text -->
+                <a href="AboutUs.html">
+                    <img src="../Pictures/TextLogo.png" width="175" height="75" alt="Text beside logo saying Astro" class="Showinstant">
+                </a>
+            </div>
+        </div>
+        <nav>
+            <div class="nav-container">
+                <a class="nav-link" href="#Home">Home</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Introduction">Introduction</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Size">Size</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Location">Location</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Atmosphere">Atmosphere</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Orbit">Orbit</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#GravitationalPull">Gravitational Pull</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Rotation">Rotation</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Composition">Composition</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#History">History</a>
+                <div class="progress-container">
+                    <div class="progress-bar" id="myBar"></div>
+                </div>  
+            </div>
+          </nav> 
+          <div id="myNav-for-mobile" class="overlay-for-mobile">
+            <a href="javascript:void(0)" class="closebtn-for-mobile" onclick="closeNav()">&times;</a>
+            <div class="overlay-content-for-mobile">
+                <a class="nav-link" href="#Home">Home</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Introduction">Introduction</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Size">Size</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Location">Location</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Atmosphere">Atmosphere</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Orbit">Orbit</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#GravitationalPull">Gravitational Pull</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Rotation">Rotation</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Composition">Composition</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#History">History</a>
+            </div>
+        </div>
+        <div id="navbut">
+            <span onclick="openNav()">open Navigation</span>
+        </div>
+        <div class="FirstContainer" id="Introduction">
+            <div class="FirstBoxLeft">
+                <div class="FirstBoxHeaders">
+                    <h5>Blue Planet</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>In The Depths</h2>
+                </div>
+                <p>Neptune is a fascinating and enigmatic planet that has captured the attention of astronomers and space enthusiasts for decades. As the eighth planet from the Sun and located in the outer reaches of the solar system, Neptune is shrouded in mystery and has much to reveal to us.
+                <br><br>
+                Named after the Roman god of the sea, Neptune is a gas giant that is primarily composed of hydrogen, helium, and methane. Its striking blue color is due to the absorption of red light by the methane in its atmosphere. The planet is also home to a complex weather system with the fastest winds in the solar system, reaching speeds of over 1,200 miles per hour.
+                <br><br>
+                Neptune is also known for its impressive ring system, which is composed of three main rings and several fainter ones. These rings are thought to be relatively young, formed from the debris of one or more of Neptune's moons.
+                <br><br>
+                With a total of 14 known moons, Neptune has a diverse and fascinating family of satellites. One of its moons, Triton, is of particular interest to scientists as it is the only moon in the solar system that orbits its planet in a retrograde direction.</p>
+            </div>
+            <div class="FirstBoxRight">
+                <img src="../Pictures/Neptune/neptune.png" alt="A picture of Neptune" >
+            </div>
+        </div>        
+        <div class="SecondContainer" id="Size">
+            <div class="SecondBox">
+                <div class="SecondBoxHeaders">
+                    <h5>Mighty Blue</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>The Behemoth</h2>
+                </div>
+                <p>
+                    Neptune, the eighth and farthest known planet from the Sun in our Solar System, is a mighty behemoth of a planet. With a diameter of 49,244 kilometers, it is the fourth-largest planet in the Solar System, and nearly four times the size of Earth.
+                    <span class="dots"></span><span class="more"><br><br>
+                    Neptune is often referred to as the "Blue Planet" due to its distinct blue color, which is a result of the presence of methane in its atmosphere. Despite its enormous size, Neptune is less massive than Uranus, the seventh planet from the Sun, due to its lower density.
+                    <br><br>
+                    Neptune's size is not only impressive, but it also plays a crucial role in the dynamics of our Solar System. Its massive gravitational force, which is seventeen times stronger than Earth's, has a significant impact on the orbits of other planets, particularly Uranus.
+                    <br><br>
+                    Neptune has a total of fourteen known moons, the largest of which is Triton. Triton is a unique moon, as it orbits Neptune in the opposite direction of the planet's rotation. This unusual orbit is believed to be a result of Triton's capture by Neptune's gravity.
+                    <br><br>
+                    Despite its distance from the Sun, Neptune has a similar composition to the gas giants Jupiter and Saturn. It is primarily composed of hydrogen, helium, and methane, with trace amounts of other gases such as ammonia and water vapor.
+                    <br><br>
+                    In conclusion, Neptune is a mighty behemoth of a planet, and its size is a significant factor in the dynamics of our Solar System. Its vast size and gravitational pull have a profound impact on the orbits of other planets and their moons. As we continue to explore and study this magnificent planet, we are sure to uncover more fascinating facts about this distant blue giant.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+            <div class="SecondBox">
+                <img src="../Pictures/Neptune/size.jpg" alt="A picture of neptune compared o the other planets in our solar system" style="border: 1px solid;">
+            </div>
+        </div>
+        <div class="ThirdContainer" id="Location">
+            <div class="ThirdBoxHeaders" style="border-bottom: 1px solid white">
+                <h5>The Lonely Blue Planet</h5>
+                <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                <h2>A Planet Lost in Space</h2>
+            </div>
+            <div class="ThirdBottomBox">
+                <img src="../Pictures/Neptune/location.jpg" alt="A picture showing how neptune is the furthest away from us and right before the kuiper belt">
+            </div>
+            <div class="ThirdTopBox">
+                <p>
+                    Neptune, the eighth and farthest known planet from the Sun, is a planet lost in space. It is located at an average distance of 4.5 billion kilometers from the Sun, which makes it the most distant planet in our Solar System. Due to its great distance from the Sun, Neptune is a planet that is often overlooked.
+                    <span class="dots"></span><span class="more"><br><br>
+                    Neptune's location is significant because it has an impact on the planet's climate and environment. Being so far from the Sun, Neptune receives only a small fraction of the solar energy that Earth receives, which means that its surface temperatures are extremely cold, averaging around -200°C.
+                    <br><br>
+                    Despite its distance from the Sun, Neptune has a unique and dynamic atmosphere. It has the fastest winds in the Solar System, reaching speeds of up to 2,100 kilometers per hour. The planet's atmosphere is also known for its beautiful and distinct blue color, which is a result of the absorption of red light by methane gas in its atmosphere.
+                    <br><br>
+                    Neptune's distance from the Sun also makes it a challenging planet to study. It takes almost 165 Earth years for Neptune to complete one orbit around the Sun, which means that it was only discovered in 1846. Due to its great distance, the Voyager 2 spacecraft, which visited Neptune in 1989, is the only spacecraft to have ever visited the planet.
+                    <br><br>
+                    Despite its challenges, Neptune's location is fascinating, and it provides us with valuable insights into the dynamics of our Solar System. As we continue to explore and study this distant blue planet, we are sure to uncover more fascinating facts about its unique and mysterious location in space.                        
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+        </div>
+        <div class="SecondContainer" id="Atmosphere">
+            <div class="SecondBox">
+                <div class="SecondBoxHeaders">
+                    <h5>Layers</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>Atmospheric Zones</h2>
+                </div>
+                <p>
+                    Neptune, the eighth and farthest planet from the Sun in our Solar System, is renowned for its dynamic and unique atmosphere. It is composed mainly of hydrogen and helium gas, with trace amounts of methane, which gives the planet its distinctive blue color. The atmosphere of Neptune is divided into layers, each with its distinct characteristics and features.
+                    <span class="dots"></span><span class="more"><br><br>
+                    The first layer of Neptune's atmosphere is the troposphere, which extends from the planet's surface up to an altitude of about 40 kilometers. The troposphere is the densest part of the atmosphere, and it is where most of the weather phenomena on Neptune occur, including the planet's famous Great Dark Spot and bright cloud formations.
+                    <br><br>
+                    Above the troposphere lies the stratosphere, which extends from an altitude of about 40 to 400 kilometers above the planet's surface. This layer is characterized by its extremely cold temperatures, which can reach as low as -225°C. The stratosphere of Neptune is also known for its unique haze, which is composed of complex organic compounds that give the planet its distinctive blue color.
+                    <br><br>
+                    Beyond the stratosphere is the thermosphere, which extends from an altitude of about 400 to 2,000 kilometers above the planet's surface. The thermosphere is characterized by its high temperatures, which can reach as high as 1,700°C. This layer is also the site of many of the planet's auroras, which are caused by charged particles from the solar wind interacting with the planet's magnetic field.
+                    <br><br>
+                    Finally, the exosphere is the outermost layer of Neptune's atmosphere, extending from an altitude of about 2,000 kilometers to the planet's magnetosphere boundary. The exosphere is characterized by its extremely low density and high temperatures, with particles escaping into space.
+                    <br><br>
+                    In conclusion, Neptune's atmosphere is a complex and dynamic system that is divided into distinct layers. Each layer has its unique characteristics and features, from the dense and turbulent troposphere to the hot and hazy thermosphere. The study of Neptune's atmosphere provides us with valuable insights into the nature of planetary atmospheres and the complex processes that govern them.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+            <div class="SecondBox">
+                <img src="../Pictures/Neptune/atmos.png" alt="A picture showing the atmopshere of neptune" >
+            </div>
+        </div>     
+        <div class="ThirdContainer" id="Orbit">
+            <div class="ThirdBoxHeaders" style="border-bottom: 1px solid white;">
+                <h5>Elusive Orbit</h5>
+                <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                <h2>The Rhythmic Dance of Neptune and its Moons</h2>
+            </div>
+            <div class="ThirdBottomBox">
+                <img src="../Pictures/Neptune/orbit2.jpg" alt="A picture showing jupiters, saturns, uranus, plutos and neptunes orbit">
+            </div>
+            <div class="ThirdTopBox">
+                <p>
+                    Neptune, the eighth planet from the Sun, has an elusive and unique orbit around the star. Its distance from the Sun ranges from 4.5 to 30 astronomical units, and it takes about 164.8 Earth years for Neptune to complete one orbit around the Sun. This means that only one full orbit has been completed since the planet's discovery in 1846.
+                    <span class="dots"></span><span class="more"><br><br>
+                    The orbit of Neptune is also notable for its irregularity, which is caused by the gravitational influence of other planets in the Solar System. In particular, the gravitational pull of Jupiter and Saturn creates a resonance that causes Neptune's orbit to deviate from its predicted path.
+                    <br><br>
+                    Neptune also has a system of 14 known moons that orbit around the planet, each with its unique orbit and rhythm. The largest moon, Triton, is unusual in that it orbits Neptune in a retrograde direction, opposite to the planet's rotation. This suggests that Triton was not originally a moon of Neptune but was instead captured by the planet's gravity.
+                    <br><br>
+                    The other moons of Neptune are smaller and have more regular orbits, although they are still influenced by the gravitational pull of the planet and its larger moons. Some of these moons even have their own moons, creating a complex system of orbits within orbits.
+                    <br><br>
+                    Despite its elusive orbit, Neptune and its moons perform a rhythmic dance around the Sun, with each orbit and revolution contributing to the stability and balance of the Solar System. The study of Neptune's orbit and its moons provides valuable insights into the dynamics of the Solar System and the processes that shape the planets and their satellites.
+                    <br><br>
+                    In conclusion, Neptune's orbit is a complex and dynamic system that is influenced by the gravitational forces of other planets and its own system of moons. The study of this elusive orbit provides us with valuable insights into the nature of planetary systems and the complex interplay of gravity and motion in the Solar System.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+        </div>
+        <div class="ThirdContainer" id="GravitationalPull">
+            <div class="ThirdBoxHeaders">
+                <h5>Neptune's Gravity Well</h5>
+                <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                <h2>Exploring Its Impact on Nearby Objects</h2>
+            </div>
+            <div class="ThirdBottomBox">
+                <img src="../Pictures/Neptune/gravity.jpg" alt="A picture showing what 1 gram weighs on different planets, 1 gram on earth is 1.14g on neptune">
+            </div>
+            <div class="ThirdTopBox">
+                <p>
+                    Neptune, the eighth and farthest known planet from the Sun, has a strong gravitational pull that makes it a fascinating object of study in the field of astrophysics. The force of gravity on Neptune is roughly 17% stronger than that on Earth, due to the planet's massive size and high density.
+                    <span class="dots"></span><span class="more"><br><br>
+                    This strong gravitational pull has a significant impact on nearby objects, including asteroids, comets, and other planets. For example, when a comet or asteroid comes too close to Neptune, the planet's gravity can cause the object to be pulled into its orbit, potentially leading to collisions or changes in the object's trajectory.
+                    <br><br>
+                    In addition to influencing nearby objects, Neptune's gravity also plays a crucial role in the dynamics of its own system of moons. The largest moon, Triton, is believed to have been captured by Neptune's gravity, as its orbit is highly elliptical and tilted relative to the planet's equator.
+                    <br><br>
+                    Neptune's gravity also creates a unique environment within its atmosphere, with a series of atmospheric layers that are defined by the planet's gravitational pull. These layers include the troposphere, stratosphere, and thermosphere, each with its distinct properties and characteristics.
+                    <br><br>
+                    The study of Neptune's gravity and gravitational force has provided valuable insights into the nature of planetary systems and the processes that shape the Solar System. The gravity well of Neptune has also been used to explore the outer reaches of the Solar System, with spacecraft such as Voyager 2 using the planet's gravity to slingshot outwards towards the Kuiper Belt.
+                    <br><br>
+                    In conclusion, Neptune's gravity is a fascinating and powerful force that has a significant impact on nearby objects and the dynamics of its own system of moons. The study of this gravity well provides us with valuable insights into the nature of planetary systems and the complex interplay of gravity and motion in the Solar System.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+        </div>
+        <div class="SecondContainer" id="Rotation">
+            <div class="SecondBox">
+                <div class="SecondBoxHeaders">
+                    <h5>Mystery Rotation</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>Changing Rotation</h2>
+                </div>
+                <p>
+                    Neptune, the eighth planet in our Solar System, is a giant gas planet that rotates on its axis. The rotation of Neptune is unique, as it is tilted at an extreme angle of 28.3 degrees. This means that the planet's north and south poles are almost parallel to its orbit around the Sun.
+                    <span class="dots"></span><span class="more"><br><br>
+                    Furthermore, the rotation of Neptune is also unique in that it is not uniform. The planet's rotation period, or the time it takes for one complete rotation on its axis, is approximately 16.11 hours at the equator. However, the rotation period changes depending on the latitude, with the polar regions rotating at a slower rate.
+                    <br><br>
+                    The cause of Neptune's changing rotation is still a mystery to scientists. Some theories suggest that the planet's extreme tilt and irregular shape may play a role in the changing rotation. Others believe that the presence of a massive internal ocean, made of liquid diamond, may be affecting the planet's rotation.
+                    <br><br>
+                    Another unique aspect of Neptune's rotation is the presence of a series of large storms in its atmosphere, including the famous Great Dark Spot, which was observed by the Voyager 2 spacecraft in 1989. These storms are believed to be caused by the planet's strong atmospheric currents, which are driven by the planet's rotation.
+                    <br><br>
+                    The changing rotation of Neptune is a fascinating topic of study in the field of planetary science. Understanding the causes of this phenomenon can provide valuable insights into the processes that shape the dynamics of gas planets in our Solar System and beyond. Future missions to Neptune, such as the proposed Trident mission, may help to shed more light on the mystery of Neptune's changing rotation.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+            <div class="SecondBox">
+                <img src="../Pictures/Neptune/rotation.jpg" alt="A picture showing the rotation of neptune" style="border: 1px solid white;">
+            </div>
+        </div>
+        <div class="FirstContainer" id="Composition">
+            <div class="FirstBoxLeft">
+                <div class="FirstBoxHeaders">
+                    <h5>Composition</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>Layers</h2>
+                </div>
+                <p>Neptune is a giant gas planet located in the outer reaches of our Solar System. The planet has a diameter of approximately 49,000 kilometers, making it the fourth largest planet in our Solar System. The composition of Neptune is primarily made up of hydrogen and helium, with trace amounts of methane and other gases.
+                <br><br>
+                Like the other gas giants in our Solar System, Neptune has no solid surface. The planet's interior is divided into layers, with the outermost layer consisting of a thick atmosphere of gas and clouds. Beneath the atmosphere is a layer of icy clouds and methane gas, which gradually give way to a layer of liquid hydrogen and helium.
+                <br><br>
+                Deeper still, the intense pressure and temperature cause the hydrogen to become metallic, creating a layer of metallic hydrogen. This layer is thought to be responsible for generating the planet's strong magnetic field, which is tilted at an angle of 47 degrees to the planet's rotation axis.
+                <br><br>
+                Finally, at the core of the planet lies a rocky, icy mantle. The exact composition of the mantle is still not well understood, but it is believed to be made up of a combination of rock and ice.
+                <br><br>
+                Neptune's composition and structure are fascinating subjects of study for planetary scientists. By studying the layers of the planet's interior, scientists can learn more about the processes that govern the formation and evolution of gas giants in our Solar System and beyond. Future missions to Neptune, such as the proposed Ice Giants mission, may provide more detailed insights into the composition of this distant and enigmatic planet.
+                <br><br>
+                Another interesting feature of Neptune's composition is the presence of its ring system. Like the other gas giants in our Solar System, Neptune has a set of rings made up of small particles of dust and ice. However, Neptune's ring system is different from that of Saturn, as it is much fainter and has fewer particles. The rings are believed to have been formed by the breakup of moons or other objects in the planet's vicinity. The rings are also constantly changing, with new particles being added and removed over time. Studying the composition and behavior of Neptune's rings can provide valuable insights into the planet's history and evolution.</p>
+            </div>
+            <div class="FirstBoxRight">
+                <img src="../Pictures/Neptune/comp.jpg" alt="A picture showing the composition of neptune" >
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Element</th>
+                            <th>Percentage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hydrogen</td>
+                            <td>80%</td>
+                        </tr>
+                        <tr>
+                            <td>Helium</td>
+                            <td>19%</td>
+                        </tr>
+                        <tr>
+                            <td>Methane</td>
+                            <td>1.5%</td>
+                        </tr>
+                        <tr>
+                            <td>Ethane</td>
+                            <td>0.0005%</td>
+                        </tr>
+                        <tr>
+                            <td>Acetylene</td>
+                            <td>0.00015%</td>
+                        </tr>
+                        <tr>
+                            <td>Propane</td>
+                            <td>0.00009%</td>
+                        </tr>
+                        <tr>
+                            <td>Carbon Monoxide</td>
+                            <td>0.00005%</td>
+                        </tr>
+                        <tr>
+                            <td>Cyanogen</td>
+                            <td>0.00005%</td>
+                        </tr>
+                        <tr>
+                            <td>Ammonia</td>
+                            <td>0.00002%</td>
+                        </tr>
+                        <tr>
+                            <td>Molecular Nitrogen</td>
+                            <td>0.00002%</td>
+                        </tr>
+                        <tr>
+                            <td>Water</td>
+                            <td>0.00001%</td>
+                        </tr>
+                        <tr>
+                            <td>Hydrogen Deuteride</td>
+                            <td>0.00001%</td>
+                        </tr>
+                        <tr>
+                            <td>Helium Dimer</td>
+                            <td>trace amount</td>
+                        </tr>
+                        <tr>
+                            <td>Hydrogen Cyanide</td>
+                            <td>trace amount</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>     
+        <div class="ThirdBoxHeaders" id="History">
+            <h5>History of the Earth</h5>
+            <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+            <h2>From Formation to the Future</h2>
+        </div>
+        <div class="Timeline-Box">
+            <div class="timeline-timeline">
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                    <h4>The Formation of the Solar System: Neptune's Origins
+                    </h4>
+                    <p>
+                        The formation of the Solar System is a fascinating topic that has intrigued scientists and astronomers for decades. One of the most mysterious and enigmatic planets in our Solar System is Neptune. Understanding the origins of Neptune can help shed light on the formation of the Solar System as a whole.
+                        <span class="dots"></span><span class="more"><br><br>
+                        Scientists believe that Neptune formed about 4.5 billion years ago from a disk of gas and dust that surrounded the young Sun. The process of planet formation is complex and involves the accretion of smaller bodies into larger ones. In the case of Neptune, it is thought that the planet grew by accreting gas and dust from the surrounding disk.
+                        <br><br>
+                        The exact mechanism of Neptune's formation is still a topic of debate among scientists. Some believe that Neptune formed closer to the Sun and migrated outward to its current position, while others think that it formed where it currently resides.
+                        <br><br>
+                        Despite the uncertainties surrounding Neptune's formation, scientists have been able to learn a great deal about the planet through observation and exploration. Studying the formation of Neptune can provide valuable insights into the early Solar System and the processes that led to the formation of our planetary system.
+                        </span>
+                    </p>
+                    <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>Neptune's Early Years: A Look at the Planet's Formation
+                        </h4>
+                        <p>
+                            Neptune's early years were marked by a tumultuous period of growth and change. As one of the outer planets in the Solar System, Neptune formed in the cold and distant reaches of the early Solar System, where conditions were vastly different from those in the inner Solar System.
+                            <span class="dots"></span><span class="more"><br><br>
+                            Scientists believe that Neptune began its formation as a solid core made up of rock and ice. As the young planet grew, it began to accrete gas and dust from the surrounding disk, eventually becoming a gas giant planet like Jupiter and Saturn.
+                            <br><br>
+                            Neptune's formation was likely influenced by its position in the outer Solar System. The cold temperatures and low density of gas and dust in this region of the Solar System made it difficult for planets to form quickly, resulting in a slower and more gradual process of planet formation.
+                            <br><br>
+                            The early years of Neptune were also marked by collisions with other bodies in the Solar System. These collisions may have played a role in shaping the planet's current appearance, including its tilted axis and irregularly shaped moons.
+                            <br><br>
+                            Despite the challenges in studying Neptune's early years, scientists have been able to piece together a general picture of how the planet formed and evolved. By studying the formation of Neptune, we can gain a better understanding of the processes that shaped our Solar System and the conditions that led to the formation of our own planet.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" id="myReadmoreBtn" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                        <h4>Exploring Neptune: The First Discoveries and Observations
+                        </h4>
+                        <p>
+                            Exploring Neptune has been a challenge for scientists and astronomers due to the planet's distance from Earth and its dimness in the night sky. Despite these challenges, the first discoveries and observations of Neptune were made in the early 19th century.
+                            <span class="dots"></span><span class="more"><br><br>
+                            In 1846, French mathematician Urbain Le Verrier used mathematical calculations to predict the existence and location of an unknown planet beyond Uranus, which was experiencing unexplained gravitational anomalies. British astronomer John Couch Adams independently made a similar prediction, and the two scientists are credited with the discovery of Neptune.
+                            <br><br>
+                            The first observations of Neptune were made shortly after its discovery by astronomers Johann Galle and Heinrich d'Arrest. These early observations were limited to the use of small telescopes and provided only a basic understanding of the planet's size and distance from the Sun.
+                            <br><br>
+                            It wasn't until the late 20th century that scientists were able to explore Neptune in greater detail. In 1989, NASA's Voyager 2 spacecraft became the first and only spacecraft to fly by Neptune. During its flyby, Voyager 2 captured detailed images and data of the planet, its moons, and its rings, providing scientists with a wealth of information about Neptune's composition, atmosphere, and magnetic field.
+                            <br><br>
+                            Since Voyager 2's flyby, astronomers have continued to observe and study Neptune using ground-based telescopes and space-based observatories like the Hubble Space Telescope. Through these observations, scientists have been able to uncover new information about the planet's weather patterns, moons, and rings.
+                            <br><br>
+                            Overall, the first discoveries and observations of Neptune were a significant milestone in our understanding of the Solar System, and subsequent exploration and observation have continued to provide new insights into the planet's composition and behavior.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>Neptune's Moons: Uncovering the Planet's Satellites
+                        </h4>
+                        <p>
+                            Neptune's moons are a fascinating aspect of the planet's system, and they have played a significant role in helping scientists uncover the mysteries of the planet. As of 2021, Neptune has 14 known moons, the largest of which is Triton.
+                            <span class="dots"></span><span class="more"><br><br>
+                            Triton was discovered just 17 days after Neptune was discovered in 1846, making it the first moon to be discovered orbiting a planet other than Earth. It is the only large moon in the Solar System to orbit its planet in a retrograde direction, meaning it orbits in the opposite direction to Neptune's rotation.
+                            <br><br>
+                            The discovery of Neptune's moons has been an ongoing process, with many of the smaller moons being discovered in the decades following the discovery of Triton. Most of these moons are thought to be captured asteroids or fragments from the early Solar System, and they vary greatly in size and shape.
+                            <br><br>
+                            The study of Neptune's moons has provided valuable insights into the planet's history and formation. The moons' composition and orbits offer clues about the conditions that existed during the planet's formation, while their behavior can shed light on the planet's gravitational field and magnetic environment.
+                            <br><br>
+                            Triton, in particular, has been the subject of intense study due to its unique characteristics. It is thought to be a captured Kuiper Belt object, similar to Pluto, and it exhibits features such as cryovolcanism and a tenuous atmosphere that make it a fascinating object to study.
+                            <br><br>
+                            Overall, Neptune's moons continue to be an area of active research, and their study is helping to deepen our understanding of this distant and enigmatic planet.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                        <h4>Voyager 2: The First Close-Up Look at Neptune
+                        </h4>
+                        <p>
+                            Voyager 2 was the first spacecraft to provide a close-up look at Neptune, its moons, and its rings. Launched in 1977 by NASA, Voyager 2 flew by all four outer planets of the Solar System, including Neptune, in 1989.
+                            <span class="dots"></span><span class="more"><br><br>
+                            During its close approach to Neptune, Voyager 2 made a series of scientific observations that revealed important information about the planet's composition, atmosphere, magnetic field, and moons. Some of the key discoveries made by Voyager 2 include:
+                            <br><br>
+                            Neptune's atmosphere is much more dynamic and active than previously thought, with large-scale cloud features, including a Great Dark Spot that was similar in size to the Great Red Spot on Jupiter.
+                            <br><br>
+                            Neptune's magnetic field is highly tilted and offset from the planet's center, which suggests that the magnetic field may not be generated in the planet's core.
+                            <br><br>
+                            Neptune's rings are composed of dust and ice particles, and they are much darker than the rings of other gas giant planets.
+                            <br><br>
+                            Neptune has several small, irregularly shaped moons in addition to its larger moons, including the moon Nereid, which has an extremely eccentric and unpredictable orbit.
+                            <br><br>
+                            The data gathered by Voyager 2 during its flyby of Neptune has provided scientists with a wealth of information about the planet and its system, and has paved the way for future exploration and study of this distant and mysterious world.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>Neptune's Atmosphere: Understanding the Planet's Weather Patterns
+                        </h4>
+                        <p>
+                            Neptune's atmosphere is one of the most dynamic and complex of any planet in the Solar System. Understanding its weather patterns is a key area of research for planetary scientists, as it can provide insights into the planet's internal structure, as well as its interactions with its moons and surrounding environment.
+                            <span class="dots"></span><span class="more"><br><br>
+                            Neptune's atmosphere is primarily composed of hydrogen and helium, with small amounts of methane, which gives the planet its distinctive blue color. The atmosphere is characterized by strong winds, with the fastest winds in the Solar System observed on Neptune, with speeds of up to 600 meters per second.
+                            <br><br>
+                            One of the most striking features of Neptune's atmosphere is the presence of large-scale cloud formations, including bright white clouds, dark spots, and other complex features. These clouds are thought to be driven by strong atmospheric convection, which transports heat and material from the planet's interior to its outer layers.
+                            <br><br>
+                            Scientists have also observed seasonal changes in Neptune's atmosphere, with changes in the brightness and distribution of clouds over time. This suggests that Neptune's weather patterns are influenced by changes in solar heating and other external factors.
+                            <br><br>
+                            Overall, the study of Neptune's atmosphere is a key area of research in planetary science, and ongoing observations and modeling efforts are helping to deepen our understanding of this complex and fascinating planet.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                        <h4>Neptune's Rings: The Latest Discoveries and Findings
+                        </h4>
+                        <p>
+                            Neptune's rings were first discovered in 1984, when astronomers observed faint arcs around the planet using Earth-based telescopes. Since then, a number of spacecraft missions, including Voyager 2 and the Hubble Space Telescope, have provided new insights into the composition and structure of these rings.
+                            <span class="dots"></span><span class="more"><br><br>
+                            The latest discoveries and findings suggest that Neptune's rings are composed of a mixture of dust and ice particles, similar to the rings of other gas giant planets. However, unlike the rings of Saturn, which are composed of mostly water ice particles, the rings of Neptune are relatively dark and may contain larger amounts of organic material.
+                            <br><br>
+                            In addition, recent observations have revealed new details about the structure of Neptune's rings. For example, data from the Voyager 2 spacecraft suggests that the rings are composed of several distinct arcs and ringlets, which may be the result of gravitational interactions with Neptune's moons.
+                            <br><br>
+                            Recent studies have also suggested that Neptune's rings may be more dynamic and changing than previously thought. For example, observations from the Hubble Space Telescope have revealed brightening and fading events in the rings, which may be caused by the impacts of small meteoroids or the gravitational effects of passing moons.
+                            <br><br>
+                            Overall, the study of Neptune's rings is an ongoing area of research, and future missions to the planet may help to shed new light on the composition, structure, and dynamics of these fascinating features.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>Neptune's Future: What We Can Expect in the Next Few Decades
+                        </h4>
+                        <p>
+                            Neptune is a dynamic and ever-changing planet, and ongoing research and exploration efforts are helping to uncover new details about its past, present, and future. In the next few decades, there are several key areas of research and exploration that are expected to shed new light on this distant world.
+                            <span class="dots"></span><span class="more"><br><br>
+                            One area of focus is the study of Neptune's atmosphere, which is known for its strong winds, complex cloud formations, and other dynamic features. Future missions, such as NASA's upcoming Trident mission, are expected to provide new insights into the planet's weather patterns, atmospheric structure, and interactions with its moons and surrounding environment.
+                            <br><br>
+                            Another area of interest is the study of Neptune's moons, which are known for their complex orbits and interactions with the planet's rings and other moons. In the coming years, astronomers are expected to discover new moons around Neptune, and ongoing observations and modeling efforts will help to deepen our understanding of the formation and evolution of these fascinating satellites.
+                            <br><br>
+                            Finally, there is also ongoing interest in the search for life on Neptune, or at least the potential for habitable environments on its moons. While the likelihood of finding life on this distant planet is still unknown, continued exploration and research efforts may provide new insights into the potential for life beyond Earth.
+                            <br><br>
+                            Overall, the next few decades are expected to be an exciting time for the study of Neptune, as new missions, observations, and discoveries promise to reveal new insights into the history, structure, and potential for life on this fascinating planet.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                        <h4>The Search for Life on Neptune: Could the Planet Harbor Living Organisms?
+                        </h4>
+                        <p>
+                            The search for life on Neptune is a topic of great interest and speculation among astronomers and astrobiologists, but at present, there is no evidence to suggest that the planet could harbor living organisms.
+                            <span class="dots"></span><span class="more"><br><br>
+                            One of the main challenges to the search for life on Neptune is the extreme conditions that exist on the planet. Neptune is a gas giant, with no solid surface, and its atmosphere is composed primarily of hydrogen, helium, and methane. The temperatures and pressures at the planet's core are thought to be extreme, and there is no known mechanism by which life as we know it could survive in these conditions.
+                            <br><br>
+                            However, there is still much to learn about Neptune's moons, which are thought to be the most likely places in the Neptune system to harbor life. Some of Neptune's moons, such as Triton and Nereid, are known to have subsurface oceans of liquid water, which could potentially provide a habitat for microbial life. In addition, recent studies have suggested that some of Neptune's smaller, irregular moons could also have subsurface oceans.
+                            <br><br>
+                            Despite these tantalizing possibilities, it is important to note that the search for life on Neptune's moons is still in its early stages, and there is currently no direct evidence to suggest that life exists beyond Earth. Nonetheless, ongoing exploration and research efforts may one day lead to the discovery of life on this distant and mysterious planet.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>Beyond Neptune: Exploring the Outer Reaches of Our Solar System
+                        </h4>
+                        <p>
+                            Beyond Neptune lies a vast and largely unexplored region of our solar system known as the Kuiper Belt. This region is home to a diverse array of small, icy bodies, including dwarf planets like Pluto, as well as a variety of comets and other objects.
+                            <span class="dots"></span><span class="more"><br><br>
+                            In recent years, there has been a growing interest in exploring the Kuiper Belt and the objects that inhabit it. One of the key missions in this effort is NASA's New Horizons mission, which provided the first close-up views of Pluto and its moons in 2015. Since then, New Horizons has continued to explore the Kuiper Belt, and in 2019, it conducted a flyby of the distant object Ultima Thule, providing new insights into the nature and composition of these distant bodies.
+                            <br><br>
+                            Other missions are also planned to explore the Kuiper Belt in the coming years, including NASA's Lucy mission, which is set to explore several Trojan asteroids that share Jupiter's orbit, as well as the distant Kuiper Belt object known as 2014 MU69. In addition, there are several proposed missions that would explore other objects in the Kuiper Belt, as well as the Oort Cloud, a region of icy bodies that lies even further from the sun.
+                            <br><br>
+                            Overall, the exploration of the Kuiper Belt and the outer reaches of our solar system promises to provide new insights into the formation and evolution of our planetary system, as well as the potential for life beyond Earth. By continuing to explore this distant and mysterious region, we may one day uncover new clues to the origins and nature of our universe.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="wrapper" id="Newsletter">
+            <h1>Subscribe to our Newsletter</h1>
+            <p>Receive updates instanly</p>
+            <div class="newsletter">
+                <input type="text" class="input" placeholder="Enter Your Email">
+                <img src="../Pictures/envelope-solid.png" class="fas fa-envelope Showinstant" alt="a picture of an envelope">
+                <div class="btn">Subscribe</div>
+            </div>
+        </div>	
+        <script src="../Javascript/SmallNav.js"></script>
+        <script src="../Javascript/FadeInUp.js"></script>
+        <script src="../Javascript/StickyNavigation.js"></script>
+        <script src="../Javascript/BackToTop&ProgressBar.Js"></script>
+        <script src="../Javascript/ReadMore.js"></script>
+    </body>
+</html>

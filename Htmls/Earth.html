@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Title-->
+        <title>Our Solar System</title>
+        <!-- This meta tag specifies the character encoding for the HTML document -->
+        <meta charset="UTF-8">
+        <!-- This meta tag specifies the author of the webpage -->
+        <meta name="author" content="Erik Rhodin Claesson">
+        <!-- This meta tag provides a brief description of the webpage for search engines -->
+        <meta name="description" content="Astro is a pioneering company that specializes in the exploration of the solar system. Their website is a one-stop destination for all things related to space exploration and the wonders of the cosmos. From the latest discoveries about our neighboring planets to cutting-edge research on the origins of the universe, Astro's website offers a wealth of information and resources for space enthusiasts of all levels.">
+        <!-- This meta tag provides a list of keywords that describe the content of the webpage -->
+        <meta name="keywords" content="Astro, solar system, space exploration, cosmos, neighboring planets, discoveries, cutting-edge research, origins of the universe, space enthusiasts, information, resources, planet data, light pollution, astronomy, science, space technology, space missions, space science, planet exploration, telescopes, space telescopes, space discoveries, extraterrestrial life, space news, space education, space events, rocket science, space missions, NASA, ESA, JAXA, space probes, space travel, space programs, space history, space research, space discoveries, celestial objects, solar system objects, planetary science, space imaging, space simulations, space visualization, space facts, space phenomena, space exploration missions, space colonization, space engineering, space technology advancements, space conferences, space outreach, space apps, space industry">
+        <!-- This meta tag sets the viewport to ensure that the webpage is displayed properly on mobile devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- These meta tags are used by social media platforms when the webpage is shared to specify the title, description, image and URL for the shared content -->
+        <meta property="og:title" content="Our Solar System">
+        <meta property="og:description" content="Astro is a pioneering company that specializes in the exploration of the solar system. Their website is a one-stop destination for all things related to space exploration and the wonders of the cosmos. From the latest discoveries about our neighboring planets to cutting-edge research on the origins of the universe, Astro's website offers a wealth of information and resources for space enthusiasts of all levels.">
+        <meta property="og:image" content="https://img.freepik.com/free-vector/solar-system-science-education_1308-89626.jpg?w=2000">
+        <meta property="og:url" content="http://astro.com/">
+        <!-- Css Links -->
+        <link rel="stylesheet" href="../Css/StickyNavigation.css">
+        <link rel="stylesheet" href="../Css/CustomScrollBar.css">
+        <link rel="stylesheet" href="../Css/TopNavigation.css">
+        <link rel="stylesheet" href="../Css/NavbarSmaller.css">
+        <link rel="stylesheet" href="../Css/GeneralStyle.css"> 
+        <link rel="stylesheet" href="../Css/ProgressBar.css"> 
+        <link rel="stylesheet" href="../Css/Newsletter.css"> 
+        <link rel="stylesheet" href="../Css/BackToTop.css"> 
+        <link rel="stylesheet" href="../Css/FactsPage.css"> 
+        <link rel="stylesheet" href="../Css/TimeLine.css">
+        <link rel="stylesheet" href="../Css/Readmore.css"> 
+        <link rel="stylesheet" href="../Css/FadeInUp.css"> 
+        <link rel="stylesheet" href="../Css/Socials.css"> 
+        <!-- Script Links -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Other Links -->
+        <link rel="icon" href="../Pictures/solar-system.png">
+        <style>
+            .header {
+                background-image: url("../Pictures/Earth/qe.jpg");
+            }
+        </style>
+    </head>
+    <body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <!-- Top Header -->
+        <div class="header" id="Home">
+            <div class="textbox">
+                <h1 class="Showinstant">planet earth</h1>
+                <div class="overtext">
+                    <p class="Showinstant">our home in the vast expanse of the universe.</p>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="mailto:example@gmail.com" target="_blank" class="icon gmail"></a>
+                <a href="https://twitter.com/example" target="_blank" class="icon twitter"></a>
+                <a href="https://instagram.com/example" target="_blank" class="icon instagram"></a>
+                <a href="https://youtube.com/channel/UCdXh9gKzDo6H_2q3oPW6Gzw" target="_blank" class="icon youtube"></a>
+                <a href="https://linkedin.com/in/example" target="_blank" class="icon linkedin"></a>
+            </div>
+            <div class="topnavigation">
+                <a href="Main.html">Home</a>
+                <a href="AboutUs.html">About us</a>
+                <a href="ContactUs.html">Contact</a>
+            </div>
+            <div class="TopLinks">
+                <!-- Logo Picture --> 
+                <a href="Main.html">
+                    <img src="../Pictures/AstroLogo.png" width="75" height="75" alt="Company logo that looks like davids star from the jewish belief" class="Showinstant">
+                </a>
+                
+                <!-- Logo Text -->
+                <a href="AboutUs.html">
+                    <img src="../Pictures/TextLogo.png" width="175" height="75" alt="Text beside logo saying Astro" class="Showinstant">
+                </a>
+            </div>
+        </div>
+        <nav>
+            <div class="nav-container">
+                <a class="nav-link" href="#Home">Home</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Introduction">Introduction</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Size">Size</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Location">Location</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Atmosphere">Atmosphere</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Orbit">Orbit</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#GravitationalPull">Gravitational Pull</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Rotation">Rotation</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Composition">Composition</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#History">History</a>
+                <div class="progress-container">
+                    <div class="progress-bar" id="myBar"></div>
+                </div>  
+            </div>
+          </nav> 
+          <div id="myNav-for-mobile" class="overlay-for-mobile">
+            <a href="javascript:void(0)" class="closebtn-for-mobile" onclick="closeNav()">&times;</a>
+            <div class="overlay-content-for-mobile">
+                <a class="nav-link" href="#Home">Home</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Introduction">Introduction</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Size">Size</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Location">Location</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Atmosphere">Atmosphere</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Orbit">Orbit</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#GravitationalPull">Gravitational Pull</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Rotation">Rotation</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Composition">Composition</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#History">History</a>
+            </div>
+        </div>
+        <div id="navbut">
+            <span onclick="openNav()">open Navigation</span>
+        </div>
+        <div class="FirstContainer" id="Introduction">
+            <div class="FirstBoxLeft">
+                <div class="FirstBoxHeaders">
+                    <h5>Earth</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>Home As We Know It</h2>
+                </div>
+                <p>Welcome to the planet Earth, a majestic and vibrant planet that stands out as a true gem in our solar system. As a space exploration company specializing in our very own celestial neighborhood, Astro has had the privilege of getting to know Earth better than most.
+                <br><br>
+                From the vast and shimmering oceans to the towering mountains and verdant forests, Earth is a visual marvel that never ceases to amaze. But what truly sets our planet apart is the sheer diversity of life that thrives on its surface.
+                <br><br>
+                As we explore the many corners of this dynamic world, we encounter a dazzling array of flora and fauna, each one uniquely adapted to their environment. From the tiny microbes that live in the soil to the majestic elephants that roam the savannah, Earth is teeming with life in all its forms.
+                <br><br>
+                But Earth is not just a planet of wonder and beauty. It is also a planet of contrasts, where the forces of nature can be both awe-inspiring and terrifying. From the thundering power of a hurricane to the gentle sway of a flower in the breeze, Earth is a planet that demands respect and reverence.
+                <br><br>
+                Even among the wonders of the cosmos, Earth remains a true standout. With its lush landscapes, vibrant ecosystems, and diverse cultures, our planet is a testament to the limitless potential of life in the universe.</p>
+            </div>
+            <div class="FirstBoxRight">
+                <img src="../Pictures/Earth/WholeEarth.jpg" alt="Picture of planet earth" >
+            </div>
+        </div>        
+        <div class="SecondContainer" id="Size">
+            <div class="SecondBox">
+                <div class="SecondBoxHeaders">
+                    <h5>Size</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>The Grand Scale of Earth</h2>
+                </div>
+                <p>
+                    Earth is the third planet from the Sun and is the largest of the terrestrial planets in the solar system. Its equatorial diameter is approximately 12,742 kilometers (7,926 miles), while its polar diameter is approximately 12,714 kilometers (7,900 miles). The Earth has a total surface area of approximately 510.1 million square kilometers (196.9 million square miles) and a total volume of approximately 1.08 trillion cubic kilometers (259.8 billion cubic miles).
+                    <span class="dots"></span><span class="more"><br><br>
+                    The Earth's equatorial radius is approximately 6,378 kilometers (3,963 miles), while its polar radius is approximately 6,357 kilometers (3,950 miles). The difference between the equatorial and polar radii is due to the Earth's rotation, which causes it to bulge at the equator and flatten at the poles.
+                    <br><br>
+                    Compared to other planets and celestial bodies in the solar system, Earth is larger than Mars, Mercury, the Moon, and Pluto, but smaller than Saturn, Jupiter, Uranus, and Neptune. Mars has a diameter of approximately 6,779 kilometers (4,212 miles), Mercury has a diameter of approximately 4,880 kilometers (3,032 miles), and the Moon has a diameter of approximately 3,476 kilometers (2,160 miles). Pluto, which was once considered a planet but is now classified as a dwarf planet, has a diameter of approximately 2,377 kilometers (1,477 miles).
+                    <br><br>
+                    In terms of size, Earth is also significantly larger than Titan, which is the largest moon of Saturn. Titan has a diameter of approximately 5,150 kilometers (3,200 miles) and is the only known moon in the solar system with a dense atmosphere.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+            <div class="SecondBox">
+                <img src="../Pictures/Earth/size.jpg" alt="Picture showing the earths size compared to mars, the moon titan, mercury, our moon and pluto">
+            </div>
+        </div>
+        <div class="ThirdContainer" id="Location">
+            <div class="ThirdBoxHeaders">
+                <h5>Earth's Orbital Journey</h5>
+                <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                <h2>Tracing Our Location in the Solar System</h2>
+            </div>
+            <div class="ThirdBottomBox">
+                <img src="../Pictures/Earth/location.jpg" alt="Picture showing earths location in the solar system, third planet from the sun">
+            </div>
+            <div class="ThirdTopBox">
+                <p>
+                    Earth is the third planet from the Sun and is the largest of the terrestrial planets in the solar system. Its equatorial diameter is approximately 12,742 kilometers (7,926 miles), while its polar diameter is approximately 12,714 kilometers (7,900 miles). The Earth has a total surface area of approximately 510.1 million square kilometers (196.9 million square miles) and a total volume of approximately 1.08 trillion cubic kilometers (259.8 billion cubic miles).
+                    <span class="dots"></span><span class="more"><br><br>
+                    The Earth's equatorial radius is approximately 6,378 kilometers (3,963 miles), while its polar radius is approximately 6,357 kilometers (3,950 miles). The difference between the equatorial and polar radii is due to the Earth's rotation, which causes it to bulge at the equator and flatten at the poles.
+                    <br><br>
+                    Compared to other planets and celestial bodies in the solar system, Earth is larger than Mars, Mercury, the Moon, and Pluto, but smaller than Saturn, Jupiter, Uranus, and Neptune. Mars has a diameter of approximately 6,779 kilometers (4,212 miles), Mercury has a diameter of approximately 4,880 kilometers (3,032 miles), and the Moon has a diameter of approximately 3,476 kilometers (2,160 miles). Pluto, which was once considered a planet but is now classified as a dwarf planet, has a diameter of approximately 2,377 kilometers (1,477 miles).
+                    <br><br>
+                    In terms of size, Earth is also significantly larger than Titan, which is the largest moon of Saturn. Titan has a diameter of approximately 5,150 kilometers (3,200 miles) and is the only known moon in the solar system with a dense atmosphere.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+        </div>
+        <div class="FirstContainer" id="Atmosphere">
+            <div class="FirstBoxRight">
+                <img src="../Pictures/Earth/Atmos4.jpg" alt="Picture showing the different atmospheres of Earth and how far they stretch and what you might find in the different atmosphere layers" >
+            </div>
+            <div class="FirstBoxLeft">
+                <div class="FirstBoxHeaders">
+                    <h5>Layers</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>Atmospheric Zones</h2>
+                </div>
+                <p>Earth's atmosphere is a complex system of gases and particles that surrounds our planet. It is divided into several distinct layers.
+                The first layer of Earth's atmosphere is the troposphere, which extends from the surface up to an altitude of about 12 kilometers. This is the layer where weather occurs, and it is where we find most of the Earth's air, as well as clouds, dust, and other atmospheric particles. The troposphere is also the layer where the temperature decreases as altitude increases, a phenomenon known as the lapse rate.
+                <br><br>
+                Above the troposphere is the stratosphere, which extends from about 12 kilometers up to an altitude of about 50 kilometers. This layer is characterized by the presence of the ozone layer, a region of the atmosphere that contains high concentrations of ozone gas. The ozone layer absorbs much of the sun's harmful ultraviolet radiation, helping to protect life on Earth from its damaging effects.
+                <br><br>
+                Beyond the stratosphere lies the mesosphere, which extends from about 50 kilometers up to an altitude of about 85 kilometers. This layer is characterized by extremely low temperatures and is also where meteors burn up upon entering Earth's atmosphere. The boundary between the Earth's atmosphere and space is known as the Karman line, which is defined as an altitude of 100 kilometers above sea level.
+                <br><br>
+                Above the mesosphere is the thermosphere, which extends from about 85 kilometers up to an altitude of about 600 kilometers. This layer is characterized by high temperatures, as well as the presence of the ionosphere, a region of the atmosphere that contains high concentrations of ions and free electrons. The ionosphere plays an important role in radio communication and other forms of wireless communication.
+                <br><br>
+                Finally, beyond the thermosphere is the exosphere, which extends from about 600 kilometers up to the edge of space. characteristics are, very low densities of gas and particles. Where Earth's atmosphere gradually gives way to the vacuum of space.
+                </p>
+            </div>
+        </div>     
+        <div class="ThirdContainer" id="Orbit">
+            <div class="ThirdBoxHeaders">
+                <h5>Elliptical Orbit</h5>
+                <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                <h2>Shape and Characteristics of Earth's Path</h2>
+            </div>
+            <div class="ThirdBottomBox">
+                <img src="../Pictures/Earth/Orbit.jpg" alt="Picture showing the orbit of planet earth around the sun and how that affects our seasons">
+            </div>
+            <div class="ThirdTopBox">
+                <p>
+                    The Earth's orbit around the Sun is not a perfect circle but rather an ellipse, a shape that resembles a stretched-out circle. This means that the distance between the Earth and the Sun varies throughout the year, resulting in different seasons and temperatures.
+                    <span class="dots"></span><span class="more"><br><br>
+                    The shape of the Earth's orbit is not a fixed ellipse but rather a slightly changing one, due to various gravitational influences such as the gravitational pull of other planets in our solar system. This means that the Earth's distance from the Sun and its speed in orbit also vary over time.
+                    <br><br>
+                    The Earth's orbit has an eccentricity of 0.0167, which means that its elliptical shape is relatively mild, and the difference between its closest and farthest points from the Sun is not very significant. The closest point in the Earth's orbit to the Sun is called perihelion, and it occurs in early January, while the farthest point is called aphelion and occurs in early July.
+                    <br><br>
+                    The difference in the Earth's distance from the Sun at perihelion and aphelion has a minimal effect on our climate, as the Earth's axial tilt and the resulting changes in the angle of sunlight are the primary drivers of our seasons. However, the elliptical shape of the Earth's orbit does affect the length of our seasons, with winter in the northern hemisphere being slightly shorter than summer due to the Earth's faster movement in its orbit during the winter months.
+                    <br><br>
+                    Overall, the elliptical shape of the Earth's orbit is just one of many factors that contribute to the complex and fascinating behavior of our planet and its relationship with the Sun.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+        </div>
+        <div class="ThirdContainer" id="GravitationalPull">
+            <div class="ThirdBoxHeaders">
+                <h5>Relativity, Earth's Gravity</h5>
+                <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                <h2>Einstein Changed Our Understanding</h2>
+            </div>
+            <div class="ThirdBottomBox">
+                <img src="../Pictures/Earth/GravitationalForce.png" alt="Picture showing the gravitational pull and force of earth and how earth bends the space fabric and how the moon orbits around it">
+            </div>
+            <div class="ThirdTopBox">
+                <p>
+                    Gravity is one of the fundamental forces in the universe that governs the motion of objects. It is the force that keeps us grounded on Earth, and it is the force that keeps planets in orbit around the Sun. For centuries, scientists have been trying to understand the mysteries of gravity, and one man who made a significant contribution to our understanding of it is Albert Einstein.
+                    <span class="dots"></span><span class="more"><br><br>
+                    Einstein's theory of general relativity is perhaps one of the most famous scientific theories of all time. It revolutionized our understanding of space, time, and gravity, and it has stood the test of time for over a century. At the heart of Einstein's theory is the concept that gravity is not a force in the traditional sense but is instead the result of the curvature of space-time caused by massive objects.
+                    <br><br>
+                    So, how does this relate to Earth's gravity? According to Einstein's theory, the mass of the Earth warps the space-time around it, causing objects to move towards the center of the Earth. This explains why objects fall towards the Earth's surface and why the Earth orbits around the Sun. The amount of curvature of space-time is directly proportional to the mass of the object, which means that more massive objects like the Sun have a stronger gravitational pull than smaller objects like the Earth.
+                    <br><br>
+                    Einstein's theory also predicts that the gravitational force should be weaker on the surface of the Earth at higher altitudes. This is because the Earth's gravitational field is not uniform but varies with the distance from the center of the Earth. This effect has been confirmed through various experiments, including measurements of the weight of objects at different altitudes.
+                    <br><br>
+                    Furthermore, Einstein's theory predicts that gravity can cause time dilation, which means that time moves slower in a strong gravitational field than in a weak gravitational field. This has been confirmed through experiments, such as the observation of time dilation in clocks on GPS satellites.
+                    <br><br>
+                    In conclusion, Einstein's theory of general relativity has greatly enhanced our understanding of Earth's gravity. It has provided a new framework for understanding the fundamental nature of gravity and has helped us to explain many of the phenomena that we observe in the universe. Today, scientists continue to study and test the predictions of general relativity, and it remains one of the most important scientific theories in history.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+        </div>
+        <div class="SecondContainer" id="Rotation">
+            <div class="SecondBox">
+                <div class="SecondBoxHeaders">
+                    <h5>Coriolis Effect</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>Earth's Rotation</h2>
+                </div>
+                <p>
+                    Earth's gravity is a fundamental force that holds everything on the planet's surface. It is the force that keeps us grounded and is responsible for the motion of objects on Earth. The gravitational pull of the Earth is also what makes it possible for us to have seasons. However, there is another factor that comes into play when it comes to the changing of seasons, which is the Coriolis Effect.
+                    <span class="dots"></span><span class="more"><br><br>
+                    The Coriolis Effect is a phenomenon that results from the Earth's rotation on its axis. This effect causes moving objects, including air and water, to appear to be deflected to the right in the Northern Hemisphere and to the left in the Southern Hemisphere. This effect is caused by the fact that different parts of the Earth's surface are moving at different speeds due to the rotation of the planet. As a result, the Coriolis Effect is what causes the rotation of large-scale weather systems like hurricanes and typhoons.
+                    <br><br>
+                    Seasons, on the other hand, are caused by the Earth's tilt on its axis. The Earth's axis is tilted at an angle of about 23.5 degrees relative to the plane of its orbit around the sun. This means that at different times of the year, different parts of the Earth receive more or less direct sunlight, which leads to the changing of seasons.
+                    <br><br>
+                    For example, during the summer solstice, which occurs around June 21st in the Northern Hemisphere, the North Pole is tilted towards the sun, and the Southern Hemisphere is tilted away from the sun. This means that the Northern Hemisphere receives more direct sunlight, which leads to warmer temperatures and longer days. Conversely, during the winter solstice, which occurs around December 21st in the Northern Hemisphere, the North Pole is tilted away from the sun, and the Southern Hemisphere is tilted towards the sun. This means that the Northern Hemisphere receives less direct sunlight, which leads to colder temperatures and shorter days.
+                    <br><br>
+                    In conclusion, Earth's gravity, the Coriolis Effect, and the tilt of its axis all play important roles in the changing of seasons. Without these factors, our planet would be a vastly different place. Understanding how these natural phenomena work can help us better appreciate the complexity and beauty of the world around us.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+            <div class="SecondBox">
+                <img src="../Pictures/Earth/Rotation.gif" alt="A gif video showing off how the rotation of earth affects our seasons" style="border: 1px solid white;">
+            </div>
+        </div>
+        <div class="FirstContainer" id="Composition">
+            <div class="FirstBoxLeft">
+                <div class="FirstBoxHeaders">
+                    <h5>Composition</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>Layers</h2>
+                </div>
+                <p>Earth is a complex and diverse planet, with a composition that is both varied and fascinating. The planet is composed of a number of different elements, ranging from the solid crust to the molten core at the center of the planet. Understanding the composition of the Earth is key to understanding how it formed, how it functions, and how it interacts with the other planets and celestial bodies in our solar system.
+                <br><br>
+                At the core of the Earth lies the inner core, which is composed primarily of iron and nickel. The pressure at the center of the Earth is so intense that these elements are compressed into a solid state, despite their high temperatures. The inner core is surrounded by the outer core, which is also composed primarily of iron and nickel but is in a liquid state due to the lower pressure.
+                <br><br>
+                Above the core lies the Earth's mantle, which is primarily composed of silicate rocks rich in magnesium and iron. The mantle is semi-solid and can flow over time, which gives rise to the process of plate tectonics that shapes the Earth's surface. The crust, which is the outermost layer of the Earth, is composed of a variety of different materials, including granite, basalt, and sedimentary rocks.
+                <br><br>
+                In addition to these solid components, the Earth is also surrounded by a thin atmosphere composed primarily of nitrogen, oxygen, and trace amounts of other gases. This atmosphere is essential for life on Earth, as it provides a protective layer that shields us from harmful radiation and regulates the planet's temperature.
+                <br><br>
+                Overall, the composition of the Earth is a complex and dynamic system that has evolved over billions of years. By studying the composition of our planet, we can gain insight into its history, its current state, and its future evolution.</p>
+            </div>
+            <div class="FirstBoxRight">
+                <img src="../Pictures/Earth/Composition.jpg" alt="A picture showing the earths composition and how its made with the different layers of our planet and their lengths and materials" >
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Element</th>
+                            <th>Percentage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Oxygen</td>
+                            <td>46.6%</td>
+                        </tr>
+                        <tr>
+                            <td>Silicon</td>
+                            <td>27.7%</td>
+                        </tr>
+                        <tr>
+                            <td>Aluminum</td>
+                            <td>8.1%</td>
+                        </tr>
+                        <tr>
+                            <td>Iron</td>
+                            <td>5.0%</td>
+                        </tr>
+                        <tr>
+                            <td>Calcium</td>
+                            <td>3.6%</td>
+                        </tr>
+                        <tr>
+                            <td>Sodium</td>
+                            <td>2.8%</td>
+                        </tr>
+                        <tr>
+                            <td>Potassium</td>
+                            <td>2.6%</td>
+                        </tr>
+                        <tr>
+                            <td>Magnesium</td>
+                            <td>2.1%</td>
+                        </tr>
+                        <tr>
+                            <td>Titanium</td>
+                            <td>0.58%</td>
+                        </tr>
+                        <tr>
+                            <td>Hydrogen</td>
+                            <td>0.14%</td>
+                        </tr>
+                        <tr>
+                            <td>Phosphorus</td>
+                            <td>0.099%</td>
+                        </tr>
+                        <tr>
+                            <td>Manganese</td>
+                            <td>0.09%</td>
+                        </tr>
+                        <tr>
+                            <td>Carbon</td>
+                            <td>0.05%</td>
+                        </tr>
+                        <tr>
+                            <td>Sulfur</td>
+                            <td>0.04%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>     
+        <div class="ThirdBoxHeaders" id="History">
+            <h5>History of the Earth</h5>
+            <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+            <h2>From Formation to the Future</h2>
+        </div>
+        <div class="Timeline-Box">
+            <div class="timeline-timeline">
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                    <h4>Formation of the Earth: The origins of our planet</h4>
+                    <p>
+                        The formation of Earth is a fascinating topic that has intrigued scientists and researchers for centuries. It is believed that the Earth formed about 4.54 billion years ago from a cloud of gas and dust that surrounded the young Sun. This cloud, known as the solar nebula, contained elements such as hydrogen, helium, carbon, and oxygen, which eventually came together to form the Earth and other planets in our solar system.
+                        <span class="dots"></span><span class="more"><br><br>
+                        The process of the Earth's formation began when gravity caused the solar nebula to collapse in on itself. As the nebula contracted, it began to spin, forming a disk-like structure with the young Sun at its center. Over time, this disk began to cool, allowing solid particles to form. These particles collided and stuck together, eventually forming larger and larger objects known as planetesimals.
+                        <br><br>
+                        As the planetesimals continued to grow, they began to attract even more matter through their gravitational pull. Eventually, some of these planetesimals became large enough to be considered protoplanets. These protoplanets continued to collide and merge with each other, forming the planets that we know today.
+                        <br><br>
+                        The early Earth was a hot and violent place, with frequent impacts from other protoplanets and asteroids. This bombardment created massive craters on the Earth's surface and released vast amounts of heat, which helped to melt the Earth's surface. Over time, this molten rock cooled and solidified, forming the Earth's crust.
+                        <br><br>
+                        One of the most important events in the Earth's formation was the differentiation of its interior. This process involved the separation of the Earth's materials into different layers, with the densest materials sinking to the center to form the Earth's core. This differentiation created the Earth's magnetic field, which helps to protect the planet from harmful solar radiation.
+                        <br><br>
+                        Today, the Earth is a complex and dynamic planet, with a diverse range of environments and ecosystems. Its formation was a long and complex process, shaped by the forces of gravity, heat, and pressure. By studying the origins of our planet, scientists hope to gain a better understanding of how planets form and evolve, and how we can protect and preserve our own planet for future generations.
+                        </span>
+                    </p>
+                    <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>Emergence of Life: From single-celled organisms to complex ecosystems</h4>
+                        <p>
+                            The emergence of life on Earth is a remarkable story that spans billions of years. Scientists believe that life first appeared on our planet around 3.5 billion years ago, in the form of single-celled organisms. These organisms were simple in structure, but they were able to carry out all the basic functions necessary for life, such as obtaining nutrients and reproducing.
+                            <span class="dots"></span><span class="more"><br><br>
+                            Over time, these single-celled organisms began to evolve and diversify, leading to the development of more complex life forms. One of the key events in this process was the evolution of photosynthesis, which allowed organisms to harness the energy of the Sun to produce their own food. This paved the way for the development of complex, multicellular life forms, such as plants and animals.
+                            <br><br>
+                            As life evolved and diversified, it also began to interact with the environment in new and complex ways. Organisms adapted to different environments and began to form complex ecosystems, with different species interacting and relying on each other for survival. These ecosystems are essential for maintaining the balance of life on our planet, providing critical services such as pollination, nutrient cycling, and carbon sequestration.
+                            <br><br>
+                            Despite the many challenges that life has faced over the course of its evolution, it has persisted and thrived, adapting to changing environmental conditions and developing new strategies for survival. Today, life is found in virtually every corner of our planet, from the depths of the ocean to the highest mountain peaks.
+                            <br><br>
+                            Understanding the emergence and evolution of life is essential for us to appreciate the incredible diversity and complexity of the natural world, as well as the many ways in which we rely on it for our own survival. It also underscores the importance of preserving and protecting the ecosystems and biodiversity that make life on Earth possible.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" id="myReadmoreBtn" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                        <h4>Dinosaurs and Mass Extinctions: The rise and fall of the reptilian giants</h4>
+                        <p>
+                            Dinosaurs are some of the most iconic creatures to have ever walked the Earth, and their rise and fall is one of the most fascinating stories in the history of life on our planet. These reptilian giants dominated the planet for millions of years, but their reign was abruptly cut short by a series of catastrophic events that resulted in one of the most devastating mass extinctions in the history of life on Earth.
+                            <span class="dots"></span><span class="more"><br><br>
+                            The earliest dinosaurs appeared around 230 million years ago, during the late Triassic period. These early dinosaurs were small and relatively insignificant, but over time, they began to evolve and diversify, giving rise to a wide variety of species. By the late Jurassic period, dinosaurs had become some of the largest and most impressive animals on the planet, with massive creatures like the Brachiosaurus and Diplodocus towering over their smaller relatives.
+                            <br><br> 
+                            Despite their dominance, dinosaurs were not invincible, and they were eventually brought down by a series of cataclysmic events. The most famous of these events was the impact of a massive asteroid, which struck the Earth around 65 million years ago. This impact caused widespread devastation, triggering a chain reaction of environmental changes that ultimately led to the extinction of the dinosaurs and many other species.
+                            <br><br> 
+                            While the asteroid impact was certainly a major factor in the extinction of the dinosaurs, it was not the only cause. Scientists believe that other factors, such as volcanic eruptions and changes in sea level and climate, also played a role in the mass extinction. Together, these events created a perfect storm of conditions that ultimately brought an end to the age of the dinosaurs.
+                            <br><br> 
+                            Despite their demise, dinosaurs continue to captivate our imaginations, and their legacy lives on in the many birds that evolved from their reptilian ancestors. By studying the rise and fall of these incredible creatures, scientists can gain a deeper understanding of the processes that shape the evolution and extinction of species, as well as the many ways in which our planet has changed over time.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>Ice Ages and Climate Change: The shaping of the planet's climate</h4>
+                        <p>
+                            Climate change has been a constant feature of Earth's history, and one of the most dramatic examples of this is the series of Ice Ages that have occurred over the past 2.6 million years. These periods of extreme cold and glaciation have had a profound impact on the planet's climate, shaping everything from the landscape to the evolution of life itself.
+                            <span class="dots"></span><span class="more"><br><br>
+                            Ice Ages are characterized by periods of prolonged cooling, during which glaciers and ice sheets expand and cover large portions of the planet's surface. These periods are typically interspersed with shorter, warmer interglacial periods, during which the ice retreats and the climate warms up.
+                            <br><br>
+                            The causes of Ice Ages are complex and still not fully understood, but they are believed to be the result of a combination of factors, including changes in the Earth's orbit and axial tilt, variations in solar output, and feedback mechanisms involving the atmosphere, oceans, and ice cover.
+                            <br><br>
+                            Despite the natural causes of Ice Ages, scientists are now warning that human activity is driving a new phase of climate change, with potentially devastating consequences for the planet. Global temperatures are rising at an unprecedented rate, largely due to the emission of greenhouse gases such as carbon dioxide and methane from burning fossil fuels and other human activities.
+                            <br><br>
+                            These changes in temperature and weather patterns are already having a profound impact on the planet, from melting polar ice caps and rising sea levels to more frequent and severe weather events such as hurricanes and droughts. They are also driving the loss of biodiversity, with many species struggling to adapt to the rapid changes in their habitats.
+                            <br><br>
+                            Addressing the challenge of climate change requires a global effort, with individuals, governments, and businesses all playing a role in reducing greenhouse gas emissions and transitioning to more sustainable ways of living. By understanding the complex history of Earth's climate and the factors that shape it, we can better appreciate the urgent need for action to safeguard the planet for future generations.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                        <h4>Human Evolution: The emergence of Homo sapiens and the development of civilization</h4>
+                        <p>
+                            Human evolution is a fascinating subject that has captivated scientists and the general public for decades. It is the study of how humans developed from early primates to modern-day Homo sapiens. The emergence of Homo sapiens marked a significant turning point in human evolution, as it led to the development of civilization as we know it today.
+                            <span class="dots"></span><span class="more"><br><br>
+                            The evolution of Homo sapiens can be traced back millions of years, to the time when our earliest ancestors were apes. Over time, these apes evolved to become bipedal, meaning they could walk on two legs instead of four. This development allowed them to travel long distances, carry objects, and use their hands for complex tasks.
+                            <br><br>
+                            The next major milestone in human evolution occurred around 2.5 million years ago when the first members of the Homo genus appeared. These early humans were characterized by their larger brains and smaller teeth, which allowed them to consume a wider range of foods. They also developed the ability to make and use tools, which gave them a significant advantage over other animals.
+                            <br><br>
+                            Around 200,000 years ago, Homo sapiens emerged as the most advanced and intelligent species of humans. They had larger brains and more complex societies than any of their predecessors. They also developed language, which allowed them to communicate complex ideas and collaborate on a wide range of tasks.
+                            <br><br>
+                            The development of civilization began around 10,000 years ago, when humans began to settle in one place and engage in agriculture. This allowed them to produce surplus food, which in turn led to the development of cities and the division of labor. As civilizations grew, so did the need for social organization, which led to the development of laws, governments, and religious systems.
+                            <br><br>
+                            Today, human civilization has reached unprecedented levels of complexity, with advanced technologies, massive cities, and global networks of trade and communication. Despite the challenges that civilization poses, it has also allowed us to achieve remarkable feats, from exploring the depths of space to curing deadly diseases.
+                            <br><br>
+                            In conclusion, the emergence of Homo sapiens and the development of civilization represent two of the most important milestones in human evolution. They have allowed us to achieve remarkable advancements and overcome numerous challenges, while also raising new questions about our place in the universe and the future of our species.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>Agriculture and Civilization: The birth of farming and the growth of human societies</h4>
+                        <p>
+                            The development of agriculture was a crucial step in human evolution that led to the birth of farming and the growth of human societies. It allowed humans to settle in one place and produce food on a larger scale, which in turn led to the formation of complex civilizations.
+                            <span class="dots"></span><span class="more"><br><br>
+                            Before the advent of agriculture, humans were hunter-gatherers who roamed from place to place in search of food. They relied on natural resources such as fruits, nuts, and game, and their lifestyle was characterized by a high degree of mobility and uncertainty.
+                            <br><br>
+                            Around 10,000 years ago, humans began to domesticate plants and animals, marking the beginning of agriculture. This allowed them to produce food on a larger scale and store it for future use, which in turn led to the development of permanent settlements. As humans began to cultivate crops and rear animals, they became more sedentary and were able to develop more complex societies.
+                            <br><br>
+                            The growth of agriculture also had numerous other benefits, such as increased food security, better nutrition, and higher population densities. With the production of surplus food, humans were able to support larger populations, which in turn led to the development of cities and the specialization of labor. This allowed people to specialize in different tasks, such as farming, manufacturing, and trade, leading to the growth of complex societies.
+                            <br><br>
+                            Agriculture and civilization were closely linked, as the growth of one facilitated the growth of the other. The development of agriculture allowed for the growth of civilization, and in turn, civilization created the conditions for agriculture to flourish. The relationship between agriculture and civilization has continued to evolve over time, with new technologies and practices continually improving food production and enabling new levels of prosperity.
+                            <br><br>
+                            Today, agriculture continues to be a vital part of human society, providing food and other resources to support our ever-growing population. While the impact of agriculture has not always been positive, it has undoubtedly played a crucial role in shaping human history and the world we live in today.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                        <h4>Exploration and Discovery: The era of European expansion and the age of exploration</h4>
+                        <p>
+                            The era of European expansion and the age of exploration are two significant periods in world history that marked the beginning of a new era of global interaction and discovery. It was a time when European powers ventured into the unknown territories of the world, seeking new resources, trade routes, and opportunities.
+                            <span class="dots"></span><span class="more"><br><br>
+                            The age of exploration began in the 15th century, when Portuguese explorers began to explore the coast of Africa in search of new trade routes to Asia. They discovered new lands, peoples, and cultures, and their voyages set the stage for the European colonization of the Americas and other parts of the world.
+                            <br><br>
+                            During this time, the Spanish also made significant contributions to exploration and discovery, with the voyage of Christopher Columbus in 1492 being the most famous. Columbus's journey opened up the Americas to European exploration and colonization, leading to the eventual subjugation of the native peoples and the establishment of new colonial empires.
+                            <br><br>
+                            As European powers continued to expand their territories and influence, they discovered new resources and treasures, such as gold, silver, and spices. These discoveries led to the development of new trade routes and increased wealth, as well as new scientific and cultural exchanges.
+                            <br><br>
+                            The era of European expansion also had a significant impact on the indigenous peoples of the Americas, Africa, and Asia, with many suffering from enslavement, disease, and exploitation. However, the age of exploration also brought about new cultural exchanges and innovations, such as the spread of Christianity and the introduction of new foods and technologies.
+                            <br><br>
+                            Today, the era of European expansion and the age of exploration are seen as a defining period in world history, marking the beginning of a new era of global interaction and discovery. While the impact of these events has been complex and often controversial, they have undoubtedly played a significant role in shaping the world we live in today.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>Industrial Revolution: The transformation of society through technology and industry</h4>
+                        <p>
+                            The Industrial Revolution was a transformative period in human history that occurred in the late 18th and early 19th centuries. It was characterized by the widespread adoption of new manufacturing technologies, the development of new industries, and the growth of urbanization. This period saw a major shift from manual labor to machine-based manufacturing, which enabled large-scale production and allowed for the creation of new goods at an unprecedented pace.
+                            <span class="dots"></span><span class="more"><br><br>
+                            One of the key innovations of the Industrial Revolution was the invention of the steam engine, which greatly increased the efficiency of manufacturing processes and enabled the expansion of rail transportation. Other technological advances included improvements in textile production, such as the power loom and spinning jenny, which greatly increased the speed and quality of cloth production. These innovations led to a rapid increase in the production of goods, which in turn stimulated economic growth and expanded global trade.
+                            <br><br>
+                            The Industrial Revolution also had profound social implications. With the growth of industry and urbanization, many people left their rural homes and migrated to cities in search of work. This led to the rise of a new working class, who often worked long hours in dangerous and unsanitary conditions. This created a social divide between the wealthy owners of factories and the working class, which led to the emergence of labor movements and the eventual development of labor laws and protections.
+                            <br><br>
+                            The Industrial Revolution also had a significant impact on the environment. The widespread use of coal and other fossil fuels led to increased pollution and the depletion of natural resources. This created a need for more sustainable manufacturing processes, which led to the development of new technologies and the emergence of the environmental movement.
+                            <br><br>
+                            In conclusion, the Industrial Revolution was a period of great change and innovation that transformed society through technology and industry. It brought about profound economic, social, and environmental changes that continue to shape our world today. While it had its drawbacks, the innovations of the Industrial Revolution paved the way for modern manufacturing, transportation, and communication, and laid the foundation for the modern world we live in today.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                        <h4>Modern World: Globalization, world wars, and the modern era</h4>
+                        <p>
+                            The modern world is characterized by a number of key events and trends, including globalization, world wars, and the rise of technology and mass media.
+                            <span class="dots"></span><span class="more"><br><br>
+                            Globalization is the process of increased interconnectedness and integration among countries, economies, and cultures. It has led to the growth of international trade and investment, the spread of technology and ideas, and increased cultural exchange. However, globalization has also had negative effects, such as increased economic inequality and the loss of cultural diversity.
+                            <br><br>
+                            The two world wars of the 20th century were defining events in modern world history. World War I was fought between 1914 and 1918, and was caused by a complex web of political, economic, and social factors. The war led to the deaths of millions of people and the destruction of much of Europe. World War II followed in 1939 and lasted until 1945, and was even more destructive, leading to the deaths of tens of millions of people and the devastation of much of Europe and Asia.
+                            <br><br>
+                            The aftermath of the world wars saw significant changes in the global political and economic landscape. The United States emerged as a superpower, and the world became increasingly divided into two opposing blocs during the Cold War. The rise of the Soviet Union and the spread of communism led to conflicts in many parts of the world, including Korea and Vietnam.
+                            <br><br>
+                            In the latter half of the 20th century, technological advancements and the growth of mass media had a significant impact on the modern world. The development of the internet and other forms of digital communication revolutionized the way people interacted and conducted business. It also had significant social and political effects, including the rise of social media and the spread of misinformation.
+                            <br><br>
+                            Today, the modern era is characterized by ongoing political, social, and economic changes, including the continued growth of globalization, the challenges posed by climate change, and the ongoing struggle for social justice and equality. Despite these challenges, the modern era also offers unprecedented opportunities for collaboration, innovation, and progress.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>The Future of Earth: Challenges and opportunities for our planet and its inhabitants.</h4>
+                        <p>
+                            The future of Earth is both exciting and uncertain, with many challenges and opportunities ahead for our planet and its inhabitants. From climate change to technological advancements, the future presents a range of potential outcomes, some positive and some negative.
+                            <span class="dots"></span><span class="more"><br><br>
+                            One of the biggest challenges facing our planet is climate change, which has the potential to have devastating effects on the environment and on human societies. Rising temperatures, sea level rise, and extreme weather events threaten to displace millions of people, cause widespread food and water shortages, and lead to the extinction of many plant and animal species.
+                            <br><br>
+                            However, there are also opportunities to address these challenges and create a more sustainable future. Advances in renewable energy, such as solar and wind power, have the potential to replace fossil fuels and reduce greenhouse gas emissions. Sustainable agriculture and forestry practices can help to mitigate the effects of climate change while also promoting economic growth and environmental stewardship.
+                            <br><br>
+                            Another major challenge facing our planet is the rapid pace of technological advancement. While technology has the potential to revolutionize many aspects of our lives, from healthcare to transportation, it also poses significant risks. Cybersecurity threats, AI-powered weapons, and the potential misuse of advanced biotechnologies are just some of the potential dangers associated with rapid technological advancement.
+                            <br><br>
+                            However, there are also opportunities to harness technology for positive change. Advances in biotechnology, for example, offer the potential for cures for diseases and other medical breakthroughs. AI and machine learning can help to improve efficiency and productivity in many industries, while also providing valuable insights into complex problems.
+                            <br><br>
+                            Ultimately, the future of Earth will be shaped by the choices we make as a global community. By working together to address the challenges facing our planet, and by seizing the opportunities presented by technological advancements, we can create a future that is both prosperous and sustainable. It will require cooperation, innovation, and a willingness to embrace change, but the rewards are too great to ignore.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="wrapper" id="Newsletter">
+            <h1>Subscribe to our Newsletter</h1>
+            <p>Receive updates instanly</p>
+            <div class="newsletter">
+                <input type="text" class="input" placeholder="Enter Your Email">
+                <img src="../Pictures/envelope-solid.png" class="fas fa-envelope Showinstant" alt="Picture of an envelope">
+                <div class="btn">Subscribe</div>
+            </div>
+        </div>	
+        <script src="../Javascript/SmallNav.js"></script>
+        <script src="../Javascript/StickyNavigation.js"></script>
+        <script src="../Javascript/BackToTop&ProgressBar.Js"></script>
+        <script src="../Javascript/ReadMore.js"></script>
+        <script src="../Javascript/FadeInUp.js"></script>
+    </body>
+</html>

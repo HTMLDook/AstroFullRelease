@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Title-->
+        <title>Our Solar System</title>
+        <!-- This meta tag specifies the character encoding for the HTML document -->
+        <meta charset="UTF-8">
+        <!-- This meta tag specifies the author of the webpage -->
+        <meta name="author" content="Erik Rhodin Claesson">
+        <!-- This meta tag provides a brief description of the webpage for search engines -->
+        <meta name="description" content="Astro is a pioneering company that specializes in the exploration of the solar system. Their website is a one-stop destination for all things related to space exploration and the wonders of the cosmos. From the latest discoveries about our neighboring planets to cutting-edge research on the origins of the universe, Astro's website offers a wealth of information and resources for space enthusiasts of all levels.">
+        <!-- This meta tag provides a list of keywords that describe the content of the webpage -->
+        <meta name="keywords" content="Astro, solar system, space exploration, cosmos, neighboring planets, discoveries, cutting-edge research, origins of the universe, space enthusiasts, information, resources, planet data, light pollution, astronomy, science, space technology, space missions, space science, planet exploration, telescopes, space telescopes, space discoveries, extraterrestrial life, space news, space education, space events, rocket science, space missions, NASA, ESA, JAXA, space probes, space travel, space programs, space history, space research, space discoveries, celestial objects, solar system objects, planetary science, space imaging, space simulations, space visualization, space facts, space phenomena, space exploration missions, space colonization, space engineering, space technology advancements, space conferences, space outreach, space apps, space industry">
+        <!-- This meta tag sets the viewport to ensure that the webpage is displayed properly on mobile devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- These meta tags are used by social media platforms when the webpage is shared to specify the title, description, image and URL for the shared content -->
+        <meta property="og:title" content="Our Solar System">
+        <meta property="og:description" content="Astro is a pioneering company that specializes in the exploration of the solar system. Their website is a one-stop destination for all things related to space exploration and the wonders of the cosmos. From the latest discoveries about our neighboring planets to cutting-edge research on the origins of the universe, Astro's website offers a wealth of information and resources for space enthusiasts of all levels.">
+        <meta property="og:image" content="https://img.freepik.com/free-vector/solar-system-science-education_1308-89626.jpg?w=2000">
+        <meta property="og:url" content="http://astro.com/">
+        <!-- Css Links -->
+        <link rel="stylesheet" href="../Css/AboutUs.css">
+        <link rel="stylesheet" href="../Css/StickyNavigation.css">
+        <link rel="stylesheet" href="../Css/ModalAndGallery.css">
+        <link rel="stylesheet" href="../Css/CustomScrollBar.css">
+        <link rel="stylesheet" href="../Css/TopNavigation.css">
+        <link rel="stylesheet" href="../Css/NavbarSmaller.css">
+        <link rel="stylesheet" href="../Css/GeneralStyle.css">
+        <link rel="stylesheet" href="../Css/ProgressBar.css"> 
+        <link rel="stylesheet" href="../Css/ModalCards.css">
+        <link rel="stylesheet" href="../Css/BackToTop.css">
+        <link rel="stylesheet" href="../Css/FadeInUp.css"> 
+        <link rel="stylesheet" href="../Css/Socials.css">
+        <!-- Script Links -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Other Links -->
+        <link rel="icon" href="../Pictures/solar-system.png">
+    </head>
+    <body>
+        <!-- Back to top button -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <!-- First Paralax Scrolling Picture -->
+        <div class="bgimg-1">
+            <div>
+                <!-- Top Header -->
+                <div class="header">
+                    <div class="social-icons">
+                        <a href="mailto:example@gmail.com" target="_blank" class="icon gmail"></a>
+                        <a href="https://twitter.com/example" target="_blank" class="icon twitter"></a>
+                        <a href="https://instagram.com/example" target="_blank" class="icon instagram"></a>
+                        <a href="https://youtube.com/channel/UCdXh9gKzDo6H_2q3oPW6Gzw" target="_blank" class="icon youtube"></a>
+                        <a href="https://linkedin.com/in/example" target="_blank" class="icon linkedin"></a>
+                    </div>
+                    <div class="topnavigation">
+                        <a href="Main.html">Home</a>
+                        <a href="AboutUs.html" class="active">About us</a>
+                        <a href="ContactUs.html">Contact</a>
+                    </div>
+                    <div class="TopLinks">
+                        <!-- Logo Picture --> 
+                        <a href="Main.html">
+                            <img src="../Pictures/AstroLogo.png" width="75" height="75" alt="Company logo that looks like davids star from the jewish belief" class="Showinstant">
+                        </a>
+                        <!-- Logo Text -->
+                        <a href="AboutUs.html">
+                            <img src="../Pictures/TextLogo.png" width="175" height="75" alt="Text beside logo saying Astro" class="Showinstant">
+                        </a>
+                    </div>
+                </div>
+                <div class="caption3">
+                    <span class="border" style="background-color:transparent;color: #f7f7f7;">Welcome to Astro</span>
+                </div>
+            </div>
+        </div>
+        <!-- Sticky Navigation Bar -->
+        <nav>
+            <div style="list-style: none; margin: 0; padding: 0; display: flex;">
+                <!-- Opens Dropdown When Clicked -->
+                <div class="dropdown">
+                    <button onclick="toggleDropdown(this.id)" id="home" class="dropbtn">Home</button>
+                    <div id="home-dropdown" class="dropdown-content">
+                        <input type="text" placeholder="Search.." id="home-input" onkeyup="filterDropdown('home')">
+                        <a href="#about">About</a>
+                    </div>
+                </div>
+                <!-- Opens Dropdown When Clicked -->
+                <div class="dropdown">
+                    <button onclick="toggleDropdown(this.id)" id="sun" class="dropbtn">Sun</button>
+                    <div id="sun-dropdown" class="dropdown-content">
+                        <input type="text" placeholder="Search.." id="sun-input" onkeyup="filterDropdown('sun')">
+                        <a href="Sun.html#Home">About</a>
+                        <a href="Sun.html#Introduction">Introduction</a>
+                        <a href="Sun.html#Size">Size</a>
+                        <a href="Sun.html#Location">Location</a>
+                        <a href="Sun.html#Atmosphere">Atmosphere</a>
+                        <a href="Sun.html#Orbit">Orbit</a>
+                        <a href="Sun.html#GravitationalPull">Gravitational Pull</a>
+                        <a href="Sun.html#Rotation">Rotation</a>
+                        <a href="Sun.html#Composition">Composition</a>
+                        <a href="Sun.html#History">History</a>
+                        <a href="Sun.html#Newsletter">Newsletter</a>
+                    </div>
+                </div> 
+                <!-- Opens Dropdown When Clicked -->
+                <div class="dropdown">
+                    <button onclick="toggleDropdown(this.id)" id="mercury" class="dropbtn">Mercury</button>
+                    <div id="mercury-dropdown" class="dropdown-content">
+                        <input type="text" placeholder="Search.." id="mercury-input" onkeyup="filterDropdown('mercury')">
+                        <a href="Mercury.html#Home">About</a>
+                        <a href="Mercury.html#Introduction">Introduction</a>
+                        <a href="Mercury.html#Size">Size</a>
+                        <a href="Mercury.html#Location">Location</a>
+                        <a href="Mercury.html#Atmosphere">Atmosphere</a>
+                        <a href="Mercury.html#Orbit">Orbit</a>
+                        <a href="Mercury.html#GravitationalPull">Gravitational Pull</a>
+                        <a href="Mercury.html#Rotation">Rotation</a>
+                        <a href="Mercury.html#Composition">Composition</a>
+                        <a href="Mercury.html#History">History</a>
+                        <a href="Mercury.html#Newsletter">Newsletter</a>
+                    </div>
+                </div>
+                <!-- Opens Dropdown When Clicked -->
+                <div class="dropdown">
+                    <button onclick="toggleDropdown(this.id)" id="venus" class="dropbtn">Venus</button>
+                    <div id="venus-dropdown" class="dropdown-content">
+                        <input type="text" placeholder="Search.." id="venus-input" onkeyup="filterDropdown('venus')">
+                        <a href="Venus.html#Home">About</a>
+                        <a href="Venus.html#Introduction">Introduction</a>
+                        <a href="Venus.html#Size">Size</a>
+                        <a href="Venus.html#Location">Location</a>
+                        <a href="Venus.html#Atmosphere">Atmosphere</a>
+                        <a href="Venus.html#Orbit">Orbit</a>
+                        <a href="Venus.html#GravitationalPull">Gravitational Pull</a>
+                        <a href="Venus.html#Rotation">Rotation</a>
+                        <a href="Venus.html#Composition">Composition</a>
+                        <a href="Venus.html#History">History</a>
+                        <a href="Venus.html#Newsletter">Newsletter</a>
+                    </div>
+                </div>
+                <!-- Opens Dropdown When Clicked -->
+                <div class="dropdown">
+                    <button onclick="toggleDropdown(this.id)" id="earth" class="dropbtn">Earth</button>
+                    <div id="earth-dropdown" class="dropdown-content">
+                        <input type="text" placeholder="Search.." id="earth-input" onkeyup="filterDropdown('earth')">
+                        <a href="Earth.html#Home">About</a>
+                        <a href="Earth.html#Introduction">Introduction</a>
+                        <a href="Earth.html#Size">Size</a>
+                        <a href="Earth.html#Location">Location</a>
+                        <a href="Earth.html#Atmosphere">Atmosphere</a>
+                        <a href="Earth.html#Orbit">Orbit</a>
+                        <a href="Earth.html#GravitationalPull">Gravitational Pull</a>
+                        <a href="Earth.html#Rotation">Rotation</a>
+                        <a href="Earth.html#Composition">Composition</a>
+                        <a href="Earth.html#History">History</a>
+                        <a href="Earth.html#Newsletter">Newsletter</a>
+                    </div>
+                </div>
+                <!-- Opens Dropdown When Clicked -->
+                <div class="dropdown">
+                    <button onclick="toggleDropdown(this.id)" id="mars" class="dropbtn">Mars</button>
+                    <div id="mars-dropdown" class="dropdown-content">
+                        <input type="text" placeholder="Search.." id="mars-input" onkeyup="filterDropdown('mars')">
+                        <a href="Mars.html#Home">About</a>
+                        <a href="Mars.html#Introduction">Introduction</a>
+                        <a href="Mars.html#Size">Size</a>
+                        <a href="Mars.html#Location">Location</a>
+                        <a href="Mars.html#Atmosphere">Atmosphere</a>
+                        <a href="Mars.html#Orbit">Orbit</a>
+                        <a href="Mars.html#GravitationalPull">Gravitational Pull</a>
+                        <a href="Mars.html#Rotation">Rotation</a>
+                        <a href="Mars.html#Composition">Composition</a>
+                        <a href="Mars.html#History">History</a>
+                        <a href="Mars.html#Newsletter">Newsletter</a>
+                    </div>
+                </div>
+                <!-- Opens Dropdown When Clicked -->
+                <div class="dropdown">
+                    <button onclick="toggleDropdown(this.id)" id="jupiter" class="dropbtn">Jupiter</button>
+                    <div id="jupiter-dropdown" class="dropdown-content">
+                        <input type="text" placeholder="Search.." id="jupiter-input" onkeyup="filterDropdown('jupiter')">
+                        <a href="Jupiter.html#Home">About</a>
+                        <a href="Jupiter.html#Introduction">Introduction</a>
+                        <a href="Jupiter.html#Size">Size</a>
+                        <a href="Jupiter.html#Location">Location</a>
+                        <a href="Jupiter.html#Atmosphere">Atmosphere</a>
+                        <a href="Jupiter.html#Orbit">Orbit</a>
+                        <a href="Jupiter.html#GravitationalPull">Gravitational Pull</a>
+                        <a href="Jupiter.html#Rotation">Rotation</a>
+                        <a href="Jupiter.html#Composition">Composition</a>
+                        <a href="Jupiter.html#History">History</a>
+                        <a href="Jupiter.html#Newsletter">Newsletter</a>
+                    </div>
+                </div>
+                <!-- Opens Dropdown When Clicked -->
+                <div class="dropdown">
+                    <button onclick="toggleDropdown(this.id)" id="saturn" class="dropbtn">Saturn</button>
+                    <div id="saturn-dropdown" class="dropdown-content">
+                        <input type="text" placeholder="Search.." id="saturn-input" onkeyup="filterDropdown('saturn')">
+                        <a href="Saturn.html#Home">About</a>
+                        <a href="Saturn.html#Introduction">Introduction</a>
+                        <a href="Saturn.html#Size">Size</a>
+                        <a href="Saturn.html#Location">Location</a>
+                        <a href="Saturn.html#Atmosphere">Atmosphere</a>
+                        <a href="Saturn.html#Orbit">Orbit</a>
+                        <a href="Saturn.html#GravitationalPull">Gravitational Pull</a>
+                        <a href="Saturn.html#Rotation">Rotation</a>
+                        <a href="Saturn.html#Composition">Composition</a>
+                        <a href="Saturn.html#History">History</a>
+                        <a href="Saturn.html#Newsletter">Newsletter</a>
+                    </div>
+                </div>
+                <!-- Opens Dropdown When Clicked -->
+                <div class="dropdown">
+                    <button onclick="toggleDropdown(this.id)" id="uranus" class="dropbtn">Uranus</button>
+                    <div id="uranus-dropdown" class="dropdown-content">
+                        <input type="text" placeholder="Search.." id="uranus-input" onkeyup="filterDropdown('uranus')">
+                        <a href="Uranus.html#Home">About</a>
+                        <a href="Uranus.html#Introduction">Introduction</a>
+                        <a href="Uranus.html#Size">Size</a>
+                        <a href="Uranus.html#Location">Location</a>
+                        <a href="Uranus.html#Atmosphere">Atmosphere</a>
+                        <a href="Uranus.html#Orbit">Orbit</a>
+                        <a href="Uranus.html#GravitationalPull">Gravitational Pull</a>
+                        <a href="Uranus.html#Rotation">Rotation</a>
+                        <a href="Uranus.html#Composition">Composition</a>
+                        <a href="Uranus.html#History">History</a>
+                        <a href="Uranus.html#Newsletter">Newsletter</a>
+                    </div>
+                </div>
+                <!-- Opens Dropdown When Clicked -->
+                <div class="dropdown">
+                    <button onclick="toggleDropdown(this.id)" id="neptune" class="dropbtn">Neptune</button>
+                    <div id="neptune-dropdown" class="dropdown-content">
+                        <input type="text" placeholder="Search.." id="neptune-input" onkeyup="filterDropdown('neptune')">
+                        <a href="Neptune.html#Home">About</a>
+                        <a href="Neptune.html#Introduction">Introduction</a>
+                        <a href="Neptune.html#Size">Size</a>
+                        <a href="Neptune.html#Location">Location</a>
+                        <a href="Neptune.html#Atmosphere">Atmosphere</a>
+                        <a href="Neptune.html#Orbit">Orbit</a>
+                        <a href="Neptune.html#GravitationalPull">Gravitational Pull</a>
+                        <a href="Neptune.html#Rotation">Rotation</a>
+                        <a href="Neptune.html#Composition">Composition</a>
+                        <a href="Neptune.html#History">History</a>
+                        <a href="Neptune.html#Newsletter">Newsletter</a>
+                    </div>
+                </div>
+                <!-- Opens Dropdown When Clicked (Placed On The Right Side) -->
+                <div class="dropdown split">
+                    <button onclick="toggleDropdown(this.id)" id="other" class="dropbtn">other</button>
+                    <div id="other-dropdown" class="dropdown-content">
+                        <input type="text" placeholder="Search.." id="other-input" onkeyup="filterDropdown('other')">
+                        <a href="AboutUs.html">About</a>
+                        <a href="ContactUs.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Progressbar Stuck To Navigation Bar -->
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+            </div>  
+        </nav>
+        <!-- Seperate Navigation For Devices Bellow 1200px -->
+        <div id="myNav-for-mobile" class="overlay-for-mobile">
+            <a href="javascript:void(0)" class="closebtn-for-mobile" onclick="closeNav()">&times;</a>
+            <div class="overlay-content-for-mobile">
+              <a href="Main.html">Home</a>
+              <a href="Sun.html">Sun</a>
+              <a href="Mercury.html">Mercury</a>
+              <a href="Venus.html">Venus</a>
+              <a href="Earth.html">Earth</a>
+              <a href="Mars.html">Mars</a>
+              <a href="Jupiter.html">Jupiter</a>
+              <a href="Saturn.html">Saturn</a>
+              <a href="Uranus.html">Uranus</a>
+              <a href="Neptune.html">Neptune</a>
+              <a href="AboutUs.html">About us</a>
+              <a href="ContactUs.html">Contact</a>
+            </div>
+        </div>
+        <!-- Seperate Navigation For Devices Bellow 1200px Button -->
+        <div id="navbut">
+            <span onclick="openNav()">open Navigation</span>
+        </div>
+        <!-- Splitter Block -->
+        <div style="color: white; background-color:black;text-align:center;text-align: justify;">
+            <div class="containerur">
+                <div class="left">
+                    <img src="../Pictures/AstroLogo.png" alt="Astros Company Logo that looks like the star of david from the jewish belief" style="width:100%;width:450px;">
+                </div>
+                <div class="right">
+                    <h5 style="text-align: center;">Astro</h5>
+                    <h2 style="text-align: center;">About us</h2>
+                    <p style="text-align: center; color: white;">
+                        Welcome to our space exploration company, dedicated to unlocking the secrets of our solar system. We are a team of passionate and skilled scientists, engineers, and explorers committed to advancing our understanding of the universe through research and analysis of the planets, moons, and other celestial bodies in our solar system. 
+                        <br><br> 
+                        Our company specializes in the development and deployment of cutting-edge technologies that enable us to collect and analyze data from the far reaches of space. We design and launch probes and satellites to gather information about the composition, structure, and behavior of our neighboring planets and other celestial bodies.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Second Paralax Scrolling Picture -->
+        <div class="bgimg-2">
+            <div class="caption1">
+                <span class="border" style="background-color:transparent;color: #f7f7f7;">the wonders of space...</span>
+            </div>
+        </div>
+        <!-- Splitter Block -->
+        <div style="position:relative;">
+            <div class="middleall">
+                <section class="profilemodal hidden" id="modal1">
+                    <div style="display: flex;">
+                        <button class="btn-close">⨉</button>
+                        <div class="card-container">
+                            <span class="pro">CFO</span>
+                            <img class="round" src="../Pictures/TeamMembers/Donkey_Face_(Salla).png" alt="Small profile picture of Salla, picture showing a donkey face from the movie shrek" width="128" height="128">
+                            <h3 style="color: white;">Salla-Lovis Schönewolf</h3>
+                            <h6>Salami</h6>
+                            <p>Je baise ta mère</p>
+                            <div class="skills">
+                                <h6>Skills</h6>
+                                <ul>
+                                    <li>Talking</li>
+                                    <li>Problemsolving</li>
+                                    <li>Cuddling</li>
+                                    <li>Sleeping</li>
+                                    <li>Space Game</li>
+                                    <li>Vegetarian</li>
+                                    <li>Your Mom</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-container1">
+                            <div class="additional">
+                                <div class="more-info">
+                                    <h1>Salla-Lovis Schönewolf</h1>
+                                    <div class="coords">
+                                        <span>Joined: 22 February 2019</span>
+                                    </div>
+                                    <div class="coords">
+                                        <span>Fontvieille, France</span>
+                                    </div>
+                                    <div class="coords">
+                                        <h3 style="margin-bottom: 0; color: white; letter-spacing: 4px;">Interests & Hobbies</h3>
+                                        <p style="margin-top: 0;">
+                                            I have a range of interests and hobbies that keep me engaged and curious about the world. As a dog mom, Dogs are one of my greatest passions, and I find it fascinating to study their behavior.
+                                            <br><br>
+                                            Math and art are two other interests of mine. I enjoy working with complex numbers and graph theory, and I find the creative process of art to be both therapeutic and stimulating. Whether it's painting, drawing, or sculpting,
+                                        </p>
+                                    </div>
+                                    <div class="stats">
+                                        <div>
+                                            <div class="title">Milfs</div>
+                                            <div class="value">4</div>
+                                        </div>
+                                        <div>
+                                            <div class="title">Age</div>
+                                            <div class="value">26</div>
+                                        </div>
+                                        <div>
+                                            <div class="title">Years In Business</div>
+                                            <div class="value">4</div>
+                                        </div>
+                                        <div>
+                                            <div class="title">Club Mate</div>
+                                            <div class="value">420</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="general">
+                                <h1 style="margin-bottom:0;">Salla-Lovis Schönewolf</h1>
+                                <h3 style="color: white; letter-spacing: 4px;">Education & Training</h3>
+                                <p style="margin-top: 0;">
+                                    Graduated Middle school, achieved my International Baccaleureat diploma and studied maths and science. 
+                                </p>
+                                <h3 style="color: white; letter-spacing: 4px;">Skills & Expertise</h3>
+                                <p style="margin-top: 0;">
+                                    I understand the importance of effective communication. I have honed my skills in expressing ideas, building relationships, and negotiating effectively, whether it's through emails, phone calls, or in-person meetings. I also love a good challenge and am always up for finding creative solutions to complex problems. 
+                                </p>
+                                <span class="more">Move the mouse over the card for more info</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="profilemodal hidden" id="modal2">
+                    <div style="display: flex;">
+                        <button class="btn-close">⨉</button>
+                        <div class="card-container">
+                            <span class="pro">CEO</span>
+                            <img class="round" src="../Pictures/TeamMembers/Shrek_Face_(Erik).png" alt="Small profile picture of Erik, picture of shrek from the movie shrek" width="128" height="128">
+                            <h3 style="color: white;">Erik Rhodin<br>Claesson</h3>
+                            <h6>Swedish Fish</h6>
+                            <p>Ton chat ç'est Macron</p>
+                            <div class="skills">
+                                <h6>Skills</h6>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Javascript</li>
+                                    <li>Python</li>
+                                    <li>C++</li>
+                                    <li>C#</li>
+                                    <li>Math</li>
+                                    <li>Physics</li>
+                                    <li>Multitasking</li>
+                                    <li>Music</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-container1">
+                            <div class="additional">
+                                <div class="more-info">
+                                    <h1>Erik Rhodin Claesson</h1>
+                                    <div class="coords">
+                                        <span>Joined: 6th July 2016</span>
+                                    </div>
+                                    <div class="coords">
+                                        <span>Fontvieille, France</span>
+                                    </div>
+                                    <div class="coords">
+                                        <h3 style="margin-bottom: 0; color: white; letter-spacing: 4px;">Interests & Hobbies</h3>
+                                        <p style="margin-top: 0;">
+                                            I am passionate about creating websites and applications using HTML, CSS, JavaScript, Python, C++, and C#. Solving complex mathematical and physical problems drives my curiosity.
+                                            <br><br>
+                                            I love multitasking, juggling between my interests, and discovering new things. When I need to unwind, I turn to music, which relaxes and inspires me to create my own.
+                                        </p>
+                                    </div>
+                                    <div class="stats">
+                                        <div>
+                                            <div class="title">Awards</div>
+                                            <div class="value">3</div>
+                                        </div>
+                                        <div>
+                                            <div class="title">Age</div>
+                                            <div class="value">27</div>
+                                        </div>
+                                        <div>
+                                            <div class="title">Years In Business</div>
+                                            <div class="value">6</div>
+                                        </div>
+                                        <div>
+                                            <div class="title">Emergy Drinks</div>
+                                            <div class="value infinity">∞</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="general">
+                                <h1 style="margin-bottom:0;">Erik Rhodin Claesson</h1>
+                                <h3 style="color: white; letter-spacing: 4px;">Education & Training</h3>
+                                <p style="margin-top: 0;">
+                                    As CEO of Astro, education was vital in shaping his leadership. Earned a degree in Aerospace Engineering from MIT, followed by an MBA from Stanford. But it was his passion for space that drove him to gain further expertise, attending Space Studies Program at ISU. But it was his love for space that made him a true visionary.
+                                </p>
+                                <h3 style="color: white; letter-spacing: 4px;">Skills & Expertise</h3>
+                                <p style="margin-top: 0;">
+                                    Astro's CEO, is well-versed in the technical aspects of space exploration. Erik's unique blend of technical and business expertise makes her the ideal leader for Astro as they continue to push the boundaries of space exploration.
+                                </p>
+                                <span class="more">Move the mouse over the card for more info</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="profilemodal hidden" id="modal3">
+                    <div style="display: flex;">
+                        <button class="btn-close">⨉</button>
+                        <div class="card-container">
+                            <span class="pro">CTO</span>
+                            <img class="round" src="../Pictures/TeamMembers/Farquaad_Face_(Ari).png" alt="Small profile picture of Ari, picture showing farquaad from shrek" width="128" height="128">
+                            <h3 style="color: white;">Ari Clement de Kokkonen</h3>
+                            <h6>French Baguette</h6>
+                            <p>I understand eigenvectors<br>better than relationships.</p>
+                            <div class="skills">
+                                <h6>Skills</h6>
+                                <ul>
+                                    <li>Depression</li>
+                                    <li>Sea of Thieves bilge/flex</li>
+                                    <li>French</li>
+                                    <li>Speaks with a French accent</li>
+                                    <li>Hates Cheshire Grin</li>
+                                    <li>Baguette</li>
+                                    <li>Good at German</li>
+                                    <li>Overthinking</li>
+                                    <li>Nerd</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-container1">
+                            <div class="additional">
+                                <div class="more-info">
+                                    <h1>Ari Clément de Kokkonen</h1>
+                                    <div class="coords">
+                                        <span>Joined: 31/02/1895</span>
+                                    </div>
+                                    <div class="coords">
+                                        <span>France, Paris</span>
+                                    </div>
+                                    <div class="coords">
+                                        <h3 style="margin-bottom: 0; color: white; letter-spacing: 4px;">Interests & Hobbies</h3>
+                                        <p style="margin-top: 0;">
+                                            I have a passion for gaming, and one of my favorite games is Sea of Thieves. I find the game to be incredibly immersive, with its rich storyline, detailed graphics, and engaging gameplay. One thing I adore is SOT's hit reg... Furthermore, I enjoy playing with friends and exploring the vast world of Sea of Thieves, where there is always something new to discover.
+                                            <br><br>
+                                            In addition to gaming, I have a strong interest in IT. As a self-proclaimed nerd, I find the world of technology to be endlessly fascinating. I enjoy learning about the latest advancements in software and hardware, and I am always up for a challenge when it comes to troubleshooting tech issues.
+                                        </p>
+                                    </div>
+                                    <div class="stats">
+                                        <div>
+                                            <div class="title">LBH won</div>
+                                            <div class="value">0</div>
+                                        </div>
+                                        <div>
+                                            <div class="title">Age</div>
+                                            <div class="value">17</div>
+                                        </div>
+                                        <div>
+                                            <div class="title">Years In Business</div>
+                                            <div class="value">128</div>
+                                        </div>
+                                        <div>
+                                            <div class="title">Baguette</div>
+                                            <div class="value">69</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="general">
+                                <h1 style="margin-bottom:0;">Ari Clément de Kokkonen</h1>
+                                <h3 style="color: white; letter-spacing: 4px;">Education & Training</h3>
+                                <p style="margin-top: 0;">
+                                    Graduated middle school like a champ, achieved my International Baccaleureat diploma and studied IT and mathematics. Bachelor's degree in dumbfoolness as well as a PHD in Boarded Medical Doctor
+                                </p>
+                                <h3 style="color: white; letter-spacing: 4px;">Skills & Expertise</h3>
+                                <p style="margin-top: 0;">
+                                    I enjoy playing Sea of Thieves. I find the game to be a great way to unwind and escape from the stresses of everyday life. Through my experience with depression, I have learned coping mechanisms and strategies that allow me to effectively manage my symptoms and maintain my overall well-being.
+
+                                    I am also a bit of a nerd, and I tend to overthink things, which has helped me excel academically. I am proud to say that I have achieved many 6s in Etienne's classes and am currently pursuing the IB™ program. Despite my successes, I do have a particular dislike for the Cheshire Grin, which tends to creep me out.
+                                    <br>  
+                                </p>
+                                <span class="more">Move the mouse over the card for more info</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="overlay hidden"></div>
+            <div style="color:white;background-color:black;text-align:center;padding:50px 80px;text-align: justify; text-align: center;">
+                <h5 style="text-align: center;">Founders</h5>
+                <h2 style="text-align: center;">Our Team</h2>
+                <p>
+                    With a deep respect for the mysteries and complexities of the universe, we approach our work with a sense of wonder and curiosity that drives us to push the boundaries of what is possible. Our team is committed to advancing scientific knowledge and making groundbreaking discoveries that contribute to a greater understanding of our place in the cosmos. At our core, we are driven by a belief in the power of exploration and discovery to unlock new opportunities and possibilities for humanity. Join us on this exciting journey as we continue to explore the vast expanse of our solar system and beyond. 
+                </p>
+                <div class="TopMemCard" style="display: flex;">
+                    <div class="card">
+                        <img src="../Pictures/TeamMembers/Donkey_(Salla).png" alt="Picture showing the donkey from the movie Shrek as Salla" style="width:100%"  class="btn btn-open" data-modal="modal1">
+                        <div class="container">
+                            <h4>
+                                <b>Salla-Lovis Schönewolf</b>
+                            </h4>
+                            <p>CFO</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../Pictures/TeamMembers/Shrek_(Erik).png" alt="Picture showing Shrek from the movie Shrek as Erik" style="width: 100%;" class="btn btn-open" data-modal="modal2">
+                        <div class="container">
+                            <h4>
+                                <b>Erik Rhodin Claesson</b>
+                            </h4>
+                            <p>CEO</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../Pictures/TeamMembers/Farquaad_(Ari).png" alt="Picture showing Farquaad from the movie Shrek as Ari" style="width:100%"  class="btn btn-open" data-modal="modal3">
+                        <div class="container">
+                            <h4>
+                                <b>Ari Clement de Kokkonen</b>
+                            </h4>
+                            <p>CTO</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Third Paralax Scrolling Picture -->
+        <div class="bgimg-3">
+            <div class="caption1">
+                <span class="border" style="background-color:transparent;color: #f7f7f7;">in The Beyond</span>
+            </div>
+        </div>
+        <!-- Splitter Block -->
+        <div style="position:relative;">
+            <div style="color: white;background-color:black;text-align:center;padding:50px 80px;text-align: justify;">
+                <div class="flexingforgallery">
+                    <div class="container">
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 6</div>
+                            <img class="myImages" src="../Pictures/AboutUs/Gallery/MarsPlanet.jpg" alt="Picture of the planet mars">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 6</div>
+                            <img class="myImages" src="../Pictures/AboutUs/Gallery/WaterOnMars.jpg" alt="Picture of a water map on mars">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 6</div>
+                            <img class="myImages" src="../Pictures/AboutUs/Gallery/EuropaMoon.jpg" alt="Picture of the moon Europa">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">4 / 6</div>
+                            <img class="myImages" src="../Pictures/AboutUs/Gallery/EuropaUnderground.jpg" alt="Picture of how the inner part of Europa moon looks">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">5 / 6</div>
+                            <img class="myImages" src="../Pictures/AboutUs/Gallery/EnceladusMoon.jpg" alt="Picture showing the moon Enceladus">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">6 / 6</div>
+                            <img class="myImages" src="../Pictures/AboutUs/Gallery/EnceladusUnderground.jpg" alt="Picture showing how Enceladus looks underground">
+                        </div>
+                        <div id="myModal" class="modal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content" id="img01" src="../Pictures/AstroLogo.png" alt="Holds Modal">
+                            <div id="caption1"></div>
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+                        <div class="caption-container">
+                            <p id="caption"></p>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <img class="demo cursor" src="../Pictures/AboutUs/Gallery/MarsPlanet.jpg" style="width:100%" onclick="currentSlide(1)" alt="Displayed is a recent visual representation of the planet Mars, captured utilizing our advanced telescope, AstroVision. For an amplified view, kindly select the image.">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="../Pictures/AboutUs/Gallery/WaterOnMars.jpg" style="width:100%" onclick="currentSlide(2)" alt="Mars is rich in minerals that formed in water, and in some cases still hold water. Here is a water map of Mars">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="../Pictures/AboutUs/Gallery/EuropaMoon.jpg" style="width:100%" onclick="currentSlide(3)" alt="Jupiter's moon, Europa is slightly smaller than Earth's moon. It has a subsurface ocean of liquid water and a rocky mantle. Its icy surface has cracks and ridges.">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="../Pictures/AboutUs/Gallery/EuropaUnderground.jpg" style="width:100%" onclick="currentSlide(4)" alt="On Jupiter's moon Europa, a saltwater ocean exists deep beneath a thick ice shell. The moon is potentially habitable">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="../Pictures/AboutUs/Gallery/EnceladusMoon.jpg" style="width:100%" onclick="currentSlide(5)" alt="Enceladus is a moon of Saturn with a subsurface ocean and active geysers that spew water into space. Its icy surface has fractures and craters, making it a target for astrobiology studies.">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="../Pictures/AboutUs/Gallery/EnceladusUnderground.jpg" style="width:100%" onclick="currentSlide(6)" alt="Enceladus harbors an ocean beneath its ice crust that erupts spectacular plumes from fissures at the south pole.">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidetext">
+                        <h5 style="text-align: center;">Expeditions</h5>
+                        <h2 style="text-align: center;">Recent Findings</h2>
+                        <p style="text-align: center; color: white;">
+                            Astro's dedication to space exploration has led the company to develop advanced technologies and techniques that allow them to gather a wealth of information about our solar system. Our team of scientists and engineers employ cutting-edge research methodologies to collect data, which they then analyze and interpret to uncover new insights about the cosmos.
+                            <br><br>    
+                            One of Astro's most significant recent discoveries is the presence of water on Mars, which has been a crucial piece of evidence in the search for extraterrestrial life. This finding has led to a renewed focus on Mars as a possible location for future human colonization efforts. Additionally, Astro's exploration efforts have revealed the existence of potentially habitable moons around Jupiter and Saturn, expanding our understanding of the possibility of life beyond Earth.
+                            <br><br>  
+                            Astro's dedication to sharing their latest findings with the public has made the company a major force in inspiring the next generation of space explorers and scientists. Through their stunning pictures and engaging presentations, Astro has been able to capture the imagination of people worldwide and generate widespread interest in space exploration and research.
+                            <br><br>
+                            As a leader in the field of space exploration, Astro continues to push the boundaries of what we know about our solar system and the universe beyond. Their ambitious vision and unwavering dedication to discovery are driving their continued success and ensuring that they remain at the forefront of space exploration and research.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fourth Paralax Scrolling Picture -->
+        <div class="bgimg-4">
+            <div class="caption1">
+                <span class="border" style="background-color:transparent;color: #f7f7f7;">End of page!</span>
+            </div>
+        </div>
+        <!-- Scripts -->
+        <script src="../Javascript/Gallery.js"></script>
+        <script src="../Javascript/Modal.js"></script>
+        <script src="../Javascript/BackToTop&ProgressBar.Js"></script>
+        <script src="../Javascript/ModalCards.js"></script>
+        <script src="../Javascript/StickyNavigation.js"></script>
+        <script src="../Javascript/SmallNav.js"></script>
+        <script src="../Javascript/FadeInUp.js"></script>
+    </body>
+</html>

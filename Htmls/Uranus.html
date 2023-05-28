@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Title-->
+        <title>Our Solar System</title>
+        <!-- This meta tag specifies the character encoding for the HTML document -->
+        <meta charset="UTF-8">
+        <!-- This meta tag specifies the author of the webpage -->
+        <meta name="author" content="Erik Rhodin Claesson">
+        <!-- This meta tag provides a brief description of the webpage for search engines -->
+        <meta name="description" content="Astro is a pioneering company that specializes in the exploration of the solar system. Their website is a one-stop destination for all things related to space exploration and the wonders of the cosmos. From the latest discoveries about our neighboring planets to cutting-edge research on the origins of the universe, Astro's website offers a wealth of information and resources for space enthusiasts of all levels.">
+        <!-- This meta tag provides a list of keywords that describe the content of the webpage -->
+        <meta name="keywords" content="Astro, solar system, space exploration, cosmos, neighboring planets, discoveries, cutting-edge research, origins of the universe, space enthusiasts, information, resources, planet data, light pollution, astronomy, science, space technology, space missions, space science, planet exploration, telescopes, space telescopes, space discoveries, extraterrestrial life, space news, space education, space events, rocket science, space missions, NASA, ESA, JAXA, space probes, space travel, space programs, space history, space research, space discoveries, celestial objects, solar system objects, planetary science, space imaging, space simulations, space visualization, space facts, space phenomena, space exploration missions, space colonization, space engineering, space technology advancements, space conferences, space outreach, space apps, space industry">
+        <!-- This meta tag sets the viewport to ensure that the webpage is displayed properly on mobile devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- These meta tags are used by social media platforms when the webpage is shared to specify the title, description, image and URL for the shared content -->
+        <meta property="og:title" content="Our Solar System">
+        <meta property="og:description" content="Astro is a pioneering company that specializes in the exploration of the solar system. Their website is a one-stop destination for all things related to space exploration and the wonders of the cosmos. From the latest discoveries about our neighboring planets to cutting-edge research on the origins of the universe, Astro's website offers a wealth of information and resources for space enthusiasts of all levels.">
+        <meta property="og:image" content="https://img.freepik.com/free-vector/solar-system-science-education_1308-89626.jpg?w=2000">
+        <meta property="og:url" content="http://astro.com/">
+        <!-- Css Links -->
+        <link rel="stylesheet" href="../Css/StickyNavigation.css">
+        <link rel="stylesheet" href="../Css/CustomScrollBar.css">
+        <link rel="stylesheet" href="../Css/TopNavigation.css">
+        <link rel="stylesheet" href="../Css/NavbarSmaller.css">
+        <link rel="stylesheet" href="../Css/GeneralStyle.css"> 
+        <link rel="stylesheet" href="../Css/ProgressBar.css"> 
+        <link rel="stylesheet" href="../Css/Newsletter.css"> 
+        <link rel="stylesheet" href="../Css/BackToTop.css"> 
+        <link rel="stylesheet" href="../Css/FactsPage.css"> 
+        <link rel="stylesheet" href="../Css/TimeLine.css">
+        <link rel="stylesheet" href="../Css/Readmore.css"> 
+        <link rel="stylesheet" href="../Css/FadeInUp.css"> 
+        <link rel="stylesheet" href="../Css/Socials.css"> 
+        <!-- Script Links -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Other Links -->
+        <link rel="icon" href="../Pictures/solar-system.png">
+        <style>
+            .header {
+                background-image: url("../Pictures/Uranus/Uranusbg.jpg");
+            }
+        </style>
+    </head>
+    <body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <!-- Top Header -->
+        <div class="header" id="Home">
+            <div class="textbox">
+                <h1 class="Showinstant">
+                    The Sideways Planet: Uranus</h1>
+                <div class="overtext">
+                    <p class="Showinstant">As a gas giant with a distinct blue-green hue, Uranus possesses an array of fascinating features such as a tilted axis, a collection of rings, and a multitude of moons that make it a unique and captivating planet.</p>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="mailto:example@gmail.com" target="_blank" class="icon gmail"></a>
+                <a href="https://twitter.com/example" target="_blank" class="icon twitter"></a>
+                <a href="https://instagram.com/example" target="_blank" class="icon instagram"></a>
+                <a href="https://youtube.com/channel/UCdXh9gKzDo6H_2q3oPW6Gzw" target="_blank" class="icon youtube"></a>
+                <a href="https://linkedin.com/in/example" target="_blank" class="icon linkedin"></a>
+            </div>
+            <div class="topnavigation">
+                <a href="Main.html">Home</a>
+                <a href="AboutUs.html">About us</a>
+                <a href="ContactUs.html">Contact</a>
+            </div>
+            <div class="TopLinks">
+                <!-- Logo Picture --> 
+                <a href="Main.html">
+                    <img src="../Pictures/AstroLogo.png" width="75" height="75" alt="Company logo that looks like davids star from the jewish belief" class="Showinstant">
+                </a>
+                
+                <!-- Logo Text -->
+                <a href="AboutUs.html">
+                    <img src="../Pictures/TextLogo.png" width="175" height="75" alt="Text beside logo saying Astro" class="Showinstant">
+                </a>
+            </div>
+        </div>
+        <nav>
+            <div class="nav-container">
+                <a class="nav-link" href="#Home">Home</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Introduction">Introduction</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Size">Size</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Location">Location</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Atmosphere">Atmosphere</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Orbit">Orbit</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#GravitationalPull">Gravitational Pull</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Rotation">Rotation</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Composition">Composition</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#History">History</a>
+                <div class="progress-container">
+                    <div class="progress-bar" id="myBar"></div>
+                </div>  
+            </div>
+          </nav> 
+          <div id="myNav-for-mobile" class="overlay-for-mobile">
+            <a href="javascript:void(0)" class="closebtn-for-mobile" onclick="closeNav()">&times;</a>
+            <div class="overlay-content-for-mobile">
+                <a class="nav-link" href="#Home">Home</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Introduction">Introduction</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Size">Size</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Location">Location</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Atmosphere">Atmosphere</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Orbit">Orbit</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#GravitationalPull">Gravitational Pull</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Rotation">Rotation</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Composition">Composition</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#History">History</a>
+            </div>
+        </div>
+        <div id="navbut">
+            <span onclick="openNav()">open Navigation</span>
+        </div>
+        <div class="FirstContainer" id="Introduction">
+            <div class="FirstBoxLeft">
+                <div class="FirstBoxHeaders">
+                    <h5>Uranus</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>Beneath the Veil</h2>
+                </div>
+                <p>Welcome to a fascinating journey through our solar system! Today, we will embark on an exciting adventure to explore one of the most enigmatic and captivating planets in our cosmic neighborhood - Uranus.
+                <br><br>
+                Named after the ancient Greek god of the sky, Uranus is the seventh planet from the Sun and the third-largest planet in our solar system. It is a gaseous giant, consisting mainly of hydrogen and helium gas, and is famous for its distinctive pale blue-green color that gives it a unique appearance in the sky.
+                <br><br>
+                Uranus is also known for its unusual tilt - unlike most other planets in our solar system, its axis of rotation is almost parallel to its orbit around the Sun. This means that instead of rotating like a spinning top, Uranus seems to roll on its side as it orbits the Sun, with one pole facing the Sun for half of its orbit and the other pole facing the Sun for the other half.
+                <br><br>
+                These fascinating characteristics make Uranus a fascinating and mysterious planet that has captivated the imaginations of astronomers and space enthusiasts alike for centuries. So, let's buckle up and get ready to explore this distant world, and uncover the secrets that lie hidden beneath its beautiful blue-green exterior.</p>
+            </div>
+            <div class="FirstBoxRight">
+                <img src="../Pictures/Uranus/uranus.jpg" alt="A picture of uranus" >
+            </div>
+        </div>        
+        <div class="SecondContainer" id="Size">
+            <div class="SecondBox">
+                <div class="SecondBoxHeaders">
+                    <h5>Small but Mighty</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>Sizeable Discovery</h2>
+                </div>
+                <p>
+                    Uranus, the seventh planet from the Sun, may be smaller in size compared to its gas giant siblings, Jupiter and Saturn, but it certainly has a lot of fascinating characteristics that make it a "mighty" planet in our solar system.
+                    <span class="dots"></span><span class="more"><br><br>
+                    With a diameter of about 51,118 kilometers, Uranus is roughly four times wider than Earth, but only about 14 times the mass of our planet. This relatively low density suggests that Uranus has a large amount of water and other volatile substances, making it a "gas giant" like Jupiter and Saturn. However, unlike the other gas giants, Uranus has a distinct blue-green color caused by the presence of methane gas in its atmosphere.
+                    <br><br>
+                    But what really sets Uranus apart from other planets in our solar system is its unique tilt. Unlike most planets which have a tilt of around 23.5 degrees, Uranus is tilted on its side at an angle of almost 98 degrees. This means that its poles are located where the equator would be on other planets, and its equator is almost perpendicular to its orbit around the Sun. This unusual tilt may have been caused by a giant collision with a planet-sized object during its formation, or by gravitational interactions with other planets in the solar system.
+                    <br><br>
+                    The tilt of Uranus also gives rise to some of its other peculiar characteristics. The planet has extreme seasons that last for decades, with one pole experiencing continuous sunlight for half a Uranian year (about 42 Earth years) while the other experiences complete darkness. This leads to dramatic temperature variations, with the warmest temperatures occurring near the equator and the coldest at the poles.
+                    <br><br>
+                    In addition, Uranus has a system of faint rings and 27 known moons, including five large ones: Miranda, Ariel, Umbriel, Titania, and Oberon. These moons are believed to have formed from debris left over from the planet's formation, and some of them have intriguing surface features such as canyons, cliffs, and craters.
+                    <br><br>
+                    While Uranus may be small in size compared to other gas giants, its unique features and characteristics make it a fascinating and important part of our solar system. Its tilt and extreme seasons provide valuable insights into the formation and evolution of planets, and its moons and rings offer clues about the history of the early solar system. In short, Uranus may be small, but it's definitely mighty!
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+            <div class="SecondBox">
+                <img src="../Pictures/Uranus/size.jpg" alt="A picture of uranus showing how big it is compared to other planets in our solar system" style="border: 1px solid white;">
+            </div>
+        </div>
+        <div class="ThirdContainer" id="Location">
+            <div class="ThirdBoxHeaders" style="border-bottom: 1px solid white;">
+                <h5>Finding Uranus</h5>
+                <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                <h2>The Farthest Planet We Can See with the Naked Eye</h2>
+            </div>
+            <div class="ThirdBottomBox">
+                <img src="../Pictures/Uranus/location.jpg" alt="A picture showing the location of uranus in our solar system">
+            </div>
+            <div class="ThirdTopBox">
+                <p>
+                    Uranus, the seventh planet from the Sun, is one of the most distant planets in our solar system. It is the third-largest planet by size and the fourth-largest by mass. It is a gas giant, composed mostly of hydrogen and helium, with small amounts of methane and other gases.
+                    <span class="dots"></span><span class="more"><br><br>
+                    Uranus was discovered in 1781 by the British astronomer William Herschel. It was the first planet to be discovered using a telescope, and it was a major scientific breakthrough at the time. Uranus was named after the ancient Greek god of the sky, Uranus.
+                    <br><br>
+                    Uranus is located about 2.8 billion kilometers (1.7 billion miles) from the Sun, or roughly 19 times the distance from Earth to the Sun. It has a very long orbit around the Sun, taking about 84 Earth years to complete one orbit. This means that a year on Uranus is almost as long as a human lifetime.
+                    <br><br>
+                    One of the most unique features of Uranus is its tilt. Unlike the other planets in our solar system, which have an axis tilt of less than 30 degrees, Uranus is tilted on its side, with an axis tilt of about 98 degrees. This means that the planet's poles are almost in the plane of its orbit around the Sun.
+                    <br><br>
+                    Because Uranus is so far away from the Sun, it is not visible to the naked eye under normal circumstances. However, under ideal conditions, it is possible to see Uranus with the naked eye. To do so, you need to be in a very dark location with clear skies and no light pollution. Uranus appears as a small blue-green disc, similar in appearance to a star.
+                    <br><br>
+                    In addition to being visible to the naked eye, Uranus has also been studied extensively by space probes. The Voyager 2 spacecraft flew past Uranus in 1986, taking detailed images of the planet and its moons. In recent years, astronomers have also used ground-based telescopes and space-based observatories to study Uranus in more detail.
+                    <br><br>
+                    In conclusion, Uranus is one of the most distant and unique planets in our solar system. Although it is not normally visible to the naked eye, it is possible to see it under ideal conditions. Uranus's tilt and other features continue to fascinate astronomers and space enthusiasts alike, and it will likely remain a topic of study for many years to come.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+        </div>
+        <div class="SecondContainer" id="Atmosphere">
+            <div class="SecondBox">
+                <div class="SecondBoxHeaders">
+                    <h5>Layers</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>Atmospheric Zones</h2>
+                </div>
+                <p>
+                    Uranus is a gas giant planet, with a thick and complex atmosphere that extends for thousands of kilometers from the planet's surface. The atmosphere of Uranus is composed mostly of hydrogen and helium, with small amounts of methane and other gases. The atmosphere is divided into several distinct layers or zones, each with its own unique characteristics and properties.
+                    <span class="dots"></span><span class="more"><br><br>
+                    The uppermost layer of Uranus's atmosphere is the troposphere, which extends from the planet's surface up to an altitude of about 300 kilometers. This is the layer where most of the planet's weather occurs, with strong winds, storms, and cloud formations. The temperature in the troposphere ranges from about -220 degrees Celsius near the cloud tops to about -153 degrees Celsius near the base.
+                    <br><br>
+                    Above the troposphere is the stratosphere, which extends from an altitude of about 300 kilometers up to about 1,000 kilometers. The stratosphere is characterized by a gradual increase in temperature with altitude, reaching a peak temperature of about -53 degrees Celsius. This layer is also home to a layer of haze and clouds made up of methane and other hydrocarbons.
+                    <br><br>
+                    Beyond the stratosphere is the thermosphere, which extends from an altitude of about 1,000 kilometers up to the outer edge of the atmosphere. The thermosphere is characterized by extremely high temperatures, reaching as high as 2,700 degrees Celsius due to the intense radiation from the Sun. Despite the high temperatures, the thermosphere is relatively thin and has a low density, making it difficult to study.
+                    <br><br>
+                    Uranus also has an outermost layer of the atmosphere, known as the exosphere, which extends out to thousands of kilometers from the planet's surface. This layer is made up of extremely low-density gas and is mostly composed of hydrogen and helium, with small amounts of methane and other gases. The exosphere is where the planet's magnetosphere interacts with the solar wind and other particles from space.
+                    <br><br>
+                    The unique features of Uranus's atmosphere, including its unusual tilt and the presence of methane clouds, continue to fascinate scientists and astronomers. In recent years, spacecraft missions and ground-based observations have provided new insights into the composition and dynamics of the planet's atmosphere. Despite the challenges of studying such a distant and complex world, researchers are making progress in understanding the mysteries of Uranus and its fascinating atmospheric layers.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+            <div class="SecondBox">
+                <img src="../Pictures/Uranus/Atmos.jpg" alt="A picture showing the composition of the planets atmosphere" >
+            </div>
+        </div>     
+        <div class="ThirdContainer" id="Orbit">
+            <div class="ThirdBoxHeaders">
+                <h5>Uranus' Unusual Orbit</h5>
+                <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                <h2>Eccentricity and Axial Tilt</h2>
+            </div>
+            <div class="ThirdBottomBox">
+                <img src="../Pictures/Uranus/orbit.jpeg" alt="A picture showing the peculiar tilt of uranus and the seasons of the planet depending on where around the sun it is positioned showing its very slow rotation around the sun aswell">
+            </div>
+            <div class="ThirdTopBox">
+                <p>
+                    Uranus, the seventh planet from the Sun, has one of the most unusual orbits in our solar system. Unlike the other planets, which have nearly circular orbits, Uranus has an elliptical orbit with a high degree of eccentricity. This means that its distance from the Sun varies significantly throughout its orbit, causing significant changes in temperature and other environmental conditions.
+                    <span class="dots"></span><span class="more"><br><br>
+                    Uranus' orbit is also highly tilted, with an axial tilt of about 98 degrees. This is the most extreme tilt of any planet in our solar system, and it results in highly unusual seasonal changes on Uranus. For example, during its summer solstice, one of the poles is pointed almost directly at the Sun, while during its winter solstice, the opposite pole is pointed directly away from the Sun.
+                    <br><br>
+                    The combination of Uranus' eccentric orbit and axial tilt has significant implications for the planet's climate and environment. The extreme seasonal changes can cause massive storms and weather patterns that last for months or even years. In addition, the high degree of tilt causes Uranus' magnetic field to be highly off-center, which can lead to significant disturbances and interactions with the solar wind.
+                    <br><br>
+                    Despite these challenges, scientists have made significant progress in studying Uranus' unusual orbit and its effects on the planet's environment. Spacecraft missions like Voyager 2 have provided detailed images and data on the planet's atmosphere, moons, and magnetic field, while ground-based observations have contributed to a better understanding of its overall composition and dynamics.
+                    <br><br>
+                    Looking forward, future missions to Uranus, such as the proposed Uranus Orbiter and Probe mission, will provide even more insights into the planet's unique orbit and its impact on its environment. With ongoing research and exploration, we continue to deepen our understanding of the complex and fascinating world of Uranus.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+        </div>
+        <div class="ThirdContainer" id="GravitationalPull">
+            <div class="ThirdBoxHeaders">
+                <h5>The Invisible Force</h5>
+                <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                <h2>Uranus' Powerful Gravity</h2>
+            </div>
+            <div class="ThirdBottomBox">
+                <img src="../Pictures/Uranus/gravity.png" alt="A picture showing uranus Gravitational pull">
+            </div>
+            <div class="ThirdTopBox">
+                <p>
+                    Uranus, the seventh planet from the Sun, may not be as massive as some of the other gas giants in our solar system, but it still exerts a powerful gravitational force that shapes the environment of the planet and its moons. The strength of Uranus' gravity is determined by its mass and size, as well as the distance between it and other objects in space.
+                    <span class="dots"></span><span class="more"><br><br>
+                    The gravitational force of Uranus is what keeps its moons in orbit around the planet, and it also plays a significant role in shaping the planet's atmosphere and weather patterns. The gravity of Uranus is about 0.9 times the gravity of Earth, meaning that objects on Uranus would weigh slightly less than they would on Earth.
+                    <br><br>
+                    However, the real power of Uranus' gravity becomes apparent when we consider its impact on the surrounding environment. The gravitational pull of Uranus can cause significant disturbances in the orbits of nearby planets and asteroids, and it can also affect the behavior of the solar wind and other particles in space.
+                    <br><br>
+                    In addition, Uranus' powerful gravity has also played a significant role in the formation and evolution of the planet and its moons. The gravitational forces between Uranus and its moons can cause tidal heating and other effects that shape their surfaces and geology over time.
+                    <br><br>
+                    Despite the significant impact of Uranus' gravity on its environment, this force remains invisible to the naked eye. However, through the use of spacecraft and other advanced technologies, scientists have been able to study and measure the strength of Uranus' gravity and its effects on the planet and its surroundings.
+                    <br><br>
+                    As we continue to explore and learn more about Uranus and its powerful gravitational force, we gain a deeper appreciation for the intricate interplay between the planets and other objects in our solar system.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+        </div>
+        <div class="SecondContainer" id="Rotation">
+            <div class="SecondBox">
+                <div class="SecondBoxHeaders">
+                    <h5>Sideways Planet</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>Mysterious Rotation</h2>
+                </div>
+                <p>
+                    Uranus, the seventh planet from the Sun, is known for its unusual tilt and highly eccentric orbit. However, what is often overlooked is the planet's mysterious rotation, which is unique among the planets in our solar system.
+                    <span class="dots"></span><span class="more"><br><br>
+                    Unlike the other planets, which rotate on an axis that is roughly perpendicular to their orbit around the Sun, Uranus rotates on its side. In other words, the planet's axis of rotation is almost parallel to its orbit, causing its poles to point almost directly towards the Sun during some parts of its orbit.
+                    <br><br>
+                    This unusual rotation is thought to be the result of a massive collision with another planet or object early in Uranus' history. The impact would have been powerful enough to knock the planet off its original axis of rotation and cause it to start spinning on its side.
+                    <br><br>
+                    The impact theory is supported by several pieces of evidence, including the fact that Uranus' magnetic field is highly off-center and that the planet's moons orbit in a plane that is tilted relative to the planet's equator.
+                    <br><br>
+                    Despite the impact theory, much about Uranus' rotation remains a mystery. For example, the planet's rotation period is about 17 hours, but it is not clear why the planet's atmosphere and weather patterns do not seem to follow the same rotation rate.
+                    <br><br>
+                    Further study of Uranus' rotation is essential to understanding its overall structure, dynamics, and evolution. Future missions to the planet, such as the proposed Uranus Orbiter and Probe mission, will provide more detailed data and images that could help shed light on this fascinating and enigmatic planet.
+                    <br><br>
+                    As we continue to learn more about Uranus and its unusual rotation, we gain a deeper appreciation for the diversity and complexity of the planets in our solar system.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+            <div class="SecondBox">
+                <img src="../Pictures/Uranus/rotation.jpg" alt="A picture showing the strange tilt of Uranus 97.9" style="border: 1px solid white;">
+            </div>
+        </div>
+        <div class="FirstContainer" id="Composition">
+            <div class="FirstBoxLeft">
+                <div class="FirstBoxHeaders">
+                    <h5>Composition</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>Layers</h2>
+                </div>
+                <p>Uranus, the seventh planet from the Sun, is a gas giant, meaning that it is composed mostly of hydrogen and helium, with smaller amounts of other gases, such as methane and ammonia. However, unlike the other gas giants in our solar system, Uranus has a significantly different composition, with a much higher proportion of ices and rocks in its interior.
+                <br><br>
+                The planet's composition is believed to be divided into several layers, with each layer consisting of different materials and temperatures. The outermost layer of Uranus is its atmosphere, which is composed mainly of hydrogen, helium, and methane. The atmosphere is divided into several layers, with the visible cloud tops forming the uppermost layer.
+                <br><br>
+                Beneath the atmosphere lies a layer of water, ammonia, and methane ices, which are believed to make up the majority of the planet's mass. This layer is thought to be thousands of kilometers thick and is under such high pressure that the ices are compressed into a solid state.
+                <br><br>
+                Deeper still is a layer of rocky material, which is thought to make up the planet's core. The exact composition and size of Uranus' core are still a topic of debate among scientists, but it is believed to be several times the mass of Earth and made up of heavy elements such as iron and nickel.
+                <br><br>
+                The presence of ices and rocks in Uranus' composition is one of the factors that makes it unique among the gas giants in our solar system. It is believed that the formation of the planet was influenced by its distance from the Sun and the availability of volatile materials such as ices and gases in the early solar system.</p>
+            </div>
+            <div class="FirstBoxRight">
+                <img src="../Pictures/Uranus/comp.jpg" alt="A picture showing the composition of earth" >
+                <table>
+                    <thead>
+                      <tr>
+                        <th>Element</th>
+                        <th>Percentage</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Hydrogen</td>
+                        <td>83%</td>
+                      </tr>
+                      <tr>
+                        <td>Helium</td>
+                        <td>15%</td>
+                      </tr>
+                      <tr>
+                        <td>Methane</td>
+                        <td>2.3%</td>
+                      </tr>
+                      <tr>
+                        <td>Ethane</td>
+                        <td>0.0005%</td>
+                      </tr>
+                      <tr>
+                        <td>Hydrogen Deuteride</td>
+                        <td>0.00015%</td>
+                      </tr>
+                      <tr>
+                        <td>Acetylene</td>
+                        <td>0.0001%</td>
+                      </tr>
+                      <tr>
+                        <td>Diacetylene</td>
+                        <td>0.00005%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>     
+        <div class="ThirdBoxHeaders" id="History">
+            <h5>History of the Uranus</h5>
+            <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+            <h2>From Formation to the Future</h2>
+        </div>
+        <div class="Timeline-Box">
+            <div class="timeline-timeline">
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                    <h4>The Birth of Uranus: Exploring the Formation of the Seventh Planet
+                    </h4>
+                    <p>
+                        Uranus is the seventh planet from the sun, and it is one of the four outer gas giants in our solar system. The planet is unique in many ways, including its extreme axial tilt and the fact that it rotates on its side. But how did Uranus come to be? What was the process that led to the formation of this distant and enigmatic world?
+                        <span class="dots"></span><span class="more"><br><br>
+                        Scientists believe that Uranus, like the other planets in our solar system, formed from a cloud of gas and dust left over from the formation of the sun. This cloud, called a solar nebula, contained a mix of elements and compounds, including hydrogen, helium, and small rocky particles. Over time, gravity caused this material to come together and form larger and larger clumps, eventually leading to the formation of protoplanets like Uranus.
+                        <br><br>
+                        The exact details of Uranus's formation are still a matter of debate, but most scientists believe that the planet formed in a similar way to Jupiter and Saturn. It likely started out as a solid core made of rock and metal, which then accumulated a thick layer of gas and ice as it grew larger. As the planet continued to accrete material, it eventually became the massive gas giant we know today.
+                        <br><br>
+                        Studying the formation of Uranus can help us better understand the processes that led to the creation of our entire solar system. By examining the planet's composition, structure, and history, scientists can gain insights into the conditions that existed during the early days of the solar system and the factors that influenced the formation and evolution of the planets.
+                        </span>
+                    </p>
+                    <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>Uranus' Early Years: Understanding the Planet's Evolution
+                        </h4>
+                        <p>
+                            After its formation, Uranus underwent a series of transformations and changes during its early years. These changes were driven by a variety of factors, including the planet's internal heat, the composition of its atmosphere, and its interactions with other objects in the solar system.
+                            <span class="dots"></span><span class="more"><br><br>
+                            One of the most important events in Uranus's early history was its migration to its current location in the outer solar system. It's believed that Uranus formed closer to the sun than its current position and then migrated outward as a result of gravitational interactions with other objects. This migration would have had a significant impact on the planet's environment and could have played a role in the formation and evolution of its moons.
+                            <br><br>
+                            Another important factor in Uranus's early evolution was the gradual cooling of its interior. As the planet cooled, its atmosphere began to condense, forming clouds and creating distinct weather patterns. These patterns, including the planet's distinctive blue-green color, are a result of the absorption and scattering of light by different chemicals in the atmosphere.
+                            <br><br>
+                            Uranus's moons also played a significant role in the planet's evolution during its early years. Many of the planet's moons likely formed from debris left over from the planet's formation, and their interactions with Uranus's gravitational field can influence the planet's rotation and tilt.
+                            <br><br>
+                            Overall, studying Uranus's early years can provide valuable insights into the processes that shaped the planet and its surrounding environment. By examining the planet's composition, structure, and history, scientists can better understand the factors that influence the formation and evolution of other planets and moons in our solar system and beyond.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" id="myReadmoreBtn" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                        <h4>The History of Uranus: How the Planet Has Changed Over Time
+                        </h4>
+                        <p>
+                            Uranus has a long and complex history, with many changes and transformations taking place over the course of its existence. From its formation over 4 billion years ago to the present day, the planet has undergone a variety of processes that have shaped its environment and influenced its evolution.
+                            <span class="dots"></span><span class="more"><br><br>
+                            One of the most significant changes in Uranus's history was its migration to its current location in the outer solar system. This migration likely occurred early in the planet's history and had a significant impact on its environment, influencing the formation and evolution of its moons and other nearby objects.
+                            <br><br>
+                            Another major change in Uranus's history was the development of its distinctive atmosphere. The planet's blue-green color and weather patterns are a result of the absorption and scattering of light by different chemicals in the atmosphere, including methane and ammonia. The gradual cooling of the planet's interior also played a role in the formation of these patterns.
+                            <br><br>
+                            Uranus's moons have also changed over time, with some of them likely forming from debris left over from the planet's formation and others possibly being captured from elsewhere in the solar system. These moons have influenced the planet's rotation and tilt and may have played a role in the formation and evolution of its rings.
+                            <br><br>
+                            More recently, Uranus has been the subject of extensive study by space probes and telescopes, revealing new insights into its history and environment. These studies have helped scientists better understand the planet's composition, structure, and history, shedding light on the processes that have shaped the planet over the course of its existence.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>Uranus' Past and Present: Examining the Planet's Geological Features
+                        </h4>
+                        <p>
+                            Uranus has a complex geological history, with many different features and processes shaping its surface and interior over time. By examining the planet's past and present, scientists can gain insights into the processes that have shaped Uranus and other planets in our solar system.
+                            <span class="dots"></span><span class="more"><br><br>
+                            One of the most distinctive features of Uranus is its unusual tilt, which is believed to have been caused by a collision with a large object early in the planet's history. This tilt has led to extreme seasonal variations on the planet, with one pole facing the sun for half of its orbit while the other pole faces away.
+                            <br><br>
+                            Uranus also has a number of other geological features, including its rings and moons. The planet's rings are composed of dark particles that range in size from micrometers to several meters, and they are believed to have formed from the breakup of small moons or other objects in the planet's vicinity. Uranus's moons, meanwhile, exhibit a wide range of geological features, including craters, canyons, and mountains.
+                            <br><br>
+                            Another important aspect of Uranus's geological history is the role of its interior structure in shaping the planet's environment. The planet's interior is believed to consist of a rocky core surrounded by a layer of icy material, and this structure may influence the planet's magnetic field and other properties.
+                            <br><br>
+                            Overall, by examining Uranus's geological features and history, scientists can gain a deeper understanding of the processes that shape planets and moons throughout the solar system. These insights can also help us better understand the potential for life beyond Earth and the evolution of our solar system and the universe as a whole.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                        <h4>The Future of Uranus: What Lies Ahead for the Seventh Planet?
+                        </h4>
+                        <p>
+                            The future of Uranus is a topic of much interest to scientists and space enthusiasts alike. While we cannot predict with absolute certainty what will happen to the planet, we can make some educated guesses based on our current understanding of its environment and evolution.
+                            <span class="dots"></span><span class="more"><br><br>
+                            One of the most significant factors affecting the future of Uranus is the aging of the sun. As the sun continues to evolve and age, it will become hotter and brighter, leading to increased heating and atmospheric escape on Uranus. This could cause changes in the planet's atmosphere and surface over time.
+                            <br><br>
+                            Another important factor is the ongoing migration of Neptune, which may interact with Uranus and its moons in the future. This could lead to changes in the planet's orbit or other features, potentially impacting its environment and evolution.
+                            <br><br>
+                            Despite these uncertainties, we can be sure that Uranus will continue to be an important subject of study and exploration in the coming years. Space probes and telescopes will continue to observe the planet and its moons, providing new insights into its composition, structure, and history.
+                            <br><br>
+                            In addition, future missions to Uranus could provide even more detailed information about the planet's environment and evolution. These missions could include landers or orbiters that would study the planet's atmosphere, surface, and interior, providing a more complete picture of this mysterious world.
+                            <br><br>
+                            Overall, the future of Uranus remains an open question, but continued study and exploration will help us better understand this fascinating planet and its place in our solar system.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>The Fate of Uranus: How the Planet Will Change in the Distant Future
+                        </h4>
+                        <p>
+                            While we can make some educated guesses about the future of Uranus, predicting its fate in the distant future is a much more difficult task. However, based on our current understanding of planetary evolution and the forces that shape our solar system, we can speculate about how Uranus may change over time.
+                            <span class="dots"></span><span class="more"><br><br>
+                            One of the most significant factors affecting the future of Uranus is the aging of the sun. As the sun continues to evolve and age, it will eventually become a red giant, expanding to many times its current size and engulfing the inner planets, including Uranus. This process is not expected to occur for another 5 billion years, but when it does, Uranus will be destroyed, along with the rest of the inner solar system.
+                            <br><br>
+                            Another factor that may impact Uranus's fate is the ongoing migration of Neptune. As Neptune migrates outward from its current orbit, it may interact with Uranus and other planets in the outer solar system, potentially leading to changes in the orbits or even collisions between the planets.
+                            <br><br>
+                            In addition, other forces such as asteroid impacts or gravitational interactions with passing stars could also impact Uranus's fate. However, these events are much less predictable and would likely have a smaller impact than the aging of the sun or the migration of Neptune.
+                            <br><br>
+                            Overall, while we cannot predict with certainty how Uranus will change in the distant future, we can be sure that the planet will continue to be a subject of study and fascination for scientists and space enthusiasts alike. Continued exploration and study will help us better understand the forces that shape our solar system and the fate of its planets over time.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                        <h4>Uranus' Role in the Solar System: A Historical Perspective
+                        </h4>
+                        <p>
+                            Uranus, the seventh planet from the sun, has played an important role in our understanding of the solar system since its discovery in 1781 by Sir William Herschel. Prior to this discovery, only five planets were known to exist: Mercury, Venus, Earth, Mars, and Jupiter. The discovery of Uranus marked the first new planet to be discovered in over 2,000 years, and it had a profound impact on our understanding of the solar system.
+                            <span class="dots"></span><span class="more"><br><br>
+                            At the time of its discovery, Uranus was thought to be a comet or a star, as it appeared as a small, faint object in the night sky. However, Herschel soon realized that it was a planet, and its discovery led to a rethinking of the structure and composition of the solar system.
+                            <br><br>
+                            Over the years, observations of Uranus have provided important insights into the nature of the outer solar system. For example, the planet's strange, tilted axis of rotation was first discovered by astronomers studying its moons in the 19th century, providing evidence for the existence of a massive, unseen object beyond Uranus: Neptune.
+                            <br><br>
+                            Uranus has also been the subject of many space missions, including the Voyager 2 spacecraft, which passed by the planet in 1986, providing the first detailed images and measurements of its atmosphere, rings, and moons. These observations have helped to refine our understanding of the planet's composition, structure, and history.
+                            <br><br>
+                            Today, Uranus continues to be an important subject of study and exploration, as scientists seek to understand its role in the formation and evolution of the solar system. The planet's unique features, such as its tilted axis of rotation, unusual magnetic field, and diverse moon system, provide valuable insights into the forces that shape our cosmic neighborhood.
+                            <br><br>
+                            Overall, Uranus has played a significant role in our understanding of the solar system over the past two centuries, and its continued study and exploration will help to advance our knowledge of the cosmos for years to come.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>Uranus in Context: The Planet's Place in the Evolution of the Universe
+                        </h4>
+                        <p>
+                            Uranus, the seventh planet from the sun, is one of the most distant and mysterious objects in the solar system. However, its study and exploration are not limited to just our local neighborhood. Uranus is also an important object in the broader context of the evolution of the universe.
+                            <span class="dots"></span><span class="more"><br><br>
+                            One way to understand Uranus's place in the universe is to consider its origin. Like all planets in the solar system, Uranus formed from a disk of gas and dust that surrounded the young sun. This disk was part of a larger cloud of gas and dust that collapsed under its own gravity, eventually forming the sun and its surrounding planets.
+                            <br><br>
+                            This process of planet formation is not unique to our solar system. In fact, the formation of planets is a fundamental process that occurs throughout the universe. By studying Uranus and its formation, scientists can gain insight into the commonalities and differences between planetary systems in our galaxy and beyond.
+                            <br><br>
+                            Uranus's unique features, such as its tilted axis of rotation and unusual magnetic field, also provide valuable insights into the evolution of the solar system and the forces that shape it. For example, some scientists believe that Uranus's tilt may have been caused by a collision with a large object early in its history. If true, this could provide clues about the frequency and effects of such collisions in the early solar system.
+                            <br><br>
+                            In addition, Uranus and its moons may hold clues about the formation and evolution of life in the universe. Scientists are studying the planet's icy moons, which may harbor subsurface oceans and the potential for microbial life. The study of these moons could help us understand how life may have formed and evolved in other planetary systems.
+                            <br><br>
+                            Overall, Uranus's place in the universe is both unique and universal. Its study and exploration not only help us understand our own solar system but also provide insights into the broader evolution of the universe and the potential for life beyond Earth.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                        <h4>Uranus and Its Moons: The Evolution of a Complex System
+                        </h4>
+                        <p>
+                            Uranus is not only a fascinating planet on its own, but it is also home to a diverse collection of moons. With a total of 27 known moons, Uranus has the third-largest number of moons in the solar system, after Jupiter and Saturn. The study of these moons is crucial to understanding the planet's evolution and the complex interactions that have shaped the Uranian system over time.
+                            <span class="dots"></span><span class="more"><br><br>
+                            The moons of Uranus can be divided into two groups: the inner moons and the outer moons. The inner moons are small and irregularly shaped, while the outer moons are larger and more spherical. The inner moons are thought to have formed from the debris of a collision between two larger bodies, while the outer moons are believed to have formed from the same disk of gas and dust that gave rise to Uranus itself.
+                            <br><br>
+                            One of the most intriguing moons of Uranus is Miranda, which has an unusual appearance and a complex geological history. Miranda's surface is a patchwork of different types of terrain, ranging from smooth plains to steep cliffs and deep canyons. Scientists believe that Miranda may have been shattered by a massive impact early in its history and subsequently reassembled into its current form.
+                            <br><br>
+                            Another notable moon is Titania, which is the largest of Uranus's moons. Titania has a heavily cratered surface, indicating that it is very old. Scientists believe that Titania may have formed shortly after the planet itself and has remained largely unchanged since then.
+                            <br><br>
+                            The study of Uranus's moons is important not only for understanding the planet's history but also for exploring the potential for life beyond Earth. Some of the outer moons, such as Oberon and Umbriel, have dark surfaces that are rich in organic compounds. These compounds could potentially provide the building blocks for life, making these moons potential targets for future missions to explore the possibility of extraterrestrial life.
+                            <br><br>
+                            In summary, the moons of Uranus provide a window into the planet's complex and fascinating history. Through the study of these moons, scientists can gain insights into the formation and evolution of planetary systems and explore the potential for life beyond our own planet.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>Uranus and Beyond: The Significance of the Seventh Planet for Astronomy and Space Exploration
+                        </h4>
+                        <p>
+                            Uranus, the seventh planet from the sun, has played a significant role in the field of astronomy and space exploration. From its unusual tilt to its complex system of moons, Uranus has intrigued scientists and provided important insights into the formation and evolution of our solar system.
+                            <span class="dots"></span><span class="more"><br><br>
+                            One of the most striking features of Uranus is its tilt. Unlike the other planets in our solar system, which have relatively upright axes of rotation, Uranus is tilted at an angle of nearly 98 degrees. This unique orientation has led to some interesting phenomena, such as extreme seasons that last for decades and a magnetic field that is tilted and offset from the planet's center.
+                            <br><br>
+                            In addition to its tilt, Uranus is also notable for its complex system of moons. As mentioned earlier, Uranus has 27 known moons, each with its own unique characteristics and history. The study of these moons has provided important insights into the processes that shape the outer solar system, including the role of impacts and the formation of icy bodies.
+                            <br><br>
+                            Beyond its scientific significance, Uranus has also been the subject of space exploration missions. In 1986, the Voyager 2 spacecraft flew by Uranus and provided the first detailed images and data of the planet and its moons. More recently, the European Space Agency's Gaia mission has been studying Uranus's rings and moons, providing new insights into their composition and history.
+                            <br><br>
+                            Looking to the future, there is much more to be learned from Uranus and its surroundings. Proposed missions include sending an orbiter to study the planet and its moons in greater detail, as well as exploring the potential for mining resources from Uranus's abundant ice deposits.
+                            <br><br>
+                            In conclusion, Uranus's unusual characteristics and complex system of moons have made it a significant object of study for astronomers and space explorers alike. By continuing to study and explore this distant planet, we can gain a better understanding of the processes that shape our solar system and the potential for finding life beyond Earth.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="wrapper" id="Newsletter">
+            <h1>Subscribe to our Newsletter</h1>
+            <p>Receive updates instanly</p>
+            <div class="newsletter">
+                <input type="text" class="input" placeholder="Enter Your Email">
+                <img src="../Pictures/envelope-solid.png" class="fas fa-envelope Showinstant" alt="a picture showing an envelope">
+                <div class="btn">Subscribe</div>
+            </div>
+        </div>	
+        <script src="../Javascript/SmallNav.js"></script>
+        <script src="../Javascript/FadeInUp.js"></script>
+        <script src="../Javascript/StickyNavigation.js"></script>
+        <script src="../Javascript/BackToTop&ProgressBar.Js"></script>
+        <script src="../Javascript/ReadMore.js"></script>
+    </body>
+</html>

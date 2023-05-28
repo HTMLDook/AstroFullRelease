@@ -1,0 +1,170 @@
+/* General Styles */
+
+body {
+    line-height: 25px;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+}
+
+h2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin: 1rem;
+    color: white;
+    font-family: "star_jedi_outlineregular";
+    letter-spacing: 0.2em;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 7.4vh;
+    line-height: 100%;
+}
+
+h3 {
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Main Info */
+.maininfo {
+    display: block;
+    color: white;
+    z-index: 22;
+}
+
+.Spacer {
+    height: 150px;
+}
+
+main {
+    /* background-image: url("../Pictures/Home/SolarSystemBackground.jpg"); */
+    background-color: black;
+    background-size: cover;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-position: center center;
+    height: 150%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Part 1 */
+
+/* Background */
+.header {
+    position: relative;
+    height: 100%;
+    background-image: url("../Pictures/Home/Namnlöst-3.png");
+    background-size: cover;
+    background-position: bottom;
+}
+
+/* Bottom Picture */
+.flow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    line-height: 0;
+}
+
+.flow img {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.textbox {
+    position: absolute;
+    bottom: 15%;
+}
+
+h1 {
+    float: left;
+    text-align: left;
+    margin: 1rem;
+    margin-top: 0;
+    padding: 0;
+    color: white;
+    font-family: "star_jedi_outlineregular";
+    letter-spacing: 0.2em;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2.2em;
+    line-height: 100%;
+    width: 67%;
+}
+
+.overtext {
+    float: left;
+    text-align: left;
+    margin: 1rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+    color: white;
+    font-family: "star_jedi_outlineregular";
+    letter-spacing: 0.2em;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.2em;
+    line-height: 100%;
+    width: 67%;
+}
+
+@media only screen and (max-width: 900px) {
+    h1,
+    .overtext {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .celestialbodies,
+    .Spacer,
+    #BtmInfo,
+    main {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .overtext {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    nav {
+        display: none;
+    }
+}
+
+h5 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #00a78e;
+    letter-spacing: 4px;
+    margin: 0px;
+    padding: 0px;
+}
+
+@media only screen and (min-width: 1400px) {
+    .flow img{
+        width: 0;
+    }
+  }

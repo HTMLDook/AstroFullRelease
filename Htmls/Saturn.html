@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Title-->
+        <title>Our Solar System</title>
+        <!-- This meta tag specifies the character encoding for the HTML document -->
+        <meta charset="UTF-8">
+        <!-- This meta tag specifies the author of the webpage -->
+        <meta name="author" content="Erik Rhodin Claesson">
+        <!-- This meta tag provides a brief description of the webpage for search engines -->
+        <meta name="description" content="Astro is a pioneering company that specializes in the exploration of the solar system. Their website is a one-stop destination for all things related to space exploration and the wonders of the cosmos. From the latest discoveries about our neighboring planets to cutting-edge research on the origins of the universe, Astro's website offers a wealth of information and resources for space enthusiasts of all levels.">
+        <!-- This meta tag provides a list of keywords that describe the content of the webpage -->
+        <meta name="keywords" content="Astro, solar system, space exploration, cosmos, neighboring planets, discoveries, cutting-edge research, origins of the universe, space enthusiasts, information, resources, planet data, light pollution, astronomy, science, space technology, space missions, space science, planet exploration, telescopes, space telescopes, space discoveries, extraterrestrial life, space news, space education, space events, rocket science, space missions, NASA, ESA, JAXA, space probes, space travel, space programs, space history, space research, space discoveries, celestial objects, solar system objects, planetary science, space imaging, space simulations, space visualization, space facts, space phenomena, space exploration missions, space colonization, space engineering, space technology advancements, space conferences, space outreach, space apps, space industry">
+        <!-- This meta tag sets the viewport to ensure that the webpage is displayed properly on mobile devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- These meta tags are used by social media platforms when the webpage is shared to specify the title, description, image and URL for the shared content -->
+        <meta property="og:title" content="Our Solar System">
+        <meta property="og:description" content="Astro is a pioneering company that specializes in the exploration of the solar system. Their website is a one-stop destination for all things related to space exploration and the wonders of the cosmos. From the latest discoveries about our neighboring planets to cutting-edge research on the origins of the universe, Astro's website offers a wealth of information and resources for space enthusiasts of all levels.">
+        <meta property="og:image" content="https://img.freepik.com/free-vector/solar-system-science-education_1308-89626.jpg?w=2000">
+        <meta property="og:url" content="http://astro.com/">
+        <!-- Css Links -->
+        <link rel="stylesheet" href="../Css/StickyNavigation.css">
+        <link rel="stylesheet" href="../Css/CustomScrollBar.css">
+        <link rel="stylesheet" href="../Css/TopNavigation.css">
+        <link rel="stylesheet" href="../Css/NavbarSmaller.css">
+        <link rel="stylesheet" href="../Css/GeneralStyle.css"> 
+        <link rel="stylesheet" href="../Css/ProgressBar.css"> 
+        <link rel="stylesheet" href="../Css/Newsletter.css"> 
+        <link rel="stylesheet" href="../Css/BackToTop.css"> 
+        <link rel="stylesheet" href="../Css/FactsPage.css"> 
+        <link rel="stylesheet" href="../Css/TimeLine.css">
+        <link rel="stylesheet" href="../Css/Readmore.css"> 
+        <link rel="stylesheet" href="../Css/FadeInUp.css"> 
+        <link rel="stylesheet" href="../Css/Socials.css"> 
+        <!-- Script Links -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Other Links -->
+        <link rel="icon" href="../Pictures/solar-system.png">
+        <style>
+            .header {
+                background-image: url("../Pictures/Saturn/saturnbg.jpg");
+            }
+        </style>
+    </head>
+    <body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <!-- Top Header -->
+        <div class="header" id="Home">
+            <div class="textbox">
+                <h1 class="Showinstant">The Ringed Planet: Saturn</h1>
+                <div class="overtext">
+                    <p class="Showinstant">Adorned with a glorious and awe-inspiring system of rings, swirling with beauty and mystery, and home to many moons that hold their own secrets waiting to be uncovered.</p>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="mailto:example@gmail.com" target="_blank" class="icon gmail"></a>
+                <a href="https://twitter.com/example" target="_blank" class="icon twitter"></a>
+                <a href="https://instagram.com/example" target="_blank" class="icon instagram"></a>
+                <a href="https://youtube.com/channel/UCdXh9gKzDo6H_2q3oPW6Gzw" target="_blank" class="icon youtube"></a>
+                <a href="https://linkedin.com/in/example" target="_blank" class="icon linkedin"></a>
+            </div>
+            <div class="topnavigation">
+                <a href="Main.html">Home</a>
+                <a href="AboutUs.html">About us</a>
+                <a href="ContactUs.html">Contact</a>
+            </div>
+            <div class="TopLinks">
+                <!-- Logo Picture --> 
+                <a href="Main.html">
+                    <img src="../Pictures/AstroLogo.png" width="75" height="75" alt="Company logo that looks like davids star from the jewish belief" class="Showinstant">
+                </a>
+                
+                <!-- Logo Text -->
+                <a href="AboutUs.html">
+                    <img src="../Pictures/TextLogo.png" width="175" height="75" alt="Text beside logo saying Astro" class="Showinstant">
+                </a>
+            </div>
+        </div>
+        <nav>
+            <div class="nav-container">
+                <a class="nav-link" href="#Home">Home</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Introduction">Introduction</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Size">Size</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Location">Location</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Atmosphere">Atmosphere</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Orbit">Orbit</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#GravitationalPull">Gravitational Pull</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Rotation">Rotation</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Composition">Composition</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#History">History</a>
+                <div class="progress-container">
+                    <div class="progress-bar" id="myBar"></div>
+                </div>  
+            </div>
+          </nav> 
+          <div id="myNav-for-mobile" class="overlay-for-mobile">
+            <a href="javascript:void(0)" class="closebtn-for-mobile" onclick="closeNav()">&times;</a>
+            <div class="overlay-content-for-mobile">
+                <a class="nav-link" href="#Home">Home</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Introduction">Introduction</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Size">Size</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Location">Location</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Atmosphere">Atmosphere</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Orbit">Orbit</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#GravitationalPull">Gravitational Pull</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Rotation">Rotation</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Composition">Composition</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#History">History</a>
+            </div>
+        </div>
+        <div id="navbut">
+            <span onclick="openNav()">open Navigation</span>
+        </div>
+        <div class="FirstContainer" id="Introduction">
+            <div class="FirstBoxLeft">
+                <div class="FirstBoxHeaders">
+                    <h5>Saturn</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>Enchanting World</h2>
+                </div>
+                <p>Saturn is one of the most striking and captivating planets in our solar system. Known as the "Ringed Planet", Saturn is named after the Roman god of agriculture and harvests. With its majestic and recognizable ring system, Saturn is a true wonder of the universe that has captivated human imagination for centuries.
+                <br><br>
+                As the sixth planet from the sun, Saturn is one of the gas giants, along with Jupiter, Uranus, and Neptune. It is approximately 750 times larger than Earth, and its mass is second only to Jupiter. Its atmosphere is mostly composed of hydrogen and helium, with traces of other gases like methane, ammonia, and water vapor.
+                <br><br>
+                One of the most fascinating features of Saturn is its iconic ring system, which consists of millions of individual ice particles ranging in size from tiny dust grains to enormous boulders. These rings extend thousands of kilometers from the planet's surface and are visible from Earth with even a small telescope.
+                <br><br>
+                Saturn is also known for its many moons, with at least 82 identified to date. Some of the most well-known moons include Titan, Enceladus, and Mimas, each of which has its own unique features and characteristics.</p>
+            </div>
+            <div class="FirstBoxRight">
+                <img src="../Pictures/Saturn/saturn.png" alt="Picture of Saturn" >
+            </div>
+        </div>        
+        <div class="SecondContainer" id="Size">
+            <div class="SecondBox">
+                <div class="SecondBoxHeaders">
+                    <h5>Size</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>Saturns Immense Proportions</h2>
+                </div>
+                <p>
+                    Saturn is one of the most impressive planets in our solar system, thanks in part to its immense size. In fact, it is the second-largest planet in our solar system, surpassed only by Jupiter. Its diameter measures approximately 116,460 km, which makes it almost ten times larger than Earth. It is so massive that it contains around 95 times the mass of Earth, which contributes to its strong gravitational pull.
+                    <span class="dots"></span><span class="more"><br><br>
+                    One of the most striking features of Saturn's size is its famous ring system, which spans approximately 282,000 km in diameter. This remarkable ring system is made up of countless tiny particles of ice and rock, ranging in size from microscopic grains to enormous boulders. The rings are incredibly thin, measuring just tens of meters thick, and are believed to have formed from the debris left over after a moon or comet was torn apart by Saturn's immense gravity.
+                    <br><br>
+                    Saturn's size also contributes to its unique atmospheric conditions. Its upper atmosphere is composed primarily of hydrogen and helium, while its lower atmosphere is thought to contain traces of water vapor, ammonia, and other elements. The planet's size and strong gravitational pull cause its atmosphere to be compressed, creating extreme pressure and temperature conditions.
+                    <br><br>
+                    Despite its immense size, Saturn is not the densest planet in our solar system. Its density is actually lower than that of water, which means that if a hypothetical ocean large enough to hold Saturn were to exist, the planet would float in it. This low density is due in part to the planet's predominantly gaseous composition, with only a small rocky core at its center.
+                    <br><br>
+                    In conclusion, Saturn's immense proportions are truly awe-inspiring, from its massive diameter to its iconic ring system. Its size contributes to its unique atmospheric conditions and plays a crucial role in shaping the planet's composition and evolution. Whether observed from Earth or through the lens of a spacecraft, Saturn's size is one of its most fascinating and impressive features.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+            <div class="SecondBox">
+                <img src="../Pictures/Saturn/size.jpg" alt="Saturn compared to the other planets in our solar system" style="border: 1px solid white;">
+            </div>
+        </div>
+        <div class="ThirdContainer" id="Location">
+            <div class="ThirdBoxHeaders" style="border-bottom: 1px solid white;">
+                <h5>Navigating the Cosmos</h5>
+                <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                <h2>Saturn's Place in the Solar System  </h2>
+            </div>
+            <div class="ThirdBottomBox">
+                <img src="../Pictures/Saturn/location.jpg" alt="Picture showing the location of saturn in our solar system">
+            </div>
+            <div class="ThirdTopBox">
+                <p>
+                    Saturn, the sixth planet from the Sun, is located in the outer region of our solar system. It is the second-largest planet in the solar system, with a diameter of approximately 116,460 kilometers, and it is over 1.4 billion kilometers away from the Sun. Its distance from the Sun means that it takes about 29.4 Earth years to complete a single orbit.
+                    <span class="dots"></span><span class="more"><br><br>
+                    Saturn's location is part of what makes it so unique in our solar system. It is one of the four gas giants, which means that it has a predominantly gaseous composition, as opposed to the four rocky planets closer to the Sun. Saturn's location in the outer region of the solar system also means that it receives less heat and light from the Sun than the inner planets. As a result, its atmospheric conditions are dramatically different from those of the inner planets.
+                    <br><br>
+                    Saturn has a total of 82 known moons, making it second only to Jupiter in terms of the number of moons in the solar system. These moons are located at varying distances from the planet, and some are believed to be remnants of a ring system that broke apart over time. Many of these moons have unique characteristics, such as the hydrocarbon lakes on Titan, Saturn's largest moon.
+                    <br><br>
+                    The planet's location in the solar system also plays a role in its interaction with other planets and celestial bodies. For example, its gravitational influence is thought to have played a significant role in the formation of the asteroid belt, which lies between Mars and Jupiter. Additionally, its orbital path is affected by the gravity of Jupiter, which can cause it to speed up or slow down in its orbit.
+                    <br><br>
+                    Saturn's location in the solar system has made it a fascinating object of study for astronomers and space scientists alike. Through telescopes and space probes, we have been able to gain insight into its composition, atmosphere, and moons. Despite being billions of kilometers away from Earth, Saturn's unique location and properties continue to capture our imaginations and inspire us to explore the cosmos further.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+        </div>
+        <div class="SecondContainer" id="Atmosphere">
+            <div class="SecondBox">
+                <div class="SecondBoxHeaders">
+                    <h5>Layers</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>Atmospheric Zones</h2>
+                </div>
+                <p>
+                    Saturn's atmosphere is a complex and dynamic system that consists of several layers and zones. The planet's distance from the Sun and its slow rotation mean that its atmosphere experiences extreme temperature differences and atmospheric dynamics that are not observed in the inner planets.
+                    <span class="dots"></span><span class="more"><br><br>
+                    The uppermost layer of Saturn's atmosphere is known as the thermosphere. This layer is composed primarily of hydrogen, with smaller amounts of helium and other trace elements. The thermosphere is the hottest layer of Saturn's atmosphere, with temperatures that can reach up to 1,800 degrees Celsius. This layer is also where the auroras of Saturn are generated, which are visible as bright, colorful displays in the planet's polar regions.
+                    <br><br>
+                    Beneath the thermosphere is the stratosphere, which extends down to about 300 kilometers above the planet's surface. The stratosphere is characterized by a temperature inversion, meaning that its temperature increases with altitude. This is the opposite of what is observed in Earth's atmosphere, where the temperature decreases with altitude in the stratosphere. The stratosphere of Saturn is also home to several atmospheric bands, including the famous hexagonal storm at the planet's north pole.
+                    <br><br>
+                    The troposphere is the lowest and densest layer of Saturn's atmosphere, and it extends from the planet's surface up to a height of about 200 kilometers. This layer is where most of the planet's weather occurs, including the strong winds and storms that are observed in the planet's atmosphere. The troposphere of Saturn is also home to several cloud layers, which are composed of ammonia and other compounds.
+                    <br><br>
+                    The layers of Saturn's atmosphere are not the only atmospheric zones on the planet. The planet's equatorial region is characterized by a region known as the Equatorial Zone, which is characterized by strong winds and a distinct brown coloration. Above and below the Equatorial Zone are two additional zones known as the North and South Equatorial Belts, which are characterized by alternating bands of light and dark clouds.
+                    <br><br>
+                    The complexity and variability of Saturn's atmosphere make it an area of great interest to scientists and astronomers. By studying the planet's atmospheric zones and their dynamics, we can gain insight into the planet's history and formation, as well as its potential for supporting life.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+            <div class="SecondBox">
+                <img src="../Pictures/Saturn/Atmospherewithcassini.jpg" alt="Picture showing the satelite cassini entering the atmosphere of saturn" style="border: 1px solid white;">
+            </div>
+        </div>     
+        <div class="ThirdContainer" id="Orbit">
+            <div class="ThirdBoxHeaders">
+                <h5>Elliptical Orbit</h5>
+                <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                <h2> Mystery of Saturn's Orbit And Moons and Rings</h2>
+            </div>
+            <div class="ThirdBottomBox">
+                <img src="../Pictures/Saturn/orbit.jpg" alt="Picture showing the orbit of saturn compared to, jupiter, uranus, neptune, pluto and eris">
+            </div>
+            <div class="ThirdTopBox">
+                <p>
+                    Saturn's orbit is one of the most mysterious and intriguing aspects of the planet. Unlike most planets in the solar system, Saturn has an elliptical orbit that is tilted at an angle of approximately 2.5 degrees relative to the plane of the solar system. This unique orbit has a significant impact on the planet's moons and rings, as well as its overall gravitational influence within the solar system.
+                    <span class="dots"></span><span class="more"><br><br>
+                    One of the most notable features of Saturn's elliptical orbit is its eccentricity. This means that the planet's distance from the Sun varies significantly over the course of its orbit. At its closest approach, Saturn is approximately 1.35 billion kilometers from the Sun, while at its farthest point, it is approximately 1.51 billion kilometers away. This variation in distance has a significant impact on the planet's climate and atmospheric dynamics, and is one of the key factors that makes Saturn such an interesting subject for study.
+                    <br><br>
+                    The elliptical orbit of Saturn also has a significant impact on the planet's moons and rings. The gravitational influence of the planet's orbit creates a complex and dynamic environment in which these features exist. The moons of Saturn are heavily influenced by the planet's gravity, which can cause significant tidal forces and changes in their orbits over time. This dynamic environment has led to the discovery of several new moons in recent years, and continues to be an area of active research.
+                    <br><br>
+                    Similarly, Saturn's rings are also heavily influenced by the planet's elliptical orbit. The rings are composed of countless particles of ice and rock that are held in place by the planet's gravity. However, the eccentricity of Saturn's orbit means that the distance between the planet and the rings can vary significantly over time. This can lead to changes in the composition and appearance of the rings, as well as their overall stability.
+                    <br><br>
+                    In summary, Saturn's elliptical orbit is a complex and dynamic feature that has a significant impact on the planet and its surrounding environment. By studying the mysteries of this unique orbit, scientists and astronomers can gain insight into the planet's formation and history, as well as the broader dynamics of the solar system.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+        </div>
+        <div class="SecondContainer" id="GravitationalPull">
+            <div class="SecondBox">
+                <div class="SecondBoxHeaders">
+                    <h5>Relativity</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>Gravity and Its Moons</h2>
+                </div>
+                <p>
+                    Saturn is a massive planet, with a gravitational pull that is more than twice that of Earth's. This immense gravity has a significant impact on the planet's moons, which orbit around it in a complex and dynamic dance. Understanding the forces of gravity and how they shape the moons of Saturn is one of the most fascinating areas of research in planetary science.
+                    <span class="dots"></span><span class="more"><br><br>
+                    Gravity is a fundamental force of nature, which describes the attraction between two objects based on their mass and distance from each other. In the case of Saturn, the immense mass of the planet creates a strong gravitational pull, which influences the orbits of its moons. This influence can be seen in the tidal forces that the planet exerts on its moons, which can cause them to deform and change shape over time.
+                    <br><br>
+                    One of the most intriguing aspects of Saturn's gravitational influence is the presence of gaps and divisions in its rings. These gaps are caused by the gravitational influence of the planet's moons, which act like shepherd satellites to keep the ring particles in place. The gravitational forces of the moons create complex patterns of ripples and waves within the rings, which have been studied in detail by astronomers and planetary scientists.
+                    <br><br>
+                    Saturn's largest moon, Titan, is also a subject of significant interest due to its unique atmosphere and surface features. The moon's thick atmosphere is composed primarily of nitrogen, with small amounts of methane and other gases. The dense atmosphere creates a significant greenhouse effect, which keeps the surface temperature of the moon relatively stable.
+                    <br><br>
+                    The gravity of Saturn also plays a role in the formation and evolution of its moons. Many of the smaller moons are believed to have been captured by the planet's gravity, while others may have formed from debris left over from the formation of the planet. By studying the interactions between these moons and Saturn's gravity, scientists can gain insight into the planet's history and evolution over time.
+                    <br><br>
+                    In summary, the gravity of Saturn is a complex and dynamic force that plays a significant role in shaping the planet and its moons. Understanding these forces is a key area of research in planetary science, with important implications for our understanding of the formation and evolution of the solar system as a whole.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+            <div class="SecondBox">
+                <img src="../Pictures/Saturn/gravityoncassinifromringsandsaturn.jpeg" alt="A picture showing the gravitational pull of the cassini satelite from the planet itself and its own rings" style="border: 1px solid white;">
+            </div>
+        </div>
+        <div class="SecondContainer" id="Rotation">
+            <div class="SecondBox">
+                <div class="SecondBoxHeaders">
+                    <h5>Tilt & Seasons</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>Rotational Dynamics</h2>
+                </div>
+                <p>
+                    Saturn is a gas giant with a unique tilt and rotational dynamics. Unlike most planets in our solar system, which have a relatively stable tilt angle, Saturn's tilt is constantly changing, leading to unusual seasonal variations on the planet.
+                    <span class="dots"></span><span class="more"><br><br>
+                    Saturn's tilt, or the angle at which its axis is tilted with respect to its orbit around the Sun, is approximately 27 degrees. This tilt causes the planet to experience significant seasonal variations as it orbits the Sun. During the northern hemisphere summer, for example, the North Pole of Saturn is tilted towards the Sun, leading to increased sunlight and warmer temperatures. In contrast, during the winter months, the North Pole is tilted away from the Sun, leading to decreased sunlight and colder temperatures.
+                    <br><br>
+                    Another fascinating aspect of Saturn's rotational dynamics is the presence of a hexagonal-shaped storm at the planet's North Pole. This unusual weather pattern has been observed by spacecraft such as the Cassini probe and is believed to be caused by a combination of Saturn's rotation and atmospheric dynamics.
+                    <br><br>
+                    Saturn also has one of the shortest rotation periods of any planet in our solar system. The planet completes a full rotation on its axis in just over 10 hours, which creates significant centrifugal forces that cause the planet to bulge at its equator. This equatorial bulge is noticeable even from Earth-based telescopes, and has been studied in detail by astronomers and planetary scientists.
+                    <br><br>
+                    In addition to its rotational dynamics, Saturn's magnetic field is also influenced by its rotation. The planet's magnetic field is tilted with respect to its rotational axis, which creates a complex and dynamic interaction between the magnetic field and the solar wind. This interaction leads to the formation of auroras around the planet's poles, similar to those seen on Earth and other magnetized planets.
+                    <br><br>
+                    In summary, the rotational dynamics of Saturn are complex and unique, leading to unusual seasonal variations and fascinating weather patterns. Studying these dynamics is an important area of research in planetary science, with implications for our understanding of the formation and evolution of gas giant planets in our solar system and beyond.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+            <div class="SecondBox">
+                <img src="../Pictures/Saturn/rotation.jpg" alt="A picture showing the rotation of the lanet saturn and its tilt" style="border: 1px solid white;">
+            </div>
+        </div>
+        <div class="FirstContainer" id="Composition">
+            <div class="FirstBoxLeft">
+                <div class="FirstBoxHeaders">
+                    <h5>Composition</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>Layers</h2>
+                </div>
+                <p>Saturn is a gas giant planet, which means it has a thick atmosphere made up mostly of hydrogen and helium. However, its composition goes beyond its atmosphere, with different layers and components making up the planet's interior.
+                <br><br>
+                At the topmost layer, Saturn's atmosphere is mostly composed of hydrogen, with small amounts of helium and other gases such as methane, ammonia, and water vapor. This layer is visible from Earth and is characterized by the planet's distinctive bands and zones of cloud activity. These clouds are composed of various gases and are shaped by Saturn's powerful winds and storms.
+                <br><br> 
+                Beneath the atmosphere, Saturn has a dense layer of liquid metallic hydrogen. This layer is composed of hydrogen that has been compressed so much that it behaves like a metal, with electrons flowing freely throughout the material. This layer is thought to be responsible for generating Saturn's magnetic field, which is stronger than any other planet's magnetic field in our solar system.
+                <br><br> 
+                Deeper still, Saturn has a rocky core that is estimated to be about 15 times the mass of Earth. This core is composed of rock and metal and is surrounded by layers of liquid and gaseous hydrogen. The core is believed to generate heat through radioactive decay and is responsible for the planet's internal heat flow.
+                <br><br>
+                Saturn's composition is also reflected in its numerous moons and rings. The planet's rings are composed of billions of individual particles, ranging in size from tiny dust particles to large boulders. These particles are believed to be mostly made of water ice, but also contain other materials such as rock and metal.
+                <br><br>
+                The moons of Saturn are also composed of different materials. Some, like Titan, have thick atmospheres and surfaces made up of various organic compounds. Others, like Enceladus, have icy surfaces that may conceal subsurface oceans of liquid water.
+                <br><br>
+                In summary, Saturn's composition is complex and varied, with different layers and materials making up the planet's interior and exterior. Studying these layers and their properties is important for understanding the formation and evolution of gas giant planets like Saturn, as well as the dynamics of the Saturnian system as a whole.</p>
+            </div>
+            <div class="FirstBoxRight">
+                <img src="../Pictures/Saturn/11087030.jpg" alt="A picture showing saturns composition" >
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Element</th>
+                            <th>Percentage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hydrogen (H<sub>2</sub>)</td>
+                            <td>96.3%</td>
+                        </tr>
+                        <tr>
+                            <td>Helium (He)</td>
+                            <td>3.25%</td>
+                        </tr>
+                        <tr>
+                            <td>Methane (CH<sub>4</sub>)</td>
+                            <td>0.45%</td>
+                        </tr>
+                        <tr>
+                            <td>Ammonia (NH<sub>3</sub>)</td>
+                            <td>0.01%</td>
+                        </tr>
+                        <tr>
+                            <td>Hydrogen Deuteride (HD)</td>
+                            <td>0.0006%</td>
+                        </tr>
+                        <tr>
+                            <td>Ethane (C<sub>2</sub>H<sub>6</sub>)</td>
+                            <td>0.0005%</td>
+                        </tr>
+                        <tr>
+                            <td>Water (H<sub>2</sub>O)</td>
+                            <td>0.0005%</td>
+                        </tr>
+                        <tr>
+                            <td>Acetylene (C<sub>2</sub>H<sub>2</sub>)</td>
+                            <td>0.0002%</td>
+                        </tr>
+                        <tr>
+                            <td>Phosphine (PH<sub>3</sub>)</td>
+                            <td>0.0001%</td>
+                        </tr>
+                        <tr>
+                            <td>Carbon Monoxide (CO)</td>
+                            <td>trace amounts</td>
+                        </tr>
+                        <tr>
+                            <td>Neon (Ne)</td>
+                            <td>trace amounts</td>
+                        </tr>
+                        <tr>
+                            <td>Ethylene (C<sub>2</sub>H<sub>4</sub>)</td>
+                            <td>trace amounts</td>
+                        </tr>
+                        <tr>
+                            <td>Propane (C<sub>3</sub>H<sub>8</sub>)</td>
+                            <td>trace amounts</td>
+                        </tr>
+                        <tr>
+                            <td>Butane (C<sub>4</sub>H<sub>10</sub>)</td>
+                            <td>trace amounts</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>     
+        <div class="ThirdBoxHeaders" id="History">
+            <h5>History of the Earth</h5>
+            <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+            <h2>From Formation to the Future</h2>
+        </div>
+        <div class="Timeline-Box">
+            <div class="timeline-timeline">
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                    <h4>The Birth of Saturn: Understanding the Gas Giant's Formation
+                    </h4>
+                    <p>
+                        Saturn is one of the most iconic planets in our solar system, with its distinctive rings and bright presence in our night sky. But how did this gas giant come into existence? The answer lies in the planet's formation, which took place over 4.5 billion years ago.
+                        <span class="dots"></span><span class="more"><br><br>
+                        Scientists believe that Saturn formed from a swirling cloud of gas and dust known as a protoplanetary disk. As the disk cooled and contracted, it began to spin faster, creating a central bulge. Over time, this bulge grew larger and denser, eventually forming the core of the gas giant.
+                        <br><br>
+                        As the core grew, its gravity began to attract gas from the surrounding disk, which became trapped in the planet's gravitational field. This gas eventually formed the thick atmosphere that we see today. But there is still much that we do not know about Saturn's formation, and scientists continue to study this gas giant to better understand how it came to be.
+                        <br><br>
+                        By studying the chemical makeup of Saturn's atmosphere and analyzing its gravitational field, scientists hope to uncover new insights into the planet's birth and evolution. The study of Saturn's formation is a fascinating field of research that continues to yield new discoveries and expand our understanding of the universe.
+                        </span>
+                    </p>
+                    <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>Saturn's Early Days: A Journey Through Its Early Evolution
+                        </h4>
+                        <p>
+                            Saturn's early days were a time of rapid evolution and change for this gas giant. After its formation, the planet continued to gather gas from the surrounding protoplanetary disk, gradually growing in size and mass.
+                            <span class="dots"></span><span class="more"><br><br>
+                            One of the key features of Saturn's early evolution was the development of its magnetic field. As the planet spun faster and faster, its molten core generated a magnetic field that eventually grew to be one of the strongest in the solar system. This magnetic field helps to protect Saturn from the harsh solar wind and radiation that bombards the planet.
+                            <br><br>
+                            Another important aspect of Saturn's early evolution was the formation of its moons. These small satellites began to form from the debris left over after Saturn's formation, gradually coalescing into larger bodies over time. Some of Saturn's moons, such as Titan and Enceladus, are of particular interest to scientists because they may contain the ingredients for life.
+                            <br><br>
+                            As Saturn continued to evolve, its atmosphere began to take on its distinctive banded appearance, with alternating light and dark stripes running across the planet's surface. This banding is caused by different chemical compounds in the atmosphere, which interact with each other to create the distinct patterns we see today.
+                            <br><br>
+                            Studying Saturn's early days is crucial for understanding how gas giants like Saturn form and evolve over time. By studying the planet's magnetic field, moons, and atmospheric composition, scientists can gain valuable insights into the complex processes that shape our solar system.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" id="myReadmoreBtn" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                        <h4>Saturn's Proto-Rings: An Exploration of the Gas Giant's Early Ring System
+                        </h4>
+                        <p>
+                            Saturn's stunning ring system is one of the most recognizable features of this gas giant. But did you know that the planet's rings are not a permanent fixture? In fact, Saturn's ring system is relatively young, having formed only about 100 million years ago.
+                            <span class="dots"></span><span class="more"><br><br>
+                            The origins of Saturn's rings lie in a collection of small moons that orbited the planet in its early days. These moons gradually collided and broke apart, creating a cloud of debris that began to orbit the planet. Over time, this debris began to clump together, forming the rings that we see today.
+                            <br><br>
+                            The earliest incarnation of Saturn's rings, known as the proto-rings, would have looked quite different from the rings we see today. These proto-rings were likely much thicker and less organized, with clumps of debris scattered throughout the disk.
+                            <br><br>
+                            As the proto-rings evolved, they began to flatten out into the thin, organized rings that we see today. This flattening was caused by gravitational interactions between the ring particles, which caused them to spread out into a disk-like shape.
+                            <br><br>
+                            Studying Saturn's proto-rings is important for understanding the early evolution of this gas giant and the formation of its iconic ring system. By analyzing the composition and structure of the proto-rings, scientists can gain insights into the complex processes that shape our solar system and the planets within it.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>The Changing Face of Saturn: Understanding Its Evolution Over Time
+                        </h4>
+                        <p>
+                            Saturn is a planet of constant change, with its appearance and composition evolving over billions of years. By studying these changes, scientists can gain valuable insights into the processes that shape our solar system and the planets within it.
+                            <span class="dots"></span><span class="more"><br><br>
+                            One of the most striking changes to Saturn's appearance is the evolution of its atmosphere. The planet's banded appearance, with alternating light and dark stripes running across its surface, is caused by different chemical compounds in the atmosphere interacting with each other. Over time, these bands have shifted and changed, as the planet's weather patterns and atmospheric composition have evolved.
+                            <br><br>
+                            Another important change in Saturn's evolution has been the growth and development of its ring system. As mentioned earlier, Saturn's rings are relatively young, having formed only about 100 million years ago. Since then, the rings have continued to evolve, with new ringlets forming and old ones fading away.
+                            <br><br>
+                            Saturn's moons are also subject to constant change, as they are influenced by the planet's gravity and the gravitational pull of other moons. Some of Saturn's moons, such as Enceladus and Titan, are of particular interest to scientists because they may contain the ingredients for life.
+                            <br><br>
+                            Understanding the changing face of Saturn is crucial for unraveling the mysteries of our solar system and the universe beyond. By studying the planet's atmosphere, rings, and moons, scientists can gain a deeper understanding of the complex processes that shape our world and the worlds beyond it.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                        <h4>Saturn's Moons: A Journey Through the Planet's Satellites and Their Formation</h4>
+                        <p>
+                            Saturn is a gas giant planet that is orbited by more than 80 moons, ranging in size from tiny, irregularly shaped objects to large, spherical bodies. These moons are thought to have formed from the same disk of gas and dust that gave rise to the planet itself, and studying them can provide valuable insights into the early evolution of the Saturnian system.
+                            <span class="dots"></span><span class="more"><br><br>
+                            Some of the most fascinating moons of Saturn are those that exhibit signs of activity and change, such as Enceladus and Titan. Enceladus is a small, icy moon that is known to have active geysers erupting from its south pole, which spew out water vapor and other materials into space. Titan, on the other hand, is a large, hazy moon that is thought to have a subsurface ocean of liquid water, and is the only moon in our solar system known to have a thick atmosphere.
+                            <br><br>
+                            The study of Saturn's moons also provides important clues about the formation and evolution of the Saturnian system. Some of the moons are thought to have formed from the same disk of gas and dust that gave rise to the planet, while others may have been captured from elsewhere in the solar system. By analyzing the composition and structure of these moons, scientists can gain insights into the complex processes that shape our solar system and the planets within it.
+                            <br><br>
+                            Overall, Saturn's moons provide a fascinating window into the early evolution of our solar system, and the ongoing processes that continue to shape the planets and moons within it.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>The Cassini Mission: A Comprehensive Look at Saturn and Its Moons</h4>
+                        <p>
+                            The Cassini mission was a landmark space exploration mission launched in 1997 to study the planet Saturn and its moons. It was a joint project of NASA, the European Space Agency (ESA), and the Italian Space Agency (ASI), and involved a spacecraft that orbited Saturn for more than 13 years.
+                            <span class="dots"></span><span class="more"><br><br>
+                            During its mission, Cassini made numerous groundbreaking discoveries about Saturn and its moons. It conducted the first close-up study of the planet's atmosphere, discovering complex weather patterns and a hexagonal-shaped jet stream around the north pole. Cassini also discovered several new moons, and provided detailed observations of previously known ones, including Enceladus and Titan.
+                            <br><br>
+                            One of Cassini's most significant discoveries was the presence of liquid water on Enceladus, which is thought to be one of the ingredients necessary for life. The spacecraft detected geysers of water vapor and other materials erupting from the moon's south pole, indicating the presence of a subsurface ocean.
+                            <br><br>
+                            Cassini's observations of Titan also revealed a dynamic world with lakes, rivers, and even a subsurface ocean of liquid hydrocarbons. The mission also provided valuable data on Saturn's rings, including their composition, structure, and evolution over time.
+                            <br><br>
+                            The Cassini mission was a groundbreaking effort that revolutionized our understanding of Saturn and its moons. The wealth of data it collected will continue to be studied for years to come, providing new insights into the formation and evolution of our solar system.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                        <h4>Saturn's Future: A Look Ahead at What's to Come for the Gas Giant</h4>
+                        <p>
+                            Saturn's future is an intriguing topic for astronomers and planetary scientists alike. Although the gas giant has been studied extensively, there is still much to learn about its long-term evolution and the fate of its many moons and ring system.
+                            <span class="dots"></span><span class="more"><br><br>
+                            One of the most fascinating aspects of Saturn's future is the potential for changes in its ring system. Over time, the particles that make up the rings may collide and coalesce, leading to the formation of larger bodies or the eventual dissipation of the rings altogether. Alternatively, new ring structures may form from the debris of moons that are disrupted by tidal forces or impact events.
+                            <br><br>
+                            Another area of interest for Saturn's future is the possibility of further exploration and study. While the Cassini mission provided a wealth of data on Saturn and its moons, there are still many unanswered questions about the gas giant and its complex system. Future missions could focus on studying the planet's atmosphere, its magnetic field, or the potential for life on its moons.
+                            <br><br>
+                            Finally, there is the question of Saturn's ultimate fate. Like all stars and planets, Saturn has a finite lifespan, and will eventually run out of fuel for its fusion reactions. As this happens, the gas giant will cool and shrink, eventually becoming a small, dense, rocky core surrounded by a thin atmosphere. This process is thought to take billions of years, and provides a glimpse into the long-term evolution of planets and solar systems.
+                            <br><br>
+                            Overall, Saturn's future is a fascinating topic that will continue to inspire research and exploration for years to come.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>The Age of Saturn: Understanding the Gas Giant's Lifespan and Future Evolution</h4>
+                        <p>
+                            The age of Saturn, like the age of any celestial object, is a key factor in understanding its current state and future evolution. Saturn is estimated to be around 4.5 billion years old, roughly the same age as the rest of our solar system. However, its internal structure and composition are thought to have changed significantly over time.
+                            <span class="dots"></span><span class="more"><br><br>
+                            As a gas giant, Saturn is primarily made up of hydrogen and helium, with small amounts of heavier elements. The planet's high internal pressure and temperature cause the hydrogen to become metallic, creating a unique layer of electrical conductivity in its atmosphere.
+                            <br><br>
+                            Over time, Saturn's internal heat has gradually been radiated away into space, causing it to cool and contract. This process is thought to have caused the planet's interior to separate into distinct layers, with a dense core surrounded by layers of metallic hydrogen and molecular hydrogen.
+                            <br><br>
+                            In addition to its internal evolution, Saturn's age is also important in understanding the origin and evolution of its moons and ring system. Some of Saturn's moons are thought to have formed from the debris left over from the planet's formation, while others may have been captured from the outer solar system. Understanding the timing and mechanisms behind these processes can provide valuable insights into the history of our solar system.
+                            <br><br>
+                            Looking ahead, Saturn's age will continue to play a role in its evolution. As the planet cools and contracts, its atmosphere may become more turbulent, with stronger winds and more frequent storms. In addition, changes in the planet's magnetic field and radiation environment could affect the stability and composition of its moons and ring system.
+                            <br><br>
+                            Overall, understanding the age of Saturn is essential in unraveling the mysteries of this fascinating gas giant and its complex system of moons and rings.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                        <h4>Saturn and Its Place in the Universe: An Overview of Its Role in Astronomy and Astrophysics</h4>
+                        <p>
+                            Saturn is one of the most iconic and recognizable planets in our solar system, but it also has an important role in astronomy and astrophysics beyond our immediate neighborhood. As a gas giant, Saturn belongs to a class of planets that are quite different from the small, rocky planets closer to the sun.
+                            <span class="dots"></span><span class="more"><br><br>
+                            In addition to its unique internal structure and composition, Saturn also plays an important role in the study of planetary formation and evolution. By studying the gas giants in our solar system, astronomers can learn more about the processes that led to the formation of planets in general. Saturn's moons and rings also offer valuable insights into the complex interactions between planets, moons, and other celestial bodies.
+                            <br><br>
+                            Beyond our solar system, gas giants like Saturn are also of great interest to astronomers searching for exoplanets. Many of the methods used to detect exoplanets involve studying the effects of a planet's gravity on its host star. By studying the gas giants in our own solar system, astronomers can refine their understanding of these detection methods and develop new techniques for finding exoplanets.
+                            <br><br>
+                            Saturn also plays a role in the search for life beyond Earth. While the gas giant itself is unlikely to harbor life, some of its moons, such as Enceladus and Titan, have been identified as potential targets for further study. Enceladus, in particular, has been found to have a subsurface ocean of liquid water, making it a prime target for future exploration.
+                            <br><br>
+                            Overall, Saturn's unique properties and complex system of moons and rings make it an important target for study in astronomy and astrophysics. By studying Saturn and its place in the universe, astronomers can deepen their understanding of the formation and evolution of planets, as well as the search for life beyond our solar system.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>Exploring the Unknown: The Future of Saturn Research and Discovery</h4>
+                        <p>
+                            Despite decades of study, there is still much we don't know about Saturn and its complex system of rings and moons. But with new technologies and exploration missions on the horizon, the future of Saturn research and discovery looks promising.
+                            <span class="dots"></span><span class="more"><br><br>
+                            One exciting development is the upcoming launch of the James Webb Space Telescope, which will be capable of studying the atmosphere and composition of exoplanets in unprecedented detail. While the telescope is not specifically designed to study Saturn, it could provide valuable insights into the gas giant's composition and internal structure.
+                            <br><br>
+                            In addition to the James Webb Space Telescope, there are also several proposed missions to explore Saturn and its moons in greater detail. One of the most promising is the Enceladus Life Finder mission, which would send a spacecraft to investigate the subsurface ocean on Enceladus and search for signs of life.
+                            <br><br>
+                            Another proposed mission, known as Dragonfly, would send a drone-like spacecraft to explore the surface of Titan, Saturn's largest moon. Titan is known for its complex organic chemistry and potential for harboring life, and Dragonfly would be the first mission to explore its surface in detail.
+                            <br><br>
+                            Beyond these specific missions, there is also a growing interest in studying the overall formation and evolution of our solar system, with Saturn as a key player. By studying the gas giants in our solar system, astronomers can gain insight into the processes that led to the formation of planets and the development of habitable environments.
+                            <br><br>
+                            Overall, the future of Saturn research and discovery is full of promise and excitement. With new technologies and missions on the horizon, we are sure to uncover new insights and mysteries about this iconic gas giant and its place in our solar system and beyond.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="wrapper" id="Newsletter">
+            <h1>Subscribe to our Newsletter</h1>
+            <p>Receive updates instanly</p>
+            <div class="newsletter">
+                <input type="text" class="input" placeholder="Enter Your Email">
+                <img src="../Pictures/envelope-solid.png" class="fas fa-envelope Showinstant" alt="A picture showing an envelope">
+                <div class="btn">Subscribe</div>
+            </div>
+        </div>	
+        <script src="../Javascript/SmallNav.js"></script>
+        <script src="../Javascript/FadeInUp.js"></script>
+        <script src="../Javascript/StickyNavigation.js"></script>
+        <script src="../Javascript/BackToTop&ProgressBar.Js"></script>
+        <script src="../Javascript/ReadMore.js"></script>
+    </body>
+</html>

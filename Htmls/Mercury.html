@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Title-->
+        <title>Our Solar System</title>
+        <!-- This meta tag specifies the character encoding for the HTML document -->
+        <meta charset="UTF-8">
+        <!-- This meta tag specifies the author of the webpage -->
+        <meta name="author" content="Erik Rhodin Claesson">
+        <!-- This meta tag provides a brief description of the webpage for search engines -->
+        <meta name="description" content="Astro is a pioneering company that specializes in the exploration of the solar system. Their website is a one-stop destination for all things related to space exploration and the wonders of the cosmos. From the latest discoveries about our neighboring planets to cutting-edge research on the origins of the universe, Astro's website offers a wealth of information and resources for space enthusiasts of all levels.">
+        <!-- This meta tag provides a list of keywords that describe the content of the webpage -->
+        <meta name="keywords" content="Astro, solar system, space exploration, cosmos, neighboring planets, discoveries, cutting-edge research, origins of the universe, space enthusiasts, information, resources, planet data, light pollution, astronomy, science, space technology, space missions, space science, planet exploration, telescopes, space telescopes, space discoveries, extraterrestrial life, space news, space education, space events, rocket science, space missions, NASA, ESA, JAXA, space probes, space travel, space programs, space history, space research, space discoveries, celestial objects, solar system objects, planetary science, space imaging, space simulations, space visualization, space facts, space phenomena, space exploration missions, space colonization, space engineering, space technology advancements, space conferences, space outreach, space apps, space industry">
+        <!-- This meta tag sets the viewport to ensure that the webpage is displayed properly on mobile devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- These meta tags are used by social media platforms when the webpage is shared to specify the title, description, image and URL for the shared content -->
+        <meta property="og:title" content="Our Solar System">
+        <meta property="og:description" content="Astro is a pioneering company that specializes in the exploration of the solar system. Their website is a one-stop destination for all things related to space exploration and the wonders of the cosmos. From the latest discoveries about our neighboring planets to cutting-edge research on the origins of the universe, Astro's website offers a wealth of information and resources for space enthusiasts of all levels.">
+        <meta property="og:image" content="https://img.freepik.com/free-vector/solar-system-science-education_1308-89626.jpg?w=2000">
+        <meta property="og:url" content="http://astro.com/">
+        <!-- Css Links -->
+        <link rel="stylesheet" href="../Css/StickyNavigation.css">
+        <link rel="stylesheet" href="../Css/CustomScrollBar.css">
+        <link rel="stylesheet" href="../Css/TopNavigation.css">
+        <link rel="stylesheet" href="../Css/NavbarSmaller.css">
+        <link rel="stylesheet" href="../Css/GeneralStyle.css"> 
+        <link rel="stylesheet" href="../Css/ProgressBar.css"> 
+        <link rel="stylesheet" href="../Css/Newsletter.css"> 
+        <link rel="stylesheet" href="../Css/BackToTop.css"> 
+        <link rel="stylesheet" href="../Css/FactsPage.css"> 
+        <link rel="stylesheet" href="../Css/TimeLine.css">
+        <link rel="stylesheet" href="../Css/Readmore.css">
+        <link rel="stylesheet" href="../Css/FadeInUp.css">  
+        <link rel="stylesheet" href="../Css/Socials.css"> 
+        <!-- Script Links -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Other Links -->
+        <link rel="icon" href="../Pictures/solar-system.png">
+        <style>
+            .header {
+                background-image: url("../Pictures/Mercury/mercurybg.jpg");
+            }
+        </style>
+    </head>
+    <body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <!-- Top Header -->
+        <div class="header" id="Home">
+            <div class="textbox">
+                <h1 class="Showinstant">The Planet of Transition: Mercury</h1>
+                <div class="overtext">
+                    <p class="Showinstant">our home in the vast expanse of the universe.</p>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="mailto:example@gmail.com" target="_blank" class="icon gmail"></a>
+                <a href="https://twitter.com/example" target="_blank" class="icon twitter"></a>
+                <a href="https://instagram.com/example" target="_blank" class="icon instagram"></a>
+                <a href="https://youtube.com/channel/UCdXh9gKzDo6H_2q3oPW6Gzw" target="_blank" class="icon youtube"></a>
+                <a href="https://linkedin.com/in/example" target="_blank" class="icon linkedin"></a>
+            </div>
+            <div class="topnavigation">
+                <a href="Main.html">Home</a>
+                <a href="AboutUs.html">About us</a>
+                <a href="ContactUs.html">Contact</a>
+            </div>
+            <div class="TopLinks">
+                <!-- Logo Picture --> 
+                <a href="Main.html">
+                    <img src="../Pictures/AstroLogo.png" width="75" height="75" alt="Company logo that looks like davids star from the jewish belief" class="Showinstant">
+                </a>
+                
+                <!-- Logo Text -->
+                <a href="AboutUs.html">
+                    <img src="../Pictures/TextLogo.png" width="175" height="75" alt="Text beside logo saying Astro" class="Showinstant">
+                </a>
+            </div>
+        </div>
+        <nav>
+            <div class="nav-container">
+                <a class="nav-link" href="#Home">Home</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Introduction">Introduction</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Size">Size</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Location">Location</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Atmosphere">Atmosphere</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Orbit">Orbit</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#GravitationalPull">Gravitational Pull</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Rotation">Rotation</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Composition">Composition</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#History">History</a>
+                <div class="progress-container">
+                    <div class="progress-bar" id="myBar"></div>
+                </div>  
+            </div>
+          </nav> 
+          <div id="myNav-for-mobile" class="overlay-for-mobile">
+            <a href="javascript:void(0)" class="closebtn-for-mobile" onclick="closeNav()">&times;</a>
+            <div class="overlay-content-for-mobile">
+                <a class="nav-link" href="#Home">Home</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Introduction">Introduction</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Size">Size</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Location">Location</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Atmosphere">Atmosphere</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Orbit">Orbit</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#GravitationalPull">Gravitational Pull</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Rotation">Rotation</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Composition">Composition</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#History">History</a>
+            </div>
+        </div>
+        <div id="navbut">
+            <span onclick="openNav()">open Navigation</span>
+        </div>
+        <div class="FirstContainer" id="Introduction">
+            <div class="FirstBoxLeft">
+                <div class="FirstBoxHeaders">
+                    <h5>Mercury</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>Sun's Best Friend</h2>
+                </div>
+                <p>he closest planet to our star, and the smallest planet in our solar system. Despite its tiny size, Mercury packs a big punch in terms of its relationship with the Sun.
+                <br><br>
+                This little planet is incredibly important to our understanding of how our solar system formed and how it continues to evolve. Its proximity to the Sun means that it experiences extreme conditions, including blistering hot temperatures that can reach up to 800 degrees Fahrenheit and cold temperatures that can dip as low as -290 degrees Fahrenheit.
+                <br><br>
+                But Mercury isn't just a hot potato hurtling through space. This planet has a lot of unique characteristics that make it an exciting subject of study. For example, its thin atmosphere is constantly being stripped away by the solar wind, creating a tail-like structure that extends for millions of miles behind the planet.
+                <br><br>
+                Mercury also has an unusual orbit that is elliptical rather than circular, which means that it gets closer to the Sun at certain points in its orbit than at others. This can cause some interesting effects, such as the "weird" patterns of sunlight that can be seen at the planet's poles.
+               </p>
+            </div>
+            <div class="FirstBoxRight">
+                <img src="../Pictures/Mercury/mercury.jpg" alt="Picture of planet mercury" >
+            </div>
+        </div>        
+        <div class="SecondContainer" id="Size">
+            <div class="SecondBox">
+                <div class="SecondBoxHeaders">
+                    <h5>Size</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>Smallest Planet In Our Solar System</h2>
+                </div>
+                <p>
+                    Mercury is the smallest planet in our solar system, with a diameter of approximately 4,880 kilometers (3,032 miles). It is only slightly larger than the Earth's Moon. Despite its small size, Mercury is the closest planet to the Sun and therefore experiences extreme temperature variations, ranging from -173 degrees Celsius (-280 degrees Fahrenheit) on its night side to 427 degrees Celsius (801 degrees Fahrenheit) on its day side.
+                    <span class="dots"></span><span class="more"><br><br>
+                    Mercury's small size and high density suggest that it has a large metallic core relative to its mantle and crust. Scientists believe that the core makes up about 60% of Mercury's total mass. Due to its small size, Mercury has a lower gravitational pull compared to Earth, making it challenging for spacecraft to orbit and land on its surface.
+                    <br><br>
+                    Despite its small size, Mercury has a complex geological history, with evidence of past volcanic activity, tectonic activity, and impact craters. The planet's surface is heavily cratered, indicating that it has experienced a high level of meteorite impacts throughout its history. Mercury's surface also shows evidence of ancient lava flows, indicating that volcanic activity occurred in the past. The planet's tectonic activity has created numerous cliffs and scarps, with some reaching heights of over a kilometer.
+                    <br><br>
+                    Overall, Mercury's small size has played a significant role in shaping its geology and atmosphere, and its proximity to the Sun has made it a fascinating object of study for scientists.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+            <div class="SecondBox">
+                <img src="../Pictures/Mercury/size.jpg" alt="Size of mercury compared to exoplanets, the moon, mars and earth">
+            </div>
+        </div>
+        <div class="ThirdContainer" id="Location">
+            <div class="ThirdBoxHeaders" style="border-bottom: 1px solid white;">
+                <h5>Mercury's Location</h5>
+                <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                <h2>The Closest Planet to the Sun</h2>
+            </div>
+            <div class="ThirdBottomBox">
+                <img src="../Pictures/Mercury/location.jpg" alt="Picture showing that mercury is the closest planet to the sun">
+            </div>
+            <div class="ThirdTopBox">
+                <p>
+                    Mercury is the closest planet to the Sun in our solar system, with an average distance of approximately 58 million kilometers (36 million miles) from the Sun. This proximity to the Sun means that Mercury has the shortest orbital period of all the planets in our solar system, completing one orbit around the Sun in just 88 Earth days.
+                    <span class="dots"></span><span class="more"><br><br>
+                    Despite its proximity to the Sun, Mercury's location is not fixed in the sky. Like all planets, Mercury's position in the sky changes over time due to its orbital motion around the Sun. This motion, combined with Earth's own orbital motion, creates a cycle of superior conjunctions (when Mercury is on the opposite side of the Sun from Earth) and inferior conjunctions (when Mercury is between the Sun and Earth).
+                    <br><br>
+                    Mercury's orbital path is also highly elliptical, with its closest approach to the Sun (perihelion) at a distance of only 46 million kilometers (29 million miles) and its farthest distance (aphelion) at a distance of 70 million kilometers (43 million miles). This highly elliptical orbit causes significant temperature variations on Mercury's surface, with the planet experiencing extreme heat on its day side and extreme cold on its night side.
+                    <br><br>
+                    In conclusion, Mercury's location as the closest planet to the Sun and its highly elliptical orbit have significant implications for its climate, geology, and overall characteristics as a planet.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+        </div>
+        <div class="SecondContainer" id="Atmosphere">
+            <div class="SecondBox">
+                <div class="SecondBoxHeaders">
+                    <h5>Layers</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>Atmospheric Zones</h2>
+                </div>
+                <p>Mercury has a very thin and tenuous atmosphere that is constantly bombarded by solar wind and radiation. The planet's atmosphere consists primarily of helium, hydrogen, and small amounts of oxygen, sodium, potassium, and other trace elements.
+                <span class="dots"></span><span class="more"><br><br>
+                Due to its close proximity to the Sun, Mercury's atmosphere is constantly being stripped away by solar radiation and solar winds. These processes cause the planet's atmosphere to be continuously replenished by the release of gases from its surface, as well as by the occasional impacts of comets and meteoroids.
+                <br><br>
+                Mercury's thin atmosphere means that the planet has no significant weather patterns or clouds. However, the planet's surface experiences significant temperature variations due to its proximity to the Sun, with temperatures on its day side reaching up to 427 degrees Celsius (801 degrees Fahrenheit) and temperatures on its night side dropping to -173 degrees Celsius (-280 degrees Fahrenheit).
+                <br><br>
+                In summary, Mercury's atmosphere is extremely thin and is constantly being stripped away by solar radiation and winds. The planet's lack of significant weather patterns or clouds, combined with its extreme temperature variations, make it a challenging environment for exploration and study.
+                </span></p>
+            <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+            <div class="SecondBox">
+                <img src="../Pictures/Mercury/dont.jpg" alt="Picture showing partly mercurys atmosphere but also how the magnetopause acts against solar winds" style="border: 1px solid white;">
+            </div>
+        </div>     
+        <div class="FirstContainer" id="Orbit">
+            <div class="FirstBoxLeft">
+                <img src="../Pictures/Mercury/orbit.jpg" alt="Showing mercurys orbit around the sun compared to earth">
+            </div>
+            <div class="FirstBoxRight">
+                <div class="FirstBoxHeaders">
+                    <h5>Orbit</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>Mercury's Strange Path</h2>
+                </div>
+                <p>
+                    Mercury's orbit is highly elliptical, meaning that its distance from the Sun varies significantly throughout its orbit. The planet's orbit has an eccentricity of 0.21, which is the highest of any planet in our solar system.
+                    <br><br>
+                    At its closest approach to the Sun (perihelion), Mercury is only 46 million kilometers (29 million miles) away from the Sun, while at its farthest distance (aphelion), it is approximately 70 million kilometers (43 million miles) away. Due to this highly elliptical orbit, Mercury's orbital speed varies throughout its orbit, with the planet traveling at its fastest speed when it is closest to the Sun.
+                    <br><br>
+                    Mercury's highly elliptical orbit also means that its year (the time it takes to complete one orbit around the Sun) is much shorter than its day (the time it takes for the planet to rotate once on its axis). Mercury's year is just 88 Earth days long, while its day is 58.6 Earth days long. This means that Mercury rotates on its axis at a much slower rate than it orbits the Sun, causing each day on the planet to be approximately two Mercurian years long.
+                    <br><br>
+                    In addition to its eccentric orbit, Mercury's orbit is also inclined by approximately 7 degrees relative to the plane of the ecliptic, which is the plane in which the Earth and other planets orbit the Sun. 
+                </p>
+            </div>
+        </div>
+        <div class="ThirdContainer" id="GravitationalPull">
+            <div class="ThirdBoxHeaders">
+                <h5>The Gravity of Mercury</h5>
+                <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                <h2>The Key to Understanding Its Formation</h2>
+            </div>
+            <div class="ThirdBottomBox">
+                <img src="../Pictures/Mercury/gravity.jpg" alt="Showing how much 1g on earth would weigh on mercury, 0.38g">
+            </div>
+            <div class="ThirdTopBox">
+                <p>
+                    Mercury has a relatively weak gravitational force due to its small size and low mass. The planet's surface gravity is approximately 38% of Earth's gravity, meaning that objects on the planet's surface weigh less than they would on Earth.
+                    <span class="dots"></span><span class="more"><br><br>
+                    Mercury's weak gravitational force also affects its atmosphere, which is constantly being stripped away by solar radiation and winds. The planet's low mass and gravity cannot hold onto its atmosphere, causing it to be continuously replenished by the release of gases from its surface.
+                    <br><br>
+                    Despite its weak gravitational force, Mercury's gravity is still strong enough to affect the orbits of other objects in its vicinity. For example, Mercury's gravity can perturb the orbits of comets and asteroids that pass by the planet, potentially causing them to collide with Mercury or other planets in our solar system.
+                    <br><br>
+                    Mercury's gravitational force also plays a role in the planet's geological activity, which includes features such as scarps, ridges, and craters. The planet's weak gravity causes the crust to contract as it cools, creating cliffs and ridges on its surface. The impacts of meteoroids and asteroids also cause craters to form on Mercury's surface, which are preserved due to the lack of weathering and erosion on the planet.
+                    <br><br>
+                    In summary, while Mercury's weak gravitational force limits the size of its atmosphere and affects its geological activity, it is still strong enough to affect the orbits of other objects in its vicinity. The planet's unique characteristics make it an interesting subject of study for astronomers and planetary scientists.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+        </div>
+        <div class="FirstContainer" id="Rotation">
+            <div class="FirstBoxLeft">
+                <img src="../Pictures/Mercury/rotation.gif" alt="A gif video showing the rotation of mercury around its axis" style="border: 1px solid white;">
+            </div>
+            <div class="FirstBoxRight">
+                <div class="SecondBoxHeaders">
+                    <h5>Rotation</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>Slow Rotation</h2>
+                </div>
+                <p>
+                    Mercury has a relatively slow rotation compared to its orbit around the Sun. It takes the planet 58.6 Earth days to rotate once on its axis, while it only takes 88 Earth days for Mercury to complete one orbit around the Sun.
+                    <br><br>
+                    Due to this slow rotation, Mercury experiences extreme temperature variations between its day and night sides. The planet's day side is subjected to intense heat and radiation from the Sun, causing temperatures to reach up to 427 degrees Celsius (801 degrees Fahrenheit). Conversely, temperatures on Mercury's night side drop to as low as -173 degrees Celsius (-280 degrees Fahrenheit) due to the lack of sunlight.
+                    <br><br>
+                    Mercury's slow rotation also causes a phenomenon known as the "3:2 spin-orbit resonance." This means that Mercury rotates three times on its axis for every two orbits it makes around the Sun. As a result, a day on Mercury (the time it takes for the planet to rotate once on its axis) is actually two Mercurian years long (the time it takes for Mercury to complete one orbit around the Sun).
+                    <br><br>
+                    This unique rotation pattern makes Mercury's days and nights much longer than on any other planet in our solar system. Additionally, the planet's slow rotation combined with its lack of an atmosphere makes it difficult to regulate temperatures across its surface, leading to extreme temperature variations.
+                    <br><br>
+                    In conclusion, Mercury's slow rotation and spin-orbit resonance create a unique environment on the planet, with extreme temperature variations and days and nights that are much longer than on any other planet in our solar system. These factors make Mercury an interesting and challenging planet to study and explore.
+                </p>
+            </div>
+        </div>
+        <div class="FirstContainer" id="Composition">
+            <div class="FirstBoxLeft">
+                <div class="FirstBoxHeaders">
+                    <h5>Composition</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>Layers</h2>
+                </div>
+                <p>Mercury is composed primarily of rocky material, with a large iron core that makes up about 65% of the planet's mass. The planet's surface is heavily cratered and scarred, indicating that it has been bombarded by asteroids and meteoroids throughout its history.
+                <br><br>
+                Mercury's crust is estimated to be between 20 and 90 kilometers (12 and 56 miles) thick, which is relatively thin compared to the crusts of other terrestrial planets such as Earth or Mars. The planet's surface is also covered in a layer of dust and rocky debris that has accumulated over billions of years.
+                <br><br>
+                The planet's iron core is thought to have formed early in its history, when it was still molten and the heavier elements sank to the center due to their greater density. This process is known as differentiation and is thought to have occurred in all the terrestrial planets in our solar system.
+                <br><br>
+                Mercury's atmosphere is very thin, with a composition of mostly helium and hydrogen. The planet's weak gravity cannot hold onto its atmosphere, which is constantly being stripped away by solar winds and radiation.
+                <br><br>
+                Overall, Mercury's composition is similar to that of other terrestrial planets in our solar system, but its high iron content and thin crust make it unique. The planet's surface features and geological activity are also shaped by its composition and history, making it an interesting subject of study for scientists and astronomers.
+                <br><br>
+                Mercury's composition and structure have been studied extensively by scientists, including through flybys by the Mariner 10 spacecraft in the 1970s and the more recent Messenger mission, which orbited the planet from 2011 to 2015. Through these missions, scientists have gained a better understanding of the planet's geological history and the processes that shaped its surface and interior.</p>
+            </div>
+            <div class="FirstBoxRight">
+                <img src="../Pictures/Mercury/compo.webp" alt="Picture showing the composition of the planet mercury" >
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Element</th>
+                            <th>Percentage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Iron</td>
+                            <td>65%</td>
+                        </tr>
+                        <tr>
+                            <td>Oxygen</td>
+                            <td>17%</td>
+                        </tr>
+                        <tr>
+                            <td>Silicon</td>
+                            <td>15%</td>
+                        </tr>
+                        <tr>
+                            <td>Aluminium</td>
+                            <td>1%</td>
+                        </tr>
+                        <tr>
+                            <td>Calcium</td>
+                            <td>0.7%</td>
+                        </tr>
+                        <tr>
+                            <td>Sodium</td>
+                            <td>0.6%</td>
+                        </tr>
+                        <tr>
+                            <td>Magnesium</td>
+                            <td>0.2%</td>
+                        </tr>
+                        <tr>
+                            <td>Potassium</td>
+                            <td>0.03%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>     
+        <div class="ThirdBoxHeaders" id="History">
+            <h5>History of Mercury</h5>
+            <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+            <h2>From Formation to the Future</h2>
+        </div>
+        <div class="Timeline-Box">
+            <div class="timeline-timeline">
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                    <h4>The Formation of Mercury: Insights from Planetary Science</h4>
+                    <p>
+                        Mercury, the smallest planet in our solar system, is a rocky, terrestrial planet located closest to the sun. Scientists have long been intrigued by the formation and evolution of this fascinating planet, which is believed to have formed about 4.5 billion years ago.
+                        <span class="dots"></span><span class="more"><br><br>
+                        Insights from planetary science have helped us understand how Mercury formed. The prevailing theory is that Mercury formed from the protoplanetary disk, a swirling cloud of gas and dust that surrounded the young sun. The protoplanetary disk contained all the building blocks that eventually formed the planets in our solar system.
+                        <br><br>
+                        According to this theory, Mercury formed through a process known as accretion. Dust particles collided and stuck together, gradually forming larger and larger bodies. Over time, these bodies merged to form protoplanets, which then collided and merged to form larger planets. Mercury likely formed through a series of collisions and mergers of smaller bodies, gradually growing in size until it reached its current state.
+                        <br><br>
+                        However, the formation of Mercury is still a topic of active research and debate. One alternative theory suggests that Mercury formed from the collision of two smaller planets. This would explain Mercury's high density and large iron core, which are unusual for a planet of its size.
+                        <br><br>
+                        By studying the composition, structure, and dynamics of Mercury, as well as the broader context of the solar system, planetary scientists continue to gain new insights into the formation and evolution of this intriguing planet.
+                        </span>
+                    </p>
+                    <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>Mercury's Early History: Differentiation and the Formation of the Iron Core</h4>
+                        <p>
+                            Mercury is a unique planet in many ways, and one of its most interesting features is its large iron core. Scientists believe that this core is the result of a process called differentiation that occurred early in Mercury's history.
+                            <span class="dots"></span><span class="more"><br><br>
+                            During the early stages of its formation, Mercury was a hot, molten mass of rock and metal. As the planet began to cool, heavier materials like iron sank towards its center, while lighter materials rose to the surface. This process is known as differentiation and is responsible for the layered structure of many of the rocky planets in our solar system.
+                            <br><br>
+                            On Mercury, differentiation was particularly intense due to the planet's small size and proximity to the sun. As a result, the planet's core makes up a greater proportion of its overall mass than any other planet in our solar system.
+                            <br><br>
+                            Scientists have used a variety of methods to study Mercury's core, including measurements of the planet's gravity and magnetic fields. These measurements have revealed that the core is not only large, but also has a complex structure.
+                            <br><br>
+                            Understanding the formation and structure of Mercury's core is important for a number of reasons. For one, it provides clues about the planet's early history and the processes that shaped it. Additionally, the unique properties of Mercury's core make it a valuable target for scientific study, particularly for researchers interested in the study of planetary formation and geophysics.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" id="myReadmoreBtn" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                        <h4>Bombardment and Cratering on Mercury's Surface: Evidence from Spacecraft Missions</h4>
+                        <p>
+                            Mercury's surface is pockmarked with countless craters, evidence of the planet's long history of bombardment by asteroids, comets, and other space debris. The study of these craters provides valuable insights into the geologic history of the planet, as well as the broader history of the solar system.
+                            <span class="dots"></span><span class="more"><br><br>
+                            Over the past few decades, a number of spacecraft missions have been sent to Mercury to study its surface in detail. These missions have revealed that Mercury's surface is heavily cratered, with some craters measuring hundreds of kilometers in diameter.
+                            <br><br>
+                            One of the most prominent features of Mercury's surface is its extensive system of interlocking ridges, which are thought to be the result of the planet's contraction as it cooled. These ridges are often found in close proximity to large impact basins, suggesting a link between the planet's tectonic activity and its history of bombardment.
+                            <br><br>
+                            In addition to providing insights into Mercury's geologic history, the study of impact craters on the planet's surface can also help us understand the broader history of the solar system. By studying the distribution and frequency of craters on different bodies in the solar system, scientists can develop a more detailed picture of the processes that have shaped our corner of the universe over billions of years.
+                            <br><br>
+                            As our understanding of Mercury's surface continues to evolve, it is likely that we will uncover even more evidence of the planet's complex and fascinating geologic history.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>Volcanism on Mercury: Evidence of Geological Activity</h4>
+                        <p>
+                            Despite being a small, rocky planet located closest to the sun, Mercury has a surprisingly active geological history. One of the most striking examples of this activity is the presence of volcanic features on the planet's surface.
+                            <span class="dots"></span><span class="more"><br><br>
+                            The study of volcanic features on Mercury has been made possible by a number of spacecraft missions, including NASA's MESSENGER (MErcury Surface, Space ENvironment, GEochemistry, and Ranging) mission, which orbited the planet from 2011 to 2015.
+                            <br><br>
+                            One of the most notable volcanic features on Mercury is a large plain known as the Caloris Basin. This basin is thought to be the result of a massive impact event that occurred early in the planet's history, which triggered volcanic activity in the surrounding area. As a result, the Caloris Basin is surrounded by a ring of volcanic deposits, including lava flows and pyroclastic deposits.
+                            <br><br>
+                            In addition to the Caloris Basin, a number of other volcanic features have been identified on Mercury, including small shield volcanoes and fissure vents. The presence of these features suggests that volcanic activity has occurred on the planet throughout its history, and may still be ongoing today.
+                            <br><br>
+                            The study of volcanic features on Mercury is important for a number of reasons. For one, it provides valuable insights into the planet's geologic history and the processes that have shaped its surface over billions of years. Additionally, the study of volcanism on Mercury can help us better understand the broader history of the solar system, and the processes that drive geological activity on other planets and moons.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                        <h4>Mercury's Magnetic Field: Understanding Its Origins and Significance</h4>
+                        <p>
+                            Mercury is the smallest planet in the solar system, and one of the most enigmatic. Despite its small size, Mercury has a surprisingly strong magnetic field, which has been a subject of scientific study for decades.
+                            <span class="dots"></span><span class="more"><br><br>
+                            The origins of Mercury's magnetic field are not yet fully understood, but scientists believe it may be related to the planet's core. Unlike other terrestrial planets like Earth, Mercury's core is thought to be composed primarily of iron, which is highly conductive and could generate a strong magnetic field through a process known as dynamo action.
+                            <br><br>
+                            The study of Mercury's magnetic field is important for a number of reasons. For one, it provides valuable insights into the planet's interior structure and composition, and the processes that have shaped it over billions of years. Additionally, the study of Mercury's magnetic field can help us better understand the broader dynamics of the solar system, including the interactions between the solar wind and the planetary magnetic fields.
+                            <br><br>
+                            Mercury's magnetic field is also significant from a practical standpoint, as it poses a significant challenge for spacecraft that visit the planet. The strong magnetic field can interfere with instruments and electronics, and can even cause spacecraft to become destabilized in some cases.
+                            <br><br>
+                            Despite the challenges posed by Mercury's magnetic field, scientists continue to study this enigmatic planet in an effort to better understand its origins, significance, and potential for further scientific exploration.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>Exploring Mercury's Atmosphere: Insights from Spacecraft Data</h4>
+                        <p>
+                            Mercury is often thought of as a barren, airless world, but recent spacecraft missions have revealed that the planet does in fact have an atmosphere. Though extremely thin and tenuous, Mercury's atmosphere is a subject of intense scientific study, as it can provide valuable insights into the planet's history and current state.
+                            <span class="dots"></span><span class="more"><br><br>
+                            NASA's MESSENGER mission, which orbited Mercury from 2011 to 2015, provided the most detailed information yet about the planet's atmosphere. The mission's instruments were able to measure the composition and structure of the atmosphere, as well as its interactions with the planet's surface and the solar wind.
+                            <br><br>
+                            One of the most surprising discoveries made by MESSENGER was the presence of a "tail" of neutral particles trailing behind the planet in its orbit. This tail is thought to be caused by the stripping away of atoms from the planet's atmosphere by the solar wind, which then form a neutral cloud in the planet's wake.
+                            <br><br>
+                            Other discoveries made by MESSENGER include the presence of sodium and potassium in the atmosphere, as well as evidence of seasonal variations in the composition and density of the atmosphere. These findings provide valuable insights into the processes that have shaped Mercury's atmosphere over time, and the ways in which the planet interacts with its environment.
+                            <br><br>
+                            The study of Mercury's atmosphere is important not only for understanding this enigmatic planet, but also for advancing our understanding of planetary atmospheres in general. By studying the processes that have shaped Mercury's atmosphere, scientists can gain insights into the broader dynamics of planetary atmospheres throughout the solar system and beyond.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                        <h4>Mercury's Polar Regions: Evidence of Water Ice and Future Exploration Opportunities</h4>
+                        <p>
+                            Despite its proximity to the Sun, recent observations of Mercury's polar regions have provided strong evidence for the presence of water ice in the permanently shadowed craters near the poles. This has significant implications for our understanding of the planet's history and potential for future exploration.
+                            <span class="dots"></span><span class="more"><br><br>
+                            The discovery of water ice on Mercury was made possible by the NASA's MESSENGER mission, which used its neutron spectrometer instrument to detect unusually high concentrations of hydrogen at the planet's poles. These high concentrations were found to be consistent with the presence of water ice, which would be expected to accumulate in the permanently shadowed craters where temperatures are low enough for ice to persist.
+                            <br><br>
+                            The discovery of water ice on Mercury is significant not only for what it tells us about the planet's history, but also for its potential implications for future exploration. Water is a critical resource for human exploration, and the presence of water ice on Mercury could make the planet a more attractive destination for future missions.
+                            <br><br>
+                            Furthermore, the permanently shadowed craters near the poles of Mercury are also of scientific interest in their own right, as they are some of the coldest places in the solar system and may provide unique insights into the origins and evolution of the innermost planet.
+                            <br><br>
+                            While the discovery of water ice on Mercury's polar regions is a major breakthrough, much remains to be learned about the planet and its potential for future exploration. The study of Mercury's polar regions and the implications of their discovery for future missions is an active area of research for planetary scientists and space exploration organizations.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>Challenges of Exploring Mercury: Lessons Learned from Past Space Missions</h4>
+                        <p>
+                            Exploring Mercury has proven to be a significant challenge for space missions due to a number of factors, including the planet's close proximity to the Sun, its extreme temperatures, and the harsh radiation environment in the vicinity of the planet. Over the years, a number of space missions have attempted to explore Mercury, each with their own set of challenges and lessons learned.
+                            <span class="dots"></span><span class="more"><br><br>
+                            The first spacecraft to fly by Mercury was NASA's Mariner 10 mission in the mid-1970s. This mission provided the first close-up images of the planet, but was limited in its ability to fully explore the planet due to the fact that it was only able to observe roughly half of the planet's surface.
+                            <br><br>
+                            NASA's MESSENGER mission, which orbited Mercury from 2011 to 2015, provided a much more detailed look at the planet and made a number of important discoveries, including evidence for the presence of water ice near the planet's poles. However, the mission also faced significant challenges, such as the need to operate in the extreme temperatures near the planet and the difficulties of navigating in the complex gravitational environment of the inner solar system.
+                            <br><br>
+                            Other proposed missions to explore Mercury, such as the European Space Agency's BepiColombo mission, face their own set of challenges, such as the need to develop new technologies to withstand the intense radiation environment around the planet.
+                            <br><br>
+                            Despite these challenges, the study of Mercury remains an important area of research for planetary scientists, as it provides insights into the processes that have shaped the inner solar system and the ways in which planets can evolve under extreme conditions. The lessons learned from past space missions to Mercury will continue to inform and guide future efforts to explore this fascinating planet.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                        <h4>The Future of Mercury Exploration: New Missions and Scientific Objectives</h4>
+                        <p>
+                            The future of Mercury exploration is bright, with several new missions and scientific objectives planned in the coming years. These missions aim to build upon the discoveries made by previous missions and to answer new questions about the planet's history, geology, and potential for astrobiology.
+                            <span class="dots"></span><span class="more"><br><br>
+                            One of the most exciting upcoming missions is the European Space Agency's BepiColombo mission, which is scheduled to arrive at Mercury in 2025. This mission consists of two spacecraft, one to orbit the planet and study its surface and magnetic field, and the other to explore its atmosphere and exosphere.
+                            <br><br>
+                            In addition to BepiColombo, NASA is also planning a new mission to Mercury, tentatively named "Mercury Surface, Space Environment, Geochemistry, and Ranging (M-S^2-GER)", which is currently in the early stages of development. This mission aims to land a spacecraft on the planet's surface and conduct a range of scientific investigations, including studying the planet's surface composition and geology.
+                            <br><br>
+                            Other proposed missions include a possible sample return mission to Mercury, which would provide scientists with the opportunity to study actual samples of the planet's surface materials, and a possible mission to explore Mercury's unique magnetic field and its interactions with the solar wind.
+                            <br><br>
+                            These new missions and scientific objectives will help to further our understanding of Mercury and its place in the solar system, and will provide valuable insights into the processes that have shaped the innermost planet.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>Mercury and the Search for Life in the Solar System: Potential for Astrobiology Research</h4>
+                        <p>
+                            While Mercury is not typically thought of as a prime candidate for astrobiology research, there is still potential for this innermost planet to offer insights into the search for life in the solar system.
+                            <span class="dots"></span><span class="more"><br><br>
+                            One area of interest is the possibility of water ice at Mercury's poles, which has been observed by NASA's MESSENGER mission. This water ice could potentially serve as a resource for future human exploration, and may also provide clues about the origins and evolution of water in the inner solar system.
+                            <br><br>
+                            Another area of interest is the potential for organic molecules on the planet's surface. While the extreme temperatures and harsh radiation environment on Mercury's surface make it unlikely that any complex organic molecules would survive, it is possible that simpler organic compounds could exist.
+                            <br><br>
+                            Furthermore, studying the geological processes that have shaped Mercury's surface can provide insights into the conditions that existed in the early solar system, and the ways in which planets can evolve over time. This understanding can inform our search for other habitable worlds in the universe, and may offer clues about the conditions necessary for life to arise and thrive.
+                            <br><br>
+                            In addition to direct observations of Mercury, studying the interactions between the planet's magnetic field and the solar wind can provide insights into the ways in which planets protect themselves from the harsh radiation environment of space. Understanding these processes can inform our search for habitable worlds and help to identify the conditions necessary for life to thrive in the solar system and beyond.
+                            <br><br>
+                            Overall, while Mercury may not be a prime target for astrobiology research, studying this innermost planet can still provide valuable insights into the search for life in the solar system and beyond.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="wrapper" id="Newsletter">
+            <h1>Subscribe to our Newsletter</h1>
+            <p>Receive updates instanly</p>
+            <div class="newsletter">
+                <input type="text" class="input" placeholder="Enter Your Email">
+                <img src="../Pictures/envelope-solid.png" class="fas fa-envelope Showinstant" alt="Picture of an envelope">
+                <div class="btn">Subscribe</div>
+            </div>
+        </div>	
+        <script src="../Javascript/SmallNav.js"></script>
+        <script src="../Javascript/FadeInUp.js"></script>
+        <script src="../Javascript/StickyNavigation.js"></script>
+        <script src="../Javascript/BackToTop&ProgressBar.Js"></script>
+        <script src="../Javascript/ReadMore.js"></script>
+    </body>
+</html>

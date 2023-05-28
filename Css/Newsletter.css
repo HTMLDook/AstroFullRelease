@@ -1,0 +1,110 @@
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+    background: url("../Pictures/Newsletter.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.wrapper h1 {
+    margin-bottom: 40px;
+    font-size: 42px;
+    color: #fff;
+}
+
+.wrapper p {
+    margin-bottom: 40px;
+    color: white;
+    font-size: 20px;
+}
+
+.newsletter {
+    max-width: 550px;
+    width: 100%;
+    position: relative;
+}
+
+.newsletter .input {
+    padding: 30px 100px 30px 60px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+
+.newsletter .fas {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    font-size: 20px;
+    width: 16px;
+    height: 16px;
+}
+
+.newsletter .btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30px;
+    background: #00a78e;
+    padding: 15px 20px;
+    border-radius: 25px;
+    font-size: 12px;
+    letter-spacing: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 600px) {
+    .newsletter .btn {
+        text-align: center;
+        position: relative;
+        transform: translateY(0);
+        right: 0;
+        background: #00a78e;
+        padding: 15px;
+        border-radius: 25px;
+        font-size: 12px;
+        letter-spacing: 5px;
+        color: #fff;
+        cursor: pointer;
+        text-transform: uppercase;
+        bottom: 0px;
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .newsletter .input {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 30px 0px 30px 0px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .newsletter .input::placeholder {
+        color: white;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .fas {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .wrapper h1 {
+        display: none;
+    }
+}

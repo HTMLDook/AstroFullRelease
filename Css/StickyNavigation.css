@@ -1,0 +1,96 @@
+/* Sticky Navigation Bar */
+nav {
+    background-color: #333;
+    color: white;
+    width: 100%;
+    z-index: 200000000000;
+}
+
+nav ul li:hover {
+    background-color: #555;
+}
+
+.split {
+    margin-left: auto;
+}
+
+.split .dropdown-content {
+    left: auto;
+    right: 0;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.dropbtn {
+    background-color: #333;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #00a78e;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+    top: 100%;
+    overflow: hidden;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 6px 8px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #00a78e;
+}
+
+.dropdown-content input {
+    box-sizing: border-box;
+    background-image: url("../Pictures/searchicon.png");
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    background-size: 10%;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown-content input:focus {
+    outline: 3px solid #ddd;
+}
+
+.dropdown button {
+    font-family: "star_jedi_outlineregular";
+    letter-spacing: 0.2em;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1em;
+}

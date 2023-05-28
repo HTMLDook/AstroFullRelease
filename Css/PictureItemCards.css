@@ -1,0 +1,44 @@
+.column {
+    width: 40%;
+    margin: 0 50px;
+    text-align: left;
+    vertical-align: top;
+    margin: 0 1%;
+    height: auto;
+    display: inline-block;
+    padding: 0;
+}
+.item {
+    margin-bottom: 75px;
+    display: block;
+}
+.responsive-image {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+picture.responsive-image img {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.item .location {
+    display: block;
+    font: 14px/28px Arial, Verdana, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+.item .label {
+    display: block;
+    font: 24px/28px D-DIN-Bold, Arial, Verdana, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #fff;
+}

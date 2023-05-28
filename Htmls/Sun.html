@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Title-->
+        <title>Our Solar System</title>
+        <!-- This meta tag specifies the character encoding for the HTML document -->
+        <meta charset="UTF-8">
+        <!-- This meta tag specifies the author of the webpage -->
+        <meta name="author" content="Erik Rhodin Claesson">
+        <!-- This meta tag provides a brief description of the webpage for search engines -->
+        <meta name="description" content="Astro is a pioneering company that specializes in the exploration of the solar system. Their website is a one-stop destination for all things related to space exploration and the wonders of the cosmos. From the latest discoveries about our neighboring planets to cutting-edge research on the origins of the universe, Astro's website offers a wealth of information and resources for space enthusiasts of all levels.">
+        <!-- This meta tag provides a list of keywords that describe the content of the webpage -->
+        <meta name="keywords" content="Astro, solar system, space exploration, cosmos, neighboring planets, discoveries, cutting-edge research, origins of the universe, space enthusiasts, information, resources, planet data, light pollution, astronomy, science, space technology, space missions, space science, planet exploration, telescopes, space telescopes, space discoveries, extraterrestrial life, space news, space education, space events, rocket science, space missions, NASA, ESA, JAXA, space probes, space travel, space programs, space history, space research, space discoveries, celestial objects, solar system objects, planetary science, space imaging, space simulations, space visualization, space facts, space phenomena, space exploration missions, space colonization, space engineering, space technology advancements, space conferences, space outreach, space apps, space industry">
+        <!-- This meta tag sets the viewport to ensure that the webpage is displayed properly on mobile devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- These meta tags are used by social media platforms when the webpage is shared to specify the title, description, image and URL for the shared content -->
+        <meta property="og:title" content="Our Solar System">
+        <meta property="og:description" content="Astro is a pioneering company that specializes in the exploration of the solar system. Their website is a one-stop destination for all things related to space exploration and the wonders of the cosmos. From the latest discoveries about our neighboring planets to cutting-edge research on the origins of the universe, Astro's website offers a wealth of information and resources for space enthusiasts of all levels.">
+        <meta property="og:image" content="https://img.freepik.com/free-vector/solar-system-science-education_1308-89626.jpg?w=2000">
+        <meta property="og:url" content="http://astro.com/">
+        <!-- Css Links -->
+        <link rel="stylesheet" href="../Css/StickyNavigation.css">
+        <link rel="stylesheet" href="../Css/CustomScrollBar.css">
+        <link rel="stylesheet" href="../Css/TopNavigation.css">
+        <link rel="stylesheet" href="../Css/NavbarSmaller.css">
+        <link rel="stylesheet" href="../Css/GeneralStyle.css"> 
+        <link rel="stylesheet" href="../Css/ProgressBar.css"> 
+        <link rel="stylesheet" href="../Css/Newsletter.css"> 
+        <link rel="stylesheet" href="../Css/BackToTop.css"> 
+        <link rel="stylesheet" href="../Css/FactsPage.css"> 
+        <link rel="stylesheet" href="../Css/TimeLine.css">
+        <link rel="stylesheet" href="../Css/Readmore.css"> 
+        <link rel="stylesheet" href="../Css/FadeInUp.css"> 
+        <link rel="stylesheet" href="../Css/Socials.css"> 
+        <!-- Script Links -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Other Links -->
+        <link rel="icon" href="../Pictures/solar-system.png">
+        <style>
+            .header {
+                background-image: url("../Pictures/Sun/sunbg.jpg");
+            }
+        </style>
+    </head>
+    <body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <!-- Top Header -->
+        <div class="header" id="Home">
+            <div class="textbox">
+                <h1 class="Showinstant">The sun</h1>
+                <div class="overtext">
+                    <p class="Showinstant">The luminous ball of plasma at the center of the Solar System that is responsible for life on Earth.</p>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="mailto:example@gmail.com" target="_blank" class="icon gmail"></a>
+                <a href="https://twitter.com/example" target="_blank" class="icon twitter"></a>
+                <a href="https://instagram.com/example" target="_blank" class="icon instagram"></a>
+                <a href="https://youtube.com/channel/UCdXh9gKzDo6H_2q3oPW6Gzw" target="_blank" class="icon youtube"></a>
+                <a href="https://linkedin.com/in/example" target="_blank" class="icon linkedin"></a>
+            </div>
+            <div class="topnavigation">
+                <a href="Main.html">Home</a>
+                <a href="AboutUs.html">About us</a>
+                <a href="ContactUs.html">Contact</a>
+            </div>
+            <div class="TopLinks">
+                <!-- Logo Picture --> 
+                <a href="Main.html">
+                    <img src="../Pictures/AstroLogo.png" width="75" height="75" alt="Company logo that looks like davids star from the jewish belief" class="Showinstant">
+                </a>
+                
+                <!-- Logo Text -->
+                <a href="AboutUs.html">
+                    <img src="../Pictures/TextLogo.png" width="175" height="75" alt="Text beside logo saying Astro" class="Showinstant">
+                </a>
+            </div>
+        </div>
+        <nav>
+            <div class="nav-container">
+                <a class="nav-link" href="#Home">Home</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Introduction">Introduction</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Size">Size</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Location">Location</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Atmosphere">Atmosphere</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Orbit">Orbit</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#GravitationalPull">Gravitational Pull</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Rotation">Rotation</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Composition">Composition</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#History">History</a>
+                <div class="progress-container">
+                    <div class="progress-bar" id="myBar"></div>
+                </div>  
+            </div>
+          </nav> 
+          <div id="myNav-for-mobile" class="overlay-for-mobile">
+            <a href="javascript:void(0)" class="closebtn-for-mobile" onclick="closeNav()">&times;</a>
+            <div class="overlay-content-for-mobile">
+                <a class="nav-link" href="#Home">Home</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Introduction">Introduction</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Size">Size</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Location">Location</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Atmosphere">Atmosphere</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Orbit">Orbit</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#GravitationalPull">Gravitational Pull</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Rotation">Rotation</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#Composition">Composition</a>
+                <span class="SpacerLine">|</span>
+                <a class="nav-link" href="#History">History</a>
+            </div>
+        </div>
+        <div id="navbut">
+            <span onclick="openNav()">open Navigation</span>
+        </div>
+        <div class="FirstContainer" id="Introduction">
+            <div class="FirstBoxLeft">
+                <div class="FirstBoxHeaders">
+                    <h5>The Sun</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>The Celestial Fire</h2>
+                </div>
+                <p>The sun is undoubtedly one of the most fascinating objects in our solar system. It is a massive ball of gas that provides the energy that powers life on Earth. From sunrise to sunset, it illuminates our planet and influences everything from our climate to our biological rhythms. The sun is also responsible for the stunning displays of light in the sky, such as sunsets, sunrises, and the Northern and Southern Lights.
+                <br><br>
+                Despite its constant presence in our lives, the sun remains a mysterious and complex entity. Scientists are constantly studying the sun to better understand its behavior and to predict the impacts of its activity on our planet. From solar flares and coronal mass ejections to the sun's magnetic field and sunspots, there is always something new to discover about our closest star.
+                <br><br>
+                Exploring the sun is not an easy task, and it requires advanced technology and equipment. NASA and other space agencies have launched numerous missions to study the sun and gather data about its behavior. These missions have allowed scientists to make groundbreaking discoveries and to expand our understanding of the sun's impact on our planet and the universe as a whole. Whether you are a space enthusiast or just someone curious about the world around you, there is something fascinating to learn about the sun.</p>
+            </div>
+            <div class="FirstBoxRight">
+                <img src="../Pictures/Sun/thesun.png" alt="Picture of the sun" >
+            </div>
+        </div>        
+        <div class="SecondContainer" id="Size">
+            <div class="SecondBox">
+                <div class="SecondBoxHeaders">
+                    <h5>Size</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>The Sun's Vast Scale</h2>
+                </div>
+                <p>
+                    The sun is an immense ball of gas, with a diameter of about 1.39 million kilometers. To put that into perspective, it is about 109 times larger than the diameter of Earth. In fact, the sun is so large that you could fit over 1 million Earths inside it!
+                    <span class="dots"></span><span class="more"><br><br>
+                    To better understand the sheer size of the sun, let's take a look at a comparison of the sun to the other planets in our solar system. As you can see from the image, the sun is significantly larger than any of the planets. It is also much larger than other stars in our galaxy that are similar in composition and age.
+                    <br><br>
+                    The sun's enormous size plays a critical role in shaping our solar system. Its immense gravitational force keeps all of the planets in orbit around it, while its powerful energy output influences everything from the temperature and climate of our planet to the behavior of space weather in our solar system.
+                    <br><br>
+                    Despite its enormous size, the sun is just one of many stars in our galaxy, and it is not even particularly large compared to some of the other stars out there. However, its relative closeness to Earth and its influence on our planet make it an object of great interest and fascination for scientists and space enthusiasts alike.
+                    <br><br>
+                    In conclusion, the sun's size is truly awe-inspiring, and it has a significant impact on our planet and our solar system as a whole. Understanding the sun's size and behavior is critical to unlocking some of the universe's most profound mysteries and shaping our understanding of the cosmos.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+            <div class="SecondBox">
+                <img src="../Pictures/Sun/Star-sizes.jpg" alt="Picture of the sun compared to planets and other stars" style="border: 1px solid white;">
+            </div>
+        </div>
+        <div class="ThirdContainer" id="Location">
+            <div class="ThirdBoxHeaders" style="border-bottom: 1px solid white;">
+                <h5>Central Position of the Sun</h5>
+                <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                <h2>Importance to Life on Earth</h2>
+            </div>
+            <div class="ThirdBottomBox">
+                <img src="../Pictures/Sun/location2.jpg" alt="Picture showing the star in the center of our solar system">
+            </div>
+            <div class="ThirdTopBox">
+                <p>
+                    The sun is the center of our solar system, around which all the other planets revolve. This central position has played a crucial role in shaping the unique features of our solar system, including the relative sizes and distances of the planets, and the complex interactions between them.
+                    <span class="dots"></span><span class="more"><br><br>
+                    From our perspective on Earth, the sun appears to move across the sky, rising in the east and setting in the west. However, it is not the sun that is moving but rather our planet as it rotates on its axis. The sun's location relative to Earth changes throughout the year, which is why we experience different seasons as the Earth orbits the sun.
+                    <br><br>
+                    But where does the sun sit in the grand scheme of the universe? The sun is located in the Orion Arm, one of the spiral arms of the Milky Way galaxy. It is about 25,000 light-years away from the galactic center, and it takes about 225-250 million years for the sun to complete one orbit around the center of the galaxy.
+                    <br><br>
+                    The sun's position in the galaxy has played a critical role in shaping the evolution of our solar system. Its location in a relatively quiet part of the galaxy has allowed for stable conditions that have allowed life to flourish on Earth. Additionally, its position relative to other stars and galaxies has given us a unique perspective on the cosmos, allowing us to explore and understand the universe in ways that were once unimaginable.
+                    <br><br>
+                    In conclusion, the sun's location at the center of our solar system and in the Orion Arm of the Milky Way has had a profound impact on the development of our planet and the evolution of life on Earth. Understanding the sun's position in space is critical to unlocking some of the universe's most profound mysteries and shaping our understanding of the cosmos.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+        </div>
+        <div class="ThirdContainer" id="Atmosphere">
+            <div class="ThirdBoxHeaders" style="border-bottom: 1px solid white;">
+                <h5>Core to the Corona</h5>
+                <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                <h2>A Complex and Dynamic System of Layers</h2>
+            </div>
+            <div class="ThirdBottomBox">
+                <img src="../Pictures/Sun/atmos.jpg" alt="Picture showing the composition of the suns atmosphere">
+            </div>
+            <div class="ThirdTopBox">
+                <p>
+                    The sun's atmosphere is a multi-layered, complex and dynamic system that is critical to understanding the behavior of our star. The different layers of the sun's atmosphere, from the core to the corona, each have their unique characteristics and are shaped by various physical processes. In this section, we'll explore the different atmospheric layers of the sun and their defining features.
+                    <span class="dots"></span><span class="more"><br><br>
+                    The Core: The sun's core is the center of its atmosphere, where temperatures reach a staggering 15 million degrees Celsius. It is here that nuclear fusion occurs, which generates the enormous amount of energy that sustains the sun's brightness and warmth. The core is the only region of the sun that produces significant amounts of energy.
+                    <br><br>
+                    The Radiative Zone: Above the core is the radiative zone, where energy is transported by photons through a dense, opaque plasma. In this region, the temperature drops to about 2 million degrees Celsius. This layer of the atmosphere is characterized by a smooth and steady energy transfer.
+                    <br><br>
+                    The Convection Zone: The convection zone is the outermost layer of the sun's interior, where energy is transported by massive currents of plasma that rise and fall in a process known as convection. The temperature in this layer drops to about 1 million degrees Celsius. The convection zone is responsible for creating the sun's magnetic field.
+                    <br><br>
+                    The Photosphere: The photosphere is the visible surface of the sun, where the temperature drops to about 5,500 degrees Celsius. This is where most of the sun's light and heat is generated, and it is the layer that we see when we look at the sun. The photosphere is characterized by granulation, a pattern of bright and dark spots caused by convection currents.
+                    <br><br>
+                    The Chromosphere: The chromosphere is a thin layer of the sun's atmosphere above the photosphere, where temperatures increase again to around 20,000 degrees Celsius. It is characterized by the presence of spicules, thin jets of plasma that rise up from the photosphere.
+                    <br><br>
+                    The Transition Region: The transition region is the thin layer between the chromosphere and the corona, where temperatures rapidly increase to over a million degrees Celsius. This layer is marked by sharp temperature gradients and is responsible for much of the sun's ultraviolet radiation.
+                    <br><br>
+                    The Corona: The corona is the outermost layer of the sun's atmosphere, where temperatures reach several million degrees Celsius. It is a region of tenuous plasma that extends far into space and is visible during total solar eclipses. The corona is characterized by the presence of magnetic loops and eruptions, such as solar flares and coronal mass ejections.
+                    <br><br>
+                    In conclusion, the sun's atmosphere is a complex and dynamic system that comprises many layers, each with its unique properties and characteristics. Understanding the different atmospheric layers of the sun is critical to unlocking some of the most profound mysteries of our star and the impact it has on our solar system.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+        </div>
+        <div class="ThirdContainer" id="Orbit">
+            <div class="ThirdBoxHeaders" style="border-bottom: 1px solid white;">
+                <h5>Into the Void</h5>
+                <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                <h2>Tracing the Orbital Path of Our Star</h2>
+            </div>
+            <div class="ThirdBottomBox">
+                <img src="../Pictures/Sun/orbit.jpg" alt="Picture showing how the sun moves through the milky way">
+            </div>
+            <div class="ThirdTopBox">
+                <p>
+                    The sun is in constant motion, traveling through space in a graceful dance with the other celestial bodies in our solar system. Our star is located at the center of the solar system, and all the planets, including Earth, orbit around it. In this section, we'll explore the orbital path of the sun and how it travels into the void of space.
+                    <span class="dots"></span><span class="more"><br><br>
+                    The sun's orbit around the center of the Milky Way galaxy takes approximately 225-250 million years to complete. This orbit is not a perfect circle, but rather an elliptical shape, which means that the distance between the sun and the center of the galaxy varies over time. The sun is currently located about 25,000 light-years from the galactic center, and it takes about 225-250 million years for it to complete one orbit around it.
+                    <br><br>
+                    In addition to its orbit around the galactic center, the sun also moves in a path that takes it through interstellar space. As the sun orbits around the galactic center, it moves up and down through the plane of the galaxy. This motion takes the sun through the various interstellar clouds of gas and dust that are scattered throughout the galaxy. As it moves through these clouds, the sun's path is influenced by the gravitational forces of nearby stars and other celestial bodies.
+                    <br><br>
+                    The sun's path through interstellar space is not a straight line but rather a spiral path. This spiral path is caused by the motion of the sun as it orbits around the galactic center, combined with the gravitational forces of nearby celestial bodies. As the sun travels through interstellar space, it carries with it the planets and other objects in the solar system.
+                    <br><br>
+                    The sun's orbit and its journey through interstellar space have significant implications for the solar system. For example, the sun's position relative to other stars and interstellar clouds can affect the amount of cosmic radiation that the solar system is exposed to, which in turn can impact the climate on Earth and other planets.
+                    <br><br>
+                    In conclusion, the sun's orbit is a complex and fascinating dance that takes it through the vast expanse of interstellar space. Its journey around the galactic center and through the interstellar clouds is shaped by gravitational forces and other celestial bodies. Understanding the sun's orbital path is critical to unlocking some of the most profound mysteries of our solar system and the universe.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+        </div>
+        <div class="ThirdContainer" id="GravitationalPull">
+            <div class="ThirdBoxHeaders">
+                <h5>The Mighty Attraction</h5>
+                <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                <h2>The Sun's Role in Our Cosmic Neighborhood</h2>
+            </div>
+            <div class="ThirdBottomBox">
+                <img src="../Pictures/Sun/spacetime.jpg" alt="Picture showing how the sun bends space time a lot">
+            </div>
+            <div class="ThirdTopBox">
+                <p>
+                    The sun is an incredibly massive celestial body, with a mass more than 300,000 times that of Earth. One of the most significant effects of this massive size is the sun's gravitational pull, which is responsible for keeping the planets in our solar system in their orbits. In this section, we will explore the sun's role in our cosmic neighborhood and the ways in which its gravity bends space-time.
+                    <span class="dots"></span><span class="more"><br><br>
+                    The concept of gravity was first described by Sir Isaac Newton in the 17th century, and it was later expanded upon by Albert Einstein in the early 20th century. Einstein's theory of general relativity states that gravity is not just a force between two objects, but it is actually a curvature of space-time. In other words, massive objects like the sun warp the fabric of space-time, creating a gravitational well that other objects are drawn into.
+                    <br><br>
+                    The sun's gravitational pull is so strong that it can even affect the motion of light. When light passes close to the sun, it is bent by the curvature of space-time, a phenomenon known as gravitational lensing. This effect has been observed and studied by astronomers, providing valuable insights into the nature of the universe.
+                    <br><br>
+                    The sun's gravity also plays a crucial role in the formation and evolution of the solar system. As the sun was forming billions of years ago, its gravitational pull drew in gas and dust from the surrounding space. Over time, these materials coalesced to form the planets and other bodies in the solar system.
+                    <br><br>
+                    In addition to its role in the formation of the solar system, the sun's gravity continues to shape the orbits of the planets and other objects in the system. For example, the gravitational pull of Jupiter is responsible for the eccentric orbit of Pluto.
+                    <br><br>
+                    In conclusion, the sun's gravitational pull is an essential force in our cosmic neighborhood. Its massive size and gravity warp the fabric of space-time, affecting the motion of light and the formation and evolution of the solar system. Understanding the sun's role in the universe is critical to unlocking some of the most profound mysteries of our cosmos.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+        </div>
+        <div class="SecondContainer" id="Rotation">
+            <div class="SecondBox">
+                <div class="SecondBoxHeaders">
+                    <h5>Rotation</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>The Sun's Daily Dance</h2>
+                </div>
+                <p>
+                    The sun is a dynamic and complex celestial object, and one of its most fascinating aspects is its rotation. In this section, we will explore the sun's daily dance, examining the details of its rotational motion and the effects it has on the solar system.
+                    <span class="dots"></span><span class="more"><br><br>
+                    The sun rotates on its axis once every 27.3 days, making it a relatively slow-moving star. This rotation causes a range of effects, including the creation of a magnetic field that can influence space weather and the formation of sunspots and other features on the sun's surface.
+                    <br><br>
+                    The sun's rotational motion is not uniform, with different parts of the sun rotating at slightly different speeds. This phenomenon is known as differential rotation, and it is caused by the fact that the sun is not a solid body. Instead, it is composed of a layer of gas that rotates at different rates, depending on latitude.
+                    <br><br>
+                    One of the most visible effects of the sun's rotation is the creation of sunspots, which are dark, cooler areas on the sun's surface. Sunspots are formed by the twisting of the sun's magnetic field lines, which can cause the gas in the sun's atmosphere to cool and darken.
+                    <br><br>
+                    The sun's rotation also has significant effects on the solar system. It creates a magnetic field that extends far into space, known as the heliosphere, which protects the solar system from high-energy particles and cosmic rays. Additionally, the rotation of the sun causes variations in the solar wind, which can affect the Earth's atmosphere and create auroras.
+                    <br><br>
+                    In conclusion, the sun's daily dance of rotation is a fascinating and essential aspect of our solar system. Its effects are far-reaching, from the formation of sunspots to the creation of the heliosphere and the solar wind. Understanding the sun's rotation is critical to unlocking the mysteries of the sun and its influence on the solar system.
+                </span></p>
+                <button onclick="readMoreFunction(this)" class="read-more" style=" margin-bottom: 20px;">Read more</button>
+            </div>
+            <div class="SecondBox">
+                <img src="../Pictures/Sun/Rotation.jpg" alt="Picture showing how the sun rotates and that the days are different lengths depending on where on the sun you look" style="border: 1px solid white;">
+            </div>
+        </div>
+        <div class="FirstContainer" id="Composition">
+            <div class="FirstBoxLeft">
+                <div class="FirstBoxHeaders">
+                    <h5>Composition</h5>
+                    <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+                    <h2>Layers</h2>
+                </div>
+                <p>The sun's composition is a fascinating subject that has been the focus of scientific research for decades. In this section, we will explore the layers that make up the sun and the composition of each layer.
+                <br><br>
+                The sun is a massive ball of gas, primarily composed of hydrogen and helium. The core of the sun is the innermost layer and is the site of nuclear fusion, where hydrogen atoms fuse together to form helium. This process releases a tremendous amount of energy in the form of light and heat, which powers the sun and provides light and warmth to the solar system.
+                <br><br>
+                The layer above the core is the radiative zone, which extends outward to about 70% of the sun's radius. In this layer, energy from the core is transported through the sun's interior via radiation. The energy is absorbed and re-emitted by particles in the gas, eventually making its way to the outer layers of the sun.
+                <br><br>
+                Above the radiative zone is the convective zone, where energy is transported through convection. In this layer, hot gas rises to the surface of the sun, where it cools and sinks back down to the interior. This convective motion creates the sun's magnetic field and drives the movement of the sun's surface.
+                <br><br>
+                The outermost layer of the sun is the outer atmosphere, which is composed of the photosphere, chromosphere, and corona. The photosphere is the visible surface of the sun and is the layer from which most of the sun's light and heat are emitted. The chromosphere is a thin layer above the photosphere, and the temperature in this layer increases rapidly. The corona is the outermost layer of the sun's atmosphere and is composed of hot, ionized gas that extends far into space.
+                </p>
+            </div>
+            <div class="FirstBoxRight">
+                <img src="../Pictures/Sun/composition.png" alt="A picture showing the composition of the sun and how hot it is">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Element</th>
+                            <th>Percentage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hydrogen</td>
+                            <td>73.46%</td>
+                        </tr>
+                        <tr>
+                            <td>Helium</td>
+                            <td>24.85%</td>
+                        </tr>
+                        <tr>
+                            <td>Oxygen</td>
+                            <td>0.77%</td>
+                        </tr>
+                        <tr>
+                            <td>Carbon</td>
+                            <td>0.29%</td>
+                        </tr>
+                        <tr>
+                            <td>Iron</td>
+                            <td>0.16%</td>
+                        </tr>
+                        <tr>
+                            <td>Neon</td>
+                            <td>0.12%</td>
+                        </tr>
+                        <tr>
+                            <td>Nitrogen</td>
+                            <td>0.09%</td>
+                        </tr>
+                        <tr>
+                            <td>Silicon</td>
+                            <td>0.07%</td>
+                        </tr>
+                        <tr>
+                            <td>Magnesium</td>
+                            <td>0.05%</td>
+                        </tr>
+                        <tr>
+                            <td>Sulphur</td>
+                            <td>0.04%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>     
+        <div class="ThirdBoxHeaders" id="History">
+            <h5>History of the Sun</h5>
+            <span class="SpacerLine" style="padding-left: 50px; padding-right: 50px;">|</span>
+            <h2>From Formation to the Future</h2>
+        </div>
+        <div class="Timeline-Box">
+            <div class="timeline-timeline">
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                    <h4>Formation: The Birth of Our Sun</h4>
+                    <p>
+                        The formation of our Sun began approximately 4.6 billion years ago when a giant molecular cloud, or nebula, began to collapse under its own gravity. As the cloud collapsed, it began to spin faster, creating a flattened disk of gas and dust around a central protostar, which would eventually become our Sun.
+                        <span class="dots"></span><span class="more"><br><br>
+                        The protostar continued to grow as it accreted more and more material from the disk. At the center of the protostar, the pressure and temperature became so high that nuclear fusion reactions began to occur. These reactions released a tremendous amount of energy, which counteracted the force of gravity, allowing the protostar to reach a stable size.
+                        <br><br>
+                        Over time, the remaining material in the disk either fell into the Sun or coalesced into smaller objects, including the planets and other bodies in our Solar System. The Sun has since continued to shine, providing the energy necessary for life on Earth to thrive. The process of its formation is still not fully understood, but ongoing research continues to shed light on the mysteries of the early Solar System.
+                        </span>
+                    </p>
+                    <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>Early Life: The Proto-Sun and Its Surrounding Disk</h4>
+                        <p>
+                            During its early life, the Sun was a protostar surrounded by a disk of gas and dust. This disk, known as the solar nebula, extended for many astronomical units (AU) from the protostar and was composed primarily of hydrogen, helium, and other elements. As the protostar grew in mass and temperature, it began to emit a strong solar wind that cleared out the gas and dust from the inner region of the solar nebula, leaving behind a ring of planetesimals.
+                            <span class="dots"></span><span class="more"><br><br>
+                            The planetesimals, in turn, began to collide and coalesce, forming larger and larger bodies. Eventually, these bodies became the planets, moons, asteroids, and other objects in the Solar System. The inner planets, including Earth, were formed from the rocky and metallic material that was closest to the protostar, while the outer planets, such as Jupiter and Saturn, were formed from the gas and ice that remained in the outer regions of the solar nebula.
+                            <br><br>
+                            The solar nebula continued to evolve and change over time, with the protostar growing in size and luminosity as it accreted more material from the disk. The early Solar System was a chaotic and violent place, with massive collisions and impacts shaping the final configuration of the planets and other objects. Despite this violence, however, the conditions in the early Solar System were also favorable for the emergence of life, setting the stage for the evolution of complex organisms on Earth billions of years later.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" id="myReadmoreBtn" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                        <h4>Nuclear Fusion Ignites: The Sun Becomes a Star</h4>
+                        <p>
+                            The ignition of nuclear fusion in the core of the protostar marked a pivotal moment in the history of the Solar System. At this point, the protostar had accumulated enough mass for the pressure and temperature in its core to become so high that hydrogen nuclei began to fuse together to form helium. This process released an enormous amount of energy in the form of light and heat, which gave rise to the intense radiation that characterizes the Sun.
+                            <span class="dots"></span><span class="more"><br><br>
+                            The fusion reactions in the Sun's core have been ongoing for approximately 4.6 billion years, with the energy released from these reactions sustaining the Sun's luminosity and allowing it to shine. The fusion of hydrogen into helium is an exothermic reaction, meaning that it releases energy. This energy is carried outward from the core of the Sun by radiation and convection, ultimately reaching the surface and being released into space as visible light and other forms of electromagnetic radiation.
+                            <br><br>
+                            The energy produced by nuclear fusion in the Sun's core also has important implications for the planets and other bodies in the Solar System. The heat and light generated by the Sun allow for the existence of liquid water and other necessary conditions for life on Earth. Without the energy produced by the Sun's fusion reactions, life on Earth as we know it would not be possible.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>Stellar Wind and the Birth of the Solar System</h4>
+                        <p>
+                            As the Sun ignited and began to fuse hydrogen into helium, it also began to emit a strong solar wind. This wind, composed of charged particles, flowed out from the Sun in all directions, eventually sweeping up the remaining gas and dust in the solar nebula and clearing out the inner regions of the disk.
+                            <span class="dots"></span><span class="more"><br><br>
+                            The solar wind had a significant impact on the formation and evolution of the Solar System. As it interacted with the gas and dust in the solar nebula, it pushed these materials outward, causing them to coalesce and form the planetesimals that eventually became the planets and other objects in the Solar System.
+                            <br><br>
+                            In addition to shaping the formation of the Solar System, the solar wind also has important implications for the current state of the Solar System. The solar wind continues to flow outward from the Sun, forming a protective bubble around the Solar System known as the heliosphere. This bubble helps to protect the planets and other objects in the Solar System from harmful cosmic rays and other high-energy particles from outside the Solar System.
+                            <br><br>
+                            The solar wind also has important implications for our understanding of the broader universe. By studying the solar wind, scientists can gain insight into the processes that drive the evolution of stars and the formation of planetary systems, helping to shed light on the origin and nature of the universe as a whole.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                        <h4>Youthful Vigor: The Sun's First Billion Years</h4>
+                        <p>
+                            During the first billion years of its life, the Sun was much more active and energetic than it is today. Its luminosity was approximately 30% lower than it is today, but it compensated for this by emitting much more high-energy radiation in the form of ultraviolet light and X-rays.
+                            <span class="dots"></span><span class="more"><br><br>
+                            This high-energy radiation had important implications for the early Solar System. It ionized the gas in the solar nebula, leading to the formation of a dense layer of charged particles known as the solar nebula ionization front. This front effectively shielded the outer regions of the solar nebula from the strong solar wind, allowing the gas and dust to accumulate and form the outer planets and other objects.
+                            <br><br>
+                            The Sun's high-energy radiation also had important implications for the emergence of life on Earth. It caused the breakdown of molecules in the Earth's primitive atmosphere, leading to the formation of organic compounds that were essential for the development of life. Without the early Sun's high-energy radiation, it is unlikely that life on Earth would have emerged in the form that we know it today.
+                            <br><br>
+                            Over time, the Sun's activity level decreased as it entered into its main sequence phase. However, the energy released by the Sun during its first billion years had a profound impact on the formation and evolution of the Solar System, setting the stage for the emergence of complex organisms and the development of life on Earth.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>Middle Age: The Sun Enters Its Main Sequence Phase</h4>
+                        <p>
+                            After its first billion years, the Sun settled into a more stable phase of its life known as the main sequence. During this phase, the Sun's energy output remained relatively constant, with the energy produced by nuclear fusion in its core balanced by the force of gravity that was compressing its core.
+                            <span class="dots"></span><span class="more"><br><br>
+                            As the Sun entered the main sequence phase, its surface temperature and luminosity increased, leading to the emergence of more complex organisms on Earth. The increase in the Sun's luminosity allowed for more of its energy to be absorbed by the Earth, leading to the formation of the oceans and the development of the Earth's climate.
+                            <br><br>
+                            The main sequence phase is expected to last for approximately 10 billion years, with the Sun burning through its hydrogen fuel and gradually fusing heavier elements in its core. During this time, the Sun's luminosity and temperature will gradually increase, causing it to slowly evolve and change over time.
+                            <br><br>
+                            For scientists studying the Sun, the main sequence phase is an important period of stability that allows for the measurement of its properties and the study of its behavior over long periods of time. By observing the Sun during this phase, scientists can gain insight into the processes that govern the behavior of stars and the evolution of planetary systems.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                        <h4>Aging Gracefully: The Sun's Subgiant and Red Giant Phases</h4>
+                        <p>
+                            As the Sun exhausts the hydrogen fuel in its core during the later stages of its life, it will begin to evolve and change, eventually entering the subgiant and red giant phases.
+                            <span class="dots"></span><span class="more"><br><br>
+                            During the subgiant phase, which is expected to occur in about 5 billion years, the Sun's core will begin to contract and heat up, causing the outer layers of the star to expand and cool. This expansion will cause the Sun to grow to a size about 1.2 times its current size, and its luminosity will increase by a factor of about 10.
+                            <br><br>
+                            The red giant phase, which is expected to occur in another 5 billion years after the subgiant phase, will see the Sun expand even further, reaching a size of about 100 times its current size. At this stage, the Sun will have exhausted its hydrogen fuel and will begin to fuse helium in its core, leading to a significant increase in energy output.
+                            <br><br>
+                            As the Sun enters its red giant phase, it will have a profound impact on the Solar System. The expanding outer layers of the star will likely engulf the inner planets, including Earth, and possibly even the outer gas giants. This process will mark the end of the Solar System as we know it, with the Sun evolving into a planetary nebula and eventually a white dwarf.
+                            <br><br>
+                            Despite its eventual fate, the Sun's subgiant and red giant phases represent a time of graceful aging, as the star slowly evolves and changes over time. For astronomers, these phases provide a unique opportunity to study the late-stage evolution of stars and gain insight into the formation and evolution of planetary systems.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>Planetary Nebula and White Dwarf: The Final Acts of a Dying Star</h4>
+                        <p>
+                            After the red giant phase, the Sun will have exhausted most of its fuel, and its outer layers will have expanded to form a planetary nebula. Planetary nebulae are beautiful and intricate structures that are formed by the outer layers of a star being expelled into space. The nebulae are illuminated by the ultraviolet radiation emitted by the dying star's hot core.
+                            <span class="dots"></span><span class="more"><br><br>
+                            As the planetary nebula continues to expand, the core of the star will begin to cool and contract, eventually forming a white dwarf. A white dwarf is a small, extremely dense star that is about the size of Earth, but with the mass of the Sun. Although white dwarfs are no longer undergoing fusion reactions, they continue to emit heat and light as they slowly cool over time.
+                            <br><br>
+                            For astronomers, the white dwarf phase is of particular interest because it allows them to study the properties and behavior of extremely dense objects. White dwarfs are thought to be the final fate of most stars, and their study provides insight into the evolution of the universe as a whole.
+                            <br><br>
+                            The Sun's white dwarf phase is still billions of years away, but its eventual fate serves as a reminder of the transience of all things in the universe. However, the legacy of the Sun will continue to live on, as the elements it created during its lifetime will be recycled into new stars and planets, continuing the cycle of stellar birth and death.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline left-timeline">
+                    <div class="content-timeline">
+                        <h4>The Fate of the Solar System: The Sun's Impact on the Planets</h4>
+                        <p>
+                            As the Sun ages and evolves, its influence on the planets of the Solar System will become increasingly profound. During the Sun's subgiant and red giant phases, the outer layers of the star will expand, potentially engulfing Mercury, Venus, and even Earth.
+                            <span class="dots"></span><span class="more"><br><br>
+                            However, the fate of each planet is not solely dependent on the Sun's evolution. The gravitational interactions between the planets, as well as their own individual characteristics, will also play a role in determining their ultimate fate.
+                            <br><br>
+                            Mars, for example, is far enough from the Sun that it will likely survive the red giant phase relatively unscathed. However, its atmosphere may be stripped away by the increased solar wind and radiation during this phase.
+                            <br><br>
+                            Jupiter and Saturn, with their massive size and strong gravity, are unlikely to be affected by the Sun's expansion. However, their moons may be impacted, with some potentially being destroyed or ejected from their orbits.
+                            <br><br>
+                            The outermost planets, Uranus and Neptune, may also be largely unaffected by the Sun's evolution. However, their orbits may be altered by the gravitational interactions between them and the other planets, potentially leading to their expulsion from the Solar System altogether.
+                            <br><br>
+                            In the end, the ultimate fate of the Solar System will depend on a complex interplay of factors, including the evolution of the Sun, the gravitational interactions between the planets, and even external factors such as close encounters with other stars. While we can make predictions about what may happen billions of years in the future, the true outcome remains uncertain.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+                <div class="container-timeline right-timeline">
+                    <div class="content-timeline">
+                        <h4>The Future of the Sun: The Death and Evolution of Our Star</h4>
+                        <p>
+                            The Sun has already burned through about half of its hydrogen fuel, and as it continues to evolve, it will eventually run out of fuel altogether. The exact timeline of the Sun's evolution is complex and depends on a number of factors, but astronomers estimate that it will enter its red giant phase in about 5 billion years.
+                            <span class="dots"></span><span class="more"><br><br>
+                            During the red giant phase, the outer layers of the Sun will expand outwards, potentially engulfing Mercury, Venus, and even Earth. The Sun will eventually shed its outer layers, leaving behind a white dwarf at its core. The white dwarf will slowly cool over time, eventually becoming a cold, dark object.
+                            <br><br>
+                            However, the Sun's impact on the universe will not end with its death. During its lifetime, the Sun has been creating heavier elements through nuclear fusion reactions. When the Sun dies and its outer layers are shed, these elements will be recycled into the universe, eventually becoming part of new stars and planets.
+                            <br><br>
+                            The death of the Sun is not something to fear, but rather something to marvel at. It is a natural part of the universe's evolution, and the legacy of the Sun will continue to live on in the cosmos for billions of years to come. As we study and learn more about the evolution of stars, we gain a deeper understanding of the universe as a whole, and the Sun's journey serves as a reminder of the beauty and complexity of the natural world.
+                            </span>
+                        </p>
+                        <button onclick="readMoreFunction(this)" class="read-more">Read more</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="wrapper" id="Newsletter">
+            <h1>Subscribe to our Newsletter</h1>
+            <p>Receive updates instanly</p>
+            <div class="newsletter"  style="align-items: center;">
+                <input type="text" class="input" placeholder="Enter Your Email">
+                <img src="../Pictures/envelope-solid.png" class="fas fa-envelope Showinstant" alt="Picture of an envelope">
+                <div class="btn">Subscribe</div>
+            </div>
+        </div>	
+        <script src="../Javascript/SmallNav.js"></script>
+        <script src="../Javascript/FadeInUp.js"></script>
+        <script src="../Javascript/StickyNavigation.js"></script>
+        <script src="../Javascript/BackToTop&ProgressBar.Js"></script>
+        <script src="../Javascript/ReadMore.js"></script>
+    </body>
+</html>
